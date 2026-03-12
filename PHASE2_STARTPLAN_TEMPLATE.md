@@ -92,3 +92,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Wenn GO/HOLD-Owner >48h nicht erreichbar ist: Stellvertretung übernimmt Entscheidung im selben SLA-Rahmen.
 - Fehlt auch Stellvertretung: automatische HOLD-Fortführung + Eskalationsnotiz mit neuem Entscheidungstermin.
 - Ziel: Keine stillen Deadlocks im Freigabeprozess.
+
+## First-72h Kill-Switch (nach GO)
+- Wenn in den ersten 72h ein P1-Risiko ohne benannten Owner auftritt: sofortiger Scope-Freeze (keine neuen Workstreams starten).
+- Re-Start nur mit kurzer 3-Punkte-Entscheidung: Risiko isoliert, Owner gesetzt, Mitigation datiert.
+- Ziel: Frühe Fehlstarts begrenzen und GO-Disziplin sichern.

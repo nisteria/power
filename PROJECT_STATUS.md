@@ -133,3 +133,8 @@
 - PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt „Delegate-Absence Fallback“ ergänzt.
 - Regel ergänzt: Bei Nicht-Erreichbarkeit des Decision-Owners greift Stellvertretung, sonst HOLD + Eskalationsnotiz.
 - Wirkung: Governance bleibt handlungsfähig ohne vorzeitige Phase-2-Umsetzung.
+
+## Phase-2 Prep Micro-Update (2026-03-12 13:54:23)
+- PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt „First-72h Kill-Switch (nach GO)“ ergänzt.
+- Regel ergänzt: Bei P1-Risiko ohne Owner in den ersten 72h greift Scope-Freeze bis Risiko/Owner/Mitigation klar sind.
+- Wirkung: Frühphase nach GO wird kontrollierter, ohne vorzeitige Ausweitung der Umsetzung.
