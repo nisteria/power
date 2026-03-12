@@ -801,3 +801,15 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um Dashboard-UX-Micro-Update ergänzt (grafische ToDo-Sicht + Timeline + Doku-Links als aktiv dokumentiert).
 - Impact: Dashboard bleibt nicht nur aktiv, sondern zeigt operativen Fortschritt klarer und schneller prüfbar.
 - Nächster Schritt: Verlaufschart (open/done over time) als optionales nächstes UX-Inkrement ergänzen.
+
+## [2026-03-12 15:50 Europe/Warsaw] Progress Step
+- Was gemacht: `QA_MVP_ACCEPTANCE.md` um ein **Phase-2 Addendum fuer Paket 3 (Tarif-Engine Day-Ahead v0.1)** erweitert, inkl. Testfaelle **TC-20 bis TC-23** und Review-Ready-Checklist.
+- Impact: Paket 3 ist testseitig jetzt deutlich konkreter; API- und QA-Sicht sind enger synchronisiert und die Abnahme wird reproduzierbarer.
+- Naechster Schritt: Paket-3-Sign-off in `API_SPEC.md` mit echten Namen + Zeitstempel gegenzeichnen und das Ergebnis (GO/GO+Auflage/HOLD) im Status spiegeln.
+- Blocker/Workaround: Kein technischer Blocker; fuer fehlende namentliche Zuordnung bleibt bis zum Slot ein rollenbasiertes Pre-Fill aktiv.
+
+## [2026-03-12 15:52 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update zur Dashboard-Readiness ergaenzt und Fokus auf naechsten Acceptance-Checkpoint festgezogen.
+- Impact: Dashboard bleibt aktiv, Projektstatus bleibt konsistent zwischen GO-Planung und operativer Ausfuehrung.
+- Naechster Schritt: Paket-1 Kickoff-Termin-ID + Teilnehmerkernteam dokumentieren und danach Paket-2 Scope-Sign-off gegenzeichnen.
+

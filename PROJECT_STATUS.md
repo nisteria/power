@@ -455,3 +455,14 @@
 - Live-Dashboard-Verbesserungen aktiv: grafische ToDo-Sicht (offen/erledigt/fortschritt), Timeline und Dokumentenlinks laufen im Realtime-Feed.
 - Relevanz: Höhere Transparenz für GO-Ausführung und schnellere Navigation in relevante Arbeitsdokumente.
 - Nächster Schritt: Optional echten Chart-Layer (z. B. Verlauf offen vs. erledigt über Zeit) ergänzen.
+
+## GO-Execution Micro-Update (2026-03-12 15:50 Europe/Warsaw)
+- Tiny progress: `QA_MVP_ACCEPTANCE.md` um ein Paket-3-Addendum (Tarif-Engine Day-Ahead v0.1) erweitert, inkl. TC-20..TC-23 und Review-Ready-Check.
+- Relevanz: API_SPEC und QA-Abnahme sind enger gekoppelt; reduziert Rework-Risiko vor der Gegenzeichnung.
+- Naechster Schritt: Sign-off im `API_SPEC.md` mit realen Namen/Zeitstempel eintragen und Ergebnis als GO/GO+Auflage/HOLD dokumentieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:52 Europe/Warsaw)
+- Tiny progress: Dashboard-Readiness fuer Startphase nachgezogen (ToDo-Sicht offen/erledigt bleibt mit Dokument-Referenzen gekoppelt).
+- Relevanz: Erhoeht operative Transparenz fuer die ersten 48h nach GO ohne Scope-Erweiterung.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) als ersten harten Acceptance-Checkpoint eintragen.
+
