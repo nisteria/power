@@ -284,3 +284,13 @@
 - Tiny progress: Power CEO Live Dashboard um professionelle ToDo-Visualisierung (offen/erledigt/Fortschritt), Workflow-Timeline und Doku-Referenzlinks erweitert.
 - Relevanz: Projektsteuerung ist schneller auditierbar; offene vs. erledigte Aufgaben und Nachlese-Dokumente sind sofort sichtbar.
 - Naechster Schritt: Optionaler Chart-Pass (Phase-Fortschritt Q2/Q3/Q4 + Trendgraph "completed over time") als v2.
+
+## GO-Execution Micro-Update (2026-03-12 15:06 Europe/Warsaw)
+- Tiny progress: Neues Artefakt MONITORING_ALERTING_MINIMUM.md fuer Phase-2-Paket 5 angelegt (Kernmetriken, P1/P2-Alarmregeln, Routing, DoR).
+- Relevanz: Monitoring/Alerting ist damit von "nur Prioritaet" auf ein konkret umsetzbares Pilot-Minimum gehoben; reduziert Blindflug-Risiko im Pilotbetrieb.
+- Naechster Schritt: 20-min Alignment backend-agent + qa-agent und P1-Trigger (Query/Threshold) final gegenzeichnen.
+
+## GO-Execution Micro-Update (2026-03-12 15:07 Europe/Warsaw)
+- Tiny progress: Dashboard-Upgrade abgeschlossen (grafische ToDo-Sicht + Dokumentenlinks) und auf Startklarheit für operative Phase-2-Transparenz eingeordnet.
+- Relevanz: Bessere Sichtbarkeit von offen/erledigt reduziert Koordinationsverlust im GO-Followup.
+- Nächster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) als nächsten harten Abnahmepunkt im Status referenzieren.

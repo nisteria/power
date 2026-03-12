@@ -569,3 +569,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um Micro-Update zur Dashboard-Professionalisierung ergänzt (ToDo-Grafik, Werdegang, Doku-Links).
 - Impact: Status und operative Transparenz sind fuer Lech in einem Blick sichtbar; weniger Suchaufwand bei Review/Entscheidungen.
 - Naechster Schritt: Chart-v2 mit Trendlinie (completed/open over time) als naechsten kleinen Visual-Boost einbauen.
+
+## [2026-03-12 15:06 Europe/Warsaw] Progress Step
+- Was gemacht: Neues Dokument MONITORING_ALERTING_MINIMUM.md erstellt und damit fuer Phase-2-Paket 5 ein umsetzbares Monitoring/Alerting-v0.1 definiert (5 Kernmetriken, P1/P2-Alarmregeln, Routing, Runbook-Skeleton, DoR).
+- Impact: Pilotbetrieb bekommt ein klares operatives Minimum fuer Sichtbarkeit + Eskalation; senkt Risiko, dass kritische API-/Device-/Tarif-Probleme zu spaet erkannt werden.
+- Naechster Schritt: 20-min Alignment mit backend-agent + qa-agent und pro P1-Regel den finalen Trigger (Query + Threshold) gegenzeichnen.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:07 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update ergänzt (Dashboard-Upgrade als Transparenzhebel eingeordnet).
+- Impact: Operative Steuerung nach GO wird klarer, weil offene/erledigte Arbeit und Nachlese-Dokumente direkt sichtbar sind.
+- Nächster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im nächsten Zyklus verbindlich eintragen.
