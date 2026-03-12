@@ -835,3 +835,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md um Abschnitt **"No-Show Recovery (Micro, Day-0)"** ergänzt (Stellvertretungs-Aktivierung + HOLD-Regel bei fehlender Pflichtrolle).
 - Impact: Kickoff bleibt auch bei kurzfristigem Owner-Ausfall steuerbar; verhindert unklare Verantwortungsuebergaben im Paket-1 Start.
 - Naechster Schritt: Im naechsten Status-Update die Recovery-Regel als Day-0 Guardrail in PROJECT_STATUS.md referenzieren.
+
+## [2026-03-12 15:55:59 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: `PROJECT_STATUS.md` um ein GO-Execution-Micro-Update ergänzt und die neue Day-0-Guardrail **"No-Show Recovery"** aus `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` als Paket-1-Schutz explizit gespiegelt.
+- Impact: Der Kickoff bleibt bei kurzfristigem Owner-Ausfall steuerbar (Stellvertretung/HOLD-Regel), wodurch Verantwortungsdrift im Day-0 reduziert wird.
+- Nächster Schritt: Eskalationskontakt im Kickoff-Protokoll namentlich setzen und anschließend Termin-ID/Evidence im Status verlinken.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch bleibt die namentliche Zuordnung bis zum Kickoff offen (Workaround: Rollen-Pre-Fill aktiv).
+
+## [2026-03-12 15:56 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: POWER_WEBDASHBOARD.md um ein kompaktes Update zur neuen Professional-Dashboard-Ansicht erweitert (KPI-Karten, grafische ToDo-Sicht, Werdegang, Doku-Links + /docs/<datei>.md Route).
+- Impact: Nachlesen und Bedienung des Dashboards sind jetzt klar dokumentiert; reduziert Onboarding-Reibung fuer den Live-Betrieb.
+- Naechster Schritt: Als naechstes echte Linien-/Balkencharts fuer Verlauf (open/done over time) in die UI integrieren.

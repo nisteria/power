@@ -17,3 +17,13 @@ Dann im Browser öffnen:
 
 ## Aktivitätsquelle
 Der Cron-Loop schreibt in `POWER_AGENT_ACTIVITY.md`.
+
+## Update 2026-03-12 (Professional Layout)
+- KPI-Karten fuer offene/erledigte Aufgaben + Fortschrittsquote.
+- Grafische ToDo-Darstellung (Offen vs. Erledigt) und getrennte Listen.
+- Live-Bereich "Werdegang/Arbeitsgang" fuer die letzten Agentenlaeufe.
+- Abschnitt "Dokumente zum Nachlesen" mit direkten Links auf referenzierte `.md`-Dateien.
+
+### Dokumente direkt im Browser oeffnen
+- Route: `http://localhost:4177/docs/<DATEI>.md`
+- Beispiel: `http://localhost:4177/docs/PROJECT_STATUS.md`
