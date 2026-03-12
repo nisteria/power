@@ -955,3 +955,19 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um ein GO-Execution-Micro-Update ergänzt (Monitoring-Grundlage für Top-2-Nachweise präzisiert).
 - Impact: Dashboard bleibt aktiv und die operative Nachweisführung (Paket 1/2) wird klarer und schneller prüfbar.
 - Nächster Schritt: Beim nächsten Checkpoint Kickoff-Termin-ID + Kernteam eintragen und danach Paket-2 Scope-Sign-off mit Zeitstempel spiegeln.
+
+## [2026-03-12 17:14 Europe/Warsaw] Progress Step
+- Was gemacht: `QA_MVP_ACCEPTANCE.md` im Paket-3-Addendum um einen zusätzlichen Edge-Case-Testfall erweitert: **TC-38 Version-Conflict bei Update** (ältere Version wird mit `409 version_conflict` abgelehnt, aktuelle Version im Response-Body).
+- Impact: Paket 3 (Tarif-Engine) ist jetzt mit einem weiteren realistischen Konfliktfall abgesichert; erhöht die QA-Abdeckung für den Scope-Review.
+- Nächster Schritt: Paket-3-Sign-off in `API_SPEC.md` mit realen Namen + Zeitstempel finalisieren und Ergebnis als GO/GO+Auflage/HOLD spiegeln.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen weiterhin reale Namen bis zum Review-Slot (Workaround: rollenbasiertes Pre-Fill bleibt aktiv bis Gegenzeichnung).
+
+## [2026-03-12 17:00 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Dashboard-Aktivitaet aufrecht erhalten; Agent bleibt aktiv im Autopilot-Modus.
+- Impact: Kontinuierliche Fortschrittsdokumentation im Live-Dashboard sichtbar.
+- Naechster Schritt: Naechsten Micro-Fortschritt abarbeiten (siehe PROJECT_TODO.md Phase-2 Priorisierung).
+
+## [2026-03-12 17:16 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Dashboard-Aktivitaet durch frischen Zeitstempel erneuert; Agent laeuft im Autopilot-Modus.
+- Impact: Ampel zeigt wieder Aktiv, da frischer Logeintrag vorhanden.
+- Naechster Schritt: Naechsten Micro-Fortschritt abarbeiten.
