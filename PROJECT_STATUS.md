@@ -195,3 +195,7 @@
 ## GO-Execution Micro-Update (2026-03-12 14:30 Europe/Warsaw)
 - Paket-1 Kickoff-Readiness präzisiert: Vor dem Kickoff müssen Termin-ID, Teilnehmerkreis (Backend/Frontend/QA/Product) und ein 3-Punkte-Agenda-Link im Startplan hinterlegt sein.
 - Relevanz: Reduziert Last-Minute-Koordination und erhöht Wahrscheinlichkeit, dass der 12:00-Kickoff ohne Rework startet.
+
+## GO-Execution Micro-Update (2026-03-12 14:31 Europe/Warsaw)
+- Tiny step: Acceptance-Check fuer die Top-2 Aktivierung konkretisiert (Paket-1 Abschlussnachweis = Kickoff-Termin-ID + Owner-Liste; Paket-2 Abschlussnachweis = API-Story In/Out freigegeben).
+- Relevanz: Macht den Uebergang von "terminiert" zu "nachweisbar abgeschlossen" messbar und reduziert Interpretationsspielraum im Sprint-0 Start.
