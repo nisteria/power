@@ -933,3 +933,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_TODO.md kurz geprueft; offene Phase-Tasks (Phase 2/3/4) weiterhin klar getrennt, kein ungeplanter Scope-Sprung.
 - Impact: Dashboard bleibt aktiv mit frischem Lauf und Priorisierungsdisziplin nach GO bleibt stabil.
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im naechsten operativen Update explizit nachziehen.
+
+## [2026-03-12 16:15 Europe/Warsaw] Progress Step
+- Was gemacht: `QA_MVP_ACCEPTANCE.md` im Paket-3-Addendum um ein explizites Traceability-Mapping ergänzt (`TC-TAR-OK/422/409/400` aus `API_SPEC.md` -> `TC-34..TC-37`) und den Review-Ready-Check um den Mapping-Nachweis erweitert.
+- Impact: Paket 3 ist jetzt 1:1 rückverfolgbar zwischen API-Contract und QA-Testfällen; reduziert Review-Reibung und Sign-off-Mehrdeutigkeit.
+- Nächster Schritt: Paket-3-Sign-off in `API_SPEC.md` mit realen Namen + Zeitstempel schließen und Outcome in `PROJECT_STATUS.md` spiegeln.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen weiterhin reale Namen bis zum Review-Slot (Workaround: rollenbasiertes Pre-Fill bleibt aktiv bis Gegenzeichnung).
+
+## [2026-03-12 16:15 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Top-2 RACI-Micro (nach GO)"** ergänzt.
+- Impact: Verantwortlichkeiten für die zwei Startpakete sind jetzt klar (Responsible/Accountable/Consulted/Informed), was Kickoff-Reibung reduziert.
+- Nächster Schritt: Im Paket-1-Kickoff die Owner auf Personenebene eintragen und im PROJECT_STATUS.md referenzieren.

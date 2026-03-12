@@ -264,3 +264,15 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Paket 1: Status-Checkpoint alle 12h bis Kickoff-Abnahme (Termin-ID + Owner-Set) dokumentiert ist.
 - Paket 2: Scope-Checkpoint alle 12h bis API-Story-Sign-off (Backend+QA) dokumentiert ist.
 - Ziel: Frueherkennung von Drift/Blockern vor Day-1 Exit-Criteria.
+
+## Top-2 RACI-Micro (nach GO)
+- Paket 1 (Owner+Kickoff):
+  - Responsible: Product/Delivery-Owner
+  - Accountable: ceo-agent
+  - Consulted: backend-agent, frontend-agent, qa-agent
+  - Informed: assistant-agent
+- Paket 2 (Smart-Meter API-Story):
+  - Responsible: backend-agent
+  - Accountable: ceo-agent
+  - Consulted: qa-agent
+  - Informed: assistant-agent, finance-agent
