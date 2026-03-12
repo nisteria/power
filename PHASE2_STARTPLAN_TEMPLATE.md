@@ -168,3 +168,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
     - **In:** Minimales Datenmodell + Beispiel-Payloads für Day-Ahead-Verarbeitung.
     - **Out:** Keine vollständige Geräteorchestrierung und keine produktive Deployment-Freigabe.`r`n  - Abhängigkeit: Paket 2 startet mit Scope-Freeze, sobald Paket-1-Kickoff protokolliert ist (Termin-ID gesetzt).
 - Ziel: Die zwei hoechsten Prioritaeten sind nach GO konkret terminiert und owner-seitig eindeutig zugeordnet.
+
+## Top-2 Readiness Check (5-Minuten Gate)
+- Paket 1 bereit, wenn: Kickoff-Termin-ID dokumentiert + alle Stream-Owner bestaetigt.
+- Paket 2 bereit, wenn: API-Story In/Out im Repo verlinkt + Abnahmeverantwortlicher benannt.
+- Regel: Ohne beide Ready-Haken kein "Start executed"-Status in PROJECT_STATUS.
