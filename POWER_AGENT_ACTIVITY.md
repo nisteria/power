@@ -679,3 +679,16 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: Live-Dashboard-Snapshot validiert (/api/status) und KPI-Konsistenz geprueft (offen=7, erledigt=8, Fortschritt=53%, Dokument-Links=14).
 - Impact: Dashboard zeigt verifizierbare Echtzeitwerte; reduziert Risiko von stillen Anzeigeabweichungen nach UI-Upgrade.
 - Naechster Schritt: Bei naechstem Mikrozyklus eine kleine Visual-Ergaenzung fuer "Neu hinzugekommen" als Zaehlerkarte nachziehen.
+
+## 2026-03-12 15:26:04
+- Was gemacht: `API_SPEC.md` (Paket 4) um **UI->API Feldmapping v0.1** erweitert: konkrete Zuordnung der UI-Felder zu API-Feldern fuer Battery/Wallbox plus Validierungsregeln und Fehlercodes.
+- Impact: Integrationsschnittstelle fuer Device-Control ist jetzt explizit und reviewbar; weniger Interpretationsspielraum zwischen Frontend, Backend und QA.
+- Nächster Schritt: Feldmapping in `QA_MVP_ACCEPTANCE.md` mit 2 zusätzlichen Assertions fuer Battery-Intents (`charge_now`/`discharge_now`) absichern.
+- Blocker/Workaround: Kein Blocker im aktuellen Slice.
+- AI-> Micro-Step auf Paket-4 Integrationsklarheit ausgeführt und in `PROJECT_STATUS.md` gespiegelt.
+- AI<- Repo-Dokumentation synchron, frischer Zeitstempelblock geschrieben.
+
+## [2026-03-12 15:26 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Dashboard-Livecheck gegen /api/status ausgefuehrt und ToDo-Metriken (open/done/completionRate) auf Konsistenz mit PROJECT_TODO.md geprueft.
+- Impact: Agent-Ampel und ToDo-Grafik bleiben belastbar; verhindert stille Abweichungen zwischen Log, Status und Visualisierung.
+- Naechster Schritt: Bei naechstem Zyklus einen Mini-Delta-Check fuer "recentChanges" nachziehen, damit neue TODO-Aenderungen explizit sichtbar werden.
