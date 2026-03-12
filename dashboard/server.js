@@ -103,12 +103,42 @@ function getTrafficFromEntry(entry) {
   };
 }
 
-function parseCompletedTodos(projectTodo) {
-  return projectTodo
-    .split(/\r?\n/)
-    .map((l) => l.trim())
-    .filter((l) => /^-\s*\[x\]/i.test(l))
-    .map((l) => l.replace(/^-\s*\[x\]\s*/i, ''));
+function parseTodos(projectTodo) {
+  const lines = projectTodo.split(/\r?\n/).map((l) => l.trim());
+  const done = [];
+  const open = [];
+
+  for (const line of lines) {
+    if (/^-\s*\[x\]/i.test(line)) done.push(line.replace(/^-\s*\[x\]\s*/i, ''));
+    if (/^-\s*\[\s\]/i.test(line)) open.push(line.replace(/^-\s*\[\s\]\s*/i, ''));
+  }
+
+  return {
+    done,
+    open,
+    total: done.length + open.length
+  };
+}
+
+function parseDocMentionsFromText(text) {
+  const set = new Set();
+  const direct = text.match(/\b[A-Z0-9_\-]+\.md\b/gi) || [];
+  const inline = [...text.matchAll(/\(([^)]+\.md)\)/gi)].map((m) => m[1]);
+  [...direct, ...inline].forEach((m) => set.add(m.replace(/`/g, '')));
+  return Array.from(set).sort();
+}
+
+function inferRecentTodoChanges(entries) {
+  const hints = [];
+  for (const e of entries.slice(-20).reverse()) {
+    const t = (e.title || '').toLowerCase();
+    const b = (e.bullets || []).join(' ').toLowerCase();
+    const hay = `${t} ${b}`;
+    if (/(todo\.md|project_todo|todo)/.test(hay) && /(erstellt|angelegt|ergänzt|ergaenzt|aktualisiert|abgehakt|erledigt)/.test(hay)) {
+      hints.push(e.title);
+    }
+  }
+  return hints.slice(0, 6);
 }
 
 function buildSnapshot() {
@@ -122,7 +152,10 @@ function buildSnapshot() {
   const activityStat = getFileStatSafe(files.activity);
   const latestEntry = entries[entries.length - 1] || null;
   const traffic = getTrafficFromEntry(latestEntry);
-  const completedTodos = parseCompletedTodos(projectTodo);
+  const todo = parseTodos(projectTodo);
+  const completionRate = todo.total ? Math.round((todo.done.length / todo.total) * 100) : 0;
+  const mentionedDocs = parseDocMentionsFromText(`${projectTodo}\n${projectStatus}\n${roadmap}`);
+  const recentTodoChanges = inferRecentTodoChanges(entries);
 
   return {
     now: new Date().toISOString(),
@@ -137,13 +170,19 @@ function buildSnapshot() {
       activityEntries: entries.slice(-20)
     },
     todos: {
-      completed: completedTodos,
-      completedCount: completedTodos.length
+      completed: todo.done,
+      open: todo.open,
+      completedCount: todo.done.length,
+      openCount: todo.open.length,
+      totalCount: todo.total,
+      completionRate,
+      recentChanges: recentTodoChanges
     },
     docs: {
       projectStatus,
       projectTodo,
-      roadmap
+      roadmap,
+      mentionedDocs
     }
   };
 }
@@ -202,6 +241,28 @@ const server = http.createServer((req, res) => {
     req.on('close', () => {
       clearInterval(timer);
       res.end();
+    });
+    return;
+  }
+
+  if (req.url.startsWith('/docs/')) {
+    const rawName = decodeURIComponent(req.url.replace('/docs/', '').split('?')[0]);
+    if (!/^[\w.-]+\.md$/i.test(rawName)) {
+      res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8' });
+      return res.end('Invalid document name');
+    }
+    const docPath = path.join(ROOT, rawName);
+    if (!docPath.startsWith(ROOT)) {
+      res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
+      return res.end('Forbidden');
+    }
+    fs.readFile(docPath, 'utf8', (err, data) => {
+      if (err) {
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+        return res.end('Document not found');
+      }
+      res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end(data);
     });
     return;
   }
