@@ -215,3 +215,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Paket-1 Deliverable als 1-Satz-Abnahmekriterium dokumentiert.
 - Paket-2 API-Story Scope (In/Out) im Terminanhang verlinkt.
 - Nächster Decision-Checkpoint (Datum/Uhrzeit) vorab gesetzt.
+
+## Paket-1 Completion Criteria (Owner+Kickoff, Micro)
+- Sprint-Owner je Stream (Backend/Frontend/QA/Product) namentlich gesetzt.
+- Kickoff-Termin-ID im Dokument verlinkt.
+- Day-1 KPI-Baseline-Verantwortung je Stream zugeordnet.
