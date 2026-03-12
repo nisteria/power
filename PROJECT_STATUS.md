@@ -407,3 +407,15 @@
 - Tiny progress: Live-Dashboard-Upgrade (grafische ToDo-Übersicht, offene/erledigte Aufgaben, Doku-Links) als aktiver Steuerungs-View verankert.
 - Relevanz: Fortschritt/Backlog sind operativ schneller lesbar; reduziert Koordinationsaufwand im GO-Followup.
 - Nächster Schritt: Optionaler Chart-Pass (Trend pro Phase/Q2-Q4) bei nächstem UI-Inkrement.
+
+## GO-Execution Micro-Update (2026-03-12 15:38 Europe/Warsaw)
+- Tiny progress: `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` um **Paket-1 Evidence Prep v0.2** erweitert (vorgefüllte Owner-Zuordnung inkl. Stellvertretungen/Kanäle für Backend, Frontend, QA, Product).
+- Blocker dokumentiert: Für den Abschluss von Paket 1 fehlt weiterhin die **echte Kickoff-Termin-ID** (Kalenderabhängigkeit außerhalb Repo).
+- Workaround festgelegt: Termin-ID direkt nach Kalendereintrag im Protokoll setzen und sofort als Evidence in `PROJECT_STATUS.md` referenzieren.
+- Relevanz: Paket-1 TODO ist jetzt von „vollständig offen“ auf „finalisierbar in 1 Schritt“ reduziert.
+- Nächster Schritt: `KICKOFF_EVENT_ID` eintragen und Paket-1 TODO anschließend auf erledigt setzen.
+
+## GO-Execution Micro-Update (2026-03-12 15:39 Europe/Warsaw)
+- Tiny progress: Dashboard-Workstream und Delivery-Workstream synchronisiert; Referenz auf PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md als Paket-1-Nachweisquelle explizit gesetzt.
+- Relevanz: Verknuepft operative Kickoff-Abnahme mit bestehender Projektdoku und reduziert Such-/Uebergabereibung.
+- Naechster Schritt: Paket-1 Kickoff-Termin-ID + namentliche Stream-Owner im Protokoll eintragen und im Status spiegeln.

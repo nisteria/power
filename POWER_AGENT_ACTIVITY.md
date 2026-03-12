@@ -746,3 +746,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um Dashboard-Micro-Update ergänzt (grafische ToDo-Transparenz + Doku-Referenzen als Live-Steuerungsbasis).
 - Impact: Dashboard bleibt aktiv und zeigt Arbeitsstand/Backlog klarer für schnelle Entscheidungen.
 - Naechster Schritt: Bei Bedarf Chart-Pass (Phase- und Trendgrafiken) als nächstes UI-Micro-Inkrement umsetzen.
+
+## [2026-03-12 15:38:43 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` um **Paket-1 Evidence Prep v0.2** erweitert (vorgefüllte Stream-Owner + Stellvertretungen + Kanäle) und den offenen Blocker für den TODO-Abschluss explizit dokumentiert (fehlende echte Kickoff-Termin-ID).
+- Impact: Paket-1 (Governance) ist jetzt operativ fast abnahmebereit; es fehlt nur noch ein externer Kalenderschritt statt weiterer inhaltlicher Klärung.
+- Nächster Schritt: Nach Kalendereintrag `KICKOFF_EVENT_ID` eintragen, in `PROJECT_STATUS.md` verlinken und Paket-1 TODO auf erledigt setzen.
+- Blocker/Workaround: Blocker = Termin-ID liegt außerhalb Repo; Workaround = ID direkt nach Event-Erstellung in Vorlage nachziehen und sofort im Status spiegeln.
+
+## [2026-03-12 15:39 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update erweitert und PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md als Paket-1-Nachweisquelle verankert.
+- Impact: Dashboard bleibt aktiv; gleichzeitig ist der Pfad von GO-Planung zu operativer Kickoff-Abnahme klarer dokumentiert.
+- Naechster Schritt: Kickoff-Termin-ID und namentliche Owner im Kickoff-Protokoll eintragen, danach Status auf "ready for execution" nachziehen.
