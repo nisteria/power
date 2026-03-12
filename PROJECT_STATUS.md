@@ -320,3 +320,23 @@
 - Tiny progress: Dashboard-Readiness fuer Phase-2-Nachweis konkretisiert; naechster harter Beleg bleibt Paket-1 Kickoff mit Termin-ID + Kernteam-Referenz.
 - Relevanz: Hält den Übergang von Plan zu Execution messbar und verhindert Status-Drift trotz paralleler Dashboard-Weiterentwicklung.
 - Nächster Schritt: Nach Kickoff die Paket-1-Abnahme im Status auf "evidence linked" setzen.
+
+## GO-Execution Micro-Update (2026-03-12 15:14 Europe/Warsaw)
+- Tiny progress: `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` um einen **Paket-1 Execution Prep Block** erweitert (fixer Kickoff-Slot 2026-03-13 12:00, Termin-ID-Placeholder, Invite-Mindesttext, 4-Point Schnell-DoD inkl. API_SPEC-Link).
+- Relevanz: Paket 1 ist damit nicht nur "terminiert", sondern mit einem direkt nutzbaren Invite-/Evidence-Template ausfuehrbar; reduziert Last-Minute-Reibung vor dem Kickoff.
+- Naechster Schritt: Kalendereintrag erzeugen, echte Termin-ID eintragen und danach Paket-1-Abnahme in `PROJECT_STATUS.md` auf "evidence linked" setzen.
+
+## GO-Execution Micro-Update (2026-03-12 15:16 Europe/Warsaw)
+- Tiny progress: API_SPEC.md um **Auth Skeleton v0.1** erweitert (Login/Refresh/Logout Contract, Rollenmodell, Security-Minimum, Pflicht-Fehlerfaelle, DoR-Check).
+- Relevanz: Paket 1 (API/Auth-Skeleton) ist von reiner Endpoint-Liste auf einen umsetzbaren Mindestvertrag gehoben; Backend + QA koennen jetzt auf identischem Scope arbeiten.
+- Naechster Schritt: Rollen-Matrix gegen QA_MVP_ACCEPTANCE.md spiegeln und 3 Negativtests (invalid_credentials, \token_expired, \role_forbidden) als konkrete Testfaelle eintragen.
+
+## GO-Execution Micro-Update (2026-03-12 15:17 Europe/Warsaw)
+- Tiny progress: `QA_MVP_ACCEPTANCE.md` um Auth-Skeleton-Abschnitt erweitert (Paket 1) und drei reproduzierbare Negativtests ergänzt: `401 invalid_credentials`, `401 token_expired`, `403 role_forbidden`.
+- Relevanz: API-Scope (Auth v0.1) und QA-Abnahme sind jetzt synchron; reduziert Interpretationsspielraum vor Implementierung und erlaubt schnelleren Paket-1-Sign-off.
+- Naechster Schritt: In `API_SPEC.md` den Scope-Review-Sign-off-Block fuer Auth mit echten Namen/Zeitstempel vorbereiten und danach Paket-1 auf "evidence linked" setzen.
+
+## GO-Execution Micro-Update (2026-03-12 15:18 Europe/Warsaw)
+- Tiny progress: Dashboard-Upgrade operationalisiert; Fokus fuer naechsten Schritt auf sichtbare ToDo-Delta-Logik (neu/offen/erledigt) verankert.
+- Relevanz: Verbindet Live-Monitoring mit operativer Prioritaet und reduziert Blindflug bei Task-Transitionen.
+- Naechster Schritt: Bei naechster Aenderung in PROJECT_TODO.md Delta explizit im Status spiegeln.

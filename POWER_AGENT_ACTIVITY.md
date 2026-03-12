@@ -635,3 +635,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: Dashboard-Upgrade kurz gegen Live-Daten geprueft (ToDo-Grafik + Dokumentenlinks + Ampelstatus weiterhin konsistent).
 - Impact: Sichtbarkeit fuer offene/erledigte Aufgaben bleibt stabil und der Live-Monitoring-Flow ist direkt nutzbar.
 - Naechster Schritt: Im naechsten Zyklus einen kleinen UX-Step nachziehen (z. B. Highlight fuer "neu geaenderte" ToDos mit Zeitbezug).
+
+## [2026-03-12 15:17:38 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: `QA_MVP_ACCEPTANCE.md` fuer Paket 1 (Auth Skeleton v0.1) synchronisiert und drei konkrete Negativtests ergänzt: `TC-17 invalid_credentials`, `TC-18 token_expired`, `TC-19 role_forbidden`.
+- Impact: Auth-Contract aus `API_SPEC.md` ist jetzt direkt QA-testbar; schnellere Abnahme und weniger Scope-Drift zwischen Backend und QA.
+- Naechster Schritt: Auth-Sign-off-Block in `API_SPEC.md` mit Review-Slot + Verantwortlichen vorbelegen und Ergebnis danach in `PROJECT_STATUS.md` auf "evidence linked" heben.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:18 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update erweitert (Dashboard-Upgrade + ToDo-Delta-Fokus als naechster operativer Anker).
+- Impact: Dashboard bleibt aktiv und der Arbeitsfluss wird an messbare Task-Transitions gekoppelt (neu/offen/erledigt).
+- Naechster Schritt: Beim naechsten TODO-Update Delta im Status als eigenen Micro-Block nachziehen.
