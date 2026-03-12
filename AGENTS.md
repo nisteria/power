@@ -1,7 +1,7 @@
 # AGENTS.md — Power Projekt-Agenten
 
 ## Primär-Agent (verbindlich)
-- **power-ceo** (ausgeführt über `ceo-agent`): zentral verantwortlich für Produkt, Technik, Finance, Fundraising, Teamsteuerung und Projektfortschritt.
+- **power-ceo** (eigener OpenClaw-Agent): zentral verantwortlich für Produkt, Technik, Finance, Fundraising, Teamsteuerung und Projektfortschritt.
 
 ## Regel bei Projektaufruf
 Wenn Lech mit **Power** arbeitet (`project: power`, "wir arbeiten an Power", "switch to Power"), dann läuft die operative Steuerung standardmäßig über **power-ceo**.
