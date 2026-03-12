@@ -61,3 +61,8 @@
 ### Keepalive-Update 2026-03-12 13:26:31
 - MVP Fokus bestätigt: Phase 1 bleibt aktiv bis alle Strategy-TODOs abgeschlossen sind.
 - Nächster konkreter Schritt: ICP-Definition (Haushalt vs. KMU) final textlich ausarbeiten.
+
+## Phase-1 Micro-Update — ICP Drafting Fortschritt
+- Haushalts-ICP und KMU-ICP als nächste priorisierte Entscheidungsfrage festgelegt.
+- Entscheidungsvorbereitung: Fokus zuerst auf Haushalte mit PV+Speicher + dynamischem Tarif.
+
