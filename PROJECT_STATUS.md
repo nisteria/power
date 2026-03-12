@@ -191,3 +191,7 @@
 - Top-2 Activation Pack bleibt verbindlich: Paket 1 (ceo-agent, 2026-03-13 12:00), Paket 2 (backend-agent, 2026-03-14 16:00).
 - Ergänzung: Für Paket 1 ist das erwartete Ergebnis nun explizit als "Owner-Benennung je Stream + Kickoff mit Termin-ID" festgehalten.
 - Relevanz: Erhöht Abnahme-Klarheit für den ersten GO-Tag ohne Scope-Erweiterung.
+
+## GO-Execution Micro-Update (2026-03-12 14:30 Europe/Warsaw)
+- Paket-1 Kickoff-Readiness präzisiert: Vor dem Kickoff müssen Termin-ID, Teilnehmerkreis (Backend/Frontend/QA/Product) und ein 3-Punkte-Agenda-Link im Startplan hinterlegt sein.
+- Relevanz: Reduziert Last-Minute-Koordination und erhöht Wahrscheinlichkeit, dass der 12:00-Kickoff ohne Rework startet.
