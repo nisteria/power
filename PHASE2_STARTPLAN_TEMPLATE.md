@@ -97,3 +97,9 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Wenn in den ersten 72h ein P1-Risiko ohne benannten Owner auftritt: sofortiger Scope-Freeze (keine neuen Workstreams starten).
 - Re-Start nur mit kurzer 3-Punkte-Entscheidung: Risiko isoliert, Owner gesetzt, Mitigation datiert.
 - Ziel: Frühe Fehlstarts begrenzen und GO-Disziplin sichern.
+
+## GO-Meeting Minimal Agenda (10 Minuten)
+- 2 Min: A/B/C-Signale kurz bestätigen (Owner, Timing, Legal).
+- 4 Min: Offene Risiken (Top-3) + jeweilige Mitigation/Owner.
+- 2 Min: Entscheidung GO | GO mit Auflage | HOLD treffen.
+- 2 Min: Nächsten Termin + Verantwortliche verbindlich festhalten.
