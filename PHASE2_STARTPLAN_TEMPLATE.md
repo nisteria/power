@@ -249,3 +249,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Wenn nur Rollen eingetragen sind, muessen innerhalb von 24h konkrete Namen je Stream (Backend/Frontend/QA/Product) nachgezogen werden.
 - Jede Namenszeile braucht Stellvertretung + Kommunikationskanal (Slack/Discord/Email).
 - Ziel: Keine Owner-Luecken zwischen Plan-Fixierung und Sprint-0-Ausfuehrung.
+
+## GO+24h Review Check (Micro)
+- Check 1: Paket-1 Kickoff-Protokoll ist vollständig (Termin-ID + Kernteam + Owner-Liste).
+- Check 2: Paket-2 Scope-Sign-off hat Ergebniscode (GO | GO+COND | HOLD) mit Zeitstempel.
+- Check 3: Offene Conditions haben Owner + Fälligkeitsdatum.

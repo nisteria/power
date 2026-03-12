@@ -646,3 +646,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update erweitert (Dashboard-Upgrade + ToDo-Delta-Fokus als naechster operativer Anker).
 - Impact: Dashboard bleibt aktiv und der Arbeitsfluss wird an messbare Task-Transitions gekoppelt (neu/offen/erledigt).
 - Naechster Schritt: Beim naechsten TODO-Update Delta im Status als eigenen Micro-Block nachziehen.
+
+## [2026-03-12 15:19:35 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: `PROJECT_TODO.md` auf GO-Realitaet synchronisiert: aktive Phase auf **Phase 2** umgestellt, `Phase 2 TODOs (aktiv)` mit 5 konkreten Paketen angelegt und Phase 3/4 als naechste (noch nicht starten) belassen. Danach `PROJECT_STATUS.md` mit ToDo-Delta-Micro-Update gespiegelt.
+- Impact: Beseitigt den Steuerungsbruch (GO bereits erteilt, TODO zuvor noch Phase 1) und schafft eine klare, operative Source-of-Truth fuer die naechsten 5 Umsetzungsschritte.
+- Naechster Schritt: Paket 1 als ersten echten Abschluss vorbereiten (Kickoff-Termin-ID + namentliche Stream-Owner in `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` eintragen).
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:20 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um "GO+24h Review Check (Micro)" ergänzt.
+- Impact: Der erste Tag nach GO ist jetzt mit 3 klaren Review-Checks abgesichert; reduziert Drift zwischen Kickoff und Scope-Sign-off.
+- Naechster Schritt: Beim naechsten Status-Update die 3 Checks gegen reale Nachweise abhaken und in PROJECT_STATUS.md spiegeln.
