@@ -528,3 +528,13 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Micro-Update ergaenzt (Top-2 von Terminierung auf nachweisbare Acceptance-Checkpoints ausgerichtet).
 - Impact: Dashboard bleibt frisch; operative Startklarheit steigt, weil Abschlusskriterien aktiv nachverfolgt werden.
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID/Teilnehmerkernteam) eintragen und danach Paket-2 Scope-Gegenzeichnung dokumentieren.
+
+## [2026-03-12 14:57:32 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: In `API_SPEC.md` den Abschnitt **"Entscheidungs-Vorschlag v0.2 (fuer 20-min Scope-Review)"** angelegt und die drei offenen Punkte aus Paket 2 auf konkrete Default-Werte vorstrukturiert: Payload-Limit (`500`), Retry-Backoff bei `408` (`2s/5s/10s`, max. 3), Raw-Retention (`90 Tage` + laengere Aggregation).
+- Impact: Das Team muss im Scope-Review nicht mehr bei Null diskutieren; Backend+QA koennen direkt pro Thema mit GO/Adjust/HOLD entscheiden und den Scope-Freeze schneller verbindlich machen.
+- Naechster Schritt: Sign-off-Review terminlich durchziehen, Entscheidungen je Thema im Sign-off-Block finalisieren und Ergebnis in `PROJECT_STATUS.md` als Paket-2-Abnahme spiegeln.
+
+## [2026-03-12 14:58 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Followup-Micro-Update ergänzt (Top-2-Konsistenz bestätigt, nächster Ausführungsschritt konkretisiert).
+- Impact: Dashboard bleibt mit frischem Log aktiv und der operative Fokus bleibt auf Paket-1-Kickoff-Execution.
+- Naechster Schritt: Kickoff-Termin-ID + Kernteilnehmer in PHASE2_STARTPLAN_TEMPLATE.md eintragen und danach Status auf "ready for execution" setzen.

@@ -244,3 +244,13 @@
 ## GO-Micro-Update (2026-03-12 14:55 Europe/Warsaw)
 - Tiny Step: Acceptance-Fokus fuer Top-2 Startpakete konkretisiert (Paket-1 Kickoff-Nachweis + Paket-2 Scope-Gegenzeichnung als naechster harter Checkpoint).
 - Relevanz: Haltet den Uebergang von "terminiert" zu "nachweisbar abgeschlossen" messbar und reduziert Drift in den ersten 24h.
+
+## GO-Execution Micro-Update (2026-03-12 14:57 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` um **Entscheidungs-Vorschlag v0.2** fuer Paket 2 erweitert (Default-Entscheidungen fuer Payload-Limit, 408-Retry-Backoff und Raw-Data-Retention inkl. Entscheidungsregel GO/Adjust/HOLD).
+- Relevanz: Das Scope-Review kann jetzt in 20 Minuten auf konkrete Defaults entscheiden statt offene Fragen neu aufzusetzen; reduziert Entscheidungszeit und Drift zwischen Backend/QA.
+- Naechster Schritt: Scope-Review-Slot durchfuehren, pro Thema final auf GO/Adjust setzen und Sign-off-Block mit realen Namen/Zeitstempel ausfuellen.
+
+## GO-Followup Micro-Update (2026-03-12 14:58 Europe/Warsaw)
+- Top-2 Activation Pack weiterhin konsistent (Owner+Zieltermine vorhanden).
+- Fokus für nächsten Schritt: Paket-1 Kickoff mit Termin-ID und Kernteilnehmern final dokumentieren.
+- Relevanz: Hält Übergang von Plan zu Ausführung aktiv und verhindert Stillstand nach GO.
