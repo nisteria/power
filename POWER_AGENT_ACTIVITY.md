@@ -538,3 +538,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Followup-Micro-Update ergänzt (Top-2-Konsistenz bestätigt, nächster Ausführungsschritt konkretisiert).
 - Impact: Dashboard bleibt mit frischem Log aktiv und der operative Fokus bleibt auf Paket-1-Kickoff-Execution.
 - Naechster Schritt: Kickoff-Termin-ID + Kernteilnehmer in PHASE2_STARTPLAN_TEMPLATE.md eintragen und danach Status auf "ready for execution" setzen.
+
+## [2026-03-12 14:58:42 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: In `API_SPEC.md` den Abschnitt **"Phase-2 API Story Slice — Tarif-Engine Scope-Freeze v0.1"** ergänzt (In/Out-Scope, Day-Ahead-Endpunkte, Request-Contract, Pflicht-Validierungen, Fehlerfälle 422/409/400). Danach `PROJECT_STATUS.md` synchronisiert.
+- Impact: Phase-2-Paket 3 (Tarif-Engine Scope-Freeze) ist jetzt als konkrete Spezifikation reviewbar statt nur als Prioritätsliste; reduziert Scope-Drift zwischen Backend/QA.
+- Naechster Schritt: `QA_MVP_ACCEPTANCE.md` um Acceptance-Referenz auf `Safety > Contract > Cost` plus reproduzierbare Testfälle für 422/409/400 erweitern.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 14:59 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution Micro-Check ergaenzt (Top-2 Konsistenz geprueft, Drift-Check dokumentiert).
+- Impact: Stabilisiert den Uebergang von Planung zu Ausfuehrung und haelt die Entscheidungsgrundlage frisch.
+- Naechster Schritt: Paket-1 Kickoff-Termin-ID + Kernteam im Startplan fixieren und danach Status auf "ready for execution" setzen.

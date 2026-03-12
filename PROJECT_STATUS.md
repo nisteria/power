@@ -254,3 +254,12 @@
 - Top-2 Activation Pack weiterhin konsistent (Owner+Zieltermine vorhanden).
 - Fokus für nächsten Schritt: Paket-1 Kickoff mit Termin-ID und Kernteilnehmern final dokumentieren.
 - Relevanz: Hält Übergang von Plan zu Ausführung aktiv und verhindert Stillstand nach GO.
+
+## GO-Execution Micro-Update (2026-03-12 14:58 Europe/Warsaw)
+- Tiny progress: In `API_SPEC.md` wurde ein neuer Abschnitt **"Phase-2 API Story Slice — Tarif-Engine Scope-Freeze v0.1"** ergänzt (Day-Ahead In/Out-Scope, 3 Endpunkte, Minimal-Contract, Pflicht-Validierungen, Fehlerfälle 422/409/400).
+- Relevanz: Arbeitspaket 3 ist damit von "nur Priorität" auf eine konkret reviewbare Spezifikation gehoben; reduziert Interpretationsspielraum zwischen Backend/QA vor der Umsetzung.
+- Nächster Schritt: QA-Acceptance (`QA_MVP_ACCEPTANCE.md`) um Referenz auf die Prioritätsregel `Safety > Contract > Cost` und die drei Fehlerfälle ergänzen.
+
+## GO-Execution Micro-Check (2026-03-12 14:59 Europe/Warsaw)
+- Top-2-Activation weiterhin konsistent (Owner+Zieltermine unveraendert, kein Drift erkannt).
+- Fokus bis Kickoff: Paket-1 Termin-ID + Teilnehmerkernteam verbindlich nachziehen.
