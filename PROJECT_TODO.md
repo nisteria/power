@@ -10,7 +10,7 @@
 - [x] [HIGH] [backend-agent] [Tech] MVP Scope v1 finalisiert (`TECH_MVP_SCOPE_V1.md`)
 - [x] [HIGH] [finance-agent] [Funding] Förderfähigkeits-Mapping + Unterlagenplan erstellt (`FUNDING_WORKPLAN.md`)
 - [x] [MEDIUM] [qa-agent] [Quality] MVP-Abnahmekriterien + Pilot-Go/No-Go-Checkliste erstellt (`QA_MVP_ACCEPTANCE.md`)
-- [ ] [MEDIUM] [assistant-agent] [GTM] Go-to-Market Hypothesen v1 dokumentieren
+- [x] [MEDIUM] [assistant-agent] [GTM] Go-to-Market Hypothesen v1 dokumentieren (`GTM_HYPOTHESES_AT.md`)
 
 ## Nächste Phasen (noch nicht starten)
 - [ ] Phase 2 — MVP Build & Pilotfähigkeit
@@ -22,3 +22,4 @@ Wenn alle TODOs aus der aktiven Phase erledigt sind:
 1. Ergebnisse in PROJECT_STATUS.md dokumentieren
 2. Arbeit stoppen
 3. Lech um Freigabe für nächste Phase fragen
+

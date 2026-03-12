@@ -82,3 +82,9 @@
 - KMU-Hypothese ergänzt: Peak-Reduktion 10–25 %, Einsparung 120–450 €/Monat.
 - Ergebnis: Value-Proposition-Task in `PROJECT_TODO.md` als erledigt markiert.
 
+
+## Phase-1 Micro-Update — GTM Hypothesen v1 (2026-03-12 13:31)
+- Neues Artefakt erstellt: `GTM_HYPOTHESES_AT.md`.
+- Vier testbare GTM-Hypothesen definiert (Partnerkanal, Einspar-Story, KMU-Peak-Shaving, Compliance-Differenzierung).
+- Messkriterien + 2-Wochen-Validierungsplan ergänzt, damit Phase 2 datenbasiert starten kann.
+- Ergebnis: GTM-Task in `PROJECT_TODO.md` als erledigt markiert.
