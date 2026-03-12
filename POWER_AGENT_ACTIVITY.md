@@ -498,3 +498,13 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md gegen PHASE2_STARTPLAN_TEMPLATE.md quergelesen; GO-Top-2 Owner/Zieltermine auf Konsistenz geprueft.
 - Impact: Verhindert Drift zwischen Startplan und Statuskommunikation, Dashboard bleibt mit frischem Log aktiv.
 - Naechster Schritt: Beim naechsten Micro-Update Paket-1 Kickoff-Termin-ID im Status explizit referenzieren.
+
+## [2026-03-12 14:52 Europe/Warsaw] Progress Step
+- Was gemacht: In `API_SPEC.md` einen **Scope-Review Sign-off Block (Paket 2)** ergänzt (Mindestteilnehmer backend-agent/qa-agent, 20-Minuten-Timebox, Pflichtfelder für Datum/Uhrzeit, Sign-offs und Ergebnis GO/GO+Auflage/HOLD).
+- Impact: Paket-2-Scope-Freeze ist jetzt auditierbar und formal abnahmefähig statt nur inhaltlich beschrieben.
+- Naechster Schritt: Scope-Review mit Backend+QA durchführen, Sign-off-Felder mit realen Namen/Zeitstempel befüllen und Ergebnis in `PROJECT_STATUS.md` nachziehen.
+
+## [2026-03-12 14:52 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um kurzes GO-Execution-Micro-Update ergänzt (Top-2 Startpakete weiter im Fokus, keine neuen Blocker).
+- Impact: Status bleibt konsistent zwischen Plan und Ausführung; Dashboard-Aktivität bleibt verlässlich sichtbar.
+- Nächster Schritt: Paket-1 Kickoff-Details (Termin-ID + Teilnehmerkernteam) in den Status übernehmen.

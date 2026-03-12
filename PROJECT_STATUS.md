@@ -211,3 +211,17 @@
 ## GO-Followup Micro-Update (2026-03-12 14:41 Europe/Warsaw)
 - Top-2 Activation Pack bleibt verbindlich (Owner+Termin gesetzt); Fokus bis morgen 12:00 auf Paket-1 Kickoff-Execution.
 - Relevanz: Verhindert Drift zwischen Plan-Fixierung und tatsächlichem Start (GO -> Day-1 Ausführung).
+
+## GO-Execution Micro-Update (2026-03-12 14:49 Europe/Warsaw)
+- Tiny progress: Paket-2 wurde inhaltlich konkretisiert: `API_SPEC.md` enthält jetzt eine **Smart-Meter API Story v0.1** mit In/Out-Scope, 2 Endpunkten, Beispiel-Request/-Response und 3 Pflicht-Fehlerfällen (Validation/Timeout/Duplicate).
+- Relevanz: Der Scope-Freeze für Paket-2 ist von "nur Plan" auf "umsetzbare Schnittdefinition" gehoben; Backend/QA können auf derselben Spezifikation reviewen.
+- Nächster Schritt: Backend+QA Scope-Review terminieren und die Gegenzeichnung (Datum/Uhrzeit) im Status als Paket-2-Abnahme referenzieren.
+
+## GO-Execution Micro-Update (2026-03-12 14:52 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` um einen **Scope-Review Sign-off Block (Paket 2)** erweitert (Mindestteilnehmer, 20-min Timebox, Pflichtfelder für Gegenzeichnung inkl. Ergebnis GO/GO+Auflage/HOLD).
+- Relevanz: Die Paket-2-Abnahme ist jetzt nicht nur inhaltlich, sondern auch prozessual sauber auditierbar; reduziert Missverständnisse zwischen Backend/QA beim Scope-Freeze.
+- Nächster Schritt: Review-Slot durchführen und den Sign-off Block mit realen Namen + Zeitstempel ausfüllen; Ergebnis danach in `PROJECT_STATUS.md` spiegeln.
+
+## GO-Execution Micro-Update (2026-03-12 14:52 Europe/Warsaw)
+- Top-2 Startpakete bleiben verbindlich priorisiert, aktuell ohne gemeldete neue Blocker.
+- Fokus bleibt auf Paket-1 Kickoff-Operationalisierung (Termin-ID + Kernteam-Dokumentation).
