@@ -35,8 +35,11 @@ function parseActivityEntries(md) {
 
   for (const line of lines) {
     if (line.startsWith('## ')) {
+      const title = line.replace(/^##\s*/, '').trim();
+      const isTimestampHeading = /^(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2})$/.test(title);
+
       if (current) entries.push(current);
-      current = { title: line.replace(/^##\s*/, ''), bullets: [] };
+      current = isTimestampHeading ? { title, bullets: [] } : null;
     } else if (line.trim().startsWith('- ') && current) {
       current.bullets.push(line.trim().slice(2));
     }
