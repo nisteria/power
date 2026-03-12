@@ -52,3 +52,12 @@
 
 ## Phase-1 Update — ICP Snapshot
 - ICP_SNAPSHOT.md v0.1 angelegt (Primär/sekundär + Early-Adopter Kriterien).
+
+## Phase-1 Micro-Update — ICP Draft (AT)
+- Primäres Segment bestätigt: Haushalte mit PV + Heimspeicher + dynamischem Tarifinteresse.
+- Sekundäres Segment: KMU mit Lastspitzen und planbarer Lastverschiebung.
+- Nächster Schritt: Nutzenversprechen je Segment quantifizieren (€/Monat, Autarkie, Komfort).
+
+### Keepalive-Update 2026-03-12 13:26:31
+- MVP Fokus bestätigt: Phase 1 bleibt aktiv bis alle Strategy-TODOs abgeschlossen sind.
+- Nächster konkreter Schritt: ICP-Definition (Haushalt vs. KMU) final textlich ausarbeiten.
