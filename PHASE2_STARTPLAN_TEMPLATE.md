@@ -127,3 +127,44 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - **RD-GO:** Re-Decision ergibt GO, Sprint-0 Starttermin wird sofort gesetzt.
 - **RD-GO+COND:** Re-Decision ergibt GO mit Auflage, offene Conditions in den Tracker eintragen.
 - **RD-HOLD:** Re-Decision bestätigt HOLD, nächster Termin + fehlendes Signal verpflichtend dokumentieren.
+
+## Governance Watchdog (bei Decision-Drift)
+- Trigger: Wenn nach einer Freigabeanfrage >72h kein neues Decision-Log-Update vorliegt.
+- Aktion: Automatischer 2-Zeilen-Status-Ping + Vorschlag für einen 20-Minuten Re-Decision-Slot.
+- Ziel: HOLD-Schleifen ohne klaren Owner-/Termin-Fortschritt früh sichtbar machen.
+
+## Decision-Input Freshness Check (vor GO in 60 Sekunden)
+- Prüfe, ob A/B/C-Nachweise jünger als 7 Tage sind; ältere Nachweise gelten als "stale".
+- Bei stale Nachweis: nur GO mit Auflage oder HOLD, bis der Nachweis aktualisiert ist.
+- Ziel: Verhindern, dass mit veralteten Entscheidungsgrundlagen in Sprint-0 gestartet wird.
+
+## GO-Decision Confidence Score (Micro)
+- Score je Signal A/B/C: 0 = fehlt, 1 = vorhanden aber stale, 2 = vorhanden & fresh.
+- Entscheidungsregel: 6 Punkte = GO möglich; 4-5 = GO mit Auflage; <=3 = HOLD.
+- Ziel: Freigaben konsistent und in 30 Sekunden quantifizierbar machen.
+
+## GO-Decision Escalation Trigger (Micro)
+- Trigger: Wenn 2 aufeinanderfolgende Re-Decision-Termine ohne Outcome-Code enden.
+- Aktion: CEO-Review in 24h ansetzen (Owner + Datum fix), bis dahin nur Entblockungsarbeit zulassen.
+- Ziel: Endlosschleifen stoppen und eine harte Entscheidungsinstanz erzwingen.
+
+
+## Pre-GO Artifact Links (Micro)
+- Owner-Entscheidung: Name + Rolle + Stellvertretung in einem Block dokumentieren.
+- Kickoff-Nachweis: Kalendereintrag/Termin-ID als Referenz notieren.
+- Legal-Nachweis: geplanter Review-Termin + verantwortliche Person festhalten.
+- Decision-Log-Referenz: Link/Dateipfad zur letzten GO/HOLD-Entscheidung ergänzen.
+
+## GO-First-2 Activation Pack (Micro)
+- Paket 1 (Owner+Kickoff) — **verbindlich fixiert**:
+  - Owner (Rolle): **ceo-agent**
+  - Zieltermin: **2026-03-13, 12:00 Europe/Warsaw**
+  - Deliverable: Sprint-Owner je Stream (Backend/Frontend/QA/Product) benannt + Kickoff-Slot mit Termin-ID dokumentiert.
+- Paket 2 (Smart-Meter API-Story) — **verbindlich fixiert**:
+  - Owner (Rolle): **backend-agent**
+  - Zieltermin: **2026-03-14, 16:00 Europe/Warsaw**
+  - Kurz-Scope (In/Out):
+    - **In:** API-Story-Schnitt (Input/Output/Fehlerfälle) für Smart-Meter-Datenpfad zur Tarif-Engine v1.
+    - **In:** Minimales Datenmodell + Beispiel-Payloads für Day-Ahead-Verarbeitung.
+    - **Out:** Keine vollständige Geräteorchestrierung und keine produktive Deployment-Freigabe.`r`n  - Abhängigkeit: Paket 2 startet mit Scope-Freeze, sobald Paket-1-Kickoff protokolliert ist (Termin-ID gesetzt).
+- Ziel: Die zwei hoechsten Prioritaeten sind nach GO konkret terminiert und owner-seitig eindeutig zugeordnet.
