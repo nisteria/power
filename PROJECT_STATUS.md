@@ -397,3 +397,13 @@
 - Tiny progress: Dashboard-Professionalisierung als operativer Sichtbarkeits-Boost im Status verankert (ToDo-Grafik, offene/erledigte Trennung, Dokumentenlinks).
 - Relevanz: Fortschritt ist fuer Stakeholder schneller bewertbar; reduziert Reporting-Reibung waehrend laufender Top-2-Umsetzung.
 - Naechster Schritt: In naechstem Zyklus Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) als ersten "execution proof" nachziehen.
+
+## GO-Execution Micro-Update (2026-03-12 15:36 Europe/Warsaw)
+- Tiny progress: `MONITORING_ALERTING_MINIMUM.md` um **Alignment Pre-Fill v0.5** erweitert: fixer Paket-5-Review-Slot (`2026-03-13 12:50`), vorbelegte GO/GO+Auflage-Entscheidungen je P1-Regel, Owner/Faelligkeit und Blocker-Vorpruefung.
+- Relevanz: Macht den Monitoring-Sign-off unmittelbar durchfuehrbar statt nur vorbereitbar; reduziert Leerlauf im Alignment und beschleunigt DoR-Fortschritt fuer Paket 5.
+- Naechster Schritt: Sign-off im Slot mit realen Namen gegenzeichnen; falls eine Regel auf HOLD bleibt, Blocker + Workaround sofort als Incident-Micro-Update nachziehen.
+
+## Dashboard Micro-Update (2026-03-12 15:37 Europe/Warsaw)
+- Tiny progress: Live-Dashboard-Upgrade (grafische ToDo-Übersicht, offene/erledigte Aufgaben, Doku-Links) als aktiver Steuerungs-View verankert.
+- Relevanz: Fortschritt/Backlog sind operativ schneller lesbar; reduziert Koordinationsaufwand im GO-Followup.
+- Nächster Schritt: Optionaler Chart-Pass (Trend pro Phase/Q2-Q4) bei nächstem UI-Inkrement.

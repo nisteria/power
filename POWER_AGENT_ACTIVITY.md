@@ -735,3 +735,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Micro-Update erweitert und Dashboard-Upgrade (grafische ToDo-Sicht + Doku-Links) als aktiven Fortschritt synchronisiert.
 - Impact: Dashboard bleibt nicht nur aktiv, sondern liefert jetzt klarere Entscheidungs- und Fortschrittskommunikation fuer den laufenden Phase-2-Start.
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im Status als naechsten messbaren Execution-Proof erfassen.
+
+## [2026-03-12 15:36 Europe/Warsaw] Progress Step
+- Was gemacht: `MONITORING_ALERTING_MINIMUM.md` auf v0.5 konkretisiert: Alignment-Sign-off fuer Paket 5 mit **festem Review-Slot** (2026-03-13 12:50), vorbelegten Regel-Entscheidungen (GO/GO+AUFLAGE), Owners/Faelligkeiten und dokumentierter Blocker-Vorpruefung erweitert.
+- Impact: Paket 5 ist nicht mehr nur "ausfuellbar", sondern direkt "review-startklar"; senkt Friktion im 20-Min-Alignment und erhoeht Chance auf sofortige Gegenzeichnung.
+- Naechster Schritt: Im Review-Slot reale Namen in den Sign-off uebernehmen und bei verbleibendem HOLD den Blocker+Workaround in `PROJECT_STATUS.md` verankern.
+- Blocker/Workaround: Kein harter Blocker; einziges Restrisiko ist fehlende namentliche Finalisierung von Backend/QA (Workaround im Dokument hinterlegt).
+
+## [2026-03-12 15:37 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um Dashboard-Micro-Update ergänzt (grafische ToDo-Transparenz + Doku-Referenzen als Live-Steuerungsbasis).
+- Impact: Dashboard bleibt aktiv und zeigt Arbeitsstand/Backlog klarer für schnelle Entscheidungen.
+- Naechster Schritt: Bei Bedarf Chart-Pass (Phase- und Trendgrafiken) als nächstes UI-Micro-Inkrement umsetzen.
