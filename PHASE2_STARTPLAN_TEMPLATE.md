@@ -103,3 +103,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - 4 Min: Offene Risiken (Top-3) + jeweilige Mitigation/Owner.
 - 2 Min: Entscheidung GO | GO mit Auflage | HOLD treffen.
 - 2 Min: Nächsten Termin + Verantwortliche verbindlich festhalten.
+
+## GO-Decision Log (3 Zeilen, direkt in PROJECT_STATUS übernehmen)
+- Entscheidung: GO | GO mit Auflage | HOLD
+- Begründung (1 Satz): _tbd_
+- Verantwortlich + nächster Termin (Datum/Uhrzeit): _tbd_
