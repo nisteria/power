@@ -193,3 +193,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - [ ] Paket 2: Abnahmetermin im Kalender mit Ownern gesetzt.
 - Ziel: Verhindert Lücken zwischen Plan-Fixierung und operativer Übergabe.
 
+
+## Paket-2 Abnahmekriterien (Scope-Freeze, Micro)
+- Scope-Dokument enthaelt exakt In/Out fuer die API-Story (keine offenen TODO-Platzhalter).
+- Mindestens 1 Beispiel-Payload + 3 Fehlerfaelle sind dokumentiert (Validation/Timeout/Missing-Data).
+- Freigabe durch Backend + QA ist mit Datum/Uhrzeit im Decision-Log referenziert.
