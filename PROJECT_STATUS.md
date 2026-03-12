@@ -186,3 +186,8 @@
 - Paket 1 remains on track: Owner/Kickoff slot fixed for 2026-03-13 12:00.
 - Paket 2 prep remains on track: Smart-Meter API scope freeze targeted for 2026-03-14 16:00.
 - Relevanz: Verbindliche Termin-/Owner-Linie bleibt stabil und reduziert Re-Planning-Risiko bis Sprint-0.
+
+## GO-Execution Micro-Update (2026-03-12 14:27 Europe/Warsaw)
+- Top-2 Activation Pack bleibt verbindlich: Paket 1 (ceo-agent, 2026-03-13 12:00), Paket 2 (backend-agent, 2026-03-14 16:00).
+- Ergänzung: Für Paket 1 ist das erwartete Ergebnis nun explizit als "Owner-Benennung je Stream + Kickoff mit Termin-ID" festgehalten.
+- Relevanz: Erhöht Abnahme-Klarheit für den ersten GO-Tag ohne Scope-Erweiterung.
