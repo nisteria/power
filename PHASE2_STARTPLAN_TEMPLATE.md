@@ -50,3 +50,29 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Frontend-Owner: _tbd_
 - QA-Owner: _tbd_
 - Product/Delivery-Owner: _tbd_
+
+## KPI-Zielkorridor (erste 14 Tage nach GO)
+- Steuerpfad-Stabilität Staging: >= 95% erfolgreiche Durchläufe
+- Messbarkeit Savings: tägliche Erfassung für >= 90% der Testläufe
+- Incident-Reaktionszeit: Erstreaktion <= 4h bei P1/P2
+
+## No-Go-Kriterien (vor Sprint-Start prüfen)
+- Kein namentlicher Owner pro Stream (Backend/Frontend/QA)
+- Kein fixierter Termin für juristischen Final-Review
+- Kritische Zugänge/Repos nicht funktionsfähig am Day-0
+
+## GO-Decision Inputs (60-Sekunden-Check)
+- **Signal A (Owner):** Für jeden Stream ist ein namentlicher Owner eingetragen.
+- **Signal B (Timing):** Kickoff-Slot ist datiert und mit Kernrollen bestätigt.
+- **Signal C (Legal):** Juristischer Final-Review hat fixen Termin + Verantwortlichen.
+- **Interpretation:** Nur bei A+B+C = GO ohne Auflage. Fehlt ein Signal -> GO mit Auflage oder HOLD.
+
+## HOLD-Modus (wenn kein GO in 7 Tagen)
+- Scope bleibt eingefroren (keine neue Feature-Umsetzung, nur Entscheidungsreife erhöhen).
+- Wöchentlich 1-Page Update an Lech: offene Signale A/B/C + konkret nächster Entblockungsschritt.
+- Trigger für Re-Decision: sobald alle fehlenden Signale dokumentiert sind.
+
+## Escalation-Trigger (wenn kein GO in 14 Tagen)
+- Eskalations-Notiz vorbereiten: "Top-3 Gründe für HOLD" + "2 Entscheidungsoptionen mit Risiko".
+- 20-Minuten-Entscheidungstermin mit Lech anfordern (GO mit Auflagen vs. bewusstes Parken bis Datum X).
+- Ergebnis verpflichtend dokumentieren (Entscheidung, Owner, nächster Termin).
