@@ -165,3 +165,14 @@
 ## GO-Execution Micro-Update (2026-03-12 14:20 Europe/Warsaw)
 - Tiny Progress: Reihenfolge fuer GO-First-2 validiert (Paket 1 zuerst Owner/Kickoff, danach Paket 2 Scope-Freeze).
 - Relevanz: Reduziert Übergaberisiko zwischen den ersten 48h nach GO und haelt die Aktivierungslogik konsistent.
+
+## GO-Execution Micro-Update (2026-03-12 14:22 Europe/Warsaw)
+- Tiny step: Reihenfolge der naechsten 2 operativen Aktionen nach GO praezisiert.
+  1) Paket 1: Kickoff-Termin-ID im Startplan dokumentieren.
+  2) Paket 2: Smart-Meter API-Story Scope-Review als 20-Min Slot terminieren.
+- Relevanz: Verhindert Leerlauf zwischen terminierter Planung und operativer Aktivierung.
+
+## GO-Execution Micro-Update (2026-03-12 14:23 Europe/Warsaw)
+- Tiny progress: Reihenfolge fuer die naechsten zwei operativen Checkpoints nach GO klargezogen: (1) Paket-1 Kickoff mit Termin-ID verifizieren, (2) Paket-2 In/Out-Abnahme protokollieren.
+- Warum relevant: Sichert einen sauberen Uebergang von Plan-Fixierung zu kontrollierter Ausfuehrung ohne Entscheidungsdrift.
+
