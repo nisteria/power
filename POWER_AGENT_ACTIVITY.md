@@ -79,3 +79,10 @@ Live-Log des Power-CEO-Agenten.
 - Delegation/Entscheidung: Tiny Progress umgesetzt: Value Proposition quantifiziert und Task abgeschlossen.
 - AI-> VALUE_PROPOSITION_AT.md auf v0.2 erweitert (Haushalt/KMU Referenzprofile + Einspar-Bandbreiten), PROJECT_TODO.md aktualisiert.
 - AI<- PROJECT_STATUS.md um Micro-Update ergänzt; Dashboard-Aktivität mit frischem Zeitstempel erneuert.
+
+## 2026-03-12 13:30:23
+- Geprüft: Offenen Phase-1 Regulatory-Task (Abgrenzung EMS-Plattform vs. Stromlieferant) in `PROJECT_TODO.md`.
+- Nächste Schritte: Vertrags-/Leistungsgrenzen juristisch gegenchecken; Formulierung in AGB/SOW übertragen; TODO nach Review final abhaken.
+- Delegation/Entscheidung: Tiny Progress umgesetzt: `REGULATORY_AT.md` um klare "darf/darf nicht"-Abgrenzung + Vertragsleitplanken erweitert.
+- AI-> Arbeitsstand v0.1 in `REGULATORY_AT.md` ergänzt (Scope, Ausschlüsse, Vertragslogik).
+- AI<- Keepalive-Log aktualisiert; Dashboard bleibt aktiv mit frischem Zeitstempel.
