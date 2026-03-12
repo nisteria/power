@@ -224,3 +224,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 ## Kickoff Invite-Set (Micro, nach GO)
 - Pflichtteilnehmer: ceo-agent, backend-agent, frontend-agent, qa-agent.
 - Ziel: Termin steht nur als "fix" wenn alle 4 Rollen eingeladen sind (Kalender-ID im Status loggen).
+
+## Top-2 Day-1 Exit Criteria (Micro)
+- Paket 1 gilt als Day-1 abgeschlossen, wenn Kickoff-Termin-ID dokumentiert und alle Stream-Owner (Backend/Frontend/QA/Product) eingetragen sind.
+- Paket 2 gilt als Day-1 abgeschlossen, wenn Smart-Meter API-Story In/Out final signiert und ein Beispiel-Payload im Scope referenziert ist.
+- Ziel: Nach GO ist innerhalb von 24h ein objektiv prüfbarer Fortschrittsnachweis vorhanden.
