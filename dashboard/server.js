@@ -28,6 +28,20 @@ function getFileStatSafe(filePath) {
   }
 }
 
+function extractTimestampParts(title) {
+  // Supports:
+  // - 2026-03-12 13:54:23
+  // - [2026-03-12 14:44 Europe/Warsaw]
+  // - [2026-03-12 14:44:52 +01:00]
+  const m = title.match(/\[?(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2})(?::(\d{2}))?/);
+  if (!m) return null;
+  return {
+    date: m[1],
+    hhmm: m[2],
+    ss: m[3] || '00'
+  };
+}
+
 function parseActivityEntries(md) {
   const lines = md.split(/\r?\n/);
   const entries = [];
@@ -36,7 +50,7 @@ function parseActivityEntries(md) {
   for (const line of lines) {
     if (line.startsWith('## ')) {
       const title = line.replace(/^##\s*/, '').trim();
-      const isTimestampHeading = /^(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2})$/.test(title);
+      const isTimestampHeading = !!extractTimestampParts(title);
 
       if (current) entries.push(current);
       current = isTimestampHeading ? { title, bullets: [] } : null;
@@ -50,9 +64,9 @@ function parseActivityEntries(md) {
 }
 
 function parseIsoFromTitle(title) {
-  const m = title.match(/(\d{4}-\d{2}-\d{2})\s+(\d{2}:\d{2}:\d{2})/);
-  if (!m) return null;
-  const iso = `${m[1]}T${m[2]}`;
+  const parts = extractTimestampParts(title);
+  if (!parts) return null;
+  const iso = `${parts.date}T${parts.hhmm}:${parts.ss}`;
   const d = new Date(iso);
   return Number.isNaN(d.getTime()) ? null : d;
 }
