@@ -922,3 +922,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Micro-Update mit klaren Nachlesepfaden fuer Top-2 erweitert.
 - Impact: Dashboard bleibt aktiv und die wichtigsten Referenzdokumente fuer den operativen Start sind gebuendelt auffindbar.
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im Status als erledigt markieren.
+
+## [2026-03-12 16:12 Europe/Warsaw] Progress Step
+- Was gemacht: QA_MVP_ACCEPTANCE.md im Paket-3-Addendum bereinigt und Testfall-ID-Kollision aufgeloest: Tarif-Engine-Faelle von TC-20..TC-23 auf eindeutige IDs TC-34..TC-37 umnummeriert.
+- Impact: Entfernt Ueberschneidung mit Paket-4-Device-Control-Tests (TC-20..TC-23) und verbessert eindeutige Rueckverfolgbarkeit fuer QA-Review/SIGN-OFF.
+- Naechster Schritt: Paket-3 Scope-Review-Sign-off in API_SPEC.md mit realen Namen/Zeitstempel eintragen und im PROJECT_STATUS.md als Outcome referenzieren.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch bleiben reale Namen/Signaturen extern (Workaround: rollenbasiertes Pre-Fill bis zum Review-Slot).
+
+## [2026-03-12 16:13 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_TODO.md kurz geprueft; offene Phase-Tasks (Phase 2/3/4) weiterhin klar getrennt, kein ungeplanter Scope-Sprung.
+- Impact: Dashboard bleibt aktiv mit frischem Lauf und Priorisierungsdisziplin nach GO bleibt stabil.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im naechsten operativen Update explizit nachziehen.
