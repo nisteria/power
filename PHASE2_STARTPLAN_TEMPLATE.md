@@ -208,3 +208,10 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Owner-Mapping final namentlich bestätigt (Backend/Frontend/QA/Product).
 - Kickoff-Termin-ID in PROJECT_STATUS verlinkt.
 - Sprint-0 Startsignal als GO-Decision-Log-Eintrag dokumentiert.
+
+## Kickoff Input Checklist (15-Minuten Readiness)
+- Repo-Link + Branching-Regel im Kickoff-Invite verlinkt.
+- Owner je Stream (Backend/Frontend/QA/Product) mit Stellvertretung bestätigt.
+- Paket-1 Deliverable als 1-Satz-Abnahmekriterium dokumentiert.
+- Paket-2 API-Story Scope (In/Out) im Terminanhang verlinkt.
+- Nächster Decision-Checkpoint (Datum/Uhrzeit) vorab gesetzt.
