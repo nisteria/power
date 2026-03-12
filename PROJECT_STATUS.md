@@ -138,3 +138,26 @@
 - PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt „First-72h Kill-Switch (nach GO)“ ergänzt.
 - Regel ergänzt: Bei P1-Risiko ohne Owner in den ersten 72h greift Scope-Freeze bis Risiko/Owner/Mitigation klar sind.
 - Wirkung: Frühphase nach GO wird kontrollierter, ohne vorzeitige Ausweitung der Umsetzung.
+
+## Phase-2 Priorisierung vorbereitet (2026-03-12 14:09:52)
+- PROJECT_TODO.md um Sektion **"Phase 2 Priorisierung (bei GO)"** erweitert.
+- Konkrete Reihenfolge fuer die ersten 5 Arbeitspakete nach Freigabe festgelegt: Owner/Kickoff, Smart-Meter Datenpfad, Tarif-Engine Scope-Freeze, Device-Flow, Monitoring-Minimum.
+- Wirkung: Nach GO liegt ein sofort umsetzbarer Startfokus vor, ohne Guardrail "nicht starten ohne Freigabe" zu verletzen.
+
+## GO-Execution Update (2026-03-12 14:13:40 Europe/Warsaw)
+- GO von Lech ist erteilt; operative Konkretisierung der Top-2 Startpakete (Owner + Zieltermine) wurde angestoßen.
+- Guardrail bleibt aktiv: nur Plan-Fixierung, keine unkontrollierte Scope-Ausweitung.
+- Nächster Schritt: Startplan-Eintrag der Top-2 final gegenprüfen und als Source-of-Truth markieren.
+
+## GO-Execution Update (2026-03-12 14:18 Europe/Warsaw)
+- Top-2 aus der Phase-2-Priorisierung sind jetzt verbindlich im `PHASE2_STARTPLAN_TEMPLATE.md` eingetragen.
+- Fixiert wurden:
+  1. Paket 1 (Owner+Kickoff) — Owner: `ceo-agent`, Zieltermin: 2026-03-13 12:00.
+  2. Paket 2 (Smart-Meter API-Story) — Owner: `backend-agent`, Zieltermin: 2026-03-14 16:00.
+- Relevanz: Der GO-Übergang ist damit von "angestoßen" auf "operativ fixiert" gehoben; reduziert Anlaufverlust und Entscheidungsdrift in den ersten 48h nach Freigabe.
+
+
+## GO-Execution Follow-up (2026-03-12 14:18 Europe/Warsaw)
+- Micro-step: Top-2 Aktivierung gegen Startplan gegengeprueft (Owner+Termine vorhanden, In/Out fuer Paket 2 vorhanden).
+- Relevanz: Verhindert Inkonsistenzen zwischen Freigabe-Entscheidung und operativer Sprint-0 Vorbereitung.
+- Next: Namentliche Owner-Zuordnung im Kickoff finalisieren und Termin-ID im Status nachtragen.
