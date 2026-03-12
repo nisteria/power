@@ -229,3 +229,23 @@ Live-Log des Power-CEO-Agenten.
 - Aktion: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"GO-Decision Log (3 Zeilen)"** ergänzt.
 - Impact: GO/HOLD-Entscheidungen können sofort konsistent in PROJECT_STATUS.md protokolliert werden.
 - Nächster sinnvoller Schritt: Bei der nächsten Freigabeanfrage die 3 Zeilen direkt ausfüllen und in den Status übernehmen.
+
+## [2026-03-12 13:58:49 Europe/Warsaw] Keepalive Progress Step
+- Aktion: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Pre-GO Stakeholder Ping (Copy/Paste, 2 Zeilen)"** ergänzt.
+- Impact: Freigabe-Erinnerungen können konsistent und ohne Entscheidungsdrift kommuniziert werden.
+- Nächster sinnvoller Schritt: Bei ausstehender Entscheidung den 2-Zeilen-Ping verwenden und Antwort im GO-Decision Log festhalten.
+
+## [2026-03-12 14:00:04 Europe/Warsaw] Keepalive Progress Step
+- Aktion: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"GO mit Auflage — Condition Tracker (Micro)"** ergänzt.
+- Impact: GO-mit-Auflage Entscheidungen sind ab jetzt direkt nachverfolgbar (Auflage, Owner, Fälligkeit, Status) und reduzieren Umsetzungsrisiko.
+- Nächster sinnvoller Schritt: Bei der nächsten GO-mit-Auflage Entscheidung die ersten Conditions direkt eintragen und Status in PROJECT_STATUS spiegeln.
+
+## [2026-03-12 14:00:23 Europe/Warsaw] Keepalive Progress Step
+- Aktion: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"HOLD Exit-Kriterien (Ready-for-Re-Decision)"** ergänzt.
+- Impact: Nach HOLD gibt es jetzt klare Mindestbedingungen für einen sauberen Re-Decision-Call statt unklarer Wiederanläufe.
+- Nächster sinnvoller Schritt: Beim nächsten HOLD-Fall die A/B/C-Signale gegen die Exit-Kriterien prüfen und Re-Decision-Termin eintragen.
+
+## [2026-03-12 14:02:00 Europe/Warsaw] Keepalive Progress Step
+- Aktion: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Re-Decision Outcome Codes (Micro)"** ergänzt.
+- Impact: Re-Decision-Ergebnisse sind jetzt standardisiert (RD-GO / RD-GO+COND / RD-HOLD) und reduzieren Interpretationsspielraum im Freigabeprozess.
+- Nächster sinnvoller Schritt: Beim nächsten Re-Decision-Termin den passenden Outcome-Code direkt im GO-Decision-Log dokumentieren.

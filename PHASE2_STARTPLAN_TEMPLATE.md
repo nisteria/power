@@ -108,3 +108,22 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Entscheidung: GO | GO mit Auflage | HOLD
 - Begründung (1 Satz): _tbd_
 - Verantwortlich + nächster Termin (Datum/Uhrzeit): _tbd_
+
+## Pre-GO Stakeholder Ping (Copy/Paste, 2 Zeilen)
+- Status: "Phase 2 ist startklar, Freigabeentscheidung steht aus (GO | GO mit Auflage | HOLD)."
+- Bedarf: "Bitte Entscheidung + nächster Termin bestätigen, damit Sprint-0-Planung verbindlich bleibt."
+
+## GO mit Auflage — Condition Tracker (Micro)
+- Auflage 1: _tbd_ | Owner: _tbd_ | Fällig: _tbd_ | Status: offen/erledigt
+- Auflage 2: _tbd_ | Owner: _tbd_ | Fällig: _tbd_ | Status: offen/erledigt
+- Regel: Sprint-Start nur für Workstreams ohne offene kritische Auflage.
+
+## HOLD Exit-Kriterien (Ready-for-Re-Decision)
+- Mindestens 2 von 3 A/B/C-Signalen sind nachweisbar geschlossen.
+- Für verbleibendes Signal liegt ein datierter Entblockungsplan mit Owner vor.
+- Nächster Re-Decision-Termin ist im Kalender fixiert (keine offenen TODO-Platzhalter).
+
+## Re-Decision Outcome Codes (Micro)
+- **RD-GO:** Re-Decision ergibt GO, Sprint-0 Starttermin wird sofort gesetzt.
+- **RD-GO+COND:** Re-Decision ergibt GO mit Auflage, offene Conditions in den Tracker eintragen.
+- **RD-HOLD:** Re-Decision bestätigt HOLD, nächster Termin + fehlendes Signal verpflichtend dokumentieren.
