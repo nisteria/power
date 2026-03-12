@@ -39,3 +39,14 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 
 ## Freigabe-Message (Copy/Paste)
 "Phase 1 ist abgeschlossen und dokumentiert. Soll ich Phase 2 (MVP Build & Pilotfähigkeit) jetzt freigeben und mit Sprint 0 starten?"
+
+## Entscheidungsoptionen für Lech (kompakt)
+- **GO jetzt:** Start mit Sprint 0 innerhalb von 24h
+- **GO mit Auflage:** Start erst nach fixem Termin für juristischen Final-Review
+- **HOLD:** Kein Start, nur weitere Vorbereitung ohne Build-Beginn
+
+## Owner-Mapping (nach GO, vorzubelegen)
+- Backend-Owner: _tbd_
+- Frontend-Owner: _tbd_
+- QA-Owner: _tbd_
+- Product/Delivery-Owner: _tbd_
