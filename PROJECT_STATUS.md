@@ -496,3 +496,30 @@
 - Tiny progress: Dashboard-Klarheit geschärft — ToDo-Visualisierung und Dokument-Referenzen als laufende Kontrollpunkte für Phase-2-Execution bestätigt.
 - Relevanz: Verhindert Informationsdrift zwischen operativer Arbeit und Führungs-/Statussicht.
 - Nächster Schritt: Beim nächsten Update Paket-1-Kickoff-Nachweis (Termin-ID + Teilnehmerkernteam) explizit als Referenzlink im Status führen.
+
+## GO-Execution Micro-Update (2026-03-12 16:03 Europe/Warsaw)
+- Tiny progress: Paket 4 (Device Control) in `API_SPEC.md` um verbindliche **Idempotenz- und Konfliktregeln v0.2** ergänzt (24h commandId-Fenster, 409 bei Payload-Mismatch, 1 aktiver Write-Command pro Device, traceId-Pflicht bei 409/422/504).
+- QA-Spiegelung ergänzt: `QA_MVP_ACCEPTANCE.md` um **TC-30** (idempotenter Replay) und **TC-31** (commandId mit abweichendem Payload -> 409 + reason) erweitert.
+- Relevanz: Reduziert Integrations- und Incident-Risiko vor Paket-4-Sign-off, weil Dedupe/Conflict-Verhalten jetzt API+QA-seitig eindeutig prüfbar ist.
+- Nächster Schritt: Paket-4 Scope-Review-Slot (2026-03-13 13:10) mit realen Namen/Zeitstempel gegenzeichnen und Outcome im Sign-off-Block festhalten.
+
+## GO-Execution Micro-Update (2026-03-12 16:03 Europe/Warsaw)
+- Tiny progress: Dashboard-/Execution-Readiness geprueft; Top-2 Aktivierung bleibt konsistent (Owner+Zieltermine unveraendert).
+- Relevanz: Hält den Übergang von Planung zu Ausführung stabil und verhindert stillen Drift.
+- Nächster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im Status referenzieren.
+
+## GO-Execution Micro-Update (2026-03-12 16:04 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` im Paket-2-Slice um einen konkreten **JSON-Contract v0.1** (Pflichtfelder, Feldgrenzen, `maxItems=500`, Power-Limits) sowie **5 kanonische Contract-Testvektoren** (`SM-OK-01`, `SM-422-01`, `SM-408-01`, `SM-409-01`, `SM-BATCH-01`) erweitert.
+- Relevanz: Scope-Review fuer Smart-Meter kann jetzt auf einem pruefbaren Minimalvertrag statt nur Fließtext gegenzeichnen; reduziert Abnahme- und Implementierungsrisiko zwischen Backend/QA.
+- Nächster Schritt: `QA_MVP_ACCEPTANCE.md` auf die neuen Testvektor-IDs referenzieren und danach Paket-2-Sign-off mit realen Namen/Zeitstempel finalisieren.
+
+## GO-Execution Micro-Update (2026-03-12 16:07 Europe/Warsaw)
+- Tiny progress: QA_MVP_ACCEPTANCE.md für Paket 2 um API↔QA-Vektor-Mapping ergänzt (SM-422-01/408-01/409-01) und um **TC-32 Batch-Partial-Accept (2/1)** (↔ SM-BATCH-01) erweitert.
+- Relevanz: Schließt eine konkrete Nachweislücke zwischen Smart-Meter-Contract und QA-Backlog; Partial-Accept ist nun explizit abnahmefähig spezifiziert.
+- Nächster Schritt: SM-OK-01 als dedizierten Happy-Path-QA-Fall ergänzen und danach Paket-2-Sign-off-Block mit realen Namen/Zeitstempel finalisieren.
+
+## GO-Execution Micro-Update (2026-03-12 16:07 Europe/Warsaw)
+- Tiny progress: Top-2 Activation und QA-Sync-Status kurz gegengeprueft; keine neue Inkonsistenz erkannt.
+- Relevanz: Haelt den operativen Day-1 Fokus stabil und vermeidet Drift zwischen API_SPEC/QA/Startplan.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) verbindlich in Status referenzieren.
+

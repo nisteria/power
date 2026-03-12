@@ -886,3 +886,15 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Top-2 Execution Cadence (Micro)"** erweitert (12h-Checkpoints fuer Paket 1 und Paket 2 bis zur jeweiligen Abnahme).
 - Impact: Fruehes Drift-/Blocker-Scanning vor den Day-1 Exit-Criteria; macht GO-Fortschritt im Dashboard belastbarer.
 - Naechster Schritt: Nächsten Status-Checkpoint mit Termin-ID (Paket 1) bzw. Sign-off-Status (Paket 2) in PROJECT_STATUS.md spiegeln.
+
+## [2026-03-12 16:07 Europe/Warsaw] Progress Step
+- Was gemacht: QA_MVP_ACCEPTANCE.md im Paket-2-Slice um ein explizites API↔QA-Mapping auf die Smart-Meter-Canonical-Vektoren erweitert (SM-422-01/408-01/409-01) und neuen Testfall **TC-32 Batch-Partial-Accept (2/1)** (↔ SM-BATCH-01) ergänzt.
+- Impact: Paket-2-Review ist jetzt präziser rückverfolgbar zwischen API-Contract und QA-Nachweisen; Partial-Accept-Verhalten ist als eigener reproduzierbarer Test fixiert.
+- Naechster Schritt: SM-OK-01 als Happy-Path-Referenz noch als eigener QA-Testfall ergänzen und dann den Paket-2-Sign-off mit realen Namen/Zeitstempel schließen.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen für finalen Sign-off weiterhin reale Namen (Workaround: Rollen-Pre-Fill bis zum Review-Slot beibehalten).
+
+## [2026-03-12 16:07 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution Micro-Update ergaenzt (Top-2 + QA-Sync-Konsistenz geprueft).
+- Impact: Dashboard bleibt aktiv; Plan-zu-Ausfuehrung bleibt ohne Drift nachvollziehbar.
+- Naechster Schritt: Kickoff-Termin-ID + Kernteam als Paket-1-Abnahmebeleg eintragen.
+
