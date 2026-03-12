@@ -846,3 +846,16 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: POWER_WEBDASHBOARD.md um ein kompaktes Update zur neuen Professional-Dashboard-Ansicht erweitert (KPI-Karten, grafische ToDo-Sicht, Werdegang, Doku-Links + /docs/<datei>.md Route).
 - Impact: Nachlesen und Bedienung des Dashboards sind jetzt klar dokumentiert; reduziert Onboarding-Reibung fuer den Live-Betrieb.
 - Naechster Schritt: Als naechstes echte Linien-/Balkencharts fuer Verlauf (open/done over time) in die UI integrieren.
+
+## 2026-03-12 15:58:48
+- Was gemacht: In `API_SPEC.md` (Paket 4) zwei konkrete Review-Prep-Artefakte ergänzt: (A) Device-Grenzen mit Beispielwerten für `dev_wb_42`/`dev_bat_17`, (B) vollständiges `command-events` Incident-Beispiel mit `statusTransition`, `latencyMs` und `traceId`.
+- Impact: Paket-4-Scope-Review ist operativ besser vorbereitbar; offene Prep-Lücken wurden in dokumentierte, direkt prüfbare Inputs überführt.
+- Nächster Schritt: Review-Slot 2026-03-13 13:10 durchführen, Sign-off-Block (Frontend/Backend/QA) mit echten Namen + Zeitstempel befüllen und Ergebnis (GO/GO+Auflage/HOLD) in `PROJECT_STATUS.md` spiegeln.
+- Delegation/Entscheidung: Kein Blocker; Fokus bleibt auf kleinem GO-Fortschritt in Phase 2.
+- AI-> Paket-4-API-Spec um konkrete Review-Evidence erweitert.
+- AI<- Vorbereitungstiefe erhöht, Risiko für Review-Leerlauf reduziert.
+
+## [2026-03-12 15:59 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update ergaenzt (Paket-1 Kickoff-Nachweis auf Termin-ID + Kernteam-Liste + Agenda-Link festgezogen).
+- Impact: Dashboard bleibt aktiv und der morgige Kickoff ist mit klaren Nachweisfeldern operativ abgesichert.
+- Naechster Schritt: Nach Kickoff Pflichtfelder im PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md befuellen und den Verweis im Status final setzen.

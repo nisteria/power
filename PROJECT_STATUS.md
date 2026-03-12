@@ -466,3 +466,28 @@
 - Relevanz: Erhoeht operative Transparenz fuer die ersten 48h nach GO ohne Scope-Erweiterung.
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) als ersten harten Acceptance-Checkpoint eintragen.
 
+## GO-Execution Micro-Update (2026-03-12 15:52 Europe/Warsaw)
+- Tiny progress: `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` um eine **Fallback-Nachweisregel** erweitert (temporärer `KICKOFF_EVENT_REF`, 24h Ersetzungsfrist, HOLD-Regel bei fehlender Evidenz).
+- Relevanz: Entblockt Paket-1-Abnahme bei kurzfristigen Kalender-ID-Problemen, ohne den Evidence-Standard aufzuweichen.
+- Nächster Schritt: Beim Kickoff entweder echte `KICKOFF_EVENT_ID` setzen oder Fallback-Ref verwenden und innerhalb 24h auf echte ID heben.
+
+
+## GO-Execution Micro-Update (2026-03-12 15:54 Europe/Warsaw)
+- Tiny progress: PROJECT_TODO.md fuer Paket 5 synchronisiert (Monitoring/Alerting-Task von v0.4 auf **v0.6 + Drill-Matrix-Sign-off** angehoben; erwartetes Ergebnis jetzt explizit: reale Namen + GO/ADJUST/HOLD je P1-Regel).
+- Relevanz: Entfernt Versions-Drift zwischen TODO-Steuerung und aktuellem Artefaktstand in MONITORING_ALERTING_MINIMUM.md; macht den naechsten Abschluss fuer Paket 5 klarer und auditierbar.
+- Naechster Schritt: Alignment-Slot durchfuehren und Sign-off-Sheet v0.6 mit realen Namen/Zeitstempel/Outcome ausfuellen, danach Paket 5 in PROJECT_TODO.md auf erledigt ziehen.
+
+## GO-Execution Micro-Update (2026-03-12 15:55 Europe/Warsaw)
+- Tiny progress: Die neue Day-0-Guardrail **"No-Show Recovery"** aus `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` wurde als operativer Paket-1-Schutz explizit in den laufenden GO-Status übernommen.
+- Relevanz: Bei kurzfristigem Ausfall einer Pflichtrolle bleibt der Kickoff handlungsfähig (Stellvertretung/HOLD-Regel), statt in unklarer Verantwortung zu starten.
+- Nächster Schritt: Im Kickoff-Protokoll den Eskalationskontakt namentlich setzen und die resultierende Termin-ID/Evidence direkt im Status verlinken.
+
+## GO-Execution Micro-Update (2026-03-12 15:58 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` im Paket-4-Slice um zwei konkrete Review-Prep-Evidenzen erweitert: (1) Device-Grenzen als Beispielmatrix fuer Battery/Wallbox (`powerKw`, `targetSocPct`, `ttlSec`), (2) Incident-Nachweis-Event fuer `GET /sites/:siteId/devices/command-events` inkl. `statusTransition`, `latencyMs`, `traceId`.
+- Relevanz: Reduziert Interpretationsspielraum im Scope-Review und macht die Abnahme fuer Frontend/Backend/QA unmittelbar pruefbar statt nur textlich beschrieben.
+- Naechster Schritt: Sign-off-Slot 2026-03-13 13:10 mit realen Namen/Zeitstempel durchziehen und Ergebnis im Paket-4-Sign-off-Block dokumentieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:59 Europe/Warsaw)
+- Tiny progress: Paket-1 Kickoff-Nachweis konkretisiert: Pflichtfelder fuer Day-1 sind jetzt verbindlich als **Termin-ID + Kernteam-Liste + Agenda-Link** definiert.
+- Relevanz: Verhindert, dass der Kickoff morgen formal stattfindet, aber ohne belastbaren Nachweis in den Status rueckgespielt wird.
+- Naechster Schritt: Nach Kickoff diese drei Pflichtfelder in PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md befuellen und in PROJECT_STATUS.md referenzieren.
