@@ -625,3 +625,13 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md um Abschnitt **"Paket-1 Kickoff Minutes (2-Minuten Abschlussblock)"** erweitert.
 - Impact: Kickoff-Ergebnisse koennen direkt strukturiert dokumentiert und ohne Informationsverlust in PROJECT_STATUS.md uebernommen werden.
 - Naechster Schritt: Beim Paket-1-Kickoff den Abschlussblock live befuellen und die Beschlusszeile im Status referenzieren.
+
+## [2026-03-12 15:16:14 Europe/Warsaw] Phase-2 Fortschrittsschritt
+- Was gemacht: API_SPEC.md um "Auth Skeleton v0.1" erweitert (Scope in/out, Login/Refresh/Logout-Contract, JWT-TTL, Rollen owner|installer|support, Pflicht-Fehlerfaelle, DoR-Check).
+- Impact: Arbeitspaket "API/Auth-Skeleton produktiv aufsetzen" ist jetzt konkret spezifiziert und direkt implementier-/testbar statt nur als High-Level Endpoint-Liste.
+- Nächster Schritt: Auth-Rollenmatrix + Fehlerfaelle in QA_MVP_ACCEPTANCE.md als explizite Abnahmetests verankern und danach Status-Signoff fuer Paket 1 setzen.
+
+## [2026-03-12 15:16 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Dashboard-Upgrade kurz gegen Live-Daten geprueft (ToDo-Grafik + Dokumentenlinks + Ampelstatus weiterhin konsistent).
+- Impact: Sichtbarkeit fuer offene/erledigte Aufgaben bleibt stabil und der Live-Monitoring-Flow ist direkt nutzbar.
+- Naechster Schritt: Im naechsten Zyklus einen kleinen UX-Step nachziehen (z. B. Highlight fuer "neu geaenderte" ToDos mit Zeitbezug).
