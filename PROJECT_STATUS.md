@@ -99,3 +99,8 @@
 - Stop-Regel geprüft: Alle TODOs der aktiven Phase 1 sind erledigt.
 - Ergebnis in PROJECT_STATUS konsolidiert; Projekt ist bereit für Freigabeentscheidung zu Phase 2.
 - Nächster Schritt: Lech um explizite Freigabe für Start von Phase 2 bitten (noch nicht starten).
+
+## Freigabe-Vorlage vorbereitet (2026-03-12 13:36)
+- Entscheidungsfrage an Lech vorbereitet: „Phase 2 (MVP Build & Pilotfähigkeit) jetzt freigeben?“
+- Guardrail festgehalten: Ohne explizite Freigabe keine Phase-2-Umsetzung.
+- Bei Freigabe: erster Schritt ist nur ein Phase-2-Startplan mit Milestones, keine parallelen Build-Starts.
