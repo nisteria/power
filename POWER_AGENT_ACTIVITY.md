@@ -909,3 +909,16 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update ergänzt (Top-2 Fokus + nächster Checkpoint fixiert).
 - Impact: Dashboard bleibt aktiv und der operative Fokus bleibt auf nachweisbarer Paket-1-Ausführung statt losem Status-Tracking.
 - Nächster Schritt: Kickoff-Termin-ID und Kernteam in den Startplan/Status eintragen und danach Paket-2 Scope-Sign-off mit Namen/Zeitstempel schließen.
+
+## [2026-03-12 16:10 Europe/Warsaw] Progress Step
+- Was gemacht: In `PROJECT_STATUS.md` einen neuen **Sign-off-Risiko-Snapshot (24h)** für Paket 2/3/4/5 ergänzt und je Paket den realen Engpass klargezogen (fachlich review-ready, organisatorisch noch namentliche Gegenzeichnung offen).
+- Impact: Priorisiert den tatsächlichen Day-1-Flaschenhals (Namen/Signaturen im Slot) statt weiterer Scope-Dokumentation; reduziert Risiko von „fertig beschrieben, aber nicht formal abgenommen“.
+- Nächster Schritt: Im ersten verfügbaren Slot pro Paket reale Namen + Zeitstempel eintragen und Ergebnis sofort als GO/GO+Auflage/HOLD im Status spiegeln.
+- Blocker/Workaround: Blocker = reale Namen liegen außerhalb Repo; Workaround = rollenbasiertes Pre-Fill bis zum Slot beibehalten und danach direkt evidence-linked nachziehen.
+- AI-> Sign-off-Risiko-Snapshot in PROJECT_STATUS.md nachgezogen und Day-1 Fokus auf Gegenzeichnung geschärft.
+- AI<- Engpass ist jetzt explizit sichtbar (organisatorisch statt fachlich), was die nächsten 5–15-Min-Slices zielgerichteter macht.
+
+## [2026-03-12 16:11 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update mit klaren Nachlesepfaden fuer Top-2 erweitert.
+- Impact: Dashboard bleibt aktiv und die wichtigsten Referenzdokumente fuer den operativen Start sind gebuendelt auffindbar.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im Status als erledigt markieren.

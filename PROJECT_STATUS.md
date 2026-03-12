@@ -532,3 +532,18 @@
 ## GO-Execution Micro-Update (2026-03-12 16:09 Europe/Warsaw)
 - Tiny progress: Top-2 Execution-Fokus bestätigt; nächster harter Checkpoint bleibt Paket-1-Kickoff-Nachweis (Termin-ID + Kernteam).
 - Relevanz: Hält den Übergang von Planung zu Ausführung stabil und verhindert Prioritätsdrift nach GO.
+
+## GO-Execution Micro-Update (2026-03-12 16:10 Europe/Warsaw)
+- Tiny progress: Paket-übergreifenden **Sign-off-Risiko-Snapshot** für die nächsten 24h fixiert (Paket 2/3/4/5):
+  - Paket 2 (Smart-Meter): Sign-off-Block + QA-Vektoren sind review-ready; offen bleibt namentliche Gegenzeichnung.
+  - Paket 3 (Tarif-Engine): Sign-off-Block + TC-TAR-Mapping sind review-ready; offen bleibt namentliche Gegenzeichnung.
+  - Paket 4 (Device Control): Sign-off-Slot 2026-03-13 13:10 ist vorbelegt; offen bleiben reale Namen + Outcome-Eintrag.
+  - Paket 5 (Monitoring): Alignment-Sheet v0.6 + Drill-Matrix sind vorbereitet; offen bleibt reale Namenszuordnung im Slot.
+- Relevanz: Macht den echten Engpass (organisatorische Gegenzeichnung statt fachlicher Scope-Lücke) explizit und priorisierbar für Day-1.
+- Blocker: Reale Teilnehmernamen/Signaturen liegen außerhalb Repo.
+- Workaround: Rollenbasiertes Pre-Fill bleibt aktiv; im jeweiligen Slot werden Name + Zeitstempel nachgezogen und sofort im Status gespiegelt.
+
+## GO-Execution Micro-Update (2026-03-12 16:11 Europe/Warsaw)
+- Tiny progress: Dokumentations-Nachlesepfade fuer GO-Top-2 konkretisiert (PHASE2_STARTPLAN_TEMPLATE.md, API_SPEC.md, QA_MVP_ACCEPTANCE.md) und als Referenzpunkt fuer den naechsten Check festgehalten.
+- Relevanz: Schnellere Orientierung fuer Review/Kickoff ohne Suchaufwand; reduziert Reibung im Day-1-Start.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) in den Status uebernehmen.
