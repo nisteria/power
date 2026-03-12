@@ -779,3 +779,25 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Micro-Update ergaenzt und den Paket-1-Nachweis auf konkrete Pflichtbelege (Termin-ID, Kernteam, Agenda-Link) geschaerft.
 - Impact: Erhoeht die Ausfuehrungssicherheit fuer den naechsten Kickoff und reduziert Interpretationsspielraum bei der Abnahme.
 - Naechster Schritt: Belegblock beim Kickoff ausfuellen und danach Paket-1-Status auf acceptance-ready setzen.
+
+## [2026-03-12 15:46 Europe/Warsaw] Progress Step
+- Was gemacht: `MONITORING_ALERTING_MINIMUM.md` auf **v0.6** erweitert und eine **Alert-Drill Acceptance Matrix** fuer Paket 5 hinzugefuegt (3 synthetische P1-Drills inkl. Trigger, erwarteter Alarm, Sofortaktion, Erfolgsnachweis) plus Drill-DoD-Checklist.
+- Impact: Monitoring/Alerting ist jetzt nicht nur regelbasiert, sondern vor Pilotstart kontrolliert pruefbar; reduziert Risiko, dass Routing/Playbooks erst im echten Incident auffallen.
+- Naechster Schritt: Im 20-min Alignment die Drill-Matrix gegenzeichnen (Owner/Faelligkeit) und den ersten Drill (`DRILL-P1-INGEST-01`) als Nachweislauf terminieren.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen noch reale Namen fuer finale Gegenzeichnung (Workaround: rollenbasiert vorzeichnen, Namen im Slot nachziehen).
+
+## [2026-03-12 15:47 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update erweitert und den Evidenzpfad fuer Paket-1-Abnahme (Kickoff-Protokoll) klargezogen.
+- Impact: Dashboard bleibt aktiv und der Uebergang von Planung zu nachweisbarer Ausfuehrung wird stabilisiert.
+- Naechster Schritt: Kickoff-Protokoll (Termin-ID, Kernteam, Owner-Namen) im naechsten Lauf konkret befuellen.
+
+## [2026-03-12 15:48 Europe/Warsaw] Progress Step
+- Was gemacht: `API_SPEC.md` im Paket-4-Abschnitt um einen vorbelegten Scope-Review-Slot (`2026-03-13 13:10`) plus **Review-Prep (2-Minuten-Check)** ergänzt (QA-Testfall-Referenzen, Device-Grenzwerte, Event-Log-Beispiel).
+- Impact: Paket 4 ist jetzt direkt review-startklar; reduziert Reibung zwischen Frontend/Backend/QA vor der Gegenzeichnung.
+- Nächster Schritt: Sign-off-Block im Slot mit realen Namen/Zeitstempel ausfüllen und Ergebnis in `PROJECT_STATUS.md` als Paket-4-Abnahme referenzieren.
+- Blocker/Workaround: Kein technischer Blocker. Organisatorisch fehlen noch reale Namen; Workaround = rollenbasiertes Pre-Fill bis zum Slot beibehalten.
+
+## [2026-03-12 15:49 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um Dashboard-UX-Micro-Update ergänzt (grafische ToDo-Sicht + Timeline + Doku-Links als aktiv dokumentiert).
+- Impact: Dashboard bleibt nicht nur aktiv, sondern zeigt operativen Fortschritt klarer und schneller prüfbar.
+- Nächster Schritt: Verlaufschart (open/done over time) als optionales nächstes UX-Inkrement ergänzen.

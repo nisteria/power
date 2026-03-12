@@ -435,3 +435,23 @@
 - Tiny progress: Paket-1 Kickoff-Nachweis weiter operationalisiert: Pflichtbeleg im Status auf **Termin-ID + Kernteam + 3-Punkte-Agenda-Link** konkretisiert.
 - Relevanz: Macht den Uebergang von geplanter zu nachweisbarer Ausfuehrung fuer den 2026-03-13 Kickoff robuster.
 - Naechster Schritt: Bei Kickoff-Durchfuehrung den Belegblock direkt befuellen und Paket-1 als "acceptance-ready" markieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:46 Europe/Warsaw)
+- Tiny progress: `MONITORING_ALERTING_MINIMUM.md` auf **v0.6** erweitert: neue **Alert-Drill Acceptance Matrix** fuer Paket 5 mit 3 synthetischen P1-Drills (Ingest/Freshness/Command), erwarteten Sofortaktionen und klaren Erfolgsnachweisen.
+- Relevanz: Paket 5 springt von "Regeln definiert" auf "operativ pruefbar"; Routing + Playbooks koennen vor Pilotstart kontrolliert verifiziert werden statt erst im echten Incident.
+- Naechster Schritt: Im Alignment-Slot die drei Drills gegenzeichnen (Owner + Deadline) und den ersten Drill als Nachweislauf einplanen.
+
+## GO-Execution Micro-Update (2026-03-12 15:47 Europe/Warsaw)
+- Tiny progress: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md als naechster Day-1-Nachweis im Status referenziert (Kickoff-Termin-ID + Kernteam + Owner-Namen als Pflichtbeleg).
+- Relevanz: Macht Paket-1-Abnahme nach GO dokumentierbar und reduziert Risiko fuer "Status ohne Evidenz".
+- Naechster Schritt: Beim naechsten operativen Lauf Template mit realen Namen/Termin-ID befuellen und als abgeschlossen markieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:48 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` im Paket-4-Slice um einen vorbelegten Scope-Review-Slot (`2026-03-13 13:10`) und einen kompakten Review-Prep-Check erweitert.
+- Relevanz: Paket 4 ist nicht nur fachlich spezifiziert, sondern organisatorisch direkt review-durchfuehrbar; reduziert Leerlauf zwischen Spezifikation und Gegenzeichnung.
+- Naechster Schritt: Sign-off-Slot mit realen Namen/Zeitstempel ausfuellen und Ergebnis (GO/GO+Auflage/HOLD) in den Status spiegeln.
+
+## Dashboard UX Micro-Update (2026-03-12 15:49 Europe/Warsaw)
+- Live-Dashboard-Verbesserungen aktiv: grafische ToDo-Sicht (offen/erledigt/fortschritt), Timeline und Dokumentenlinks laufen im Realtime-Feed.
+- Relevanz: Höhere Transparenz für GO-Ausführung und schnellere Navigation in relevante Arbeitsdokumente.
+- Nächster Schritt: Optional echten Chart-Layer (z. B. Verlauf offen vs. erledigt über Zeit) ergänzen.
