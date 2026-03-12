@@ -173,3 +173,9 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Paket 1 bereit, wenn: Kickoff-Termin-ID dokumentiert + alle Stream-Owner bestaetigt.
 - Paket 2 bereit, wenn: API-Story In/Out im Repo verlinkt + Abnahmeverantwortlicher benannt.
 - Regel: Ohne beide Ready-Haken kein "Start executed"-Status in PROJECT_STATUS.
+
+## Paket-1 Abnahmekriterien (Kickoff, Micro)
+- Kickoff-Termin-ID dokumentiert und fuer Kernrollen sichtbar.
+- Owner je Stream (Backend/Frontend/QA/Product) auf Personenebene benannt.
+- Offene Risiken (Top-3) mit Owner + naechstem Termin versehen.
+
