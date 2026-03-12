@@ -4,7 +4,7 @@
 
 ### Phase 1 TODOs
 - [x] [HIGH] [ceo-agent] [Strategy] EcoFlow Wettbewerbsanalyse strukturiert (Historie, Funding, Produktstrategie, Lücken)
-- [ ] [HIGH] [ceo-agent] [Regulatory] Abgrenzung EMS-Plattform vs. Stromlieferant finalisieren (Vertrags-/Leistungsgrenzen schriftlich)
+- [x] [HIGH] [ceo-agent] [Regulatory] Abgrenzung EMS-Plattform vs. Stromlieferant finalisiert (Vertrags-/Leistungsgrenzen schriftlich) (`REGULATORY_AT.md`)
 - [x] [HIGH] [main-agent] [Product] ICP finalisiert (Haushalt/KMU in Österreich, Segmente + Buying Trigger) (`ICP_SNAPSHOT.md`)
 - [x] [HIGH] [main-agent] [Product] Value Proposition + Differenzierung „Made in Austria“ definieren (`VALUE_PROPOSITION_AT.md`)
 - [x] [HIGH] [backend-agent] [Tech] MVP Scope v1 finalisiert (`TECH_MVP_SCOPE_V1.md`)

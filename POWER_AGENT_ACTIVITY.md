@@ -93,3 +93,10 @@ Live-Log des Power-CEO-Agenten.
 - Delegation/Entscheidung: Tiny Progress umgesetzt: GTM-Hypothesen v1 dokumentiert und TODO abgeschlossen.
 - AI-> `GTM_HYPOTHESES_AT.md` erstellt (4 testbare Markteintritts-Hypothesen + Messkriterien + 2-Wochen-Validierungsplan).
 - AI<- `PROJECT_TODO.md` und `PROJECT_STATUS.md` aktualisiert; Dashboard-Keepalive mit frischem Zeitstempel gesichert.
+
+## 2026-03-12 13:34:08
+- Geprüft: Offener Phase-1 Regulatory-Task in PROJECT_TODO.md.
+- Nächste Schritte: Juristischen Final-Review einplanen; AGB/SOW-Textbausteine synchronisieren; Phase-1 Abschlussstatus konsolidieren.
+- Delegation/Entscheidung: Tiny Progress umgesetzt: Regulatory-Abgrenzung v1.0 finalisiert und TODO abgeschlossen.
+- AI-> REGULATORY_AT.md um Finalfassung (Website/Sales + Vertrag/AGB) und Open-Items-Checkliste ergänzt; PROJECT_TODO.md aktualisiert.
+- AI<- PROJECT_STATUS.md um Micro-Update erweitert; Dashboard-Keepalive mit frischem Zeitstempel gesichert.

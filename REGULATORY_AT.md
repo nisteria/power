@@ -34,3 +34,15 @@ Eigener Lieferantenstatus bedeutet zusätzliche energiewirtschaftliche Pflichten
 - Leistungsgegenstand: "Software zur Energiesteuerung und -optimierung".
 - Kein Leistungsversprechen zur Energielieferung, Preisgarantie oder Verfügbarkeit externer Tarife.
 - Kunde bleibt Vertragspartner seines Energieversorgers; Power ist technischer Dienstleister.
+
+## Finalfassung v1.0 — Abgrenzung für externe Kommunikation
+### Kurzform (Website/Sales)
+Power ist eine EMS-Softwareplattform zur Steuerung und Optimierung von Energieflüssen hinter dem Zählpunkt. Power verkauft keinen Strom und ersetzt keinen Energieversorger.
+
+### Kurzform (Vertrag/AGB)
+Power erbringt ausschließlich Software- und Integrationsleistungen (Setup, Betrieb, Support, Optimierung). Energielieferung, Netznutzung und energiewirtschaftliche Marktrollen verbleiben vollständig bei den jeweils zuständigen Vertragspartnern des Kunden.
+
+### Open-Items vor juristischem Final-Review
+- Standardtext in AGB + SOW + Angebotsvorlage konsistent verankern.
+- Claims/Marketingtexte gegen "Lieferanten-Anschein" prüfen.
+- Partner-Setup (White-Label/Reseller) mit klarer Rollenmatrix dokumentieren.

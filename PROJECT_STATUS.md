@@ -88,3 +88,9 @@
 - Vier testbare GTM-Hypothesen definiert (Partnerkanal, Einspar-Story, KMU-Peak-Shaving, Compliance-Differenzierung).
 - Messkriterien + 2-Wochen-Validierungsplan ergänzt, damit Phase 2 datenbasiert starten kann.
 - Ergebnis: GTM-Task in `PROJECT_TODO.md` als erledigt markiert.
+
+## Phase-1 Micro-Update — Regulatory Finalisierung (2026-03-12 13:34:08)
+- REGULATORY_AT.md auf Finalfassung v1.0 ergänzt (Kurzform für Website/Sales + Vertrag/AGB).
+- "Darf/Darf nicht"-Abgrenzung durch standardisierbare Formulierungen für externe Kommunikation abgesichert.
+- Open-Items für juristischen Final-Review als klare Checkliste ergänzt.
+- Ergebnis: Regulatory-Task in PROJECT_TODO.md als erledigt markiert.
