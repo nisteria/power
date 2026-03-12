@@ -94,3 +94,8 @@
 - "Darf/Darf nicht"-Abgrenzung durch standardisierbare Formulierungen für externe Kommunikation abgesichert.
 - Open-Items für juristischen Final-Review als klare Checkliste ergänzt.
 - Ergebnis: Regulatory-Task in PROJECT_TODO.md als erledigt markiert.
+
+## Phase-1 Abschluss-Gate (2026-03-12 13:35)
+- Stop-Regel geprüft: Alle TODOs der aktiven Phase 1 sind erledigt.
+- Ergebnis in PROJECT_STATUS konsolidiert; Projekt ist bereit für Freigabeentscheidung zu Phase 2.
+- Nächster Schritt: Lech um explizite Freigabe für Start von Phase 2 bitten (noch nicht starten).
