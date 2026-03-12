@@ -657,3 +657,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um "GO+24h Review Check (Micro)" ergänzt.
 - Impact: Der erste Tag nach GO ist jetzt mit 3 klaren Review-Checks abgesichert; reduziert Drift zwischen Kickoff und Scope-Sign-off.
 - Naechster Schritt: Beim naechsten Status-Update die 3 Checks gegen reale Nachweise abhaken und in PROJECT_STATUS.md spiegeln.
+
+## [2026-03-12 15:21 Europe/Warsaw] Progress Step
+- Was gemacht: `API_SPEC.md` um den Abschnitt **"Phase-2 API Story Slice — Device Control Pilot Flow v0.1"** ergänzt (Paket 4) — inkl. Command-Endpunkten, idempotentem `commandId`-Flow, Statusmaschine (`accepted|applied|failed|expired`), Pflicht-Fehlerfällen (`422/409/504`) und DoR-Checklist.
+- Impact: Paket 4 ist jetzt als konkreter, reviewbarer Integrations-Contract für Battery + Wallbox dokumentiert statt nur als offene TODO-Zeile; reduziert Scope-Drift zwischen Backend/Frontend/QA.
+- Nächster Schritt: `QA_MVP_ACCEPTANCE.md` um Paket-4 Testfälle (2 Happy Paths + Negativpfade) ergänzen und danach Review-Slot im Status referenzieren.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:22 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Dashboard-Verbesserungen kurz gegengeprueft (ToDo-Grafik, offene/erledigte Listen, Dokument-Links) und Konsistenz mit PROJECT_TODO.md validiert.
+- Impact: Live-Dashboard bleibt fachlich konsistent und zeigt den Fortschritt weiterhin belastbar an.
+- Naechster Schritt: Im naechsten Micro-Step "recent changes"-Hinweise um echte Open->Done Delta-Logik erweitern.
