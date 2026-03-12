@@ -161,3 +161,7 @@
 - Micro-step: Top-2 Aktivierung gegen Startplan gegengeprueft (Owner+Termine vorhanden, In/Out fuer Paket 2 vorhanden).
 - Relevanz: Verhindert Inkonsistenzen zwischen Freigabe-Entscheidung und operativer Sprint-0 Vorbereitung.
 - Next: Namentliche Owner-Zuordnung im Kickoff finalisieren und Termin-ID im Status nachtragen.
+
+## GO-Execution Micro-Update (2026-03-12 14:20 Europe/Warsaw)
+- Tiny Progress: Reihenfolge fuer GO-First-2 validiert (Paket 1 zuerst Owner/Kickoff, danach Paket 2 Scope-Freeze).
+- Relevanz: Reduziert Übergaberisiko zwischen den ersten 48h nach GO und haelt die Aktivierungslogik konsistent.
