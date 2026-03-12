@@ -864,3 +864,25 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update ergänzt (Dashboard-Transparenz als Kontrollpunkt verankert).
 - Impact: Status-, ToDo- und Dokumentensicht bleiben synchron; Dashboard-Ampel bleibt aktiv mit frischem, inhaltlichem Fortschritt.
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im naechsten Zyklus als harte Abnahme-Referenz eintragen.
+
+## [2026-03-12 16:03 Europe/Warsaw] Progress Step
+- Was gemacht: In `API_SPEC.md` (Paket 4) die **Idempotenz- und Konfliktregeln v0.2** ergänzt (24h-Idempotenzfenster für `commandId`, 409 bei `commandId`-Reuse mit abweichendem Payload, max. 1 aktiver Write-Command pro Device, `traceId`-Pflicht bei 409/422/504). Danach `QA_MVP_ACCEPTANCE.md` um **TC-30** (idempotenter Replay) und **TC-31** (Payload-Mismatch -> 409) erweitert und `PROJECT_STATUS.md` synchronisiert.
+- Impact: Device-Control-Flow ist vor dem Scope-Review robuster spezifiziert; Backend/QA können Dedupe- und Konfliktverhalten jetzt eindeutig und reproduzierbar gegenprüfen.
+- Naechster Schritt: Paket-4-Scope-Review am 2026-03-13 13:10 mit realen Namen/Zeitstempel gegenzeichnen und Outcome (GO/GO+Auflage/HOLD) im Sign-off-Block final eintragen.
+- Blocker/Workaround: Kein technischer Blocker. Organisatorisch fehlen bis zum Slot reale Namen; Workaround bleibt rollenbasiertes Pre-Fill bis zur Gegenzeichnung.
+
+## [2026-03-12 16:03 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution Micro-Update ergänzt (Top-2 Konsistenzcheck + nächster harter Nachweis).
+- Impact: Dashboard bleibt aktiv mit frischem Lauf und der operative Fokus bleibt auf messbarer Paket-1-Ausführung.
+- Naechster Schritt: Kickoff-Termin-ID und Kernteilnehmer im Startplan/Status nachziehen.
+
+## [2026-03-12 16:04 Europe/Warsaw] Progress Step
+- Was gemacht: `API_SPEC.md` (Paket 2, Smart-Meter) um einen konkreten JSON-Contract v0.1 ergänzt (Pflichtfelder, Feldgrenzen, `readings.maxItems=500`, Power-Limits) und 5 kanonische Contract-Testvektoren hinzugefügt (`SM-OK-01`, `SM-422-01`, `SM-408-01`, `SM-409-01`, `SM-BATCH-01`). Danach `PROJECT_STATUS.md` synchronisiert.
+- Impact: Scope-Freeze für Paket 2 ist jetzt technisch prüfbar (Schema + reproduzierbare Fälle) statt nur beschreibend; reduziert Abstimmungsrisiko zwischen Backend und QA im Sign-off.
+- Naechster Schritt: `QA_MVP_ACCEPTANCE.md` auf die neuen Smart-Meter-Testvektor-IDs referenzieren und im Anschluss den Paket-2-Sign-off mit realen Namen/Zeitstempel schließen.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen für finalen Sign-off weiterhin reale Namen (Workaround: rollenbasiertes Pre-Fill bis zum Review-Slot beibehalten).
+
+## [2026-03-12 16:05 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Top-2 Execution Cadence (Micro)"** erweitert (12h-Checkpoints fuer Paket 1 und Paket 2 bis zur jeweiligen Abnahme).
+- Impact: Fruehes Drift-/Blocker-Scanning vor den Day-1 Exit-Criteria; macht GO-Fortschritt im Dashboard belastbarer.
+- Naechster Schritt: Nächsten Status-Checkpoint mit Termin-ID (Paket 1) bzw. Sign-off-Status (Paket 2) in PROJECT_STATUS.md spiegeln.

@@ -259,3 +259,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Paket 1 Evidenz-Link: _tbd_ (Kalender-ID/Meeting-Link + Kurzprotokollpfad)
 - Paket 2 Evidenz-Link: _tbd_ (Scope-Review-Protokoll + Sign-off-Block)
 - Ziel: Abnahmebelege der Top-2 sind mit einem Klick nachvollziehbar.
+
+## Top-2 Execution Cadence (Micro)
+- Paket 1: Status-Checkpoint alle 12h bis Kickoff-Abnahme (Termin-ID + Owner-Set) dokumentiert ist.
+- Paket 2: Scope-Checkpoint alle 12h bis API-Story-Sign-off (Backend+QA) dokumentiert ist.
+- Ziel: Frueherkennung von Drift/Blockern vor Day-1 Exit-Criteria.
