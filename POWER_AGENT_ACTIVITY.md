@@ -944,3 +944,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Top-2 RACI-Micro (nach GO)"** ergänzt.
 - Impact: Verantwortlichkeiten für die zwei Startpakete sind jetzt klar (Responsible/Accountable/Consulted/Informed), was Kickoff-Reibung reduziert.
 - Nächster Schritt: Im Paket-1-Kickoff die Owner auf Personenebene eintragen und im PROJECT_STATUS.md referenzieren.
+
+## [2026-03-12 16:16:58 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: In `PROJECT_TODO.md` den Phase-2-Task **Paket 4 Device-Steuerungs-Flow (Battery + Wallbox)** auf erledigt gesetzt und `PROJECT_STATUS.md` mit Begründung synchronisiert (API-Flow + Error-Contract + Idempotenz + QA-Testset bereits dokumentiert).
+- Impact: Das operative Backlog zeigt jetzt den echten Fortschritt (ein Medium-Paket weniger offen), wodurch Priorisierung auf die verbleibenden HIGH-Sign-offs geschärft wird.
+- Nächster Schritt: Als nächstes einen echten Sign-off-Schritt für Paket 2 oder Paket 3 mit realen Namen/Zeitstempel abschließen.
+- Blocker/Workaround: Kein technischer Blocker; organisatorischer Engpass bleibt die externe namentliche Gegenzeichnung.
+
+## [2026-03-12 16:17 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um ein GO-Execution-Micro-Update ergänzt (Monitoring-Grundlage für Top-2-Nachweise präzisiert).
+- Impact: Dashboard bleibt aktiv und die operative Nachweisführung (Paket 1/2) wird klarer und schneller prüfbar.
+- Nächster Schritt: Beim nächsten Checkpoint Kickoff-Termin-ID + Kernteam eintragen und danach Paket-2 Scope-Sign-off mit Zeitstempel spiegeln.

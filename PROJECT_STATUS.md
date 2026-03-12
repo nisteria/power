@@ -547,3 +547,23 @@
 - Tiny progress: Dokumentations-Nachlesepfade fuer GO-Top-2 konkretisiert (PHASE2_STARTPLAN_TEMPLATE.md, API_SPEC.md, QA_MVP_ACCEPTANCE.md) und als Referenzpunkt fuer den naechsten Check festgehalten.
 - Relevanz: Schnellere Orientierung fuer Review/Kickoff ohne Suchaufwand; reduziert Reibung im Day-1-Start.
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) in den Status uebernehmen.
+
+## GO-Execution Micro-Update (2026-03-12 16:12 Europe/Warsaw)
+- Tiny progress: QA_MVP_ACCEPTANCE.md im Paket-3-Addendum bereinigt: kollidierende Testfall-IDs (TC-20..TC-23) auf eindeutige IDs TC-34..TC-37 umgestellt.
+- Relevanz: Verhindert QA-Mehrdeutigkeit mit Paket 4 (Device-Control nutzt bereits TC-20..TC-23) und macht Sign-off/Traceability fuer Paket 3 robuster.
+- Nächster Schritt: Paket-3-Sign-off in API_SPEC.md mit realen Namen + Zeitstempel abschließen und Ergebnis als GO/GO+Auflage/HOLD spiegeln.
+
+## GO-Execution Micro-Update (2026-03-12 16:15 Europe/Warsaw)
+- Tiny progress: `QA_MVP_ACCEPTANCE.md` im Paket-3-Addendum um ein explizites **Traceability-Mapping API -> QA** erweitert (`TC-TAR-OK/422/409/400` -> `TC-34..TC-37`) und den Review-Ready-Check um den Mapping-Nachweis ergänzt.
+- Relevanz: Paket 3 ist jetzt sauberer gegen `API_SPEC.md` rueckverfolgbar; reduziert Sign-off-Risiko durch eindeutige 1:1-Referenzen zwischen Spezifikation und QA-Faellen.
+- Nächster Schritt: Paket-3-Sign-off-Block in `API_SPEC.md` mit realen Namen + Zeitstempel ausfuellen und Outcome (GO/GO+Auflage/HOLD) direkt im Status spiegeln.
+
+## GO-Execution Micro-Update (2026-03-12 16:16 Europe/Warsaw)
+- Tiny progress: `PROJECT_TODO.md` synchronisiert und **Paket 4 (Device-Steuerungs-Flow, Battery + Wallbox)** auf erledigt gesetzt, weil API-Flow, Fehler-Contract, Idempotenzregeln und QA-Testabdeckung (TC-20..TC-24, TC-30..TC-31) bereits dokumentiert sind.
+- Relevanz: Phase-2-Backlog spiegelt jetzt den real erreichten Umsetzungsstand; reduziert Reporting-Drift zwischen Spezifikation und Aufgabensteuerung.
+- Nächster Schritt: Paket-2- oder Paket-3-Sign-off mit realen Namen/Zeitstempel schließen, damit der nächste HIGH-Task formal auf erledigt gehen kann.
+
+## GO-Execution Micro-Update (2026-03-12 16:17 Europe/Warsaw)
+- Tiny progress: Dashboard-Readiness fuer Top-2 weiter operationalisiert: Fortschrittssicht (offen/erledigt/% + Dokumentreferenzen) als Monitoring-Grundlage fuer Paket-1/Paket-2-Nachweise bestaetigt.
+- Relevanz: Erleichtert die taegliche Fuehrung nach GO, weil Status/ToDo/Artefakt-Links in einer konsistenten Sicht zusammenlaufen.
+- Naechster Schritt: Beim naechsten Paket-1-Checkpoint Kickoff-Termin-ID + Kernteam direkt als Nachweis in PROJECT_STATUS referenzieren.
