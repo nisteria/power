@@ -238,3 +238,9 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Paket 1 darf nur als "ready" gelten, wenn Kickoff-Termin-ID + Kernteilnehmer (Backend/Frontend/QA/Product) dokumentiert sind.
 - Paket 2 darf nur als "ready" gelten, wenn API-In/Out-Scope gegengezeichnet und ein Beispiel-Payload referenziert ist.
 - Ziel: Startpakete nicht nur terminieren, sondern auch mit minimalen Abhaengigkeiten belastbar machen.
+
+## Top-2 Dependency Check (Micro)
+- Paket 1 haengt an: fixem Kickoff-Termin + benannten Stream-Ownern.
+- Paket 2 haengt an: abgestimmtem In/Out-Scope + Datenmodell-Review mit Backend/QA.
+- Regel: Bei offener kritischer Abhaengigkeit wird nur Entblockung priorisiert, kein Scope-Expand.
+
