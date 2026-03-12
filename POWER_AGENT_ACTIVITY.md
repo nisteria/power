@@ -768,3 +768,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Kickoff Evidence Link Placeholder (Micro)"** ergänzt (Paket-1/2 Evidenz-Links als feste Felder).
 - Impact: Top-2-Abnahmen sind künftig direkt nachvollziehbar (Meeting-/Scope-Signoff schnell auffindbar), wodurch Dashboard-Review und Auditfähigkeit steigen.
 - Nächster Schritt: Beim nächsten Status-Update die realen Links/IDs in beide Felder eintragen und in PROJECT_STATUS.md referenzieren.
+
+## 2026-03-12 15:44:26
+- Was gemacht: In API_SPEC.md einen neuen Scope-Review-Sign-off fuer **Paket 3 (Tarif-Engine Day-Ahead)** angelegt (Review-Ziel, Teilnehmer, Timebox, vorbelegter Slot, Ergebnis-/Blocker-Felder) und dazu einen klaren DoR-Check mit den vier Tarif-Testvektoren hinterlegt.
+- Impact: Paket 3 ist von "inhaltlich dokumentiert" auf "formal review-/abnahmebereit" gehoben; Backend+QA haben jetzt einen eindeutigen Gegenzeichnungsrahmen.
+- Naechster Schritt: Review-Slot durchfuehren, reale Namen+Zeitstempel eintragen und Paket-3-Abnahme im PROJECT_STATUS als Evidence verlinken.
+- Blocker/Workaround: Kein technischer Blocker. Organisatorischer Restpunkt bleibt die namentliche Gegenzeichnung; Workaround = Rollen-Pre-Fill bleibt bis zum Slot aktiv.
+
+## [2026-03-12 15:45 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update ergaenzt und den Paket-1-Nachweis auf konkrete Pflichtbelege (Termin-ID, Kernteam, Agenda-Link) geschaerft.
+- Impact: Erhoeht die Ausfuehrungssicherheit fuer den naechsten Kickoff und reduziert Interpretationsspielraum bei der Abnahme.
+- Naechster Schritt: Belegblock beim Kickoff ausfuellen und danach Paket-1-Status auf acceptance-ready setzen.

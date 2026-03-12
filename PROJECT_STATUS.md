@@ -419,3 +419,19 @@
 - Tiny progress: Dashboard-Workstream und Delivery-Workstream synchronisiert; Referenz auf PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md als Paket-1-Nachweisquelle explizit gesetzt.
 - Relevanz: Verknuepft operative Kickoff-Abnahme mit bestehender Projektdoku und reduziert Such-/Uebergabereibung.
 - Naechster Schritt: Paket-1 Kickoff-Termin-ID + namentliche Stream-Owner im Protokoll eintragen und im Status spiegeln.
+
+## Phase-2 Micro-Update — Tarif-Engine Test-Vector Sync (2026-03-12 15:42)
+- API_SPEC.md im Paket-3-Abschnitt um 4 reproduzierbare Referenzfälle erweitert: TC-TAR-OK-01, TC-TAR-422-01, TC-TAR-409-01, TC-TAR-400-01 (inkl. Request-/Erwartungsdefinition).
+- QA_MVP_ACCEPTANCE.md synchronisiert: explizites Mapping auf dieselben Test-IDs ergänzt.
+- Wirkung: Scope-Freeze v0.1 ist für Backend/QA reviewbarer, weil API- und QA-Sicht auf identische Fall-IDs zeigen.
+- Offener Restpunkt: Namentliche Sign-offs (Backend/QA) weiterhin ausstehend.
+
+## GO-Execution Micro-Update (2026-03-12 15:44 Europe/Warsaw)
+- Tiny progress: API_SPEC.md um einen formalen **Scope-Review Sign-off Block fuer Paket 3 (Tarif-Engine Day-Ahead)** erweitert (Review-Ziel, Teilnehmer, Timebox, vorbelegter Slot, Ergebnis-/Blocker-Felder) plus kompakten DoR-Check.
+- Relevanz: Paket 3 ist jetzt nicht nur inhaltlich beschrieben, sondern auch formal gegenzeichnungsfaehig; reduziert Abnahme-Drift zwischen Backend und QA vor Umsetzung.
+- Naechster Schritt: Sign-off im 20-min Slot mit realen Namen/Zeitstempel fuellen und Ergebnis in PROJECT_STATUS.md als Paket-3-Abnahme spiegeln.
+
+## GO-Execution Micro-Update (2026-03-12 15:45 Europe/Warsaw)
+- Tiny progress: Paket-1 Kickoff-Nachweis weiter operationalisiert: Pflichtbeleg im Status auf **Termin-ID + Kernteam + 3-Punkte-Agenda-Link** konkretisiert.
+- Relevanz: Macht den Uebergang von geplanter zu nachweisbarer Ausfuehrung fuer den 2026-03-13 Kickoff robuster.
+- Naechster Schritt: Bei Kickoff-Durchfuehrung den Belegblock direkt befuellen und Paket-1 als "acceptance-ready" markieren.
