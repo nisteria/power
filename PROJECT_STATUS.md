@@ -381,3 +381,19 @@
 - Tiny progress: Dashboard-Transparenz für Phase-2-Execution weiter erhöht (ToDo-Fortschritt offen/erledigt + Dokumentenreferenzen als Nachlese-Pfade im Live-Monitor).
 - Relevanz: Operative Entscheidungen sind schneller prüfbar, weil Status, Aufgabenstand und Artefakt-Links in einer Ansicht konsolidiert sind.
 - Nächster Schritt: Beim nächsten Kickoff-Checkpoint die Paket-1-Nachweise (Termin-ID + Kernteam) direkt im Status verlinken.
+
+## GO-Execution Micro-Update (2026-03-12 15:33 Europe/Warsaw)
+- Tiny progress: API_SPEC.md für Paket 4 um einen verbindlichen **Scope-Review Sign-off Block** erweitert (Frontend/Backend/QA, Ergebnis + Auflagen + Zeitstempel).
+- Zusätzlich: **DoR-Check für Paket 4** ergänzt (Gegenzeichnung UI→API-Mapping, Battery/Wallbox-Intent-Referenzen, reproduzierbare 422/409/504-Errorpfade).
+- Relevanz: Paket 4 ist nicht mehr nur fachlich beschrieben, sondern jetzt formal review- und abnahmefähig; reduziert Risiko von uneinheitlicher Freigabe zwischen Frontend/Backend/QA.
+- Nächster Schritt: Sign-off-Block mit realen Namen + Datum füllen und im Status als Paket-4-Gegenzeichnung referenzieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:34 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` im Paket-1-Slice (Auth Skeleton v0.1) um einen formalen **Scope-Review Sign-off Block** ergänzt (Backend+QA, Ergebnis/Auflagen/Zeitstempel) und direkt mit QA-Referenzen `TC-17..TC-19` verknüpft.
+- Relevanz: Paket 1 ist damit von „inhaltlich beschrieben“ auf „formal gegenzeichnungsfähig“ gehoben; beschleunigt evidenzbasierte Abnahme ohne Interpretationsspielraum zwischen Backend und QA.
+- Nächster Schritt: Sign-off im Review mit realen Namen + Uhrzeit ausfüllen und danach Paket-1-Status auf „evidence linked“ setzen.
+
+## GO-Execution Micro-Update (2026-03-12 15:35 Europe/Warsaw)
+- Tiny progress: Dashboard-Professionalisierung als operativer Sichtbarkeits-Boost im Status verankert (ToDo-Grafik, offene/erledigte Trennung, Dokumentenlinks).
+- Relevanz: Fortschritt ist fuer Stakeholder schneller bewertbar; reduziert Reporting-Reibung waehrend laufender Top-2-Umsetzung.
+- Naechster Schritt: In naechstem Zyklus Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) als ersten "execution proof" nachziehen.

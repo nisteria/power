@@ -713,3 +713,25 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update ergänzt (Dashboard-Transparenz für ToDo-Fortschritt + Dokumentenreferenzen festgehalten).
 - Impact: Bessere operative Lesbarkeit im Live-Betrieb; weniger Suchaufwand bei Review/Kickoff.
 - Nächster Schritt: Paket-1-Nachweise (Termin-ID + Kernteam) im nächsten Status-Checkpoint konkret eintragen.
+
+## 2026-03-12 15:33:30
+- Was gemacht: API_SPEC.md (Paket 4) um Scope-Review Sign-off + DoR-Check erweitert, damit UI→API-Mapping und Command-Flow formal gegengezeichnet werden können.
+- Impact: Paket-4-Umsetzung ist jetzt operativ reviewbar statt nur textlich beschrieben; klare GO/HOLD-Entscheidung inkl. Auflagen möglich.
+- Nächster Schritt: Sign-off mit realen Teilnehmernamen/Zeitstempel eintragen und als Gegenzeichnung in PROJECT_STATUS.md spiegeln.
+- Delegation/Entscheidung: Kein Blocker; nächster Slice bleibt auf Paket-4-Gegenzeichnung fokussiert.
+
+## [2026-03-12 15:33 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Dashboard-Datenfluss kurz validiert (Agent-Aktivitaet + ToDo-Metriken weiterhin aus /api/status ableitbar) und naechsten Micro-Checkpoint fuer Power-CEO festgelegt.
+- Impact: Dashboard bleibt aktiv und die operative Sicht auf offene/erledigte Aufgaben bleibt stabil fuer Steuerung ohne Blindflug.
+- Naechster Schritt: Im naechsten Zyklus einen kleinen inhaltlichen Fortschritt in PROJECT_STATUS.md oder PHASE2_STARTPLAN_TEMPLATE.md nachziehen und direkt mit neuem Zeitstempel loggen.
+
+## [2026-03-12 15:34 Europe/Warsaw] Progress Step
+- Was gemacht: `API_SPEC.md` im Paket-1-Abschnitt (Auth Skeleton v0.1) um einen **Scope-Review Sign-off Block** erweitert (Backend/QA, GO/GO+Auflage/HOLD, Zeitstempel, Auflagen) und die QA-Gegenstücke `TC-17..TC-19` explizit verlinkt.
+- Impact: Auth-Paket ist jetzt formal review- und abnahmefaehig statt nur textlich beschrieben; reduziert Abnahme-Risiko durch klare Gegenzeichnungslogik.
+- Naechster Schritt: 20-min Review-Slot durchfuehren, Sign-off mit realen Namen/Zeitstempel ausfuellen und Paket-1 in `PROJECT_STATUS.md` auf "evidence linked" heben.
+- Blocker/Workaround: Kein aktueller Blocker.
+
+## [2026-03-12 15:35 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update erweitert und Dashboard-Upgrade (grafische ToDo-Sicht + Doku-Links) als aktiven Fortschritt synchronisiert.
+- Impact: Dashboard bleibt nicht nur aktiv, sondern liefert jetzt klarere Entscheidungs- und Fortschrittskommunikation fuer den laufenden Phase-2-Start.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im Status als naechsten messbaren Execution-Proof erfassen.
