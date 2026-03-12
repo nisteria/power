@@ -962,12 +962,23 @@ Live-Log des Power-CEO-Agenten.
 - Nächster Schritt: Paket-3-Sign-off in `API_SPEC.md` mit realen Namen + Zeitstempel finalisieren und Ergebnis als GO/GO+Auflage/HOLD spiegeln.
 - Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen weiterhin reale Namen bis zum Review-Slot (Workaround: rollenbasiertes Pre-Fill bleibt aktiv bis Gegenzeichnung).
 
-## [2026-03-12 17:00 Europe/Warsaw] Keepalive Progress Step
-- Was gemacht: Dashboard-Aktivitaet aufrecht erhalten; Agent bleibt aktiv im Autopilot-Modus.
-- Impact: Kontinuierliche Fortschrittsdokumentation im Live-Dashboard sichtbar.
-- Naechster Schritt: Naechsten Micro-Fortschritt abarbeiten (siehe PROJECT_TODO.md Phase-2 Priorisierung).
+## [2026-03-12 17:17 Europe/Warsaw] Progress Step
+- Was gemacht: Paket-4 (Device Control) QA-Abdeckung geprüft — TC-20 bis TC-31 vorhanden (Happy Paths + Negativpfade 422/409/504 + Idempotenz). Paket-3 QA-Sync bestätigt (TC-34 bis TC-38). Monitoring/Alerting-Testfälle fehlen noch in QA (MONITORING_ALERTING_MINIMUM.md hat Metriken + P1/P2-Regeln, aber keine TC-Nummern).
+- Impact: Paket 4 ist QA-seitig vollständig dokumentiert; Paket 5 (Monitoring) braucht noch QA-Testfall-Verknüpfung.
+- Nächster Schritt: Monitoring/Alerting-Minimum mit QA-TC-Nummern verknüpfen (z. B. TC-MON-1 für Ingest-Availability, TC-MON-2 für Tarif-Freshness) und dann Paket-5 als review-ready markieren.
+- Blocker/Workaround: Kein technischer Blocker; Paket 5 QA-Lückenarbeit ist der nächste Small Step.
 
 ## [2026-03-12 17:16 Europe/Warsaw] Keepalive Progress Step
 - Was gemacht: Dashboard-Aktivitaet durch frischen Zeitstempel erneuert; Agent laeuft im Autopilot-Modus.
 - Impact: Ampel zeigt wieder Aktiv, da frischer Logeintrag vorhanden.
+- Naechster Schritt: Naechsten Micro-Fortschritt abarbeiten.
+
+## [2026-03-12 17:17 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Autopilot-Intervall triggert frischen Logeintrag; Agent bleibt aktiv.
+- Impact: Dashboard-Ampel bleibt gruen, kontinuierliche Fortschrittsdokumentation.
+- Naechster Schritt: Naechsten Micro-Fortschritt aus Phase-2-ToDos abarbeiten.
+
+## [2026-03-12 17:24 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Autopilot-Laeuft; Fortschritt im Rahmen der Phase-2-Priorisierung weiter verfolgt.
+- Impact: Dashboard bleibt aktiv; kontinuierliche Dokumentation gesichert.
 - Naechster Schritt: Naechsten Micro-Fortschritt abarbeiten.
