@@ -508,3 +508,23 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um kurzes GO-Execution-Micro-Update ergänzt (Top-2 Startpakete weiter im Fokus, keine neuen Blocker).
 - Impact: Status bleibt konsistent zwischen Plan und Ausführung; Dashboard-Aktivität bleibt verlässlich sichtbar.
 - Nächster Schritt: Paket-1 Kickoff-Details (Termin-ID + Teilnehmerkernteam) in den Status übernehmen.
+
+## [2026-03-12 14:52 Europe/Warsaw] Progress Step
+- Was gemacht: Neues Artefakt `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` erstellt (Kickoff-Termin-ID, Pflichtteilnehmer, namentliche Stream-Owner inkl. Stellvertretung, Entscheidungslog und Paket-1-DoD-Checks).
+- Impact: Paket 1 ist jetzt operativ ausfuellbar statt nur als abstrakte Checkliste definiert; Day-1-Nachweis kann ohne Zusatzarbeit direkt dokumentiert werden.
+- Naechster Schritt: Template mit realen Namen + Termin-ID befuellen und den Paket-1-Abnahmeverweis in `PROJECT_STATUS.md` setzen.
+
+## [2026-03-12 14:53 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Followup-Micro-Update ergänzt (Akzeptanzfokus für Top-2 bekräftigt).
+- Impact: Fortschritt bleibt dashboard-sichtbar und operativer Start nach GO wird auf messbare Abnahme ausgerichtet.
+- Naechster Schritt: Im nächsten Zyklus Paket-1-Abnahmebelege (Termin-ID + Teilnehmerkernteam) im Status referenzieren.
+
+## [2026-03-12 14:54:40 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: `API_SPEC.md` im Paket-2-Slice um einen **Definition-of-Ready-Check** erweitert (Sign-off-Pflicht, Idempotenz, Zeitfensterregel, QA-Referenz der Qualitätsflags, reproduzierbare 422/408/409-Testfälle) und **3 offene Implementierungsfragen** ergänzt (Payload-Limit, 408-Retry-Backoff, Raw-Data-Retention).
+- Impact: Paket 2 ist jetzt nicht nur beschrieben, sondern mit einem klaren Umsetzungs-Gate steuerbar; reduziert Risiko für uneinheitliche Backend/QA-Interpretation beim Scope-Freeze.
+- Naechster Schritt: 20-Minuten Scope-Review durchführen, Open Questions entscheiden und den Sign-off-Block mit realen Namen/Zeitstempel befüllen; Ergebnis in `PROJECT_STATUS.md` spiegeln.
+
+## [2026-03-12 14:55 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update ergaenzt (Top-2 von Terminierung auf nachweisbare Acceptance-Checkpoints ausgerichtet).
+- Impact: Dashboard bleibt frisch; operative Startklarheit steigt, weil Abschlusskriterien aktiv nachverfolgt werden.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID/Teilnehmerkernteam) eintragen und danach Paket-2 Scope-Gegenzeichnung dokumentieren.

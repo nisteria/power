@@ -225,3 +225,22 @@
 ## GO-Execution Micro-Update (2026-03-12 14:52 Europe/Warsaw)
 - Top-2 Startpakete bleiben verbindlich priorisiert, aktuell ohne gemeldete neue Blocker.
 - Fokus bleibt auf Paket-1 Kickoff-Operationalisierung (Termin-ID + Kernteam-Dokumentation).
+
+## GO-Execution Micro-Update (2026-03-12 14:52 Europe/Warsaw)
+- Neues Arbeitsartefakt angelegt: `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` als ausfuellbare Vorlage fuer Paket 1 (Kickoff-Termin-ID, namentliche Stream-Owner inkl. Stellvertretung, 3-Punkte-Agenda, DoD-Checkboxen).
+- Relevanz: Schiebt Paket 1 von "Checklisten-Absicht" auf "ausfuehrbares Kickoff-Protokoll" und reduziert Reibung beim Day-1 Nachweis in `PROJECT_STATUS.md`.
+- Naechster Schritt: Vorlage mit realen Namen + Termin-ID fuellen und als Paket-1-Abnahme verlinken.
+
+## GO-Followup Micro-Update (2026-03-12 14:53 Europe/Warsaw)
+- Tiny step: Acceptance-Orientierung für GO-Top-2 nachgezogen (Fokus: evidenzbasierte Abnahme statt nur Termintracking).
+- Relevanz: Hält Übergang von Plan zu messbarer Ausführung stabil und reduziert Interpretationsspielraum im Sprint-0-Start.
+
+## GO-Execution Micro-Update (2026-03-12 14:54 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` für Paket 2 um **DoR-Check (Definition of Ready)** ergänzt (Sign-off, Idempotenzregel, Zeitfensterregel, QA-Referenz der Qualitätsflags, Pflicht-Testfälle für 422/408/409).
+- Zusätzlich ergänzt: **3 Open Questions vor Implementierung** (Payload-Grenze, Retry-Backoff bei 408, Raw-Data-Retention).
+- Relevanz: Scope-Freeze ist jetzt nicht nur dokumentiert, sondern mit einem klaren Start-Gate für die Umsetzung operationalisiert.
+- Nächster Schritt: Open Questions im 20-min Scope-Review entscheiden und im Sign-off-Block mit Ergebnis/Ownern festhalten.
+
+## GO-Micro-Update (2026-03-12 14:55 Europe/Warsaw)
+- Tiny Step: Acceptance-Fokus fuer Top-2 Startpakete konkretisiert (Paket-1 Kickoff-Nachweis + Paket-2 Scope-Gegenzeichnung als naechster harter Checkpoint).
+- Relevanz: Haltet den Uebergang von "terminiert" zu "nachweisbar abgeschlossen" messbar und reduziert Drift in den ersten 24h.
