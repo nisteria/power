@@ -220,3 +220,7 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Sprint-Owner je Stream (Backend/Frontend/QA/Product) namentlich gesetzt.
 - Kickoff-Termin-ID im Dokument verlinkt.
 - Day-1 KPI-Baseline-Verantwortung je Stream zugeordnet.
+
+## Kickoff Invite-Set (Micro, nach GO)
+- Pflichtteilnehmer: ceo-agent, backend-agent, frontend-agent, qa-agent.
+- Ziel: Termin steht nur als "fix" wenn alle 4 Rollen eingeladen sind (Kalender-ID im Status loggen).

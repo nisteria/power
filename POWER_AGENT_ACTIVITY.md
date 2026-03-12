@@ -459,3 +459,8 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Followup-Micro-Update ergänzt (Fokus auf Paket-1 Kickoff-Execution bis 2026-03-13 12:00).
 - Impact: Hält den Übergang von Plan zu Ausführung eng geführt und reduziert Startverzögerung.
 - Nächster Schritt: Paket-1 morgen mit Termin-ID/Kickoff-Teilnehmern als "erledigt" markieren und danach Paket-2 Scope-Review durchführen.
+
+## [2026-03-12 14:42 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um "Kickoff Invite-Set (Micro, nach GO)" ergänzt (Pflichtrollen + Fix-Kriterium).
+- Impact: Kickoff-Termin ist jetzt erst dann wirklich startklar, wenn alle Kernrollen eingeladen sind; reduziert Startverzug durch fehlende Teilnehmer.
+- Naechster Schritt: Kalender-ID des Kickoff-Termins im PROJECT_STATUS hinterlegen, sobald Einladungen raus sind.
