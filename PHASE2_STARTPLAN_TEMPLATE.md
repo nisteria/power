@@ -179,3 +179,9 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Owner je Stream (Backend/Frontend/QA/Product) auf Personenebene benannt.
 - Offene Risiken (Top-3) mit Owner + naechstem Termin versehen.
 
+
+## Top-2 Ready-Check (vor Kickoff)
+- [ ] Paket 1: Termin-ID fuer Kickoff dokumentiert.
+- [ ] Paket 1: Stream-Owner je Backend/Frontend/QA/Product namentlich gesetzt.
+- [ ] Paket 2: API-Story Akzeptanzkriterien (3 Punkte) im Scope-Block ergaenzt.
+- [ ] Paket 2: Review-Slot mit Backend + QA terminiert.
