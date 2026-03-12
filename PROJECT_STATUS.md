@@ -263,3 +263,14 @@
 ## GO-Execution Micro-Check (2026-03-12 14:59 Europe/Warsaw)
 - Top-2-Activation weiterhin konsistent (Owner+Zieltermine unveraendert, kein Drift erkannt).
 - Fokus bis Kickoff: Paket-1 Termin-ID + Teilnehmerkernteam verbindlich nachziehen.
+
+## GO-Execution Micro-Update (2026-03-12 15:00 Europe/Warsaw)
+- Tiny progress: `QA_MVP_ACCEPTANCE.md` wurde fuer Paket 3 (Tarif-Engine Scope-Freeze) synchronisiert.
+- Ergaenzt wurden: Acceptance-Regel `Safety > Contract > Cost` sowie reproduzierbare QA-Testfaelle fuer `422 invalid_slot_coverage`, `409 version_conflict` und `400 invalid_timezone` (plus Prioritaetsverhalten als eigener Test).
+- Relevanz: API-Spezifikation und QA-Abnahme sind jetzt fuer den Tarif-Engine-Slice v0.1 konsistent; reduziert Risiko von Backend/QA-Drift vor Implementierung.
+- Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) dokumentieren und danach Paket-2 Scope-Sign-off mit realen Namen/Zeitstempel abschliessen.
+
+## GO-Execution Micro-Update (2026-03-12 15:04 Europe/Warsaw)
+- Tiny progress: PROJECT_STATUS.md um kurzen Dashboard-Readiness-Check ergänzt (Ampel-Parser + ToDo-Grafik now live, Fokus zurück auf Paket-1 Kickoff-Nachweis).
+- Relevanz: Verbindet Dashboard-Upgrade direkt mit operativer GO-Ausführung, statt bei reinem UI-Status stehenzubleiben.
+- Nächster Schritt: Kickoff-Termin-ID + Kernteam in PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md befüllen und im Status referenzieren.

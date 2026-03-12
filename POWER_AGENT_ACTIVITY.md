@@ -549,3 +549,13 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Execution Micro-Check ergaenzt (Top-2 Konsistenz geprueft, Drift-Check dokumentiert).
 - Impact: Stabilisiert den Uebergang von Planung zu Ausfuehrung und haelt die Entscheidungsgrundlage frisch.
 - Naechster Schritt: Paket-1 Kickoff-Termin-ID + Kernteam im Startplan fixieren und danach Status auf "ready for execution" setzen.
+
+## [2026-03-12 15:00 Europe/Warsaw] Progress Step
+- Was gemacht: `QA_MVP_ACCEPTANCE.md` um eine **Phase-2 Ergänzung für den Tarif-Engine Slice v0.1** erweitert: Acceptance-Regel `Safety > Contract > Cost` ergänzt sowie vier reproduzierbare Zusatztestfälle (TC-13 bis TC-16) für `422 invalid_slot_coverage`, `409 version_conflict`, `400 invalid_timezone` und Prioritätsverhalten dokumentiert.
+- Impact: Paket 3 (Tarif-Engine Scope-Freeze) ist jetzt QA-seitig konkret testbar und mit API-Spezifikation synchron; reduziert Interpretationsspielraum vor Implementierungsstart.
+- Naechster Schritt: `PROJECT_STATUS.md` um ein Micro-Update zur QA-Synchronisierung ergänzen und danach offenen Fokus auf Paket-1 Kickoff-Nachweis halten.
+
+## [2026-03-12 15:04 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution Micro-Update ergänzt (Dashboard-Readiness mit Top-2-Ausführung synchronisiert).
+- Impact: Dashboard bleibt aktiv und der Fokus bleibt auf echter Umsetzung (Paket-1 Kickoff-Nachweis) statt nur Monitoring.
+- Nächster Schritt: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md mit Termin-ID + Kernteam ausfüllen und im Status verlinken.
