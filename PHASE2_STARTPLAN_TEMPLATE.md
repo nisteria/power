@@ -203,3 +203,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Kickoff-Protokoll mit Termin-ID in PROJECT_STATUS.md verlinken.
 - Owner-Handshake: Backend/Frontend/QA bestaetigen in 1 Sammelkommentar.
 - Ziel: Nach GO ist innerhalb von 24h klar, dass die Top-2 Pakete operativ uebernommen wurden.
+
+## Paket-1 Completion Checklist (Micro)
+- Owner-Mapping final namentlich bestätigt (Backend/Frontend/QA/Product).
+- Kickoff-Termin-ID in PROJECT_STATUS verlinkt.
+- Sprint-0 Startsignal als GO-Decision-Log-Eintrag dokumentiert.
