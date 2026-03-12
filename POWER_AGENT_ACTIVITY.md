@@ -702,3 +702,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um Ops-Micro-Update ergänzt (Dashboard-Fortschrittsmetriken als Kontrollpunkt für GO-Followup verankert).
 - Impact: Top-2 Drift wird früher sichtbar; Startklarheit bis zum Paket-1-Kickoff bleibt aktiv steuerbar.
 - Nächster Schritt: Paket-1-Nachweise (Termin-ID + Kernteam) im nächsten Status-Update direkt gegenprüfen und abhaken.
+
+## [2026-03-12 15:30 Europe/Warsaw] Progress Step
+- Was gemacht: QA_MVP_ACCEPTANCE.md im Paket-4-Abschnitt gezielt erweitert: zwei neue Battery-Intent-Happy-Path-Tests ergänzt (TC-22 charge_now, TC-23 discharge_now) und danach die Folge-Nummerierung konsistent bereinigt (TC-25 bis TC-29).
+- Impact: Das zuvor in API_SPEC.md dokumentierte UI->API-Mapping ist jetzt QA-seitig für beide Battery-Intents reproduzierbar abgesichert; geringeres Integrationsrisiko zwischen Frontend/Backend/QA.
+- Nächster Schritt: In API_SPEC.md einen kompakten Paket-4-Review-Sign-off-Block (Owner, Slot, Outcome) nachziehen, damit die Gegenzeichnung direkt durchgeführt werden kann.
+- Blocker/Workaround: Kein Blocker in diesem Slice.
+
+## [2026-03-12 15:31 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update ergänzt (Dashboard-Transparenz für ToDo-Fortschritt + Dokumentenreferenzen festgehalten).
+- Impact: Bessere operative Lesbarkeit im Live-Betrieb; weniger Suchaufwand bei Review/Kickoff.
+- Nächster Schritt: Paket-1-Nachweise (Termin-ID + Kernteam) im nächsten Status-Checkpoint konkret eintragen.

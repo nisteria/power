@@ -370,3 +370,14 @@
 - Dashboard-Readiness geschärft: Fortschrittsmetriken (offen/erledigt/quote) sind jetzt als täglicher Kontrollpunkt für GO-Followup gesetzt.
 - Relevanz: Früh sichtbare Drift in Top-2-Paketen kann vor dem Kickoff abgefangen werden.
 - Nächster Schritt: Beim nächsten Checkpoint die Paket-1 Kickoff-Nachweise (Termin-ID + Kernteam) explizit gegen diese Metrik spiegeln.
+
+## GO-Execution Micro-Update (2026-03-12 15:30 Europe/Warsaw)
+- Tiny progress: `QA_MVP_ACCEPTANCE.md` im Paket-4-Slice um zwei explizite Battery-Intent-Happy-Path-Tests ergänzt: `TC-22 charge_now` und `TC-23 discharge_now`.
+- Zusätzlich: Nummerierung der Folgefälle bereinigt (`TC-25` bis `TC-29`) und Paket-2-Review-Ready-Referenz auf `TC-27..TC-29` synchronisiert.
+- Relevanz: UI→API-Mapping aus `API_SPEC.md` ist jetzt QA-seitig für beide Battery-Intents direkt nachweisbar; reduziert Integrationsrisiko zwischen Frontend/Backend/QA vor dem Paket-4-Review.
+- Nächster Schritt: `API_SPEC.md` um einen kurzen Review-Sign-off-Block für Paket 4 ergänzen (Owner, Zeitstempel, Outcome), damit die Gegenzeichnung direkt anschließbar ist.
+
+## GO-Execution Micro-Update (2026-03-12 15:31 Europe/Warsaw)
+- Tiny progress: Dashboard-Transparenz für Phase-2-Execution weiter erhöht (ToDo-Fortschritt offen/erledigt + Dokumentenreferenzen als Nachlese-Pfade im Live-Monitor).
+- Relevanz: Operative Entscheidungen sind schneller prüfbar, weil Status, Aufgabenstand und Artefakt-Links in einer Ansicht konsolidiert sind.
+- Nächster Schritt: Beim nächsten Kickoff-Checkpoint die Paket-1-Nachweise (Termin-ID + Kernteam) direkt im Status verlinken.
