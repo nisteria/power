@@ -76,3 +76,14 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Eskalations-Notiz vorbereiten: "Top-3 Gründe für HOLD" + "2 Entscheidungsoptionen mit Risiko".
 - 20-Minuten-Entscheidungstermin mit Lech anfordern (GO mit Auflagen vs. bewusstes Parken bis Datum X).
 - Ergebnis verpflichtend dokumentieren (Entscheidung, Owner, nächster Termin).
+
+## Pre-GO Evidence Pack (90-Sekunden-Check)
+- Owner-Mapping vollständig mit Namen + Stellvertretung je Stream.
+- Kickoff-Slot (Datum/Uhrzeit) inkl. eingeladenem Kernteam dokumentiert.
+- Legal-Review-Termin inkl. Verantwortlichem + erwarteter Output festgehalten.
+- Go/No-Go-Entscheidung als 3-Zeilen-Protokoll in `PROJECT_STATUS.md` hinterlegt.
+
+## Decision-SLA nach Freigabeanfrage (Governance)
+- SLA: Auf eine GO/HOLD-Freigabeanfrage erfolgt innerhalb von 24h eine explizite Entscheidung oder ein datierter Re-Decision-Termin.
+- Wenn keine Entscheidung innerhalb von 24h: automatische HOLD-Fortführung mit kurzem Blocker-Log (A/B/C-Signal fehlt).
+- Ziel: Entscheidungsdrift vermeiden, ohne Phase-2-Umsetzung vor GO zu starten.

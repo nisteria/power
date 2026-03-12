@@ -104,3 +104,27 @@
 - Entscheidungsfrage an Lech vorbereitet: „Phase 2 (MVP Build & Pilotfähigkeit) jetzt freigeben?“
 - Guardrail festgehalten: Ohne explizite Freigabe keine Phase-2-Umsetzung.
 - Bei Freigabe: erster Schritt ist nur ein Phase-2-Startplan mit Milestones, keine parallelen Build-Starts.
+
+## Phase-2 Prep Micro-Update (2026-03-12 13:37)
+- `PHASE2_STARTPLAN_TEMPLATE.md` als freigabefähige Startvorlage angelegt (Milestones, Risiken, GO-Check).
+- Guardrail bleibt aktiv: Dokument ist Vorbereitung, keine Umsetzung ohne explizite Freigabe.
+
+## Phase-2 Prep Micro-Update (2026-03-12 13:45)
+- `PHASE2_STARTPLAN_TEMPLATE.md` um „GO-Decision Inputs (60-Sekunden-Check)" ergänzt.
+- Pflichtsignale vor GO konkretisiert: Owner benannt, Kickoff datiert, Legal-Review terminiert.
+- Wirkung: Freigabeentscheidung ist schneller und konsistenter, ohne neue Phase-2-Umsetzung zu starten.
+
+## Phase-2 Prep Micro-Update (2026-03-12 13:48:20)
+- PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt „HOLD-Modus (wenn kein GO in 7 Tagen)“ ergänzt.
+- Klarstellung: Bei ausbleibender Freigabe bleibt Scope eingefroren; nur Entblockungsarbeit für A/B/C-Signale.
+- Wirkung: Entscheidungsstau wird reduziert, ohne Phase-2-Umsetzung vorzeitig zu starten.
+
+## Phase-2 Prep Micro-Update (2026-03-12 13:50:23)
+- `PHASE2_STARTPLAN_TEMPLATE.md` um „Pre-GO Evidence Pack (90-Sekunden-Check)“ erweitert.
+- Fokus: vor Freigabe vier harte Nachweise bündeln (Owner, Kickoff, Legal-Termin, Go/No-Go-Protokoll).
+- Wirkung: GO-Entscheidung wird auditierbar und weniger anfällig für implizite Annahmen.
+
+## Phase-2 Prep Micro-Update (2026-03-12 13:52:23)
+- PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt „Decision-SLA nach Freigabeanfrage (Governance)“ erweitert.
+- Regel ergänzt: GO/HOLD-Entscheidung innerhalb 24h oder datierter Re-Decision-Termin; sonst HOLD mit Blocker-Log.
+- Wirkung: Weniger Entscheidungsdrift, klare Governance ohne vorzeitige Phase-2-Umsetzung.
