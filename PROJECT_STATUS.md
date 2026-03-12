@@ -491,3 +491,8 @@
 - Tiny progress: Paket-1 Kickoff-Nachweis konkretisiert: Pflichtfelder fuer Day-1 sind jetzt verbindlich als **Termin-ID + Kernteam-Liste + Agenda-Link** definiert.
 - Relevanz: Verhindert, dass der Kickoff morgen formal stattfindet, aber ohne belastbaren Nachweis in den Status rueckgespielt wird.
 - Naechster Schritt: Nach Kickoff diese drei Pflichtfelder in PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md befuellen und in PROJECT_STATUS.md referenzieren.
+
+## GO-Execution Micro-Update (2026-03-12 16:02 Europe/Warsaw)
+- Tiny progress: Dashboard-Klarheit geschärft — ToDo-Visualisierung und Dokument-Referenzen als laufende Kontrollpunkte für Phase-2-Execution bestätigt.
+- Relevanz: Verhindert Informationsdrift zwischen operativer Arbeit und Führungs-/Statussicht.
+- Nächster Schritt: Beim nächsten Update Paket-1-Kickoff-Nachweis (Termin-ID + Teilnehmerkernteam) explizit als Referenzlink im Status führen.
