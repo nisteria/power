@@ -128,3 +128,8 @@
 - PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt „Decision-SLA nach Freigabeanfrage (Governance)“ erweitert.
 - Regel ergänzt: GO/HOLD-Entscheidung innerhalb 24h oder datierter Re-Decision-Termin; sonst HOLD mit Blocker-Log.
 - Wirkung: Weniger Entscheidungsdrift, klare Governance ohne vorzeitige Phase-2-Umsetzung.
+
+## Phase-2 Prep Micro-Update (2026-03-12 13:53:23)
+- PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt „Delegate-Absence Fallback“ ergänzt.
+- Regel ergänzt: Bei Nicht-Erreichbarkeit des Decision-Owners greift Stellvertretung, sonst HOLD + Eskalationsnotiz.
+- Wirkung: Governance bleibt handlungsfähig ohne vorzeitige Phase-2-Umsetzung.

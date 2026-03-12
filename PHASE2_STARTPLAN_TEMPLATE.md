@@ -87,3 +87,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - SLA: Auf eine GO/HOLD-Freigabeanfrage erfolgt innerhalb von 24h eine explizite Entscheidung oder ein datierter Re-Decision-Termin.
 - Wenn keine Entscheidung innerhalb von 24h: automatische HOLD-Fortführung mit kurzem Blocker-Log (A/B/C-Signal fehlt).
 - Ziel: Entscheidungsdrift vermeiden, ohne Phase-2-Umsetzung vor GO zu starten.
+
+## Delegate-Absence Fallback (wenn Decision Owner nicht erreichbar)
+- Wenn GO/HOLD-Owner >48h nicht erreichbar ist: Stellvertretung übernimmt Entscheidung im selben SLA-Rahmen.
+- Fehlt auch Stellvertretung: automatische HOLD-Fortführung + Eskalationsnotiz mit neuem Entscheidungstermin.
+- Ziel: Keine stillen Deadlocks im Freigabeprozess.
