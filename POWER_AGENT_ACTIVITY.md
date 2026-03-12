@@ -469,3 +469,8 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Top-2 Day-1 Exit Criteria (Micro)"** ergänzt.
 - Impact: Die GO-Top-2 haben jetzt klare 24h-Abnahmekriterien; Fortschritt ist objektiv messbar statt nur statusbasiert.
 - Naechster Schritt: Bei naechstem GO-Update die Exit-Kriterien aktiv abhaken und in PROJECT_STATUS.md spiegeln.
+
+## [2026-03-12 14:44 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"GO-First-2 Acceptance (Micro)"** ergänzt (klare Abschlusskriterien für Paket 1 und Paket 2).
+- Impact: Nach GO ist nicht nur Owner+Termin fixiert, sondern auch eindeutig messbar, wann beide Startpakete wirklich als abgeschlossen gelten.
+- Naechster Schritt: Beim naechsten Status-Update Termin-ID/Kickoff-Link und Scope-Gegenzeichnung direkt in PROJECT_STATUS.md referenzieren.

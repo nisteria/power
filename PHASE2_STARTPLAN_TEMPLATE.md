@@ -229,3 +229,7 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Paket 1 gilt als Day-1 abgeschlossen, wenn Kickoff-Termin-ID dokumentiert und alle Stream-Owner (Backend/Frontend/QA/Product) eingetragen sind.
 - Paket 2 gilt als Day-1 abgeschlossen, wenn Smart-Meter API-Story In/Out final signiert und ein Beispiel-Payload im Scope referenziert ist.
 - Ziel: Nach GO ist innerhalb von 24h ein objektiv prüfbarer Fortschrittsnachweis vorhanden.
+
+## GO-First-2 Acceptance (Micro)
+- Paket 1 gilt als abgeschlossen, wenn Termin-ID des Kickoffs + benannte Stream-Owner im Startplan dokumentiert sind.
+- Paket 2 gilt als abgeschlossen, wenn In/Out-Scope einmalig von Product/Backend gegengezeichnet und im Status verlinkt ist.
