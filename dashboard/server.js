@@ -41,6 +41,7 @@ function parseActivityEntries(md) {
       current.bullets.push(line.trim().slice(2));
     }
   }
+
   if (current) entries.push(current);
   return entries;
 }
@@ -53,8 +54,7 @@ function parseIsoFromTitle(title) {
   return Number.isNaN(d.getTime()) ? null : d;
 }
 
-function computeAgentHealth(activityMd) {
-  const entries = parseActivityEntries(activityMd);
+function computeAgentHealth(entries) {
   const latest = entries[entries.length - 1] || null;
   const latestDate = latest ? parseIsoFromTitle(latest.title) : null;
   const now = new Date();
@@ -70,8 +70,51 @@ function computeAgentHealth(activityMd) {
   return {
     active,
     minutesSince,
-    latestEntryTitle: latest ? latest.title : null,
-    entries
+    latestEntryTitle: latest ? latest.title : null
+  };
+}
+
+function getTrafficFromEntry(entry) {
+  if (!entry) return { sent: null, received: null };
+
+  const sent = entry.bullets.find((b) => b.toLowerCase().startsWith('ai->')) || null;
+  const received = entry.bullets.find((b) => b.toLowerCase().startsWith('ai<-')) || null;
+
+  return {
+    sent: sent ? sent.replace(/^ai->\s*/i, '') : null,
+    received: received ? received.replace(/^ai<-\s*/i, '') : null
+  };
+}
+
+function buildSnapshot() {
+  const activity = readTextSafe(files.activity);
+  const projectStatus = readTextSafe(files.projectStatus);
+  const projectTodo = readTextSafe(files.projectTodo);
+  const roadmap = readTextSafe(files.roadmap);
+
+  const entries = parseActivityEntries(activity);
+  const health = computeAgentHealth(entries);
+  const activityStat = getFileStatSafe(files.activity);
+  const latestEntry = entries[entries.length - 1] || null;
+  const traffic = getTrafficFromEntry(latestEntry);
+
+  return {
+    now: new Date().toISOString(),
+    agent: {
+      active: health.active,
+      minutesSinceLastEntry: health.minutesSince,
+      latestEntryTitle: health.latestEntryTitle,
+      activityFileLastModified: activityStat ? activityStat.mtime.toISOString() : null
+    },
+    traffic,
+    feed: {
+      activityEntries: entries.slice(-20)
+    },
+    docs: {
+      projectStatus,
+      projectTodo,
+      roadmap
+    }
   };
 }
 
@@ -109,31 +152,28 @@ function serveStatic(req, res) {
 
 const server = http.createServer((req, res) => {
   if (req.url.startsWith('/api/status')) {
-    const activity = readTextSafe(files.activity);
-    const projectStatus = readTextSafe(files.projectStatus);
-    const projectTodo = readTextSafe(files.projectTodo);
-    const roadmap = readTextSafe(files.roadmap);
+    return sendJson(res, buildSnapshot());
+  }
 
-    const health = computeAgentHealth(activity);
-    const activityStat = getFileStatSafe(files.activity);
-
-    return sendJson(res, {
-      now: new Date().toISOString(),
-      agent: {
-        active: health.active,
-        minutesSinceLastEntry: health.minutesSince,
-        latestEntryTitle: health.latestEntryTitle,
-        activityFileLastModified: activityStat ? activityStat.mtime.toISOString() : null
-      },
-      feed: {
-        activityEntries: health.entries.slice(-20)
-      },
-      docs: {
-        projectStatus,
-        projectTodo,
-        roadmap
-      }
+  if (req.url.startsWith('/api/stream')) {
+    res.writeHead(200, {
+      'Content-Type': 'text/event-stream',
+      'Cache-Control': 'no-cache',
+      Connection: 'keep-alive'
     });
+
+    const push = () => {
+      res.write(`data: ${JSON.stringify(buildSnapshot())}\n\n`);
+    };
+
+    push();
+    const timer = setInterval(push, 2000);
+
+    req.on('close', () => {
+      clearInterval(timer);
+      res.end();
+    });
+    return;
   }
 
   serveStatic(req, res);

@@ -7,15 +7,19 @@
   <style>
     :root { color-scheme: dark; }
     body { font-family: Inter, Segoe UI, sans-serif; margin: 0; background: #0b1020; color: #e8ecff; }
-    header { padding: 16px 20px; border-bottom: 1px solid #243058; display:flex; justify-content:space-between; align-items:center; }
+    header { padding: 16px 20px; border-bottom: 1px solid #243058; display:flex; justify-content:space-between; align-items:center; gap:12px; }
     .wrap { display:grid; grid-template-columns: 330px 1fr; gap: 16px; padding: 16px; }
     .card { background:#121933; border:1px solid #243058; border-radius:12px; padding:14px; }
-    .ok{ color:#57d38c; } .bad{ color:#ff7b7b; } .muted{ color:#9aa6d1; }
+    .ok{ color:#57d38c; } .bad{ color:#ff7b7b; } .warn{ color:#ffc857; } .muted{ color:#9aa6d1; }
+    .light { width:14px; height:14px; border-radius:50%; display:inline-block; margin-right:8px; vertical-align:middle; }
+    .light-green{ background:#57d38c; box-shadow:0 0 10px #57d38c88; }
+    .light-red{ background:#ff7b7b; box-shadow:0 0 10px #ff7b7b88; }
     pre { white-space: pre-wrap; background:#0d1430; padding:10px; border-radius:8px; max-height:300px; overflow:auto; }
     .entry { border-bottom:1px solid #243058; padding:10px 0; }
     .entry:last-child{ border-bottom:none; }
     .title { font-weight:600; }
     button { background:#4f7cff; color:white; border:none; padding:8px 10px; border-radius:8px; cursor:pointer; }
+    .top-actions { display:flex; gap:10px; align-items:center; }
   </style>
 </head>
 <body>
@@ -24,20 +28,34 @@
       <h2 style="margin:0">Power CEO Live Dashboard</h2>
       <div class="muted" id="now">lädt…</div>
     </div>
-    <button onclick="load()">Aktualisieren</button>
+    <div class="top-actions">
+      <span class="muted" id="conn">Realtime: verbinden…</span>
+      <button id="refreshBtn">Aktualisieren</button>
+    </div>
   </header>
 
   <div class="wrap">
     <div class="card">
-      <h3>Agent Status</h3>
+      <h3>Agent Status (Ampel)</h3>
       <p id="statusText">-</p>
       <p class="muted" id="lastEntry">-</p>
       <p class="muted" id="fileMod">-</p>
+      <p class="muted" id="minsSince">-</p>
     </div>
 
     <div class="card">
       <h3>Arbeitsgang (letzte Läufe)</h3>
       <div id="feed"></div>
+    </div>
+
+    <div class="card">
+      <h3>An AI gesendet (letzter Lauf)</h3>
+      <pre id="aiSent">—</pre>
+    </div>
+
+    <div class="card">
+      <h3>Von AI bekommen (letzter Lauf)</h3>
+      <pre id="aiReceived">—</pre>
     </div>
 
     <div class="card">
@@ -57,18 +75,20 @@
   </div>
 
   <script>
-    async function load() {
-      const res = await fetch('/api/status');
-      const data = await res.json();
-
+    function render(data) {
       document.getElementById('now').textContent = `Stand: ${new Date(data.now).toLocaleString()}`;
-      const active = data.agent.active;
+      const active = !!data?.agent?.active;
+
       document.getElementById('statusText').innerHTML = active
-        ? '<span class="ok">● Aktiv</span>'
-        : '<span class="bad">● Inaktiv/keine frischen Logs</span>';
+        ? '<span class="light light-green"></span><span class="ok">Aktiv</span>'
+        : '<span class="light light-red"></span><span class="bad">Inaktiv/keine frischen Logs</span>';
 
       document.getElementById('lastEntry').textContent = `Letzter Lauf: ${data.agent.latestEntryTitle || '—'}`;
       document.getElementById('fileMod').textContent = `Datei geändert: ${data.agent.activityFileLastModified || '—'}`;
+      document.getElementById('minsSince').textContent = `Minuten seit letztem Lauf: ${data.agent.minutesSinceLastEntry ?? '—'}`;
+
+      document.getElementById('aiSent').textContent = data?.traffic?.sent || 'Noch kein AI-> Eintrag im Log';
+      document.getElementById('aiReceived').textContent = data?.traffic?.received || 'Noch kein AI<- Eintrag im Log';
 
       const feed = document.getElementById('feed');
       feed.innerHTML = '';
@@ -84,8 +104,38 @@
       document.getElementById('roadmap').textContent = data.docs.roadmap || '';
     }
 
+    async function load() {
+      const btn = document.getElementById('refreshBtn');
+      try {
+        btn.disabled = true;
+        const res = await fetch('/api/status?ts=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        render(data);
+      } catch (e) {
+        document.getElementById('conn').textContent = 'Realtime: Fehler beim Laden';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function connectRealtime() {
+      const conn = document.getElementById('conn');
+      const evt = new EventSource('/api/stream');
+      evt.onopen = () => { conn.textContent = 'Realtime: verbunden'; conn.className = 'ok'; };
+      evt.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        render(data);
+      };
+      evt.onerror = () => {
+        conn.textContent = 'Realtime: getrennt, reconnect…';
+        conn.className = 'warn';
+      };
+    }
+
+    document.getElementById('refreshBtn').addEventListener('click', load);
     load();
-    setInterval(load, 5000);
+    connectRealtime();
   </script>
 </body>
 </html>
