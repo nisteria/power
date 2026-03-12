@@ -185,3 +185,11 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - [ ] Paket 1: Stream-Owner je Backend/Frontend/QA/Product namentlich gesetzt.
 - [ ] Paket 2: API-Story Akzeptanzkriterien (3 Punkte) im Scope-Block ergaenzt.
 - [ ] Paket 2: Review-Slot mit Backend + QA terminiert.
+
+## Top-2 Handover Checklist (nach GO, 5-Minuten-Check)
+- [ ] Paket 1: Kickoff-Termin-ID in PROJECT_STATUS.md eingetragen.
+- [ ] Paket 1: Stream-Owner (Backend/Frontend/QA/Product) namentlich bestätigt.
+- [ ] Paket 2: API-Story Scope (In/Out) von Backend + Product gegengezeichnet.
+- [ ] Paket 2: Abnahmetermin im Kalender mit Ownern gesetzt.
+- Ziel: Verhindert Lücken zwischen Plan-Fixierung und operativer Übergabe.
+
