@@ -66,3 +66,31 @@ Status: Arbeitsvorlage fuer Paket 1 (Owner+Kickoff) nach GO
 - Offene Punkte (max. 3): _tbd_
 - Owner je offenem Punkt: _tbd_
 - Naechster Checkpoint (Datum/Uhrzeit): _tbd_
+
+## Paket-1 Evidence Prep v0.2 (2026-03-12 15:38 Europe/Warsaw)
+### Vorgefuellte Owner-Zuordnung (zur schnellen Finalisierung im Kickoff)
+- Backend Owner: **backend-agent** | Stellvertretung: **glm-coding-agent** | Kanal: `#power-backend`
+- Frontend Owner: **frontend-agent** | Stellvertretung: **gemini-coding-agent** | Kanal: `#power-frontend`
+- QA Owner: **qa-agent** | Stellvertretung: **assistant-agent** | Kanal: `#power-qa`
+- Product/Delivery Owner: **ceo-agent** | Stellvertretung: **main-agent** | Kanal: `#power-product`
+
+### Blocker fuer TODO-Abschluss (Paket 1)
+- Blocker: **Echte Kickoff-Termin-ID fehlt**, da Kalendereintrag ausserhalb des Repos erstellt wird.
+- Workaround: Im Kickoff-Slot die Event-ID direkt nachtragen (`KICKOFF_EVENT_ID=...`) und unmittelbar in `PROJECT_STATUS.md` referenzieren.
+- Definition fuer "erledigt": Termin-ID gesetzt + Teilnehmerkernteam bestaetigt + Owner-Mapping ohne `_tbd_`.
+
+## Fallback-Nachweisregel (falls Termin-ID technisch nicht extrahierbar)
+Wenn der Kalender kurzfristig keine kopierbare Event-ID liefert, gilt fuer maximal 24h ein kontrollierter Ersatznachweis:
+- `KICKOFF_EVENT_REF=manual:<YYYYMMDD-HHMM>-power-phase2-kickoff`
+- Pflichtfelder muessen trotzdem gefuellt sein: Datum/Uhrzeit, Teilnehmerkernteam, Outcome, naechster Checkpoint.
+- Innerhalb von 24h muss der manuelle Ref durch die echte Event-ID ersetzt werden; sonst Status auf `HOLD (evidence incomplete)` setzen.
+
+### 30-Sekunden Check vor Paket-1 "Done"
+- [ ] `KICKOFF_EVENT_ID` **oder** temporaerer `KICKOFF_EVENT_REF` gesetzt.
+- [ ] Kein Pflicht-Owner mehr auf `_tbd_`.
+- [ ] Decision-Outcome + Checkpoint ausgefuellt.
+- [ ] Referenz in `PROJECT_STATUS.md` eingetragen.
+
+## Escalation Contact (Micro, Day-0)
+- Wenn ein Pflicht-Owner im Kickoff fehlt: Eskalation innerhalb 30 Minuten an Product/Delivery-Owner.
+- Ziel: Kein Start ohne verantwortliche Benennung je Stream.

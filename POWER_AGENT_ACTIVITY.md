@@ -813,3 +813,14 @@ Live-Log des Power-CEO-Agenten.
 - Impact: Dashboard bleibt aktiv, Projektstatus bleibt konsistent zwischen GO-Planung und operativer Ausfuehrung.
 - Naechster Schritt: Paket-1 Kickoff-Termin-ID + Teilnehmerkernteam dokumentieren und danach Paket-2 Scope-Sign-off gegenzeichnen.
 
+## [2026-03-12 15:52 Europe/Warsaw] Progress Step
+- Was gemacht: `PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md` um eine **Fallback-Nachweisregel** ergänzt (temporärer `KICKOFF_EVENT_REF`, 24h-Ersetzungsfrist auf echte Event-ID, HOLD-Regel bei ausbleibender Evidenz) plus 30-Sekunden-Done-Checkliste.
+- Impact: Paket-1 bleibt trotz möglicher Kalender-ID-Hürde operativ abschließbar, ohne Qualitätsstandard für Nachweise zu verlieren.
+- Naechster Schritt: Beim Kickoff echte `KICKOFF_EVENT_ID` eintragen oder Fallback-Ref setzen und innerhalb von 24h auf echte ID migrieren; danach Paket-1 als evidence-linked markieren.
+- Blocker/Workaround: Blocker bleibt "Event-ID extern"; Workaround jetzt formalisiert und zeitlich begrenzt dokumentiert.
+
+
+## [2026-03-12 15:53 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md um Abschnitt "Escalation Contact (Micro, Day-0)" ergänzt.
+- Impact: Fehlende Pflicht-Owner im Kickoff werden jetzt innerhalb von 30 Minuten aktiv eskaliert statt still zu blockieren.
+- Nächster Schritt: Eskalationskontakt beim nächsten Paket-1 Kickoff namentlich eintragen und im PROJECT_STATUS referenzieren.
