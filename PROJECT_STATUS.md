@@ -62,7 +62,23 @@
 - MVP Fokus bestätigt: Phase 1 bleibt aktiv bis alle Strategy-TODOs abgeschlossen sind.
 - Nächster konkreter Schritt: ICP-Definition (Haushalt vs. KMU) final textlich ausarbeiten.
 
+## Phase-1 Micro-Update — ICP Finalisierung (2026-03-12 13:27)
+- `ICP_SNAPSHOT.md` auf v1.0 angehoben und um Buying Trigger für Haushalt/KMU ergänzt.
+- Early-Adopter-Kriterien präzisiert (Smart Meter, dynamischer Tarif, ≥2 steuerbare Assets).
+- Disqualifier definiert, damit GTM-Fokus sauber bleibt.
+- Ergebnis: ICP-Task in `PROJECT_TODO.md` als erledigt markiert.
+
 ## Phase-1 Micro-Update — ICP Drafting Fortschritt
 - Haushalts-ICP und KMU-ICP als nächste priorisierte Entscheidungsfrage festgelegt.
 - Entscheidungsvorbereitung: Fokus zuerst auf Haushalte mit PV+Speicher + dynamischem Tarif.
+
+## Phase-1 Micro-Update — Value Proposition Draft (2026-03-12 13:30)
+- `VALUE_PROPOSITION_AT.md` v0.1 erstellt (Haushalt/KMU Nutzenversprechen + Made-in-Austria Differenzierung).
+- Struktur für Quantifizierung je Segment vorbereitet (v0.2 mit Einsparmetriken).
+
+## Phase-1 Micro-Update — Value Proposition Quantified (2026-03-12 13:29)
+- `VALUE_PROPOSITION_AT.md` auf v0.2 erweitert: Referenzprofile für Haushalt und KMU mit Einspar-Bandbreiten ergänzt.
+- Haushalt-Hypothese ergänzt: 30–70 €/Monat, Autarkie +8 bis +18 pp (profil-/saisonabhängig).
+- KMU-Hypothese ergänzt: Peak-Reduktion 10–25 %, Einsparung 120–450 €/Monat.
+- Ergebnis: Value-Proposition-Task in `PROJECT_TODO.md` als erledigt markiert.
 
