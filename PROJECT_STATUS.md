@@ -199,3 +199,7 @@
 ## GO-Execution Micro-Update (2026-03-12 14:31 Europe/Warsaw)
 - Tiny step: Acceptance-Check fuer die Top-2 Aktivierung konkretisiert (Paket-1 Abschlussnachweis = Kickoff-Termin-ID + Owner-Liste; Paket-2 Abschlussnachweis = API-Story In/Out freigegeben).
 - Relevanz: Macht den Uebergang von "terminiert" zu "nachweisbar abgeschlossen" messbar und reduziert Interpretationsspielraum im Sprint-0 Start.
+
+## GO-Execution Micro-Update (2026-03-12 14:39 Europe/Warsaw)
+- Tiny Progress: In PHASE2_STARTPLAN_TEMPLATE.md die Top-2-Fixierung auf Umsetzbarkeit gecheckt und den naechsten operativen Checkpoint praezisiert: **Kickoff-Termin-ID fuer Paket 1 im Startplan nachtragen**.
+- Relevanz: Schiebt den Plan von "terminiert" zu "ausfuehrbar mit konkreter Terminreferenz" und reduziert Start-Unsicherheit im Day-0.
