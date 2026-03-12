@@ -580,3 +580,37 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Micro-Update ergänzt (Dashboard-Upgrade als Transparenzhebel eingeordnet).
 - Impact: Operative Steuerung nach GO wird klarer, weil offene/erledigte Arbeit und Nachlese-Dokumente direkt sichtbar sind.
 - Nächster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) im nächsten Zyklus verbindlich eintragen.
+
+## [2026-03-12 15:08:33 +01:00 Europe/Warsaw] Progress Step
+- Was gemacht: `MONITORING_ALERTING_MINIMUM.md` auf v0.2 erweitert und fuer alle drei P1-Alarme konkrete Trigger hinterlegt (PromQL-Stil Query, Schwellenwert, Dauer, Sofortaktion + no-data-Regel).
+- Impact: Paket 5 ist jetzt operativ reviewbar statt nur konzeptionell; Alerting kann im Alignment direkt auf GO/ADJUST/HOLD entschieden werden.
+- Naechster Schritt: 20-min Alignment mit backend-agent + qa-agent durchziehen und Outcome je P1-Regel gegenzeichnen; danach Sign-off in `PROJECT_STATUS.md` spiegeln.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:09 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Dashboard-/Projektkonsistenz geprueft (Top-2 GO-Aktivierung bleibt mit Ownern/Zielterminen fixiert; keine neuen Blocker sichtbar).
+- Impact: Hält den Übergang von Plan zu Execution stabil und hält die Agent-Ampel mit frischem Lauf aktiv.
+- Nächster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) als nächsten harten Checkpoint in PROJECT_STATUS nachziehen.
+
+## [2026-03-12 15:10 Europe/Warsaw] Progress Step
+- Was gemacht: `MONITORING_ALERTING_MINIMUM.md` auf v0.3 erweitert und pro P1-Alarmklasse ein konkretes Mini-Playbook ergänzt (Ingest-Ausfall, Tarif-Freshness kritisch, Device-Command Failure Spike) mit Check-Sequenz, Sofortmaßnahme, Eskalationskriterium und Recovery-Nachweis.
+- Impact: Paket 5 ist nicht mehr nur „Alert-Definition“, sondern operativ incident-fähig für den Pilotbetrieb; Reaktionszeit und Abstimmungsaufwand sinken.
+- Nächster Schritt: 20-min Alignment mit backend-agent + qa-agent durchführen, je Playbook `GO/ADJUST/HOLD` dokumentieren und DoR-Checkboxen aktualisieren.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:11 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Micro-Update ergaenzt (Dashboard-Visibility-Verbesserung dokumentiert).
+- Impact: Dashboard bleibt aktiv und zeigt den aktuellen Arbeitsfortschritt fuer offene/erledigte Aufgaben konsistent.
+- Naechster Schritt: Optionalen Chart-Feinschliff fuer Trenddarstellung vorbereiten (completed vs. open ueber Zeit).
+
+
+## [2026-03-12 15:12 Europe/Warsaw] Progress Step
+- Was gemacht: `MONITORING_ALERTING_MINIMUM.md` um ein **Alignment-Sign-off Sheet v0.4** erweitert (Review-Slot, P1-Entscheidungstabelle mit GO/ADJUST/HOLD, Auflagen, Owner, Fälligkeit) plus DoR-Update-Regel nach Alignment.
+- Impact: Paket 5 kann im 20-min Termin jetzt unmittelbar entschieden und dokumentiert werden; weniger Interpretationsspielraum, schnellere Abnahme.
+- Nächster Schritt: Alignment backend-agent + qa-agent durchführen, Tabelle ausfüllen und Ergebnis in `PROJECT_STATUS.md` als Paket-5-Checkpoint spiegeln.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:13 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update ergaenzt (Fokus auf evidenzbasierte Paket-1-Abnahme mit Termin-ID + Kernteam).
+- Impact: Dashboard bleibt aktiv; Fortschritt bleibt operativ nachvollziehbar statt nur zeitbasiert geloggt.
+- Naechster Schritt: Kickoff-Nachweis verlinken und danach Paket-2 Scope-Sign-off mit Namen/Zeitstempel nachziehen.

@@ -294,3 +294,29 @@
 - Tiny progress: Dashboard-Upgrade abgeschlossen (grafische ToDo-Sicht + Dokumentenlinks) und auf Startklarheit für operative Phase-2-Transparenz eingeordnet.
 - Relevanz: Bessere Sichtbarkeit von offen/erledigt reduziert Koordinationsverlust im GO-Followup.
 - Nächster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) als nächsten harten Abnahmepunkt im Status referenzieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:08 Europe/Warsaw)
+- Tiny progress: `MONITORING_ALERTING_MINIMUM.md` auf v0.2 erweitert: P1-Regeln enthalten jetzt konkrete, reviewbare Trigger-Definitionen (PromQL-Stil) inkl. Schwellenwert, Mindestdauer (`for`) und Sofortaktion.
+- Relevanz: Paket 5 ist von grober Alarm-Absicht auf umsetzbares Alert-Design gehoben; Backend/QA koennen im 20-min Alignment direkt GO/ADJUST/HOLD je Regel entscheiden.
+- Nächster Schritt: Alignment mit backend-agent + qa-agent durchführen und die drei P1-Regeln mit finalem Outcome gegenzeichnen.
+
+## GO-Execution Micro-Update (2026-03-12 15:10 Europe/Warsaw)
+- Tiny progress: `MONITORING_ALERTING_MINIMUM.md` auf v0.3 ergaenzt: pro P1-Alarmklasse ist jetzt ein konkretes Mini-Playbook dokumentiert (Checks, Sofortaktion, Escalation-Kriterium, Recovery-Nachweis).
+- Relevanz: Paket 5 springt von "Trigger definiert" zu "operativ incident-faehig"; reduziert Reaktionszeit und Interpretationsspielraum im Pilotbetrieb.
+- Naechster Schritt: 20-min Alignment fahren und je Playbook `GO/ADJUST/HOLD` gegenzeichnen; danach DoR-Checkboxen aktualisieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:11 Europe/Warsaw)
+- Tiny progress: Dashboard-Upgrade auf TO-DO-Grafik + Doku-Links als operatives Visibility-Feature im laufenden Setup verankert.
+- Relevanz: Bessere Transparenz fuer offene/erledigte Aufgaben reduziert Steuerungsaufwand im Daily-Go-Live-Tracking.
+- Naechster Schritt: Bei naechstem Loop Chart-Feinschliff (echte Trendlinie fuer completed/open) als optionalen UI-Step pruefen.
+
+
+## GO-Execution Micro-Update (2026-03-12 15:12 Europe/Warsaw)
+- Tiny progress: `MONITORING_ALERTING_MINIMUM.md` um ein ausfuellbares **Alignment-Sign-off Sheet v0.4** erweitert (Review-Slot, Entscheidungstabelle je P1-Regel, Owner/Faelligkeit, DoR-Update-Regel).
+- Relevanz: Paket 5 ist jetzt nicht nur inhaltlich definiert, sondern direkt abnahmefaehig im 20-min Alignment; reduziert Reibung zwischen Backend/QA beim finalen GO/ADJUST/HOLD.
+- Nächster Schritt: Sign-off-Slot durchführen und die drei Regel-Entscheidungen mit realen Namen/Zeitstempel ausfüllen; bei HOLD Blocker + Workaround im Status nachziehen.
+
+## GO-Execution Micro-Update (2026-03-12 15:13 Europe/Warsaw)
+- Tiny progress: Dashboard-Readiness fuer Phase-2-Nachweis konkretisiert; naechster harter Beleg bleibt Paket-1 Kickoff mit Termin-ID + Kernteam-Referenz.
+- Relevanz: Hält den Übergang von Plan zu Execution messbar und verhindert Status-Drift trotz paralleler Dashboard-Weiterentwicklung.
+- Nächster Schritt: Nach Kickoff die Paket-1-Abnahme im Status auf "evidence linked" setzen.
