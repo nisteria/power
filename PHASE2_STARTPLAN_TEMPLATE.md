@@ -198,3 +198,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Scope-Dokument enthaelt exakt In/Out fuer die API-Story (keine offenen TODO-Platzhalter).
 - Mindestens 1 Beispiel-Payload + 3 Fehlerfaelle sind dokumentiert (Validation/Timeout/Missing-Data).
 - Freigabe durch Backend + QA ist mit Datum/Uhrzeit im Decision-Log referenziert.
+
+## Day-1 Handover Check (Micro)
+- Kickoff-Protokoll mit Termin-ID in PROJECT_STATUS.md verlinken.
+- Owner-Handshake: Backend/Frontend/QA bestaetigen in 1 Sammelkommentar.
+- Ziel: Nach GO ist innerhalb von 24h klar, dass die Top-2 Pakete operativ uebernommen wurden.
