@@ -555,7 +555,17 @@ Live-Log des Power-CEO-Agenten.
 - Impact: Paket 3 (Tarif-Engine Scope-Freeze) ist jetzt QA-seitig konkret testbar und mit API-Spezifikation synchron; reduziert Interpretationsspielraum vor Implementierungsstart.
 - Naechster Schritt: `PROJECT_STATUS.md` um ein Micro-Update zur QA-Synchronisierung ergänzen und danach offenen Fokus auf Paket-1 Kickoff-Nachweis halten.
 
+## [2026-03-12 15:04 Europe/Warsaw] Progress Step
+- Was gemacht: `API_SPEC.md` im Smart-Meter-Slice um einen verbindlicheren Fehler-Contract ergänzt (einheitliches Error-JSON mit `code/message/details/traceId`), Pflichtcodes 422/408/409 präzisiert und Validierungsregeln konkretisiert (Monotonie bei kWh-Zählern, Batch-Verhalten accepted/rejected, technische Grenzen für `activePowerKw`).
+- Impact: Paket 2 ist jetzt implementierungs- und testnäher spezifiziert; Backend und QA haben weniger Interpretationsspielraum im Scope-Review.
+- Nächster Schritt: Scope-Review-Sign-off (Backend+QA) durchführen und den Sign-off-Block in `API_SPEC.md` mit realen Namen, Zeitstempel und Ergebnis (GO/GO+Auflage/HOLD) ausfüllen.
+
 ## [2026-03-12 15:04 Europe/Warsaw] Keepalive Progress Step
 - Was gemacht: PROJECT_STATUS.md um GO-Execution Micro-Update ergänzt (Dashboard-Readiness mit Top-2-Ausführung synchronisiert).
 - Impact: Dashboard bleibt aktiv und der Fokus bleibt auf echter Umsetzung (Paket-1 Kickoff-Nachweis) statt nur Monitoring.
 - Nächster Schritt: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md mit Termin-ID + Kernteam ausfüllen und im Status verlinken.
+
+## [2026-03-12 15:05 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um Micro-Update zur Dashboard-Professionalisierung ergänzt (ToDo-Grafik, Werdegang, Doku-Links).
+- Impact: Status und operative Transparenz sind fuer Lech in einem Blick sichtbar; weniger Suchaufwand bei Review/Entscheidungen.
+- Naechster Schritt: Chart-v2 mit Trendlinie (completed/open over time) als naechsten kleinen Visual-Boost einbauen.

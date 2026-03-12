@@ -271,6 +271,16 @@
 - Naechster Schritt: Paket-1 Kickoff-Nachweis (Termin-ID + Kernteam) dokumentieren und danach Paket-2 Scope-Sign-off mit realen Namen/Zeitstempel abschliessen.
 
 ## GO-Execution Micro-Update (2026-03-12 15:04 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` im Paket-2-Slice um **Fehler-Contract + konkretisierte Validierungsregeln** erweitert (einheitliches Error-JSON, Pflichtcodes 422/408/409, Batch-Verhalten accepted/rejected, Monotonie-Regel für kWh-Zähler).
+- Relevanz: Backend-Implementierung und QA-Tests können jetzt gegen ein klareres, reproduzierbares Fehlerverhalten bauen; reduziert Interpretationsspielraum beim Scope-Review-Sign-off.
+- Nächster Schritt: Scope-Review mit Backend+QA durchführen und den Sign-off-Block in `API_SPEC.md` mit realen Namen/Zeitstempel/Outcome ausfüllen.
+
+## GO-Execution Micro-Update (2026-03-12 15:04 Europe/Warsaw)
 - Tiny progress: PROJECT_STATUS.md um kurzen Dashboard-Readiness-Check ergänzt (Ampel-Parser + ToDo-Grafik now live, Fokus zurück auf Paket-1 Kickoff-Nachweis).
 - Relevanz: Verbindet Dashboard-Upgrade direkt mit operativer GO-Ausführung, statt bei reinem UI-Status stehenzubleiben.
 - Nächster Schritt: Kickoff-Termin-ID + Kernteam in PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md befüllen und im Status referenzieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:05 Europe/Warsaw)
+- Tiny progress: Power CEO Live Dashboard um professionelle ToDo-Visualisierung (offen/erledigt/Fortschritt), Workflow-Timeline und Doku-Referenzlinks erweitert.
+- Relevanz: Projektsteuerung ist schneller auditierbar; offene vs. erledigte Aufgaben und Nachlese-Dokumente sind sofort sichtbar.
+- Naechster Schritt: Optionaler Chart-Pass (Phase-Fortschritt Q2/Q3/Q4 + Trendgraph "completed over time") als v2.
