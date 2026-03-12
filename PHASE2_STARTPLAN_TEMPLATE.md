@@ -244,3 +244,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Paket 2 haengt an: abgestimmtem In/Out-Scope + Datenmodell-Review mit Backend/QA.
 - Regel: Bei offener kritischer Abhaengigkeit wird nur Entblockung priorisiert, kein Scope-Expand.
 
+
+## Owner-Naming Rule (Micro, direkt nach GO)
+- Wenn nur Rollen eingetragen sind, muessen innerhalb von 24h konkrete Namen je Stream (Backend/Frontend/QA/Product) nachgezogen werden.
+- Jede Namenszeile braucht Stellvertretung + Kommunikationskanal (Slack/Discord/Email).
+- Ziel: Keine Owner-Luecken zwischen Plan-Fixierung und Sprint-0-Ausfuehrung.

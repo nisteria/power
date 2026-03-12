@@ -483,3 +483,8 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Top-2 Dependency Check (Micro)"** ergänzt (klare Abhängigkeiten für Paket 1/2 + Entblockungsregel).
 - Impact: Start nach GO bleibt robust, weil kritische Abhängigkeiten früh sichtbar sind und Scope-Drift vermieden wird.
 - Naechster Schritt: Offene Abhaengigkeiten im naechsten Status-Update als Checkliste abhaken (Kickoff-Termin, Owner, In/Out-Scope-Review).
+
+## [2026-03-12 14:48 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt "Owner-Naming Rule (Micro, direkt nach GO)" ergaenzt.
+- Impact: Verhindert, dass Rollen ohne konkrete Namen in Sprint-0 rutschen; klare Verantwortungsuebergabe in den ersten 24h.
+- Naechster Schritt: Namen + Stellvertretungen fuer die bereits fixierten Top-2-Pakete eintragen und im PROJECT_STATUS referenzieren.
