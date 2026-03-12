@@ -668,3 +668,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: Dashboard-Verbesserungen kurz gegengeprueft (ToDo-Grafik, offene/erledigte Listen, Dokument-Links) und Konsistenz mit PROJECT_TODO.md validiert.
 - Impact: Live-Dashboard bleibt fachlich konsistent und zeigt den Fortschritt weiterhin belastbar an.
 - Naechster Schritt: Im naechsten Micro-Step "recent changes"-Hinweise um echte Open->Done Delta-Logik erweitern.
+
+## [2026-03-12 15:23 Europe/Warsaw] Progress Step
+- Was gemacht: `QA_MVP_ACCEPTANCE.md` fuer Paket 4 (Device Control Pilot Flow v0.1) um 5 konkrete Testfaelle erweitert (`TC-20` bis `TC-24`): Wallbox/Battery Happy Paths plus Negativpfade fuer `422 invalid_command_params`, `409 command_conflict`, `504 device_ack_timeout`.
+- Impact: QA ist jetzt direkt gegen den neuen Device-Control-API-Contract testbar; reduziert Interpretationsspielraum zwischen Backend und QA vor der Umsetzung.
+- Naechster Schritt: Paket-4-Review-Slot (Backend+QA) als Referenz nachziehen und Sign-off-Ergebnis (GO/GO+Auflage/HOLD) in `PROJECT_STATUS.md` spiegeln.
+- Blocker: Kein aktueller Blocker.
+
+## [2026-03-12 15:24 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: Live-Dashboard-Snapshot validiert (/api/status) und KPI-Konsistenz geprueft (offen=7, erledigt=8, Fortschritt=53%, Dokument-Links=14).
+- Impact: Dashboard zeigt verifizierbare Echtzeitwerte; reduziert Risiko von stillen Anzeigeabweichungen nach UI-Upgrade.
+- Naechster Schritt: Bei naechstem Mikrozyklus eine kleine Visual-Ergaenzung fuer "Neu hinzugekommen" als Zaehlerkarte nachziehen.
