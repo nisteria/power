@@ -89,6 +89,14 @@ function getTrafficFromEntry(entry) {
   };
 }
 
+function parseCompletedTodos(projectTodo) {
+  return projectTodo
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter((l) => /^-\s*\[x\]/i.test(l))
+    .map((l) => l.replace(/^-\s*\[x\]\s*/i, ''));
+}
+
 function buildSnapshot() {
   const activity = readTextSafe(files.activity);
   const projectStatus = readTextSafe(files.projectStatus);
@@ -100,6 +108,7 @@ function buildSnapshot() {
   const activityStat = getFileStatSafe(files.activity);
   const latestEntry = entries[entries.length - 1] || null;
   const traffic = getTrafficFromEntry(latestEntry);
+  const completedTodos = parseCompletedTodos(projectTodo);
 
   return {
     now: new Date().toISOString(),
@@ -112,6 +121,10 @@ function buildSnapshot() {
     traffic,
     feed: {
       activityEntries: entries.slice(-20)
+    },
+    todos: {
+      completed: completedTodos,
+      completedCount: completedTodos.length
     },
     docs: {
       projectStatus,
