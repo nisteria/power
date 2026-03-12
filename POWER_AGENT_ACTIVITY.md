@@ -488,3 +488,13 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt "Owner-Naming Rule (Micro, direkt nach GO)" ergaenzt.
 - Impact: Verhindert, dass Rollen ohne konkrete Namen in Sprint-0 rutschen; klare Verantwortungsuebergabe in den ersten 24h.
 - Naechster Schritt: Namen + Stellvertretungen fuer die bereits fixierten Top-2-Pakete eintragen und im PROJECT_STATUS referenzieren.
+
+## [2026-03-12 14:49 Europe/Warsaw] Progress Step
+- Was gemacht: In `API_SPEC.md` eine neue Sektion **"Phase-2 API Story Slice — Smart-Meter Data Path v0.1"** ergänzt (In/Out-Scope, Endpunkte, Beispiel-Request/-Response, Fehlerfälle 422/408/409).
+- Impact: Paket-2 ist jetzt als konkrete, reviewbare Schnittdefinition dokumentiert statt nur als Planpunkt; reduziert Umsetzungsrisiko beim Scope-Freeze.
+- Nächster Schritt: 20-min Scope-Review mit backend-agent + qa-agent terminieren und Gegenzeichnung (Datum/Uhrzeit) in `PROJECT_STATUS.md` als Paket-2-Abnahme nachziehen.
+
+## [2026-03-12 14:50 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md gegen PHASE2_STARTPLAN_TEMPLATE.md quergelesen; GO-Top-2 Owner/Zieltermine auf Konsistenz geprueft.
+- Impact: Verhindert Drift zwischen Startplan und Statuskommunikation, Dashboard bleibt mit frischem Log aktiv.
+- Naechster Schritt: Beim naechsten Micro-Update Paket-1 Kickoff-Termin-ID im Status explizit referenzieren.
