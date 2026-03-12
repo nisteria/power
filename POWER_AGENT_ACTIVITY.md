@@ -824,3 +824,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md um Abschnitt "Escalation Contact (Micro, Day-0)" ergänzt.
 - Impact: Fehlende Pflicht-Owner im Kickoff werden jetzt innerhalb von 30 Minuten aktiv eskaliert statt still zu blockieren.
 - Nächster Schritt: Eskalationskontakt beim nächsten Paket-1 Kickoff namentlich eintragen und im PROJECT_STATUS referenzieren.
+
+## [2026-03-12 15:54 Europe/Warsaw] Progress Step
+- Was gemacht: PROJECT_TODO.md in Phase 2 bei Paket 5 auf den realen Stand gebracht: Tasktext von *v0.4 Alignment* auf **v0.6 Alignment + Drill-Matrix-Sign-off** aktualisiert (inkl. Pflicht auf reale Namen + GO/ADJUST/HOLD je P1-Regel).
+- Impact: Die operative ToDo-Steuerung spiegelt jetzt den aktuellen Dokumentenstand wider und reduziert Risiko, dass ein veralteter v0.4-Task abgearbeitet wird.
+- Naechster Schritt: Sign-off im MONITORING_ALERTING_MINIMUM.md im geplanten Slot ausfuellen und danach Paket 5 als erledigt markieren.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen nur reale Namen bis zum Alignment (Workaround: rollenbasiertes Pre-Fill bis zum Slot beibehalten).
+
+## [2026-03-12 15:55 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md um Abschnitt **"No-Show Recovery (Micro, Day-0)"** ergänzt (Stellvertretungs-Aktivierung + HOLD-Regel bei fehlender Pflichtrolle).
+- Impact: Kickoff bleibt auch bei kurzfristigem Owner-Ausfall steuerbar; verhindert unklare Verantwortungsuebergaben im Paket-1 Start.
+- Naechster Schritt: Im naechsten Status-Update die Recovery-Regel als Day-0 Guardrail in PROJECT_STATUS.md referenzieren.

@@ -94,3 +94,8 @@ Wenn der Kalender kurzfristig keine kopierbare Event-ID liefert, gilt fuer maxim
 ## Escalation Contact (Micro, Day-0)
 - Wenn ein Pflicht-Owner im Kickoff fehlt: Eskalation innerhalb 30 Minuten an Product/Delivery-Owner.
 - Ziel: Kein Start ohne verantwortliche Benennung je Stream.
+
+## No-Show Recovery (Micro, Day-0)
+- Wenn eine Pflichtrolle im Kickoff >10 Minuten fehlt: sofort Stellvertretung aktivieren und im Entscheidungslog markieren.
+- Wenn weder Owner noch Stellvertretung verfuegbar: Workstream auf HOLD setzen (kein impliziter Start) und neuen 20-Minuten Follow-up-Slot terminieren.
+- Ziel: Verhindert stille Verantwortungslaecken beim Paket-1 Start.
