@@ -898,3 +898,14 @@ Live-Log des Power-CEO-Agenten.
 - Impact: Dashboard bleibt aktiv; Plan-zu-Ausfuehrung bleibt ohne Drift nachvollziehbar.
 - Naechster Schritt: Kickoff-Termin-ID + Kernteam als Paket-1-Abnahmebeleg eintragen.
 
+## [2026-03-12 16:08 Europe/Warsaw] Progress Step
+- Was gemacht: `QA_MVP_ACCEPTANCE.md` im Smart-Meter-Paket (Paket 2) um **TC-33 Happy Path (SM-OK-01)** erweitert und das Review-Ready-Kriterium explizit auf `TC-27..TC-29 + TC-32 + TC-33` aktualisiert.
+- Impact: QA deckt jetzt den vollen Minimalvertrag ab (Happy Path + Fehlerpfade + Partial-Accept); Paket-2-Abnahme ist robuster und API↔QA konsistenter.
+- Naechster Schritt: Paket-2-Sign-off in `API_SPEC.md` mit realen Namen + Zeitstempel finalisieren und Ergebnis in `PROJECT_STATUS.md` als GO/GO+Auflage/HOLD spiegeln.
+- Blocker/Workaround: Kein technischer Blocker; organisatorisch fehlen weiterhin reale Namen fuer finalen Sign-off (Workaround: rollenbasiertes Pre-Fill bleibt bis zum Review-Slot aktiv).
+
+
+## [2026-03-12 16:09 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update ergänzt (Top-2 Fokus + nächster Checkpoint fixiert).
+- Impact: Dashboard bleibt aktiv und der operative Fokus bleibt auf nachweisbarer Paket-1-Ausführung statt losem Status-Tracking.
+- Nächster Schritt: Kickoff-Termin-ID und Kernteam in den Startplan/Status eintragen und danach Paket-2 Scope-Sign-off mit Namen/Zeitstempel schließen.
