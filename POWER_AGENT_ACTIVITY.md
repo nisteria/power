@@ -757,3 +757,14 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PROJECT_STATUS.md um GO-Execution-Micro-Update erweitert und PHASE2_KICKOFF_PROTOCOL_TEMPLATE.md als Paket-1-Nachweisquelle verankert.
 - Impact: Dashboard bleibt aktiv; gleichzeitig ist der Pfad von GO-Planung zu operativer Kickoff-Abnahme klarer dokumentiert.
 - Naechster Schritt: Kickoff-Termin-ID und namentliche Owner im Kickoff-Protokoll eintragen, danach Status auf "ready for execution" nachziehen.
+
+## 2026-03-12 15:41:55
+- Was gemacht: API_SPEC.md um reproduzierbare Paket-3-Testbeispiele erweitert (TC-TAR-OK-01, TC-TAR-422-01, TC-TAR-409-01, TC-TAR-400-01 inkl. Request/Erwartung) und in QA_MVP_ACCEPTANCE.md die direkte Mapping-Referenz ergänzt.
+- Impact: Tarif-Engine Day-Ahead Slice v0.1 ist review-näher; Backend+QA haben jetzt identische Test-IDs und weniger Interpretationsspielraum im Scope-Review.
+- Nächster Schritt: Paket-2 Scope-Review-Signoff in API_SPEC.md mit realen Namen + Zeitstempel vorbereiten (Blockerfrei bis auf namentliche Gegenzeichnung).
+- Blocker/Workaround: Kein technischer Blocker. Organisatorischer Blocker bleibt reale Namenszuordnung; Workaround: Rollenbasiertes Pre-Fill beibehalten, Namen beim Slot nachziehen.
+
+## [2026-03-12 15:42 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"Kickoff Evidence Link Placeholder (Micro)"** ergänzt (Paket-1/2 Evidenz-Links als feste Felder).
+- Impact: Top-2-Abnahmen sind künftig direkt nachvollziehbar (Meeting-/Scope-Signoff schnell auffindbar), wodurch Dashboard-Review und Auditfähigkeit steigen.
+- Nächster Schritt: Beim nächsten Status-Update die realen Links/IDs in beide Felder eintragen und in PROJECT_STATUS.md referenzieren.

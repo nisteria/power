@@ -254,3 +254,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 - Check 1: Paket-1 Kickoff-Protokoll ist vollständig (Termin-ID + Kernteam + Owner-Liste).
 - Check 2: Paket-2 Scope-Sign-off hat Ergebniscode (GO | GO+COND | HOLD) mit Zeitstempel.
 - Check 3: Offene Conditions haben Owner + Fälligkeitsdatum.
+
+## Kickoff Evidence Link Placeholder (Micro)
+- Paket 1 Evidenz-Link: _tbd_ (Kalender-ID/Meeting-Link + Kurzprotokollpfad)
+- Paket 2 Evidenz-Link: _tbd_ (Scope-Review-Protokoll + Sign-off-Block)
+- Ziel: Abnahmebelege der Top-2 sind mit einem Klick nachvollziehbar.
