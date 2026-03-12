@@ -9,6 +9,15 @@ $dashboardDir = Join-Path $root 'dashboard'
 $serverScript = Join-Path $dashboardDir 'server.js'
 $url = "http://localhost:$Port"
 
+# Single-instance guard
+$mutexName = 'Global\PowerDesktopMonitorSingleton'
+$createdNew = $false
+$mutex = New-Object System.Threading.Mutex($true, $mutexName, [ref]$createdNew)
+if (-not $createdNew) {
+  Write-Host 'Power Desktop Monitor läuft bereits. Beende zweiten Start.' -ForegroundColor Yellow
+  exit 0
+}
+
 function Ensure-ServerRunning {
   $running = Get-CimInstance Win32_Process | Where-Object {
     $_.Name -match 'node(.exe)?' -and $_.CommandLine -match [regex]::Escape($serverScript)
@@ -20,13 +29,14 @@ function Ensure-ServerRunning {
   }
 }
 
-function Ensure-DesktopWindow {
-  $appArg = "--app=$url"
-  $win = Get-CimInstance Win32_Process | Where-Object {
-    $_.Name -match 'chrome(.exe)?' -and $_.CommandLine -match [regex]::Escape($appArg)
+function OpenDesktopWindowOnce {
+  # Accept any Chrome process already showing localhost dashboard (tab or app mode)
+  $existing = Get-CimInstance Win32_Process | Where-Object {
+    $_.Name -match 'chrome(.exe)?' -and $_.CommandLine -match [regex]::Escape("localhost:$Port")
   }
 
-  if (-not $win) {
+  if (-not $existing) {
+    $appArg = "--app=$url"
     if (Test-Path $ChromePath) {
       Start-Process -FilePath $ChromePath -ArgumentList $appArg | Out-Null
     } else {
@@ -35,9 +45,19 @@ function Ensure-DesktopWindow {
   }
 }
 
-Write-Host "Power Desktop Monitor gestartet. Ctrl+C zum Beenden." -ForegroundColor Green
-while ($true) {
+try {
+  Write-Host "Power Desktop Monitor gestartet. Ctrl+C zum Beenden." -ForegroundColor Green
   Ensure-ServerRunning
-  Ensure-DesktopWindow
-  Start-Sleep -Seconds 5
+  OpenDesktopWindowOnce
+
+  while ($true) {
+    Ensure-ServerRunning
+    Start-Sleep -Seconds 5
+  }
+}
+finally {
+  if ($mutex) {
+    $mutex.ReleaseMutex() | Out-Null
+    $mutex.Dispose()
+  }
 }
