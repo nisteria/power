@@ -233,3 +233,8 @@ Eine freigabefähige Startvorlage für Phase 2 (MVP Build & Pilotfähigkeit), da
 ## GO-First-2 Acceptance (Micro)
 - Paket 1 gilt als abgeschlossen, wenn Termin-ID des Kickoffs + benannte Stream-Owner im Startplan dokumentiert sind.
 - Paket 2 gilt als abgeschlossen, wenn In/Out-Scope einmalig von Product/Backend gegengezeichnet und im Status verlinkt ist.
+
+## GO-First-2 Dependency Check (Micro)
+- Paket 1 darf nur als "ready" gelten, wenn Kickoff-Termin-ID + Kernteilnehmer (Backend/Frontend/QA/Product) dokumentiert sind.
+- Paket 2 darf nur als "ready" gelten, wenn API-In/Out-Scope gegengezeichnet und ein Beispiel-Payload referenziert ist.
+- Ziel: Startpakete nicht nur terminieren, sondern auch mit minimalen Abhaengigkeiten belastbar machen.

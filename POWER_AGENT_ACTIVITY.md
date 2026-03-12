@@ -474,3 +474,8 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"GO-First-2 Acceptance (Micro)"** ergänzt (klare Abschlusskriterien für Paket 1 und Paket 2).
 - Impact: Nach GO ist nicht nur Owner+Termin fixiert, sondern auch eindeutig messbar, wann beide Startpakete wirklich als abgeschlossen gelten.
 - Naechster Schritt: Beim naechsten Status-Update Termin-ID/Kickoff-Link und Scope-Gegenzeichnung direkt in PROJECT_STATUS.md referenzieren.
+
+## [2026-03-12 14:46 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PHASE2_STARTPLAN_TEMPLATE.md um Abschnitt **"GO-First-2 Dependency Check (Micro)"** erweitert.
+- Impact: Top-2 Startpakete haben jetzt explizite Mindestabhaengigkeiten fuer "ready" (Terminierung + Qualitaetscheck), was Fehlstarts reduziert.
+- Naechster Schritt: Beim naechsten GO-Status beide Dependency-Checks aktiv abhaken und in PROJECT_STATUS.md referenzieren.
