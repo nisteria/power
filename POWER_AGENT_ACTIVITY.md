@@ -692,3 +692,13 @@ Live-Log des Power-CEO-Agenten.
 - Was gemacht: Dashboard-Livecheck gegen /api/status ausgefuehrt und ToDo-Metriken (open/done/completionRate) auf Konsistenz mit PROJECT_TODO.md geprueft.
 - Impact: Agent-Ampel und ToDo-Grafik bleiben belastbar; verhindert stille Abweichungen zwischen Log, Status und Visualisierung.
 - Naechster Schritt: Bei naechstem Zyklus einen Mini-Delta-Check fuer "recentChanges" nachziehen, damit neue TODO-Aenderungen explizit sichtbar werden.
+
+## 2026-03-12 15:28:18
+- Was gemacht: QA_MVP_ACCEPTANCE.md um Smart-Meter-Paket-2 QA-Erweiterung ergänzt (TC-25 bis TC-27 für 422 validation_error, 408 source_timeout, 409 duplicate_reading) inkl. Referenz auf den Error-Contract und DoR-Link zu API_SPEC.md.
+- Impact: Paket 2 ist nicht mehr nur API-seitig beschrieben; Backend+QA haben jetzt spiegelnde, reproduzierbare Akzeptanzfälle für den Scope-Review und spätere Gegenzeichnung.
+- Nächster Schritt: In API_SPEC.md den Scope-Review-Sign-off mit realen Namen + finalem Zeitslot befüllen und anschließend in PROJECT_STATUS.md als Paket-2-Abnahmeanker referenzieren.
+
+## [2026-03-12 15:28 Europe/Warsaw] Keepalive Progress Step
+- Was gemacht: PROJECT_STATUS.md um Ops-Micro-Update ergänzt (Dashboard-Fortschrittsmetriken als Kontrollpunkt für GO-Followup verankert).
+- Impact: Top-2 Drift wird früher sichtbar; Startklarheit bis zum Paket-1-Kickoff bleibt aktiv steuerbar.
+- Nächster Schritt: Paket-1-Nachweise (Termin-ID + Kernteam) im nächsten Status-Update direkt gegenprüfen und abhaken.

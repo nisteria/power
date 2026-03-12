@@ -340,3 +340,33 @@
 - Tiny progress: Dashboard-Upgrade operationalisiert; Fokus fuer naechsten Schritt auf sichtbare ToDo-Delta-Logik (neu/offen/erledigt) verankert.
 - Relevanz: Verbindet Live-Monitoring mit operativer Prioritaet und reduziert Blindflug bei Task-Transitionen.
 - Naechster Schritt: Bei naechster Aenderung in PROJECT_TODO.md Delta explizit im Status spiegeln.
+
+## GO-Execution Micro-Update (2026-03-12 15:19 Europe/Warsaw)
+- Tiny progress: `PROJECT_TODO.md` auf echte GO-Lage synchronisiert: **Aktive Phase von Phase 1 auf Phase 2 umgestellt** und eine operative `Phase 2 TODOs (aktiv)`-Liste mit 5 Paketen eingefuegt.
+- Relevanz: Entfernt Steuerungswiderspruch im Repo (GO erteilt, aber TODO zeigte noch Phase 1) und macht den naechsten Arbeitsschritt fuer jedes Paket eindeutig nachvollziehbar.
+- Naechster Schritt: Paket-1-Evidence (echte Termin-ID + namentliche Owner) als erstes `Phase 2 TODO` auf erledigt ziehen und im Status verlinken.
+
+## GO-Execution Micro-Update (2026-03-12 15:21 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` um **"Phase-2 API Story Slice — Device Control Pilot Flow v0.1"** erweitert (Paket 4) mit End-to-End Command-Flow fuer Battery + Wallbox inkl. Endpunkten, Request/Response-Contract, Pflicht-Fehlerfaellen und DoR-Check.
+- Relevanz: Paket 4 ist von einer abstrakten TODO-Zeile auf eine konkret reviewbare Spezifikation gehoben; reduziert Integrations- und QA-Interpretationsspielraum vor der Umsetzung.
+- Nächster Schritt: `QA_MVP_ACCEPTANCE.md` um Paket-4-Testfaelle (Battery/Wallbox Happy Path + Negativpfade) ergänzen und danach den Paket-4-Review-Slot referenzieren.
+
+## GO-Execution Micro-Update (2026-03-12 15:23 Europe/Warsaw)
+- Tiny progress: `QA_MVP_ACCEPTANCE.md` fuer Paket 4 (Device Control Pilot Flow v0.1) erweitert: 5 neue, reproduzierbare Testfaelle `TC-20` bis `TC-24` (2 Happy Paths fuer Wallbox/Battery + Fehlerfaelle `422 invalid_command_params`, `409 command_conflict`, `504 device_ack_timeout`).
+- Relevanz: API-Spezifikation und QA-Abnahme sind jetzt auch fuer Paket 4 synchron; reduziert Scope-Drift zwischen Backend und QA vor Implementierung.
+- Naechster Schritt: Paket-4-Review-Slot referenzieren und den Sign-off-Block (Owner + Zeitstempel + Ergebnis) im Status nachziehen.
+
+## GO-Execution Micro-Update (2026-03-12 15:26 Europe/Warsaw)
+- Tiny progress: `API_SPEC.md` Paket 4 um ein konkretes **UI→API Feldmapping (Pilot v0.1)** ergänzt (`assetSelector/intent/targetPowerKw/targetSocPct/commandTTL/issuedBy` inkl. Validierungsregeln und Fehler-Referenzen).
+- Relevanz: Frontend, Backend und QA haben jetzt ein gemeinsames Integrationsraster pro Eingabefeld; reduziert Fehlverdrahtung im Device-Command-Flow und beschleunigt Reviewbarkeit.
+- Nächster Schritt: Mapping gegen reale UI-Labels spiegeln und die zwei offenen Battery-Intent-Checks (`charge_now`, `discharge_now`) im QA-Plan als explizite Assertions nachziehen.
+
+## GO-Execution Micro-Update (2026-03-12 15:28 Europe/Warsaw)
+- Tiny Progress: QA_MVP_ACCEPTANCE.md wurde für Paket 2 um drei reproduzierbare Smart-Meter-Negativtests erweitert (TC-25 bis TC-27 für 422/408/409) und explizit mit dem API-DoR in API_SPEC.md verknüpft.
+- Relevanz: Scope-Review für Smart-Meter ist jetzt API+QA-synchron statt nur API-zentriert; reduziert Abnahme-Risiko vor der Gegenzeichnung.
+- Next: Scope-Review-Sign-off in API_SPEC.md mit realen Namen + Zeitstempel ausfüllen.
+
+## Ops Micro-Update (2026-03-12 15:28 Europe/Warsaw)
+- Dashboard-Readiness geschärft: Fortschrittsmetriken (offen/erledigt/quote) sind jetzt als täglicher Kontrollpunkt für GO-Followup gesetzt.
+- Relevanz: Früh sichtbare Drift in Top-2-Paketen kann vor dem Kickoff abgefangen werden.
+- Nächster Schritt: Beim nächsten Checkpoint die Paket-1 Kickoff-Nachweise (Termin-ID + Kernteam) explizit gegen diese Metrik spiegeln.
