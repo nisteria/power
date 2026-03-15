@@ -79,7 +79,8 @@
 
 ### Phase 3 Gestartet:
 - ✅ Pitch Deck + Business Plan
-- ✅ MVP Implementation (API + Frontend + Worker)
+- ✅ MVP Implementation (API + Frontend + Worker complete)
+- ⏳ Pilot-Aufbau
 
 ### Nächste Phase:
 - MVP Build & Pilotfähigkeit vorbereiten
