@@ -32,3 +32,20 @@ Format: - [ ] title | priority:<Niedrig|Mittel|Hoch|Kritisch> | progress:<0-100>
 - [x] Value Proposition | priority:Hoch | progress:100 | owner:ceo-agent
 - [x] Regulatory Positionierung | priority:Hoch | progress:100 | owner:ceo-agent
 - [x] Funding Workplan | priority:Hoch | progress:100 | owner:finance-agent
+
+## Phase 3: MVP Build & Pilotfähigkeit
+
+### Paket 1: AWS PreSeed Vorbereitung
+- [x] Pitch Deck finalisieren | priority:Kritisch | progress:100 | owner:ceo-agent
+- [x] Business Plan ausarbeiten | priority:Hoch | progress:100 | owner:finance-agent
+- [ ] PreSeed Antrag einreichen | priority:Kritisch | progress:0 | owner:ceo-agent
+
+### Paket 2: MVP Implementation
+- [ ] API Endpoints implementieren | priority:Hoch | progress:0 | owner:backend-agent
+- [ ] Frontend Komponenten bauen | priority:Hoch | progress:0 | owner:frontend-agent
+- [ ] Worker Jobs aktivieren | priority:Mittel | progress:0 | owner:backend-agent
+
+### Paket 3: Pilot-Aufbau
+- [ ] Pilot-Partner akquirieren | priority:Hoch | progress:0 | owner:ceo-agent
+- [ ] Test-Umgebung aufsetzen | priority:Mittel | progress:0 | owner:backend-agent
+- [ ] Monitoring Dashboard | priority:Mittel | progress:0 | owner:backend-agent
