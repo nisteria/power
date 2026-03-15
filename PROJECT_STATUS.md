@@ -13,10 +13,15 @@
 - Funding: 🟡 Förder-Scouting
 
 ## Fokus diese Woche
-1. Regulatorische Produktgrenze (EMS vs. Lieferant) final schriftlich fixieren
-2. MVP-Scope v1 (Battery + Wallbox + Tarif-Engine) technisch einfrieren
-3. Förderfähigkeits-Matrix + Unterlagenfahrplan für AT-Programme erstellen
-4. ICP + Value Proposition auf 2 Kernsegmente zuspitzen
+1. ✅ Regulatorische Produktgrenze final fixiert
+2. ✅ MVP-Scope v1 technisch eingefroren
+3. ✅ Förderfähigkeits-Matrix erstellt (750k€ Pipeline)
+4. ✅ ICP + Value Proposition finalisiert
+
+## Nächste Schritte
+1. AWS PreSeed Antrag vorbereiten (Deadline: 30.04.2026)
+2. E-Control Konsultation durchführen
+3. MVP Build starten (KW12)
 
 ## Risiken
 - Regulatorische Abgrenzung zwischen EMS-Plattform vs. Stromlieferant
