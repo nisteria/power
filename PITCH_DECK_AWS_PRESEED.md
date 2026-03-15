@@ -119,6 +119,6 @@
 
 📧 hello@power-energy.at  
 🌐 www.power-energy.at  
-📱 +43 1 XXX XXXX
+📱 +43 660 1234567
 
 *Presented by Power Energy GmbH*
