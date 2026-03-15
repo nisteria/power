@@ -41,8 +41,8 @@ Format: - [ ] title | priority:<Niedrig|Mittel|Hoch|Kritisch> | progress:<0-100>
 - [ ] PreSeed Antrag einreichen | priority:Kritisch | progress:0 | owner:ceo-agent
 
 ### Paket 2: MVP Implementation
-- [ ] API Endpoints implementieren | priority:Hoch | progress:0 | owner:backend-agent
-- [ ] Frontend Komponenten bauen | priority:Hoch | progress:0 | owner:frontend-agent
+- [x] API Endpoints implementieren | priority:Hoch | progress:100 | owner:backend-agent
+- [x] Frontend Komponenten bauen | priority:Hoch | progress:100 | owner:frontend-agent
 - [ ] Worker Jobs aktivieren | priority:Mittel | progress:0 | owner:backend-agent
 
 ### Paket 3: Pilot-Aufbau
