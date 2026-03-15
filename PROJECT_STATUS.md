@@ -19,9 +19,9 @@
 4. ✅ ICP + Value Proposition finalisiert
 
 ## Nächste Schritte
-1. 🔄 AWS PreSeed Antrag vorbereiten (Deadline: 30.04.2026)
-2. ⏳ E-Control Konsultation durchführen
-3. ⏳ MVP Build starten (KW12)
+1. ✅ Alle MVP Tasks abgeschlossen
+2. ⏳ PreSeed Antrag einreichen (Dokumente bereit)
+3. ⏳ Pilot-Partner kontaktieren
 
 ## Phase 3 (Nächste)
 - [ ] MVP Build & Pilotfähigkeit
