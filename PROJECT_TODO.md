@@ -46,6 +46,6 @@ Format: - [ ] title | priority:<Niedrig|Mittel|Hoch|Kritisch> | progress:<0-100>
 - [x] Worker Jobs aktivieren | priority:Mittel | progress:100 | owner:backend-agent
 
 ### Paket 3: Pilot-Aufbau
-- [ ] Pilot-Partner akquirieren | priority:Hoch | progress:0 | owner:ceo-agent
-- [ ] Test-Umgebung aufsetzen | priority:Mittel | progress:0 | owner:backend-agent
-- [ ] Monitoring Dashboard | priority:Mittel | progress:0 | owner:backend-agent
+- [x] Pilot-Partner akquirieren | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Test-Umgebung aufsetzen | priority:Mittel | progress:100 | owner:backend-agent
+- [x] Monitoring Dashboard | priority:Mittel | progress:100 | owner:backend-agent
