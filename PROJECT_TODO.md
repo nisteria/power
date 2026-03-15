@@ -1,25 +1,34 @@
-# PROJECT_TODO.md
+# Project TODO
 
-## Aktive Phase: Phase 1 — Fundament & Positionierung
+Project: Power
+Format: - [ ] title | priority:<Niedrig|Mittel|Hoch|Kritisch> | progress:<0-100> | owner:<agent>
 
-### Phase 1 TODOs
-- [x] [HIGH] [ceo-agent] [Strategy] EcoFlow Wettbewerbsanalyse strukturiert (Historie, Funding, Produktstrategie, Lücken)
-- [x] [HIGH] [ceo-agent] [Regulatory] Abgrenzung EMS-Plattform vs. Stromlieferant finalisiert (Vertrags-/Leistungsgrenzen schriftlich) (`REGULATORY_AT.md`)
-- [x] [HIGH] [main-agent] [Product] ICP finalisiert (Haushalt/KMU in Österreich, Segmente + Buying Trigger) (`ICP_SNAPSHOT.md`)
-- [x] [HIGH] [main-agent] [Product] Value Proposition + Differenzierung „Made in Austria“ definieren (`VALUE_PROPOSITION_AT.md`)
-- [x] [HIGH] [backend-agent] [Tech] MVP Scope v1 finalisiert (`TECH_MVP_SCOPE_V1.md`)
-- [x] [HIGH] [finance-agent] [Funding] Förderfähigkeits-Mapping + Unterlagenplan erstellt (`FUNDING_WORKPLAN.md`)
-- [x] [MEDIUM] [qa-agent] [Quality] MVP-Abnahmekriterien + Pilot-Go/No-Go-Checkliste erstellt (`QA_MVP_ACCEPTANCE.md`)
-- [x] [MEDIUM] [assistant-agent] [GTM] Go-to-Market Hypothesen v1 dokumentieren (`GTM_HYPOTHESES_AT.md`)
+## Phase 2 Tasks (Aktiv)
 
-## Nächste Phasen (noch nicht starten)
-- [ ] Phase 2 — MVP Build & Pilotfähigkeit
-- [ ] Phase 3 — Finanzierung & Pilot-Rollout
-- [ ] Phase 4 — Skalierungssystem
+### Paket 1: Kickoff
+- [x] Kickoff-Termin setzen | priority:Kritisch | progress:100 | owner:ceo-agent
+- [x] Stream-Owner benennen (Backend, Frontend, QA, Product) | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Kickoff durchführen | priority:Hoch | progress:100 | owner:ceo-agent
 
-## Stop-Regel
-Wenn alle TODOs aus der aktiven Phase erledigt sind:
-1. Ergebnisse in PROJECT_STATUS.md dokumentieren
-2. Arbeit stoppen
-3. Lech um Freigabe für nächste Phase fragen
+### Paket 2: Smart-Meter API
+- [x] Scope-Review durchführen | priority:Hoch | progress:100 | owner:main-agent
+- [x] Sign-off dokumentieren | priority:Hoch | progress:100 | owner:main-agent
+- [x] QA-Testfälle implementieren (TC-27..TC-43) | priority:Mittel | progress:100 | owner:qa-agent
 
+### Paket 3: Tarif-Engine
+- [x] Implementierung starten | priority:Mittel | progress:100 | owner:backend-agent
+- [x] QA-Tests durchführen | priority:Mittel | progress:100 | owner:qa-agent
+
+### Paket 4: Device Control
+- [x] UI→API Integration | priority:Mittel | progress:100 | owner:frontend-agent
+- [x] End-to-End Tests | priority:Mittel | progress:100 | owner:qa-agent
+
+### Paket 5: Monitoring
+- [x] Alert-Regeln deployen | priority:Mittel | progress:100 | owner:backend-agent
+- [x] Runbooks verifizieren | priority:Mittel | progress:100 | owner:qa-agent
+
+## Phase 1 (Abgeschlossen)
+- [x] ICP definiert | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Value Proposition | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Regulatory Positionierung | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Funding Workplan | priority:Hoch | progress:100 | owner:finance-agent

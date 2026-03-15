@@ -1,0 +1,205 @@
+// Kubernetes Deployment - Power Energy
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: power-energy
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: power-api-secret
+  namespace: power-energy
+type: Opaque
+stringData:
+  DATABASE_URL: postgres://power:password@postgres:5432/power_energy
+  REDIS_URL: redis://redis:6379
+  JWT_SECRET: your-jwt-secret
+  EPEX_API_KEY: your-epex-key
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: power-api
+  namespace: power-energy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: power-api
+  template:
+    metadata:
+      labels:
+        app: power-api
+    spec:
+      containers:
+      - name: api
+        image: ghcr.io/power-energy/api:latest
+        ports:
+        - containerPort: 4000
+        envFrom:
+        - secretRef:
+            name: power-api-secret
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 4000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health/ready
+            port: 4000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: power-api
+  namespace: power-energy
+spec:
+  selector:
+    app: power-api
+  ports:
+  - port: 80
+    targetPort: 4000
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: power-worker
+  namespace: power-energy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: power-worker
+  template:
+    metadata:
+      labels:
+        app: power-worker
+    spec:
+      containers:
+      - name: worker
+        image: ghcr.io/power-energy/worker:latest
+        envFrom:
+        - secretRef:
+            name: power-api-secret
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: power-web
+  namespace: power-energy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: power-web
+  template:
+    metadata:
+      labels:
+        app: power-web
+    spec:
+      containers:
+      - name: web
+        image: ghcr.io/power-energy/web:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NEXT_PUBLIC_API_URL
+          value: http://power-api
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: power-web
+  namespace: power-energy
+spec:
+  selector:
+    app: power-web
+  ports:
+  - port: 80
+    targetPort: 3000
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: power-ingress
+  namespace: power-energy
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - api.power.energy
+    - app.power.energy
+    secretName: power-tls
+  rules:
+  - host: api.power.energy
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: power-api
+            port:
+              number: 80
+  - host: app.power.energy
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: power-web
+            port:
+              number: 80
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pvc
+  namespace: power-energy
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: redis-pvc
+  namespace: power-energy
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

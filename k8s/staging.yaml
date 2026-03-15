@@ -1,0 +1,60 @@
+// Kubernetes - Staging Environment
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: power-staging
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: power-staging-secrets
+  namespace: power-staging
+type: Opaque
+stringData:
+  DATABASE_URL: postgres://staging_user:password@postgres.staging:5432/power_staging
+  REDIS_URL: redis://redis.staging:6379
+  JWT_SECRET: staging-secret-change-me
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: power-api
+  namespace: power-staging
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: power-api
+  template:
+    metadata:
+      labels:
+        app: power-api
+    spec:
+      containers:
+      - name: api
+        image: ghcr.io/power-energy/api:staging
+        ports:
+        - containerPort: 4000
+        envFrom:
+        - secretRef:
+            name: power-staging-secrets
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "200m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: power-api
+  namespace: power-staging
+spec:
+  selector:
+    app: power-api
+  ports:
+  - port: 80
+    targetPort: 4000
+  type: ClusterIP

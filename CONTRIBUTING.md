@@ -1,17 +1,34 @@
-# Contributing to Power
+# Contributing to Power Energy
 
-## Branching
-- `main` ist geschützt.
-- Feature-Arbeit auf `feature/*`, Fixes auf `fix/*`.
+First off, thank you for considering contributing! 🎉
 
-## Pull Requests
-- Kleine, fokussierte PRs bevorzugt.
-- PR-Template vollständig ausfüllen.
-- Mindestens 1 Review vor Merge.
+## How to Contribute
 
-## Commit Style
-- `feat: ...`, `fix: ...`, `chore: ...`, `docs: ...`
+### Reporting Bugs
+1. Check existing issues
+2. Create issue with details
+3. Include reproduction steps
 
-## Security
-- Keine API Keys / Secrets committen.
-- Sensible Daten nur über sichere Secret Stores.
+### Pull Request Process
+1. Fork the repo
+2. Create feature branch
+3. Make changes
+4. Update docs if needed
+5. Submit PR
+
+### Code Style
+- Use Prettier
+- Follow existing patterns
+- Write tests
+
+## Development Setup
+```bash
+git clone https://github.com/power-energy/power.git
+cd power
+pnpm install
+pnpm dev
+```
+
+## Questions?
+- Discord: discord.gg/power-energy
+- Email: dev@power.energy
