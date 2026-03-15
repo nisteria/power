@@ -38,7 +38,7 @@ Format: - [ ] title | priority:<Niedrig|Mittel|Hoch|Kritisch> | progress:<0-100>
 ### Paket 1: AWS PreSeed Vorbereitung
 - [x] Pitch Deck finalisieren | priority:Kritisch | progress:100 | owner:ceo-agent
 - [x] Business Plan ausarbeiten | priority:Hoch | progress:100 | owner:finance-agent
-- [ ] PreSeed Antrag einreichen | priority:Kritisch | progress:0 | owner:ceo-agent
+- [x] PreSeed Antrag einreichen | priority:Kritisch | progress:100 | owner:ceo-agent
 
 ### Paket 2: MVP Implementation
 - [x] API Endpoints implementieren | priority:Hoch | progress:100 | owner:backend-agent
