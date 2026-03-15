@@ -1,147 +1,144 @@
-// Optimization Worker - Battery/Storage Optimization
+// Background Worker - Optimization Job
 import { db } from '../lib/db.js';
-import { logger } from '../lib/logger.js';
-import { getOptimalChargeSlots } from '../../api/src/lib/tariff-engine.js';
+import { runOptimization } from './lib/optimization-engine.js';
+import { sendTariffAlert } from './lib/notifications.js';
+import { getCurrentTariff } from './lib/tariff-engine.js';
 
-export interface OptimizationResult {
-  siteId: string;
-  recommendedActions: {
-    deviceId: string;
-    action: 'charge' | 'discharge' | 'idle';
-    targetPowerKw?: number;
-    targetSocPct?: number;
-    reason: string;
-    savingsEur?: number;
-  }[];
-  estimatedDailySavings: number;
-}
+const TARIFF_HIGH_THRESHOLD = 0.20; // EUR/kWh
+const TARIFF_LOW_THRESHOLD = 0.08; // EUR/kWh
 
 export async function runOptimizationJob(): Promise<void> {
-  logger.info('Starting optimization job');
-
+  console.log('[Optimization Worker] Starting optimization job...');
+  
   try {
-    // Get all active sites with batteries
+    // Get all active sites
     const sites = await db.sites.findMany({
       where: { status: 'active' },
-      include: {
-        devices: {
-          where: { type: 'battery' },
-        },
-      },
+      include: { devices: true },
     });
 
+    console.log(`[Optimization Worker] Found ${sites.length} active sites`);
+
     for (const site of sites) {
-      if (site.devices.length === 0) continue;
+      try {
+        // Run optimization for this site
+        const recommendations = await runOptimization(site.id);
+        
+        // Check if we need to send tariff alerts
+        const currentTariff = await getCurrentTariff(site.id);
+        if (currentTariff) {
+          const price = currentTariff.priceEurPerKwh;
+          
+          if (price >= TARIFF_HIGH_THRESHOLD) {
+            // High tariff - notify user to discharge
+            await sendTariffAlert(site.userId, price, true);
+          } else if (price <= TARIFF_LOW_THRESHOLD) {
+            // Low tariff - notify user to charge
+            await sendTariffAlert(site.userId, price, false);
+          }
+        }
 
-      const result = await optimizeSite(site.id);
-      
-      // Store optimization result
-      await db.optimizationResults.create({
-        data: {
-          id: crypto.randomUUID(),
-          siteId: site.id,
-          result: result,
-          createdAt: new Date(),
-        },
-      });
-
-      logger.info(`Optimization completed for site ${site.id}`, {
-        savings: result.estimatedDailySavings,
-      });
+        console.log(`[Optimization Worker] Site ${site.id}: ${recommendations.length} recommendations generated`);
+      } catch (error) {
+        console.error(`[Optimization Worker] Error optimizing site ${site.id}:`, error);
+      }
     }
 
-    logger.info('Optimization job completed');
+    console.log('[Optimization Worker] Optimization job completed');
   } catch (error) {
-    logger.error('Optimization job failed', { error });
+    console.error('[Optimization Worker] Fatal error:', error);
     throw error;
   }
 }
 
-async function optimizeSite(siteId: string): Promise<OptimizationResult> {
-  const recommendedActions: OptimizationResult['recommendedActions'] = [];
+// Price fetch worker - gets day-ahead prices
+export async function runPriceFetchJob(): Promise<void> {
+  console.log('[Price Worker] Starting price fetch job...');
   
-  // Get current tariff data
-  const tariffs = await db.tariffSlots.findMany({
-    where: {
-      siteId,
-      startTime: { gte: new Date() },
-    },
-    orderBy: { startTime: 'asc' },
-    take: 24,
-  });
+  try {
+    // This would connect to a real price API (e.g., ENTSO-E, aWATTar)
+    // For now, we'll generate mock data
+    
+    const sites = await db.sites.findMany({
+      where: { status: 'active' },
+    });
 
-  // Get devices
-  const devices = await db.devices.findMany({
-    where: { siteId },
-  });
+    for (const site of sites) {
+      // Generate 24 hourly prices for tomorrow
+      const prices = generateMockPrices();
+      
+      // Store in database
+      for (const price of prices) {
+        await db.tariffSlots.create({
+          data: {
+            id: crypto.randomUUID(),
+            siteId: site.id,
+            startTime: price.startTime,
+            endTime: price.endTime,
+            priceEurPerKwh: price.price,
+            source: 'day-ahead',
+            createdAt: new Date(),
+          },
+        });
+      }
 
-  const battery = devices.find(d => d.type === 'battery');
-  
-  if (!battery) {
-    return {
-      siteId,
-      recommendedActions: [],
-      estimatedDailySavings: 0,
-    };
+      console.log(`[Price Worker] Updated tariffs for site ${site.id}: ${prices.length} slots`);
+    }
+
+    console.log('[Price Worker] Price fetch job completed');
+  } catch (error) {
+    console.error('[Price Worker] Fatal error:', error);
+    throw error;
   }
-
-  // Calculate optimal charge/discharge strategy
-  const currentHour = new Date().getHours();
-  const isPeakHour = currentHour >= 17 && currentHour <= 21;
-  const isLowPriceHour = currentHour >= 0 && currentHour <= 5;
-
-  // Find cheapest hours in next 24h
-  const cheapestHours = tariffs
-    .sort((a, b) => a.priceEurPerKwh - b.priceEurPerKwh)
-    .slice(0, 5);
-
-  if (isLowPriceHour && battery.status === 'idle') {
-    // Charge during low price hours
-    recommendedActions.push({
-      deviceId: battery.id,
-      action: 'charge',
-      targetPowerKw: battery.maxPowerKw,
-      targetSocPct: 100,
-      reason: 'Low tariff - charge battery',
-      savingsEur: 2.5, // Estimated
-    });
-  } else if (isPeakHour && battery.status === 'charged') {
-    // Discharge during peak hours
-    recommendedActions.push({
-      deviceId: battery.id,
-      action: 'discharge',
-      targetPowerKw: battery.maxPowerKw,
-      targetSocPct: 20,
-      reason: 'Peak tariff - discharge battery',
-      savingsEur: 5.0, // Estimated
-    });
-  } else {
-    recommendedActions.push({
-      deviceId: battery.id,
-      action: 'idle',
-      reason: 'No optimization opportunity',
-    });
-  }
-
-  const estimatedDailySavings = recommendedActions.reduce(
-    (sum, action) => sum + (action.savingsEur || 0),
-    0
-  );
-
-  return {
-    siteId,
-    recommendedActions,
-    estimatedDailySavings: Math.round(estimatedDailySavings * 100) / 100,
-  };
 }
 
-// Cron schedule: Every hour
-export const CRON_SCHEDULE = '0 * * * *';
+function generateMockPrices(): { startTime: Date; endTime: Date; price: number }[] {
+  const prices: { startTime: Date; endTime: Date; price: number }[] = [];
+  const now = new Date();
+  
+  // Start from midnight tonight
+  const startOfDay = new Date(now);
+  startOfDay.setHours(24, 0, 0, 0);
 
-// Run manually for testing
-runOptimizationJob()
-  .then(() => process.exit(0))
-  .catch((err) => {
-    logger.error('Fatal error', { error: err });
-    process.exit(1);
-  });
+  for (let hour = 0; hour < 24; hour++) {
+    const start = new Date(startOfDay);
+    start.setHours(hour);
+    
+    const end = new Date(startOfDay);
+    end.setHours(hour + 1);
+
+    // Simulate realistic Austrian day-ahead prices (EUR/kWh)
+    // Low at night, high during peak hours
+    let basePrice = 0.08;
+    if (hour >= 6 && hour < 9) basePrice = 0.15; // Morning peak
+    else if (hour >= 17 && hour < 21) basePrice = 0.22; // Evening peak
+    else if (hour >= 0 && hour < 5) basePrice = 0.05; // Night
+    
+    // Add some randomness
+    const price = basePrice + (Math.random() * 0.04 - 0.02);
+    
+    prices.push({ startTime: start, endTime: end, price });
+  }
+
+  return prices;
+}
+
+// Run as main
+if (import.meta.main) {
+  console.log('[Worker] Starting background worker...');
+  
+  // Check command line args
+  const job = process.argv[2] || 'optimization';
+  
+  switch (job) {
+    case 'optimization':
+      runOptimizationJob().then(() => process.exit(0));
+      break;
+    case 'prices':
+      runPriceFetchJob().then(() => process.exit(0));
+      break;
+    default:
+      console.error(`Unknown job: ${job}`);
+      process.exit(1);
+  }
+}
