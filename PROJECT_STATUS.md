@@ -46,6 +46,14 @@
 2. Antrag einreichen
 3. Pilot-Partner Outreach starten
 
+### Kritische Entscheidungen
+- **MVP-Architektur:** Fastify + Next.js + PostgreSQL/TimescaleDB + Kubernetes
+- **Regulatorische Positionierung:** EMS (nicht Lieferant) - E-Control konform
+- **PreSeed Ask:** €150K für MVP + Pilot
+
+### Blocker
+- Keine aktuellen Blocker identifiziert
+
 ## Phase 3 (Nächste)
 - [ ] MVP Build & Pilotfähigkeit
 
