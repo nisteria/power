@@ -5,6 +5,39 @@
 - Standort: Österreich
 - Positionierung: Made-in-Austria Energy Orchestrator
 
+## WEEKLY STATUS (KW15, 27.03.2026, 20:13 UTC) — **⚡ POWER-CEO WEEKLY REVIEW**
+
+### KW15 Zusammenfassung
+| Bereich | Status | Notes |
+|---------|--------|-------|
+| **Investor Docs** | ✅ | Alle Docs vom 24.03. vorhanden (Teaser, Financial Model, Outreach List, Email Templates) |
+| **Investor Outreach** | 🔴 Kein Fortschritt | KW15 auf agent4my fokussiert — Power Outreach noch nicht gestartet |
+| **Gmail / Email** | 🔴 Blockiert | Gmail nicht konfiguriert — Andreas Wirth Email liegt als Entwurf |
+| **Data Room** | 🔴 Nicht gestartet | OneDrive-Struktur fehlt komplett |
+| **Respark.io** | ⏳ Offen | Account vorhanden, aber nicht aktiviert |
+
+### KW15 Learnings
+- Browser-Automation Bild-Upload schlägt in Sandbox fehl → Facebook Graph API mit Page Token = Lösung
+- Config-Patch-Regel: hooks.token ≠ gateway.auth.token
+- Protocol v3: Ed25519 statt RSA
+- Gmail + Data Room sind die letzten Blocker für Investor-Outreach
+
+### KW16 Prioritäten
+| # | Action | ETA | Blocker |
+|---|--------|-----|---------|
+| 1 | Gmail Email-Versand einrichten | 28.03. | gmail credentials |
+| 2 | OneDrive Data Room erstellen | 28.03. | OneDrive-Zugang |
+| 3 | Erste Cold Email an Andreas Wirth | 28.03. | gmail + template fertig |
+| 4 | Respark.io profilieren | 29.03. | respark.io Account |
+| 5 | Weitere 5–10 Investoren kontaktieren | KW16 | Alle Docs vorhanden |
+
+### Entscheidungen die Lech BRAUCHT
+1. Welches Gmail für Investor-Emails?
+2. OneDrive oder SharePoint für Data Room?
+3. Wieviel Zeit für Power vs. agent4my?
+
+---
+
 ## DAILY STATUS (2026-03-27, 19:33 UTC) — **⚡ INVESTOREN-OUTREACH: BLOCKIERT VON EMAIL-SETUP**
 
 ### Fortschritt seit heute Morgen (09:00 UTC)
