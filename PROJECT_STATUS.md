@@ -5,6 +5,50 @@
 - Standort: Österreich
 - Positionierung: Made-in-Austria Energy Orchestrator
 
+## DAILY STATUS (2026-03-31, 08:00 UTC) — **⚡ POWER-CEO MORNING CHECK — KW16 DAY 2**
+
+### Projekt-Übersicht
+- **Status:** 🚨 Blockiert (Outreach kann nicht starten)
+- **Letzte Aktivität:** 27.03.2026 (4 Tage her) — KW15 Weekly Review
+- **Kein Fortschritt** seit KW15 — beide kritischen Blocker (Gmail + Data Room) weiterhin offen
+
+### AWS PreSeed / INVESTOR OUTREACH
+- ⚠️ **Achtung:** PreSeed wurde in KW15 gestrichen — Pivot zu **Direkt-Investoren-Outreach**
+- Investor Docs sind ✅ vorhanden (Teaser, Financial Model, Outreach List, Email Templates)
+- **Gmail / Email:** 🔴 weiterhin blockiert — Outreach kann nicht starten
+- **Data Room:** 🔴 weiterhin nicht live — OneDrive fehlt
+- **PreSeed Deadline (30.04.):** Noch 30 Tage — aber PreSeed ist nicht mehr das Ziel
+
+### Regulatorische Meilensteine
+- ✅ E-Control Positionierung final (EMS vs. Lieferant)
+- ✅ REGULATORY_AT.md vollständig
+
+### Kritische Blocker (unverändert seit KW15)
+| Blocker | Projekt | Seit | Status |
+|---------|---------|------|--------|
+| Gmail nicht eingerichtet | Power Outreach | KW15 | 🔴 OFFEN |
+| Data Room fehlt | Power | KW15 | 🔴 OFFEN |
+| Erste Cold Email nicht gesendet | Power Outreach | KW16 | 🔴 OFFEN |
+
+### Offene Action Items mit ETA
+| # | Action | Status | ETA |
+|---|--------|--------|-----|
+| 1 | Gmail Email-Versand einrichten | 🔴 Blockiert | Offen (Lech muss Gmail einrichten) |
+| 2 | OneDrive Data Room erstellen + Unterlagen hochladen | 🔴 Blockiert | Offen |
+| 3 | Erste Cold Email an Andreas Wirth | 🔴 Blockiert | Nach Gmail-Setup |
+| 4 | Respark.io profilieren | ⏳ Offen | KW16 |
+| 5 | Weitere 5–10 Investoren kontaktieren | ⏳ Offen | KW16 |
+
+### Nächste 3 Schritte (Reihenfolge)
+1. **Gmail einrichten** — das entsperrt alles andere
+2. **OneDrive Data Room erstellen** — Unterlagen hochladen
+3. **Cold Email an Andreas Wirth senden** — als erster Test-Investor
+
+### Blocker-Escalation
+> ⚠️ **Seit KW15 sind Gmail + Data Room blockiert. Ohne diese beiden Steps kann kein Investor-Outreach starten. Lech muss Gmail/Email-Infrastruktur bereitstellen.**
+
+---
+
 ## WEEKLY STATUS (KW15, 27.03.2026, 20:13 UTC) — **⚡ POWER-CEO WEEKLY REVIEW**
 
 ### KW15 Zusammenfassung
