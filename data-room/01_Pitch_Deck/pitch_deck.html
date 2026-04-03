@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Power Energy — Pitch Deck</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #1a1a2e;
+    color: #fff;
+  }
+  
+  .slide {
+    width: 1280px;
+    min-height: 720px;
+    padding: 60px 80px;
+    page-break-after: always;
+    position: relative;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slide:last-child {
+    page-break-after: auto;
+  }
+  
+  .slide-number {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #fff;
+    border-bottom: 4px solid #22c55e;
+    padding-bottom: 20px;
+  }
+  
+  h1:first-child { /* Cover slide */
+    font-size: 72px;
+    border: none;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .content {
+    font-size: 24px;
+    line-height: 1.6;
+    flex: 1;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+  }
+  
+  .content li {
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+  
+  .content ul, .content ol {
+    margin: 20px 0;
+  }
+  
+  blockquote {
+    background: rgba(34, 197, 94, 0.1);
+    border-left: 4px solid #22c55e;
+    padding: 20px 30px;
+    margin: 30px 0;
+    font-size: 28px;
+    font-style: italic;
+    color: #22c55e;
+  }
+  
+  .mini-table {
+    font-family: monospace;
+    font-size: 18px;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  strong {
+    color: #22c55e;
+  }
+  
+  code {
+    background: rgba(255,255,255,0.1);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+  
+  /* Title slide special */
+  #slide-1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #slide-1 h1 {
+    font-size: 96px;
+    border: none;
+    margin-bottom: 30px;
+  }
+  
+  #slide-1 .subtitle {
+    font-size: 32px;
+    color: #22c55e;
+    margin-bottom: 40px;
+  }
+  
+  #slide-1 .meta {
+    font-size: 20px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 80px;
+  }
+  
+  /* Print styles */
+  @media print {
+    .slide {
+      width: 100%;
+      height: 100vh;
+      page-break-after: always;
+      page-break-inside: avoid;
+    }
+  }
+  
+  @page {
+    size: landscape;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+    <div class="slide" id="slide-1">
+      <div class="slide-number">1 / 14</div>
+      <h1>Folie 1: Titel</h1>
+      <div class="content">
+        <p># Power — Pitch Deck</p><p><strong>Power</strong></p><p><em>AI Energy Orchestrator für Österreich</em></p><p>Made in Austria | PreSeed €150K</p><p>Lech Downarowicz | April 2026</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-2">
+      <div class="slide-number">2 / 14</div>
+      <h1>Folie 2: Problem</h1>
+      <div class="content">
+        <p><strong>€1,65 Mrd. gehen verloren</strong></p><li>Strompreise schwanken stündlich — niemand reagiert</li><li>Batterien, Wallboxen, Wärmepumpen: isoliert</li><li>PV-Besitzer: Eigenverbrauch nicht optimiert</li><li>Netzlast steigt — Kosten steigen</li><blockquote>"Warum verschenken wir Geld?"</blockquote>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-3">
+      <div class="slide-number">3 / 14</div>
+      <h1>Folie 3: Lösung</h1>
+      <div class="content">
+        <p><strong>Power — der AI Energy Orchestrator</strong></p><p><code>`</code></p><p>Smart-Meter → Power Cloud → Optimierung → Geräte</p><p>↓              ↓              ↓</p><p>Daten      EPEX-Preise     Battery/Wallbox</p><p><code>`</code></p><li>Echtzeit-Optimierung auf stündliche Tarife</li><li>Kein manuelles Eingreifen nötig</li><li>Cloud-basiert — kein teures Gateway</li>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-4">
+      <div class="slide-number">4 / 14</div>
+      <h1>Folie 4: Markt</h1>
+      <div class="content">
+        <p><strong>€1,65B adressierbarer Markt in Österreich</strong></p><div class="mini-table">| Segment | Zielgruppe | Potential |</div><div class="mini-table">|---|---|---|</div><div class="mini-table">| Haushalte mit PV | 180.000 | €900M |</div><div class="mini-table">| SMEs | 45.000 | €450M |</div><div class="mini-table">| Mehrfamilienhäuser | 12.000 | €300M |</div><p><strong>Timing:</strong> EU Energy Efficiency Directive 2023 — Flexibilität verpflichtend ab 2025</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-5">
+      <div class="slide-number">5 / 14</div>
+      <h1>Folie 5: Wettbewerb</h1>
+      <div class="content">
+        <div class="mini-table">| Feature | Power | VOLTAG.Ai | Tibber | Enpal |</div><div class="mini-table">|---|---|---|---|---|</div><div class="mini-table">| Cloud | ✅ | ❌ | ✅ | ❌ |</div><div class="mini-table">| KI-Optimierung | ✅ | ✅ | ❌ | ❌ |</div><div class="mini-table">| Kein Gateway nötig | ✅ | ❌ | ✅ | ❌ |</div><div class="mini-table">| Made in Austria | ✅ | ✅ | ❌ | ❌ |</div><p><strong>Unser Vorteil:</strong> "Starten Sie mit €0 — kein teures Gerät nötig"</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-6">
+      <div class="slide-number">6 / 14</div>
+      <h1>Folie 6: Geschäftsmodell</h1>
+      <div class="content">
+        <p><strong>SaaS mit 3 Tiers</strong></p><div class="mini-table">| Tier | Preis | Features |</div><div class="mini-table">|---|---|---|</div><div class="mini-table">| Basic | €9,90/Mt | Dashboard, Alerts |</div><div class="mini-table">| Pro | €19,90/Mt | Auto-Optimierung, Steuerung |</div><div class="mini-table">| Business | €49,90/Mt | Multi-Standort, API, SLA |</div><p><strong>Unit Economics:</strong></p><li>CAC: €150</li><li>LTV: €2.400</li><li>LTV:CAC: <strong>12:1</strong></li><li>Payback: <strong>8 Monate</strong></li><li>Bruttomarge: <strong>75%</strong></li>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-7">
+      <div class="slide-number">7 / 14</div>
+      <h1>Folie 7: Traktion</h1>
+      <div class="content">
+        <p><strong>Was wir haben:</strong></p><li>✅ MVP fertig (152 Files, 17K+ LOC)</li><li>✅ E-Control-konform (EMS-Modell)</li><li>✅ API + Frontend + Pipeline vollständig</li><li>✅ 4 QA Test-Suiten (44 Cases)</li><p><strong>Was wir suchen:</strong></p><li>Pilotkunden (Wien)</li><li>Erste echte Nutzerdaten</li>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-8">
+      <div class="slide-number">8 / 14</div>
+      <h1>Folie 8: Team</h1>
+      <div class="content">
+        <p><strong>Gründer mit Domain-Expertise</strong></p><div class="mini-table">| Rolle | Hintergrund |</div><div class="mini-table">|---|---|</div><div class="mini-table">| <strong>CEO</strong> | Elektro-Domain, Strategie, Funding |</div><div class="mini-table">| <strong>CTO</strong> | Full-Stack Architektur, Cloud |</div><p><strong>Advisors:</strong> Energie-Sektor mit E-Control-Netzwerk</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-9">
+      <div class="slide-number">9 / 14</div>
+      <h1>Folie 9: Finanzübersicht</h1>
+      <div class="content">
+        <p><strong>Basisszenario</strong></p><div class="mini-table">| | Y1 | Y2 | Y3 |</div><div class="mini-table">|---|---|---|---|</div><div class="mini-table">| Kunden | 500 | 3.000 | 10.000 |</div><div class="mini-table">| ARR | €90K | €540K | €1,8M |</div><div class="mini-table">| Wachstum | — | 500% | 233% |</div><p><strong>Break-Even:</strong> Q2 2027 bei ~580 Kunden</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-10">
+      <div class="slide-number">10 / 14</div>
+      <h1>Folie 10: Roadmap</h1>
+      <div class="content">
+        <p><code>`</code></p><p>Q2 2026  MVP Launch, Pilot Start</p><p>Q4 2026  500 Kunden</p><p>Q1 2027  Seed €500K | 1.000 Kunden</p><p>Q2 2027  Break-Even</p><p>Q4 2027  5.000 Kunden</p><p>Q3 2028  Series A | DACH Expansion</p><p><code>`</code></p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-11">
+      <div class="slide-number">11 / 14</div>
+      <h1>Folie 11: Kapitalbedarf</h1>
+      <div class="content">
+        <p><strong>PreSeed: €150K</strong></p><div class="mini-table">| Use of Funds | Betrag |</div><div class="mini-table">|---|---|</div><div class="mini-table">| MVP Entwicklung | €80K |</div><div class="mini-table">| Pilot-Betrieb | €40K |</div><div class="mini-table">| Regulatory/Legal | €20K |</div><div class="mini-table">| Team/G&amp;A | €10K |</div><p><strong>Meilenstein:</strong> 50 Pilot-Haushalte, Seed-Ready</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-12">
+      <div class="slide-number">12 / 14</div>
+      <h1>Folie 12: Warum investieren</h1>
+      <div class="content">
+        <p><strong>1. Timing</strong></p><p>Smart Meter Rollout 2026 schafft Infrastruktur</p><p><strong>2. Produkt</strong></p><p>Cloud-first, keine Hardware-Einstiegskosten</p><p><strong>3. Markt</strong></p><p>Kein österreichischer Champion — Lücke!</p><p><strong>4. Ökonomie</strong></p><p>12:1 LTV:CAC, 8 Monate Payback</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-13">
+      <div class="slide-number">13 / 14</div>
+      <h1>Folie 13: Next Step</h1>
+      <div class="content">
+        <p><strong>Lass uns reden.</strong></p><p>Demo? Pitch-Termin? Fragen?</p><p>hello@power-energy.at</p>
+      </div>
+    </div>
+  
+
+    <div class="slide" id="slide-14">
+      <div class="slide-number">14 / 14</div>
+      
+      <div class="content">
+        <p><em>Power Energy GmbH — Building Austria's Energy Future</em></p>
+      </div>
+    </div>
+  
+</body>
+</html>
