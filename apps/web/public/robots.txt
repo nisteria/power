@@ -1,0 +1,7 @@
+// Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://power.energy/sitemap.xml

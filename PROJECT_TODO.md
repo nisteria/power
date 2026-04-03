@@ -1,10 +1,51 @@
-# PROJECT_TODO.md
+# Project TODO
 
-- [ ] [HIGH] [main-agent] [Product] ICP + Value Proposition finalisieren (Haushalt/KMU)
-- [ ] [HIGH] [backend-agent] [Tech] API Skeleton + Auth Module anlegen
-- [ ] [HIGH] [frontend-agent] [Tech] Web-Onboarding UI v1 bauen
-- [ ] [MEDIUM] [glm-coding-agent] [Tech] Risikoanalyse Steuerlogik/Edge-Fallback
-- [ ] [MEDIUM] [finance-agent] [Finance] Unit Economics Modell aufsetzen
-- [ ] [MEDIUM] [assistant-agent] [Ops] Installateur-Partnerliste Österreich erstellen
-- [ ] [MEDIUM] [ceo-agent] [Strategy] Marktsegmentierung + Pricing-Hypothesen
-- [ ] [LOW] [qa-agent] [Quality] Teststrategie für Device-Kommandos definieren
+Project: Power
+Format: - [ ] title | priority:<Niedrig|Mittel|Hoch|Kritisch> | progress:<0-100> | owner:<agent>
+
+## Phase 2 Tasks (Aktiv)
+
+### Paket 1: Kickoff
+- [x] Kickoff-Termin setzen | priority:Kritisch | progress:100 | owner:ceo-agent
+- [x] Stream-Owner benennen (Backend, Frontend, QA, Product) | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Kickoff durchführen | priority:Hoch | progress:100 | owner:ceo-agent
+
+### Paket 2: Smart-Meter API
+- [x] Scope-Review durchführen | priority:Hoch | progress:100 | owner:main-agent
+- [x] Sign-off dokumentieren | priority:Hoch | progress:100 | owner:main-agent
+- [x] QA-Testfälle implementieren (TC-27..TC-43) | priority:Mittel | progress:100 | owner:qa-agent
+
+### Paket 3: Tarif-Engine
+- [x] Implementierung starten | priority:Mittel | progress:100 | owner:backend-agent
+- [x] QA-Tests durchführen | priority:Mittel | progress:100 | owner:qa-agent
+
+### Paket 4: Device Control
+- [x] UI→API Integration | priority:Mittel | progress:100 | owner:frontend-agent
+- [x] End-to-End Tests | priority:Mittel | progress:100 | owner:qa-agent
+
+### Paket 5: Monitoring
+- [x] Alert-Regeln deployen | priority:Mittel | progress:100 | owner:backend-agent
+- [x] Runbooks verifizieren | priority:Mittel | progress:100 | owner:qa-agent
+
+## Phase 1 (Abgeschlossen)
+- [x] ICP definiert | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Value Proposition | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Regulatory Positionierung | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Funding Workplan | priority:Hoch | progress:100 | owner:finance-agent
+
+## Phase 3: MVP Build & Pilotfähigkeit
+
+### Paket 1: AWS PreSeed Vorbereitung
+- [x] Pitch Deck finalisieren | priority:Kritisch | progress:100 | owner:ceo-agent
+- [x] Business Plan ausarbeiten | priority:Hoch | progress:100 | owner:finance-agent
+- [x] PreSeed Antrag einreichen | priority:Kritisch | progress:100 | owner:ceo-agent
+
+### Paket 2: MVP Implementation
+- [x] API Endpoints implementieren | priority:Hoch | progress:100 | owner:backend-agent
+- [x] Frontend Komponenten bauen | priority:Hoch | progress:100 | owner:frontend-agent
+- [x] Worker Jobs aktivieren | priority:Mittel | progress:100 | owner:backend-agent
+
+### Paket 3: Pilot-Aufbau
+- [x] Pilot-Partner akquirieren | priority:Hoch | progress:100 | owner:ceo-agent
+- [x] Test-Umgebung aufsetzen | priority:Mittel | progress:100 | owner:backend-agent
+- [x] Monitoring Dashboard | priority:Mittel | progress:100 | owner:backend-agent

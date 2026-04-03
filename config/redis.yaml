@@ -1,0 +1,27 @@
+# Redis Configuration
+# Connection settings
+redis:
+  url: redis://localhost:6379
+  max_memory: 256mb
+  max_memory_policy: allkeys-lru
+
+# Key prefixes
+key_prefixes:
+  session: "session:"
+  cache: "cache:"
+  rate_limit: "rate:"
+  lock: "lock:"
+
+# TTL defaults (seconds)
+ttl:
+  session: 86400      # 24 hours
+  cache_user: 3600     # 1 hour
+  cache_short: 300     # 5 minutes
+  rate_limit: 60      # 1 minute
+  lock: 30            # 30 seconds
+
+# Cluster mode
+cluster:
+  enabled: false
+  nodes: []
+  read_from_replica: false

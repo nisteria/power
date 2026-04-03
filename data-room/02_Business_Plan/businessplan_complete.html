@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Power Energy GmbH — Businessplan</title>
+<style>
+  @page {
+    size: A4;
+    margin: 2.5cm 2cm 2.5cm 2.5cm;
+    @bottom-center {
+      content: counter(page);
+      font-size: 10pt;
+      font-family: Arial, sans-serif;
+      color: #666;
+    }
+  }
+  
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+  }
+  
+  .cover {
+    page-break-after: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+  }
+  
+  .cover h1 {
+    font-size: 42pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .cover .subtitle {
+    font-size: 18pt;
+    color: #22c55e;
+    margin-bottom: 40px;
+  }
+  
+  .cover .meta {
+    font-size: 12pt;
+    color: #aaa;
+    margin-top: 60px;
+  }
+  
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 30px 0 20px 0;
+    border-bottom: 3px solid #22c55e;
+    padding-bottom: 10px;
+    page-break-after: avoid;
+  }
+  
+  h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 25px 0 15px 0;
+    page-break-after: avoid;
+  }
+  
+  h3 {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0 10px 0;
+    page-break-after: avoid;
+  }
+  
+  p {
+    margin: 0 0 12px 0;
+    text-align: justify;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: left;
+  }
+  
+  th {
+    background: #1a1a2e;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  tr:nth-child(even) {
+    background: #f8f9fa;
+  }
+  
+  tr:hover {
+    background: #e8f5e9;
+  }
+  
+  code {
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 9pt;
+  }
+  
+  pre {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 9pt;
+    margin: 15px 0;
+  }
+  
+  blockquote {
+    border-left: 4px solid #22c55e;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #f8f9fa;
+    font-style: italic;
+  }
+  
+  ul, ol {
+    margin: 10px 0 15px 25px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .page-break {
+    page-break-before: always;
+  }
+  
+  strong {
+    color: #1a1a2e;
+  }
+  
+  .highlight {
+    background: #22c55e;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 9pt;
+    color: #888;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <h1>POWER</h1>
+  <div class="subtitle">Energy GmbH</div>
+  <div style="font-size: 24pt; margin-bottom: 30px;">Businessplan</div>
+  <div style="font-size: 14pt; color: #ccc;">Investor-ready Edition</div>
+  <div class="meta">
+    April 2026 | Pre-Seed €150.000<br>
+    <br>
+    www.power-energy.at
+  </div>
+</div>
+
+<h1>Power Energy GmbH — Businessplan</h1>
+
+<strong>Version:</strong> 1.0 | <strong>Datum:</strong> April 2026  
+<strong>Erstellt mit:</strong> BusinessPlan Architect Pro Workflow
+
+<p>---</p>
+
+<p>\newpage</p>
+
+<h1>Executive Summary</h1>
+
+<h2>Das Wichtigste zuerst</h2>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Unternehmen</strong></td><td>Power Energy GmbH</td><td></td></tr><tr><td></td><td><strong>Standort</strong></td><td>Wien, Österreich</td><td></td></tr><tr><td></td><td><strong>Stage</strong></td><td>Pre-Seed</td><td></td></tr><tr><td></td><td><strong>Raise</strong></td><td>€150.000 für 5–10% Anteile</td><td></td></tr><tr><td></td><td><strong>Datum</strong></td><td>April 2026</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>Problem</h2>
+
+<p>Strompreise schwanken stündlich am Day-Ahead-Markt — aber kein System automatisiert die Reaktion darauf. Batterien, Wallboxen und Wärmepumpen arbeiten isoliert. Millionen an Einsparungen gehen verloren.</p>
+
+<strong>Marktstillstand:</strong> In Österreich gibt es keinen ganzheitlichen Energy Orchestrator, der Smart-Meter-Daten mit dynamischen Tarifen verbindet und Geräte in Echtzeit steuert.
+
+<p>---</p>
+
+<h2>Lösung</h2>
+
+<strong>Power</strong> ist der AI Energy Orchestrator für Österreich — eine SaaS-Plattform die Verbrauch, Speicherung und Ladevorgänge automatisch optimiert.
+
+<table><thead><tr><th>Kernfunktion</th><th>Nutzen</th></tr></thead><tbody><tr><td></td><td>Smart-Meter Integration</td><td>Echtzeit-Daten für fundierte Entscheidungen</td><td></td></tr><tr><td></td><td>Day-Ahead Tarif-Engine</td><td>Automatische Optimierung auf stündliche Preise</td><td></td></tr><tr><td></td><td>Device Orchestrator</td><td>Battery, Wallbox, Wärmepumpe gesteuert</td><td></td></tr><tr><td></td><td>KI-Optimierung</td><td>Lernt Verbrauchsmuster und maximiert Ersparnis</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>Markt</h2>
+
+<table><thead><tr><th>Segment</th><th>Marktgröße Österreich</th></tr></thead><tbody><tr><td></td><td>Haushalte mit PV + Speicher</td><td>€900M</td><td></td></tr><tr><td></td><td>SMEs mit Lastmanagement</td><td>€450M</td><td></td></tr><tr><td></td><td>Mehrfamilienhäuser</td><td>€300M</td><td></td></tr><tr><td></td><td><strong>TAM Gesamt</strong></td><td><strong>€1,65B</strong></td><td></td></tr></tbody></table>
+<strong>Timing:</strong> EU Energy Efficiency Directive 2023 macht Flexibilität verpflichtend seit 2025.
+
+<p>---</p>
+
+<h2>Geschäftsmodell</h2>
+
+<strong>SaaS mit drei Preisstufen:</strong>
+
+<table><thead><tr><th>Tier</th><th>Monatspries</th><th>Zielgruppe</th></tr></thead><tbody><tr><td></td><td>Basic</td><td>€9,90</td><td>Tarif-Alerts, Analytics</td><td></td></tr><tr><td></td><td>Pro</td><td>€19,90</td><td>Auto-Optimierung, Gerätesteuerung</td><td></td></tr><tr><td></td><td>Business</td><td>€49,90</td><td>Multi-Standort, API, SLA</td><td></td></tr></tbody></table>
+<strong>Unit Economics:</strong>
+<ul><li>CAC: €150</li>
+<li>LTV: €2.400 (10 Jahre)</li>
+<li>LTV:CAC: <strong>16:1</strong></li>
+<li>Payback: <strong>8 Monate</strong></li>
+<li>Bruttomarge: <strong>75%</strong></li>
+<p></ul></p>
+<p>---</p>
+
+<h2>Status & Traktion</h2>
+
+<table><thead><tr><th>Meilenstein</th><th>Status</th></tr></thead><tbody><tr><td></td><td>MVP Architektur</td><td>✅ Fertig (152 Files, 17K+ LOC)</td><td></td></tr><tr><td></td><td>E-Control Positionierung</td><td>✅ EMS-Modell, kein Lieferant</td><td></td></tr><tr><td></td><td>Vollständige API + Frontend + Pipeline</td><td>✅</td><td></td></tr><tr><td></td><td>QA Test-Suiten</td><td>✅ 4 Suites, 44 Test Cases</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>Team</h2>
+
+<table><thead><tr><th>Rolle</th><th>Hintergrund</th></tr></thead><tbody><tr><td></td><td>CEO</td><td>Strategie, Funding, Elektro-Domain</td><td></td></tr><tr><td></td><td>CTO</td><td>Architektur, Full-Stack Entwicklung</td><td></td></tr><tr><td></td><td>[Benötigte Information]</td><td>Customer Success</td><td></td></tr></tbody></table>
+<strong>Advisors:</strong> Energie-Sektor-Experten mit E-Control-Netzwerk
+
+<p>---</p>
+
+<h2>Kapitalbedarf & Use of Funds</h2>
+
+<strong>Raise:</strong> €150.000 Pre-Seed
+
+<table><thead><tr><th>Position</th><th>Betrag</th><th>Zweck</th></tr></thead><tbody><tr><td></td><td>MVP-Entwicklung</td><td>€80K</td><td>Produkt live bringen</td><td></td></tr><tr><td></td><td>Pilot-Betrieb</td><td>€40K</td><td>50 Pilot-Haushalte Wien</td><td></td></tr><tr><td></td><td>Regulatory/Legal</td><td>€20K</td><td>E-Control, Verträge</td><td></td></tr><tr><td></td><td>Team/G&A</td><td>€10K</td><td>Overhead</td><td></td></tr></tbody></table>
+<strong>Meilenstein:</strong> Live-Pilot mit 50 Haushalten bis Q4 2026 → Seed-Readiness.
+
+<p>---</p>
+
+<h2>Vision</h2>
+
+<blockquote>"Jeder Haushalt und jedes KMU in Österreich optimiert Energie automatisch — ohne manuelles Eingreifen."</blockquote>
+
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Unternehmen & Geschäftsidee</h1>
+
+<h2>2.1 Unternehmenssteckbrief</h2>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Name</strong></td><td>Power Energy GmbH</td><td></td></tr><tr><td></td><td><strong>Rechtsform</strong></td><td>Gesellschaft mit beschränkter Haftung</td><td></td></tr><tr><td></td><td><strong>Standort</strong></td><td>Wien, Österreich</td><td></td></tr><tr><td></td><td><strong>Gründungsdatum</strong></td><td>[Benötigte Information]</td><td></td></tr><tr><td></td><td><strong>Stage</strong></td><td>Pre-Seed</td><td></td></tr><tr><td></td><td><strong>Sektor</strong></td><td>EnergyTech / Cleantech / SaaS</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>2.2 Geschäftsidee</h2>
+
+<h3>Kernidee</h3>
+
+<p>Power entwickelt eine KI-gesteuerte Plattform zur automatischen Optimierung von Energieverbrauch, -speicherung und -erzeugung für Haushalte und KMUs in Österreich.</p>
+
+<h3>Alleinstellungsmerkmal</h3>
+
+<table><thead><tr><th>Merkmal</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>End-to-End Orchestrierung</strong></td><td>Smart-Meter → Tarif → Gerätesteuerung in einer Plattform</td><td></td></tr><tr><td></td><td><strong>E-Control Konformität</strong></td><td>EMS-Modell (kein Lieferant) — regulatorisch abgesichert</td><td></td></tr><tr><td></td><td><strong>Made in Austria</strong></td><td>Datenresidenz garantiert, lokaler Support</td><td></td></tr><tr><td></td><td><strong>Dynamic Tariff Optimization</strong></td><td>Echtzeit-Reaktion auf stündlich schwankende Day-Ahead-Preise</td><td></td></tr></tbody></table>
+<h3>Differenzierung zu bestehenden Lösungen</h3>
+
+<p>Bestehende Lösungen am Markt bieten entweder:</p>
+<ul><li>Nur Monitoring ohne automatische Steuerung</li>
+<li>Steuerung ohne dynamische Tarifeinbindung</li>
+<li>Hardware-lastige Lösungen ohne Cloud-SaaS-Modell</li>
+<p></ul></p>
+<p>Power kombiniert alle drei Aspekte in einer Plattform.</p>
+
+<p>---</p>
+
+<h2>2.3 Mission & Vision</h2>
+
+<h3>Mission</h3>
+<blockquote>"Wir machen Stromnetze intelligent — durch AI-gesteuerte Orchestrierung von Verbrauch, Speicherung und Erzeugung in Echtzeit."</blockquote>
+
+<h3>Vision</h3>
+<blockquote>"Jeder Haushalt und jedes KMU in Österreich optimiert Energie automatisch — ohne manuelles Eingreifen."</blockquote>
+
+<p>---</p>
+
+<h2>2.4 Gesellschaftszweck laut Statuten</h2>
+
+<p>[Benötigte Information — originale Gesellschaftszweck-Formulierung einfügen]</p>
+
+<p>---</p>
+
+<h2>2.5 Geschichte & Meilensteine</h2>
+
+<table><thead><tr><th>Datum</th><th>Meilenstein</th><th>Status</th></tr></thead><tbody><tr><td></td><td>Q4 2025</td><td>Projektstart / Konzeptentwicklung</td><td>✅</td><td></td></tr><tr><td></td><td>Q1 2026</td><td>MVP-Entwicklung begonnen</td><td>✅</td><td></td></tr><tr><td></td><td>Q1 2026</td><td>E-Control Regulatory Positionierung final</td><td>✅</td><td></td></tr><tr><td></td><td>Q2 2026</td><td>MVP Architecture abgeschlossen</td><td>✅</td><td></td></tr><tr><td></td><td>Q2 2026</td><td>[Geplant] Seed-Runde €150K</td><td>🔄</td><td></td></tr><tr><td></td><td>Q4 2026</td><td>[Geplant] Live-Pilot mit 50 Haushalten</td><td>⏳</td><td></td></tr><tr><td></td><td>Q1 2027</td><td>[Geplant] Seed-Runde €500K</td><td>⏳</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>2.6 Standort & Infrastruktur</h2>
+
+<h3>Büro / Arbeitsumgebung</h3>
+<p>[Benötigte Information — Home-Office, Coworking, Büro?]</p>
+
+<h3>Technische Infrastruktur</h3>
+<ul><li><strong>Cloud:</strong> AWS (Europe/Frankfurt)</li>
+<li><strong>CI/CD:</strong> GitHub Actions</li>
+<li><strong>Monitoring:</strong> [Benötigte Information]</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>2.7 Rechtliche Grundlagen</h2>
+
+<h3>Branchenzugehörigkeit</h3>
+<ul><li>Energie-Dienstleistungen (EMS)</li>
+<li>Informationstechnologie / SaaS</li>
+<li>Erneuerbare Energien / Cleantech</li>
+<p></ul></p>
+<h3>Relevante Regulierung</h3>
+<ul><li>E-Control Framework (AT)</li>
+<li>EU Energy Efficiency Directive 2023</li>
+<li>DSGVO / Datenschutz</li>
+<li>Elektrotechnik-Gewerbe (Installationspartnerschaft)</li>
+<p></ul></p>
+<h3>Regulatorische Positionierung</h3>
+<p>Power tritt <strong>nicht als Stromlieferant</strong> auf, sondern als:</p>
+<ul><li>EMS-Plattform (Energie-Management-System)</li>
+<li>Software-Dienstleister für Optimierung</li>
+<li>Keine Bilanzkreisverantwortung</li>
+<li>Keine Lieferantenpflichten</li>
+<p></ul></p>
+<p>Siehe: <code>REGULATORY_AT.md</code> (Dokument im Anhang)</p>
+
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Problem & Lösung</h1>
+
+<h2>3.1 Das Problem</h2>
+
+<h3>3.1.1 Dynamische Strompreise erfordern ständige Aufmerksamkeit</h3>
+
+<p>Der österreichische Strommarkt hat sich fundamental verändert: Preise am Day-Ahead-Markt schwanken stündlich. Aber:</p>
+
+<ul><li>Verbraucher können nicht manuell auf Preisänderungen reagieren</li>
+<li>Tarife werden selten gewechselt (Komplexität, Angst vor Fehlern)</li>
+<li>Millionen an Einsparungen bleiben ungenutzt</li>
+<p></ul></p>
+<h3>3.1.2 Isolierte Geräte ohne Koordination</h3>
+
+<p>Batteriespeicher, Wallboxen und Wärmepumpen arbeiten heute isoliert:</p>
+
+<table><thead><tr><th>Gerät</th><th>Problem</th></tr></thead><tbody><tr><td></td><td><strong>Batterie</strong></td><td>Lädt auf wenn Strom billig ist, aber nicht optimiert auf Tarife</td><td></td></tr><tr><td></td><td><strong>Wallbox</strong></td><td>Lädt ohne Rücksicht auf Strompreise oder Netzlast</td><td></td></tr><tr><td></td><td><strong>Wärmepumpe</strong></td><td>Arbeitet auf festen Zeitplänen, nicht basierend auf Preisen</td><td></td></tr><tr><td></td><td><strong>Smart Home</strong></td><td>Keine Integration in Energieoptimierung</td><td></td></tr></tbody></table>
+<p>Jedes Gerät trifft eigene Entscheidungen — ohne Gesamtsicht.</p>
+
+<h3>3.1.3 Marktfragmentierung</h3>
+
+<table><thead><tr><th>Problem</th><th>Auswirkung</th></tr></thead><tbody><tr><td></td><td>Kein österreichischer Champion</td><td>Internationale Anbieter dominieren, aber ohne lokalen Fokus</td><td></td></tr><tr><td></td><td>Komplexe Regulierung</td><td>Neueinsteiger scheitern an E-Control-Anforderungen</td><td></td></tr><tr><td></td><td>Keine Smart-Meter-Integration</td><td>Markt wartet auf flächendeckende Infrastruktur</td><td></td></tr><tr><td></td><td>Hohe Komplexität für Endkunden</td><td>Vielzahl an Apps, keine ganzheitliche Lösung</td><td></td></tr></tbody></table>
+<h3>3.1.4 Konkrete Auswirkungen für Haushalte</h3>
+
+<p>[Annahme — basierend auf Marktanalysen]</p>
+
+<table><thead><tr><th>Haushaltstyp</th><th>Jährliches Einsparpotenzial</th><th>Verlust durch Nicht-Optimierung</th></tr></thead><tbody><tr><td></td><td>Haushalt mit PV + Batterie</td><td>€360–840</td><td>€200–400</td><td></td></tr><tr><td></td><td>Haushalt mit PV nur</td><td>€180–420</td><td>€100–200</td><td></td></tr><tr><td></td><td>Haushalt mit E-Auto</td><td>€240–600</td><td>€150–300</td><td></td></tr><tr><td></td><td>SME mit Lastmanagement</td><td>€1.440–5.400</td><td>€500–2.000</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>3.2 Die Lösung</h2>
+
+<h3>3.2.1 Power — AI Energy Orchestrator</h3>
+
+<p>Power ist die erste ganzheitliche SaaS-Plattform für Österreich, die:</p>
+
+<p>1. <strong>Echtzeit-Daten</strong> von Smart-Metern, Batterien, Wallboxen und Wärmepumpen zusammenführt</p>
+<p>2. <strong>KI-gestützte Optimierung</strong> auf Basis von Day-Ahead-Tarifen ermöglicht</p>
+<p>3. <strong>Automatische Steuerung</strong> von Geräten für maximale Ersparnis übernimmt</p>
+
+<h3>3.2.2 Kernkomponenten</h3>
+
+<table><thead><tr><th>Komponente</th><th>Funktion</th><th>Technologie</th></tr></thead><tbody><tr><td></td><td><strong>Smart-Meter Gateway</strong></td><td>Echtzeit-Dateningestion von Verbrauch/Produktion</td><td>REST API, MQTT</td><td></td></tr><tr><td></td><td><strong>Tarif-Engine</strong></td><td>Tag-für-Tag Optimierung basierend auf EPEX-Spotpreisen</td><td>ML-Modell</td><td></td></tr><tr><td></td><td><strong>Device Orchestrator</strong></td><td>Steuerung von Battery, Wallbox, Wärmepumpe</td><td>Modbus, REST</td><td></td></tr><tr><td></td><td><strong>Dashboard</strong></td><td>Visualisierung für Endkunden</td><td>Next.js, Charts</td><td></td></tr><tr><td></td><td><strong>KI-Optimierung</strong></td><td>Lernt Verbrauchsmuster, maximiert Ersparnis</td><td>Python ML-Pipeline</td><td></td></tr></tbody></table>
+<h3>3.2.3 So funktioniert Power</h3>
+
+<pre><code>[Smart-Meter] ──→ [Power Cloud] ──→ [Tarif-Engine]
+<p>                                    ↓</p>
+<p>[PV-Anlage] ────→ [Daten-Hub] ──→ [KI-Optimierung]</p>
+<p>                                    ↓</p>
+<p>[Batterie] ←──── [Device Orchestrator] ←─→ [Wallbox]</p>
+<p>[Wärmepumpe]</p>
+<p></code></pre></p>
+
+<strong>Automatischer Ablauf:</strong>
+<p>1. Smart-Meter liefert Echtzeit-Verbrauchsdaten</p>
+<p>2. EPEX-Spot-Preise werden für nächsten Tag geladen</p>
+<p>3. KI berechnet optimalen Ladungs-/Entladungsplan</p>
+<p>4. Device Orchestrator steuert Geräte automatisch</p>
+<p>5. Dashboard zeigt Ersparnis und Entscheidungen</p>
+
+<p>---</p>
+
+<h2>3.3 Nutzenversprechen</h2>
+
+<table><thead><tr><th>Für</th><th>Nutzen</th><th>Beweis</th></tr></thead><tbody><tr><td></td><td><strong>Haushalt mit PV + Batterie</strong></td><td>€30–70/Monat sparen</td><td>Simulation zeigt 15–25% Stromkostenreduktion</td><td></td></tr><tr><td></td><td><strong>Haushalt mit E-Auto</strong></td><td>Optimal laden, Kosten minimieren</td><td>Ladung in günstigsten Stunden</td><td></td></tr><tr><td></td><td><strong>SME mit Lastspitzen</strong></td><td>Peak-Shaving, Netzgebühren reduzieren</td><td>Lastmanagement senkt Netzgebühren um 10–20%</td><td></td></tr><tr><td></td><td><strong>Netzbetreiber</strong></td><td>Netzstabilität verbessern</td><td>Lastverschiebung hilft bei Engpässen</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>3.4 Differenzierung zu Alternativen</h2>
+
+<table><thead><tr><th>Lösung</th><th>Steuerung</th><th>Tarife</th><th>Smart-Meter</th><th>KI</th></tr></thead><tbody><tr><td></td><td><strong>Power</strong></td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td></td></tr><tr><td></td><td><strong>VOLTAG.Ai</strong></td><td>✅</td><td>Teilweise</td><td>✅</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Enpal (DE)</strong></td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td></td></tr><tr><td></td><td><strong>Tibber</strong></td><td>❌</td><td>✅</td><td>Teilweise</td><td>❌</td><td></td></tr><tr><td></td><td><strong>aWATTar</strong></td><td>❌</td><td>✅</td><td>❌</td><td>❌</td><td></td></tr><tr><td></td><td><strong>Virtueller Assistent</strong></td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Angebot</h1>
+
+<h2>4.1 Produktübersicht</h2>
+
+<h3>4.1.1 Was Power ist</h3>
+
+<p>Power ist eine <strong>Cloud-basierte SaaS-Plattform</strong> (Subscription-Modell), die Haushalte und KMUs dabei unterstützt, ihre Energiekosten automatisch zu optimieren. Das Produkt besteht aus:</p>
+
+<table><thead><tr><th>Komponente</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Cloud-Plattform</strong></td><td>Zentrale Intelligence für Optimierung</td><td></td></tr><tr><td></td><td><strong>Smart-Meter Gateway</strong></td><td>Konnektor für Echtzeit-Daten (ohne eigene Hardware)</td><td></td></tr><tr><td></td><td><strong>Device Integration</strong></td><td>Anbindung an Batterien, Wallboxen, Wärmepumpen</td><td></td></tr><tr><td></td><td><strong>Nutzer-Dashboard</strong></td><td>Web- und Mobile-App zur Visualisierung</td><td></td></tr><tr><td></td><td><strong>KI-Optimierer</strong></td><td>ML-Modell für Verbrauchsprognose und Ersparnis-Maximierung</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>4.2 Produktmodule</h2>
+
+<h3>Modul 1: Smart-Meter Gateway</h3>
+
+<table><thead><tr><th>Feature</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Echtzeit-Dateningestion</strong></td><td>Minutengenaue Verbrauchsdaten</td><td></td></tr><tr><td></td><td><strong>Produktionsdaten PV</strong></td><td>Einspeiseleistung von Solaranlagen</td><td></td></tr><tr><td></td><td><strong>Netzdaten</strong></td><td>Netzlast, Anschlusswert</td><td></td></tr><tr><td></td><td><strong>Historie</strong></td><td>12 Monate Datenaufbewahrung</td><td></td></tr></tbody></table>
+<strong>Integration:</strong> Über standardisierte Smart-Meter-APIs (AMM-Schnittstelle)
+
+<p>---</p>
+
+<h3>Modul 2: Tarif-Engine</h3>
+
+<table><thead><tr><th>Feature</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Day-Ahead-Preise</strong></td><td>EPEX Spot für Österreich</td><td></td></tr><tr><td></td><td><strong>Netzpreise</strong></td><td>Netzkosten nach Verbrauchszeit</td><td></td></tr><tr><td></td><td><strong>Steuerung</strong></td><td>Automatische Tarifoptimierung</td><td></td></tr><tr><td></td><td><strong>Vergleich</strong></td><td>Laufende Marktbeobachtung</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h3>Modul 3: Device Orchestrator</h3>
+
+<table><thead><tr><th>Feature</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Batteriesteuerung</strong></td><td>Lade-/Entladungsplanung</td><td></td></tr><tr><td></td><td><strong>Wallbox-Steuerung</strong></td><td>EV-Ladung in günstigen Zeiten</td><td></td></tr><tr><td></td><td><strong>Wärmepumpen-Integration</strong></td><td>Heiz-/Kühloptimierung</td><td></td></tr><tr><td></td><td><strong>Lastmanagement</strong></td><td>Peak-Shaving für SMEs</td><td></td></tr></tbody></table>
+<strong>Unterstützte Protokolle:</strong> Modbus TCP, REST API, MQTT, EEBUS
+
+<p>---</p>
+
+<h3>Modul 4: KI-Optimierung</h3>
+
+<table><thead><tr><th>Feature</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Verbrauchsprognose</strong></td><td>ML-Modell für 24h-Vorhersage</td><td></td></tr><tr><td></td><td><strong>Preisprognose</strong></td><td>EPEX-Spot-Vorhersage</td><td></td></tr><tr><td></td><td><strong>Optimierungsalgorithmus</strong></td><td>Maximiert Ersparnis bei gegebenen Constraints</td><td></td></tr><tr><td></td><td><strong>Auto-Learning</strong></td><td>Passt sich an Nutzerverhalten an</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h3>Modul 5: Dashboard & Reporting</h3>
+
+<table><thead><tr><th>Feature</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Live-Übersicht</strong></td><td>Aktueller Verbrauch, Preise, Ersparnis</td><td></td></tr><tr><td></td><td><strong>Historie</strong></td><td>Vergleichbare Zeiträume</td><td></td></tr><tr><td></td><td><strong>Einsparungsnachweis</strong></td><td>Konkrete Euro-Beträge</td><td></td></tr><tr><td></td><td><strong>Export</strong></td><td>CSV/PDF für Berichte</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>4.3 Preisstufen</h2>
+
+<table><thead><tr><th>Basic</th><th>Pro</th><th>Business</th></tr></thead><tbody><tr><td></td><td><strong>Monatspreis</strong></td><td>€9,90</td><td>€19,90</td><td>€49,90</td><td></td></tr><tr><td></td><td><strong>Jahrespreis</strong></td><td>€99</td><td>€199</td><td>€499</td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td><strong>Smart-Meter Dashboard</strong></td><td>✅</td><td>✅</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Tarif-Alerts</strong></td><td>✅</td><td>✅</td><td>✅</td><td></td></tr><tr><td></td><td><strong>EPEX-Spot-Übersicht</strong></td><td>✅</td><td>✅</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Auto-Optimierung</strong></td><td>❌</td><td>✅</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Gerätesteuerung (1 Gerät)</strong></td><td>❌</td><td>✅</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Gerätesteuerung (Multi)</strong></td><td>❌</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Multi-Standort</strong></td><td>❌</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>API-Zugang</strong></td><td>❌</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>SLA</strong></td><td>❌</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Priority Support</strong></td><td>❌</td><td>❌</td><td>✅</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>4.4 Produkt-Roadmap</h2>
+
+<table><thead><tr><th>Phase</th><th>Zeitplan</th><th>Features</th></tr></thead><tbody><tr><td></td><td><strong>MVP</strong></td><td>Q2 2026</td><td>Smart-Meter, Tarif-Engine, Dashboard</td><td></td></tr><tr><td></td><td><strong>V1.1</strong></td><td>Q3 2026</td><td>Batteriesteuerung, Wallbox-Integration</td><td></td></tr><tr><td></td><td><strong>V1.2</strong></td><td>Q4 2026</td><td>Wärmepumpen, KI-Optimierung</td><td></td></tr><tr><td></td><td><strong>V2.0</strong></td><td>2027</td><td>Multi-User, SME-Features, API</td><td></td></tr><tr><td></td><td><strong>V2.1</strong></td><td>2027</td><td>White-Label für Partner</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>4.5 Technische Spezifikationen</h2>
+
+<table><thead><tr><th>Komponente</th><th>Technologie</th></tr></thead><tbody><tr><td></td><td><strong>Frontend</strong></td><td>Next.js, React, TailwindCSS</td><td></td></tr><tr><td></td><td><strong>Backend</strong></td><td>Fastify (Node.js), TypeScript</td><td></td></tr><tr><td></td><td><strong>Database</strong></td><td>PostgreSQL, TimescaleDB</td><td></td></tr><tr><td></td><td><strong>ML-Pipeline</strong></td><td>Python, scikit-learn</td><td></td></tr><tr><td></td><td><strong>Infrastructure</strong></td><td>AWS (Frankfurt), Kubernetes</td><td></td></tr><tr><td></td><td><strong>Monitoring</strong></td><td>[Benötigte Information]</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>4.6 Anforderungen an Kundenseite</h2>
+
+<table><thead><tr><th>Minimum</th><th>Empfohlen</th></tr></thead><tbody><tr><td></td><td><strong>Smart Meter</strong></td><td>AMR-fähiger Zähler</td><td>Moderner Smart Meter mit M-Bus/AMM</td><td></td></tr><tr><td></td><td><strong>Internet</strong></td><td>1 Mbps stabil</td><td>10+ Mbps</td><td></td></tr><tr><td></td><td><strong>Geräte</strong></td><td>Optional</td><td>PV-Anlage, Batterie, Wallbox</td><td></td></tr><tr><td></td><td><strong>Browser</strong></td><td>Chrome, Firefox, Safari, Edge</td><td>Aktuelle Versionen</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>4.7 Installation & Setup</h2>
+
+<table><thead><tr><th>Schritt</th><th>Aufwand</th><th>Wer</th></tr></thead><tbody><tr><td></td><td>1. Account erstellen</td><td>5 Min</td><td>Kunde selbst</td><td></td></tr><tr><td></td><td>2. Smart-Meter anbinden</td><td>15 Min</td><td>Technischer Support</td><td></td></tr><tr><td></td><td>3. Geräte verbinden</td><td>10–30 Min</td><td>Kunde/Partner</td><td></td></tr><tr><td></td><td>4. Optimierung aktivieren</td><td>5 Min</td><td>Kunde selbst</td><td></td></tr></tbody></table>
+<strong>Gesamt:</strong> 30–60 Minuten bis zur ersten Ersparnis
+
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Marktanalyse</h1>
+
+<h2>5.1 Marktüberblick</h2>
+
+<h3>5.1.1 Der österreichische Energiemarkt</h3>
+
+<p>Österreich befindet sich in einer fundamentalen Transformation:</p>
+
+<table><thead><tr><th>Trend</th><th>Auswirkung</th></tr></thead><tbody><tr><td></td><td><strong>Dynamische Tarife</strong></td><td>Stündliche Preisschwankungen am Day-Ahead-Markt werden Standard</td><td></td></tr><tr><td></td><td><strong>Erneuerbare Integration</strong></td><td>PV und Wind machen Netzplanung komplexer</td><td></td></tr><tr><td></td><td><strong>E-Mobilität</strong></td><td>Wallboxen erzeugen neue Lastspitzen</td><td></td></tr><tr><td></td><td><strong>Dezentrale Speicherung</strong></td><td>Batteriespeicher werden massiv gefördert</td><td></td></tr><tr><td></td><td><strong>Smart Meter Rollout</strong></td><td>Flächendeckende Datenverfügbarkeit ab 2026</td><td></td></tr></tbody></table>
+<h3>5.1.2 Regulatorischer Treiber</h3>
+
+<p>Die <strong>EU Energy Efficiency Directive 2023</strong> verpflichtet Mitgliedstaaten zur Einführung von Flexibilitätsmechanismen. Für Österreich bedeutet das:</p>
+
+<ul><li>Verpflichtende Smart-Meter-Infrastruktur</li>
+<li>Anreize fürLastverschiebung</li>
+<li>Rechtliche Grundlage für dynamische Tarife</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>5.2 Marktgröße</h2>
+
+<h3>TAM (Total Addressable Market)</h3>
+
+<table><thead><tr><th>Segment</th><th>Einheiten</th><th>Durchschnittspreis</th><th>Gesamt</th></tr></thead><tbody><tr><td></td><td>Haushalte mit PV + Speicher</td><td>180.000</td><td>€900/Jahr</td><td>€162M</td><td></td></tr><tr><td></td><td>SMEs mit Lastmanagement</td><td>45.000</td><td>€450/Jahr</td><td>€20M</td><td></td></tr><tr><td></td><td>Mehrfamilienhäuser</td><td>12.000</td><td>€300/Jahr</td><td>€3,6M</td><td></td></tr><tr><td></td><td><strong>TAM Gesamt</strong></td><td></td><td></td><td><strong>€1,65B</strong></td><td></td></tr></tbody></table>
+<p>[Annahme — basierend auf Marktdaten von E-Control, PV Austria, brancheninternen Schätzungen]</p>
+
+<h3>SAM (Serviceable Addressable Market)</h3>
+
+<table><thead><tr><th>Segment</th><th>Zielgruppe AT</th><th>Penetration</th><th>Umsatzpotential</th></tr></thead><tbody><tr><td></td><td>Urban, mit Smart Meter</td><td>400.000 Haushalte</td><td>1% Y1, 5% Y5</td><td>€8M</td><td></td></tr><tr><td></td><td>PV-Besitzer, urban</td><td>120.000</td><td>2% Y1, 10% Y5</td><td>€4M</td><td></td></tr><tr><td></td><td>SMEs mit Lastspitzen</td><td>15.000</td><td>1% Y1, 5% Y5</td><td>€1M</td><td></td></tr><tr><td></td><td><strong>SAM Gesamt</strong></td><td></td><td></td><td><strong>~€540M</strong></td><td></td></tr></tbody></table>
+<h3>SOM (Serviceable Obtainable Market)</h3>
+
+<table><thead><tr><th>Jahr</th><th>Kunden</th><th>ARR</th></tr></thead><tbody><tr><td></td><td>Y1 (2026)</td><td>500</td><td>€90K</td><td></td></tr><tr><td></td><td>Y2 (2027)</td><td>3.000</td><td>€540K</td><td></td></tr><tr><td></td><td>Y3 (2028)</td><td>10.000</td><td>€1,8M</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>5.3 Markttrends</h2>
+
+<table><thead><tr><th>Trend</th><th>Implikation für Power</th></tr></thead><tbody><tr><td></td><td><strong>Steigende Strompreise</strong></td><td>Ersparnis-Argument wird stärker</td><td></td></tr><tr><td></td><td><strong>Dynamische Netzentgelte</strong></td><td>Lastverschiebung wird wertvoller</td><td></td></tr><tr><td></td><td><strong>PV-Booms</strong></td><td>Immer mehr Haushalte haben Speicher</td><td></td></tr><tr><td></td><td><strong>EV-Adoption</strong></td><td>Wallbox-Steuerung wird relevant</td><td></td></tr><tr><td></td><td><strong>Regulierung</strong></td><td>E-Control schafft klare Spielregeln</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>5.4 Kaufverhalten</h2>
+
+<h3>Entscheidungsprozess für Privatkunden</h3>
+
+<table><thead><tr><th>Phase</th><th>Typisch</th><th>Dauer</th></tr></thead><tbody><tr><td></td><td>1. Problemwahrnehmung</td><td>Hohe Stromrechnung</td><td>—</td><td></td></tr><tr><td></td><td>2. Informationssuche</td><td>Online, PV-Installer</td><td>1–4 Wochen</td><td></td></tr><tr><td></td><td>3. Bewertung</td><td>Vergleich von Lösungen</td><td>1–2 Wochen</td><td></td></tr><tr><td></td><td>4. Entscheidung</td><td>Vertrauen in Anbieter</td><td>1 Woche</td><td></td></tr><tr><td></td><td>5. Installation</td><td>Termin mit Elektriker</td><td>1 Tag</td><td></td></tr></tbody></table>
+<h3>Entscheidungsfaktoren</h3>
+
+<table><thead><tr><th>Faktor</th><th>Gewichtung</th><th>Power-Vorteil</th></tr></thead><tbody><tr><td></td><td><strong>Ersparnis</strong></td><td>35%</td><td>€15–70/Monat</td><td></td></tr><tr><td></td><td><strong>Einfachheit</strong></td><td>25%</td><td>30–60 Min Setup</td><td></td></tr><tr><td></td><td><strong>Vertrauen</strong></td><td>20%</td><td>Made in Austria</td><td></td></tr><tr><td></td><td><strong>Integration</strong></td><td>15%</td><td>Bestehende Geräte</td><td></td></tr><tr><td></td><td><strong>Preis</strong></td><td>5%</td><td>Ab €9,90/Monat</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>5.5 Regionale Besonderheiten</h2>
+
+<h3>Österreich-spezifische Faktoren</h3>
+
+<table><thead><tr><th>Faktor</th><th>Situation</th></tr></thead><tbody><tr><td></td><td><strong>Netzbetreiber-Landschaft</strong></td><td>100+ regionale Netze, komplexe Integration</td><td></td></tr><tr><td></td><td><strong>E-Control Regulierung</strong></td><td>Klare Regeln für EMS vs. Lieferant</td><td></td></tr><tr><td></td><td><strong>Smart Meter Rollout</strong></td><td>2022–2026, 80%+ Abdeckung bis Ende 2026</td><td></td></tr><tr><td></td><td><strong>PV-Förderung</strong></td><td>Wohnbauförderung, Bundesländer unterschiedlich</td><td></td></tr><tr><td></td><td><strong>Sprache</strong></td><td>Deutsch, regionale Varianten</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>5.6 Wettbewerbsumfeld</h2>
+
+<h3>Direkte Wettbewerber</h3>
+
+<table><thead><tr><th>Anbieter</th><th>Stärke</th><th>Schwäche</th><th>Power-Vorteil</th></tr></thead><tbody><tr><td></td><td><strong>VOLTAG.Ai</strong></td><td>Hardware-basiert, fertiges Produkt</td><td>Nur mit eigener Hardware</td><td>Cloud-first, flexibler</td><td></td></tr><tr><td></td><td><strong>Tibber</strong></td><td>Dynamische Tarife</td><td>Keine Gerätesteuerung</td><td>Volle Orchestrierung</td><td></td></tr><tr><td></td><td><strong>Enpal (DE)</strong></td><td>Skaliert in DE</td><td>Kein AT-Fokus</td><td>Lokaler Fokus, E-Control-konform</td><td></td></tr><tr><td></td><td><strong>aWATTar</strong></td><td>Einfacher Tarif-Wechsel</td><td>Kein Orchestrierung</td><td>Umfassende Lösung</td><td></td></tr></tbody></table>
+<h3>Indirekte Wettbewerber</h3>
+
+<table><thead><tr><th>Kategorie</th><th>Beispiele</th></tr></thead><tbody><tr><td></td><td><strong>Energieberater</strong></td><td>Regionale Anbieter</td><td></td></tr><tr><td></td><td><strong>PV-Installer</strong></td><td>Bieten manchmal Energiemanagement</td><td></td></tr><tr><td></td><td><strong>Smart Home</strong></td><td>Apple HomeKit, Google Home</td><td></td></tr><tr><td></td><td><strong>Energieversorger</strong></td><td>EVN, Wien Energie (eigene Lösungen)</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>5.7 Markteintrittsbarrieren</h2>
+
+<table><thead><tr><th>Barriere</th><th>Auswirkung</th><th>Mitigation</th></tr></thead><tbody><tr><td></td><td><strong>Regulatorisches Wissen</strong></td><td>E-Control-Komplexität</td><td>Bereits vorhanden ✅</td><td></td></tr><tr><td></td><td><strong>Smart-Meter-Integration</strong></td><td>Technische Herausforderung</td><td>MVP zeigt Machbarkeit ✅</td><td></td></tr><tr><td></td><td><strong>Netzbetreiber-Beziehungen</strong></td><td>Langsame Entscheidungen</td><td>Netzwerk vorhanden</td><td></td></tr><tr><td></td><td><strong>Kundenvertrauen</strong></td><td>Sensibler Bereich</td><td>Made-in-Austria Positionierung</td><td></td></tr><tr><td></td><td><strong>Skaleneffekte</strong></td><td>Hohe CAC early-stage</td><td>Partner-Kanal senkt CAC</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Zielgruppe</h1>
+
+<h2>6.1 Primäre Zielgruppen</h2>
+
+<h3>6.1.1 Haushalte mit PV + Speicher</h3>
+
+<strong>Profil:</strong>
+<ul><li>Eigentümer einer Photovoltaik-Anlage mit Batteriespeicher</li>
+<li>Bereits investiert in erneuerbare Energie</li>
+<li>Sensibel für Eigenverbrauchsoptimierung</li>
+<li>Technisch affinity vorhanden (verstehen das Produkt)</li>
+<p></ul></p>
+<strong>Typische Eigenschaften:</strong>
+<table><thead><tr><th>Attribut</th><th>Ausprägung</th></tr></thead><tbody><tr><td></td><td><strong>Einkommen</strong></td><td>Überdurchschnittlich (PV + Speicher kostet €15-30K)</td><td></td></tr><tr><td></td><td><strong>Alter</strong></td><td>35–60 Jahre</td><td></td></tr><tr><td></td><td><strong>Wohnsituation</strong></td><td>Eigenheim, Einfamilienhaus</td><td></td></tr><tr><td></td><td><strong>Region</strong></td><td>Überall in Österreich, Schwerpunkt ländlich/suburban</td><td></td></tr></tbody></table>
+<strong>Nutzen:</strong>
+<ul><li>Maximierung des Eigenverbrauchs</li>
+<li>Batterie optimal auslasten</li>
+<li>Autarkiegrad erhöhen</li>
+<li>Stromkosten senken</li>
+<p></ul></p>
+<p>---</p>
+
+<h3>6.1.2 Haushalte mit E-Auto</h3>
+
+<strong>Profil:</strong>
+<ul><li>Besitzer eines Elektrofahrzeugs</li>
+<li>Laden zuhause (Wallbox)</li>
+<li>Interesse an Kosteneffizienz</li>
+<li>Technisch affin</li>
+<p></ul></p>
+<strong>Typische Eigenschaften:</strong>
+<table><thead><tr><th>Attribut</th><th>Ausprägung</th></tr></thead><tbody><tr><td></td><td><strong>Einkommen</strong></td><td>Mittel bis hoch</td><td></td></tr><tr><td></td><td><strong>Alter</strong></td><td>30–55 Jahre</td><td></td></tr><tr><td></td><td><strong>Wohnsituation</strong></td><td>Eigenheim oder Reihenhaus (mit Ladestation)</td><td></td></tr><tr><td></td><td><strong>Region</strong></td><td>Urban und suburban</td><td></td></tr></tbody></table>
+<strong>Nutzen:</strong>
+<ul><li>Ladezeiten optimieren (günstige Stunden)</li>
+<li>Netzlast vermeiden</li>
+<li>Kosten pro km minimieren</li>
+<li>PV-Überschuss nutzen</li>
+<p></ul></p>
+<p>---</p>
+
+<h3>6.1.3 SMEs mit Lastspitzen</h3>
+
+<strong>Profil:</strong>
+<ul><li>Kleine und mittlere Unternehmen</li>
+<li>Relevante Lastspitzen (Produktion, Kühlung, etc.)</li>
+<li>Gewerbliche Stromtarife mit Lastspitzen-Komponente</li>
+<li>Interesse an Kostenreduktion</li>
+<p></ul></p>
+<strong>Typische Eigenschaften:</strong>
+<table><thead><tr><th>Attribut</th><th>Ausprägung</th></tr></thead><tbody><tr><td></td><td><strong>Branchen</strong></td><td>Gastronomie, Produktion, Landwirtschaft, Gewerbe</td><td></td></tr><tr><td></td><td><strong>Größe</strong></td><td>5–50 Mitarbeiter</td><td></td></tr><tr><td></td><td><strong>Stromkosten</strong></td><td>€5.000–50.000/Jahr</td><td></td></tr><tr><td></td><td><strong>Region</strong></td><td>Überall in Österreich</td><td></td></tr></tbody></table>
+<strong>Nutzen:</strong>
+<ul><li>Lastspitzen reduzieren (Netzgebühren sparen)</li>
+<li>Gesamtstromkosten senken</li>
+<li>Reporting für Nachhaltigkeit</li>
+<li>Wettbewerbsvorteil durch Kosteneffizienz</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>6.2 Sekundäre Zielgruppen</h2>
+
+<h3>6.2.1 Immobilienverwaltungen</h3>
+
+<strong>Nutzen:</strong>
+<ul><li>Multi-User Management</li>
+<li>Reporting für Mieter/Stromabrechnung</li>
+<li>Attraktivitätssteigerung der Immobilie</li>
+<p></ul></p>
+<h3>6.2.2 Energieberater</h3>
+
+<strong>Nutzen:</strong>
+<ul><li>Tool für Kundenberatung</li>
+<li>Professionelles Reporting</li>
+<li>Differenzierung im Markt</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>6.3 Personas</h2>
+
+<h3>Persona 1: Thomas, 42 — PV-Besitzer</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Name</strong></td><td>Thomas K.</td><td></td></tr><tr><td></td><td><strong>Alter</strong></td><td>42</td><td></td></tr><tr><td></td><td><strong>Familie</strong></td><td>Verheiratet, 2 Kinder</td><td></td></tr><tr><td></td><td><strong>Wohnung</strong></td><td>Eigenheim mit 8kWp PV + 10kWh Speicher</td><td></td></tr><tr><td></td><td><strong>Fahrzeug</strong></td><td>VW ID.4 (Wallbox vorhanden)</td><td></td></tr><tr><td></td><td><strong>Problem</strong></td><td>"Ich will mehr aus meiner Anlage rausholen, aber hab keine Zeit mich ständig um Tarife zu kümmern"</td><td></td></tr><tr><td></td><td><strong>Lösung mit Power</strong></td><td>Automatische Optimierung, €45/Monat Ersparnis</td><td></td></tr><tr><td></td><td><strong>Bereitschaft zu zahlen</strong></td><td>€19,90/Monat (Pro)</td><td></td></tr></tbody></table>
+<h3>Persona 2: Maria, 35 — E-Auto-Besitzerin</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Name</strong></td><td>Maria S.</td><td></td></tr><tr><td></td><td><strong>Alter</strong></td><td>35</td><td></td></tr><tr><td></td><td><strong>Familie</strong></td><td>Ledig</td><td></td></tr><tr><td></td><td><strong>Wohnung</strong></td><td>Reihenhaus mit Ladestation</td><td></td></tr><tr><td></td><td><strong>Fahrzeug</strong></td><td>Tesla Model 3</td><td></td></tr><tr><td></td><td><strong>Problem</strong></td><td>"Ich lade oft zu teuren Zeiten, weil ich nicht dran denke"</td><td></td></tr><tr><td></td><td><strong>Lösung mit Power</strong></td><td>Automatische Ladezeit-Optimierung, €25/Monat Ersparnis</td><td></td></tr><tr><td></td><td><strong>Bereitschaft zu zahlen</strong></td><td>€9,90/Monat (Basic)</td><td></td></tr></tbody></table>
+<h3>Persona 3: Gasthof Zur Linde — SME</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Name</strong></td><td>Gasthof Zur Linde</td><td></td></tr><tr><td></td><td><strong>Typ</strong></td><td>Familiengeführter Gasthof</td><td></td></tr><tr><td></td><td><strong>Mitarbeiter</strong></td><td>12</td><td></td></tr><tr><td></td><td><strong>Stromkosten</strong></td><td>€18.000/Jahr</td><td></td></tr><tr><td></td><td><strong>Problem</strong></td><td>"Unsere Lastspitzen sind hoch, Netzgebühren fressen Profit"</td><td></td></tr><tr><td></td><td><strong>Lösung mit Power</strong></td><td>Lastmanagement, Peak-Shaving, €200/Monat Ersparnis</td><td></td></tr><tr><td></td><td><strong>Bereitschaft zu zahlen</strong></td><td>€49,90/Monat (Business)</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>6.4 Geografische Priorisierung</h2>
+
+<table><thead><tr><th>Region</th><th>Priorität</th><th>Begründung</th></tr></thead><tbody><tr><td></td><td><strong>Wien</strong></td><td>🔴 Hoch</td><td>Größter Markt, Smart Meter früh verfügbar</td><td></td></tr><tr><td></td><td><strong>Niederösterreich</strong></td><td>🔴 Hoch</td><td>Große ländliche Gebiete, viele PV-Anlagen</td><td></td></tr><tr><td></td><td><strong>Oberösterreich</strong></td><td>🟡 Mittel</td><td>Hohe Industriequote, many SMEs</td><td></td></tr><tr><td></td><td><strong>Steiermark</strong></td><td>🟡 Mittel</td><td>Förderungen für PV + Speicher</td><td></td></tr><tr><td></td><td><strong>Salzburg</strong></td><td>🟡 Mittel</td><td>Hohes Einkommen, EV-Dichte</td><td></td></tr><tr><td></td><td><strong>Tirol</strong></td><td>🟢 Niedrig</td><td>Komplexe Netzsituation</td><td></td></tr><tr><td></td><td><strong>Kärnten</strong></td><td>🟢 Niedrig</td><td>Kleiner Markt</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>6.5 Akquise-Kanäle</h2>
+
+<table><thead><tr><th>Kanal</th><th>Zielgruppe</th><th>CAC</th></tr></thead><tbody><tr><td></td><td><strong>PV-Installateure</strong></td><td>PV-Besitzer</td><td>€50</td><td></td></tr><tr><td></td><td><strong>Google Ads (Branded)</strong></td><td>Aktiv Suchende</td><td>€80</td><td></td></tr><tr><td></td><td><strong>Google Ads (Generic)</strong></td><td>Problembewusste</td><td>€150</td><td></td></tr><tr><td></td><td><strong>Content/SEO</strong></td><td>Informierte</td><td>€80</td><td></td></tr><tr><td></td><td><strong>Empfehlungen</strong></td><td>Bestandskunden</td><td>€0</td><td></td></tr><tr><td></td><td><strong>Messen & Events</strong></td><td>B2B</td><td>€200</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Wettbewerb</h1>
+
+<h2>7.1 Wettbewerbslandschaft</h2>
+
+<h3>7.1.1 Übersicht der relevanten Wettbewerber</h3>
+
+<table><thead><tr><th>Anbieter</th><th>Typ</th><th>Kernfokus</th><th>Markt</th><th>Stärke</th></tr></thead><tbody><tr><td></td><td><strong>Power</strong></td><td>SaaS</td><td>AI Orchestration</td><td>AT</td><td>Volle Integration</td><td></td></tr><tr><td></td><td><strong>VOLTAG.Ai</strong></td><td>Hardware + SaaS</td><td>Energy Hub</td><td>AT</td><td>Hardware-basiert</td><td></td></tr><tr><td></td><td><strong>Tibber</strong></td><td>SaaS</td><td>Dynamische Tarife</td><td>NO/SE/DE</td><td>Skandinavien-Expertise</td><td></td></tr><tr><td></td><td><strong>Enpal</strong></td><td>Hardware + SaaS</td><td>PV + Speicher</td><td>DE</td><td>Größter DE-Anbieter</td><td></td></tr><tr><td></td><td><strong>aWATTar</strong></td><td>SaaS</td><td>Tarif-Wechsel</td><td>AT/DE</td><td>Einfachheit</td><td></td></tr><tr><td></td><td><strong>Virtueller Assistent</strong></td><td>Keiner</td><td>—</td><td>—</td><td>—</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>7.2 Direkte Wettbewerber im Detail</h2>
+
+<h3>7.2.1 VOLTAG.Ai</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Website</strong></td><td>voltagai.digitalisierung.or.at</td><td></td></tr><tr><td></td><td><strong>Produkt</strong></td><td>VOLTAG.Pc Gateway (€599) + AI-Service (Abo)</td><td></td></tr><tr><td></td><td><strong>Markt</strong></td><td>Österreichische Endkunden</td><td></td></tr><tr><td></td><td><strong>Stage</strong></td><td>Aktiv vermarktet</td><td></td></tr></tbody></table>
+<strong>Stärken:</strong>
+<ul><li>Hardware + Software Komplettlösung</li>
+<li>9 integrierte Module</li>
+<li>Bereits am Markt aktiv</li>
+<li>Lokale Präsenz</li>
+<p></ul></p>
+<strong>Schwächen:</strong>
+<ul><li>Hardware erforderlich (Einstiegshürde)</li>
+<li>Keine Cloud-First Strategie</li>
+<li>Kein dynamisches Tarifmodell außerhalb EPEX</li>
+<li>Proprietäre Hardware</li>
+<p></ul></p>
+<strong>Preisvergleich:</strong>
+<table><thead><tr><th>Power</th><th>VOLTAG.Ai</th></tr></thead><tbody><tr><td></td><td>Einstieg</td><td>€0 (nur Abo)</td><td>€599 + Abo</td><td></td></tr><tr><td></td><td>Monatliches Abo</td><td>€9,90–49,90</td><td>[Benötigte Information]</td><td></td></tr><tr><td></td><td>Cloud-basiert</td><td>✅</td><td>❌</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h3>7.2.2 Tibber</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Website</strong></td><td>tibber.com</td><td></td></tr><tr><td></td><td><strong>Produkt</strong></td><td>Dynamischer Stromtarif + App</td><td></td></tr><tr><td></td><td><strong>Markt</strong></td><td>Norwegen, Schweden, Deutschland, Österreich</td><td></td></tr><tr><td></td><td><strong>Stage</strong></td><td>Skaliert, 500K+ Kunden</td><td></td></tr></tbody></table>
+<strong>Stärken:</strong>
+<ul><li>Skandinavische Skalierung bewiesen</li>
+<li>Starke App-Experience</li>
+<li>Dynamische EPEX-basierte Tarife</li>
+<li>Bekannte Marke</li>
+<p></ul></p>
+<strong>Schwächen:</strong>
+<ul><li>Keine Gerätesteuerung</li>
+<li>Kein Fokus auf AT-Markt</li>
+<li>Kein EMS-Modul</li>
+<li>Keine KI-Optimierung</li>
+<p></ul></p>
+<p>---</p>
+
+<h3>7.2.3 Enpal</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Website</strong></td><td>enpal.de</td><td></td></tr><tr><td></td><td><strong>Produkt</strong></td><td>PV + Speicher + Wallbox + Mietmodell</td><td></td></tr><tr><td></td><td><strong>Markt</strong></td><td>Deutschland</td><td></td></tr><tr><td></td><td><strong>Stage</strong></td><td>Series D (€350M), 20K+ Kunden</td><td></td></tr></tbody></table>
+<strong>Stärken:</strong>
+<ul><li>Massiv finansziert</li>
+<li>Komplettes Ökosystem</li>
+<li>Mietmodell (keine Einstiegskosten)</li>
+<li>Skaliert in DE</li>
+<p></ul></p>
+<strong>Schwächen:</strong>
+<ul><li>Kein Österreich-Fokus</li>
+<li>Hardware-lastiges Modell</li>
+<li>Keine dynamischen Tarifintegration</li>
+<li>Langfristige Mietverträge</li>
+<p></ul></p>
+<p>---</p>
+
+<h3>7.2.4 aWATTar</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Website</strong></td><td>awattar.com</td><td></td></tr><tr><td></td><td><strong>Produkt</strong></td><td>Dynamischer Stromtarif</td><td></td></tr><tr><td></td><td><strong>Markt</strong></td><td>Österreich, Deutschland</td><td></td></tr><tr><td></td><td><strong>Stage</strong></td><td>Aktiv, wachsend</td><td></td></tr></tbody></table>
+<strong>Stärken:</strong>
+<ul><li>Einfacher Tarif-Wechsel</li>
+<li>Stündliche EPEX-Integration</li>
+<li>Keine Hardware nötig</li>
+<li>Kostenlos für Endkunden</li>
+<p></ul></p>
+<strong>Schwächen:</strong>
+<ul><li>Keine Gerätesteuerung</li>
+<li>Keine Optimierung</li>
+<li>Kein EMS-Feature</li>
+<li>Nur Tarifoptimierung</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>7.3 Wettbewerbsvergleichsmatrix</h2>
+
+<table><thead><tr><th>Feature</th><th>Power</th><th>VOLTAG.Ai</th><th>Tibber</th><th>Enpal</th><th>aWATTar</th></tr></thead><tbody><tr><td></td><td><strong>Cloud-basiert</strong></td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Smart-Meter Integration</strong></td><td>✅</td><td>✅</td><td>Teilw.</td><td>❌</td><td>Teilw.</td><td></td></tr><tr><td></td><td><strong>Dynamische Tarife</strong></td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Batteriesteuerung</strong></td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td></td></tr><tr><td></td><td><strong>Wallbox-Steuerung</strong></td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td></td></tr><tr><td></td><td><strong>Wärmepumpen</strong></td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td></td></tr><tr><td></td><td><strong>KI-Optimierung</strong></td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td></td></tr><tr><td></td><td><strong>Made in Austria</strong></td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>E-Control konform</strong></td><td>✅</td><td>✅</td><td>Teilw.</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>SaaS-Modell</strong></td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td><td></td></tr><tr><td></td><td><strong>Keine Hardware nötig</strong></td><td>✅</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>7.4 SWOT-Analyse</h2>
+
+<h3>Power — Stärken</h3>
+<table><thead><tr><th>Stärke</th><th>Auswirkung</th></tr></thead><tbody><tr><td></td><td>Cloud-First Architektur</td><td>Niedrige Einstiegskosten für Kunden</td><td></td></tr><tr><td></td><td>Vollständige Integration</td><td>Ein Anbieter für alles</td><td></td></tr><tr><td></td><td>E-Control Positionierung</td><td>Regulatorisch abgesichert</td><td></td></tr><tr><td></td><td>Made in Austria</td><td>Vertrauen, lokaler Support</td><td></td></tr><tr><td></td><td>MVP bereits fertig</td><td>Time-to-Market Vorteil</td><td></td></tr></tbody></table>
+<h3>Power — Schwächen</h3>
+<table><thead><tr><th>Schwäche</th><th>Auswirkung</th></tr></thead><tbody><tr><td></td><td>Kein physisches Produkt</td><td>Geringere Wertigkeit im Vergleich</td><td></td></tr><tr><td></td><td>Neuer Spieler</td><td>Keine etablierte Marke</td><td></td></tr><tr><td></td><td>Ressourcen begrenzt</td><td>Langsameres Wachstum</td><td></td></tr></tbody></table>
+<h3>Power — Chancen</h3>
+<table><thead><tr><th>Chance</th><th>Auswirkung</th></tr></thead><tbody><tr><td></td><td>Smart Meter Rollout 2026</td><td>Wachsende Zielgruppe</td><td></td></tr><tr><td></td><td>Steigende Strompreise</td><td>Stärkeres Kundennutzen</td><td></td></tr><tr><td></td><td>EV-Adoption</td><td>Wachsende Wallbox-Zielgruppe</td><td></td></tr><tr><td></td><td>EU-Regulatorik</td><td>Marktstrukturierung</td><td></td></tr></tbody></table>
+<h3>Power — Risiken</h3>
+<table><thead><tr><th>Risiko</th><th>Auswirkung</th></tr></thead><tbody><tr><td></td><td>Internationaler Wettbewerber kommt nach AT</td><td>Preisdruck</td><td></td></tr><tr><td></td><td>VOLTAG.Ai erweitert cloud-basiert</td><td>Wettbewerbsintensivierung</td><td></td></tr><tr><td></td><td>Regulatorische Änderungen</td><td>Anpassungsbedarf</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>7.5 Wettbewerbsstrategie</h2>
+
+<h3>Differenzierungsstrategie</h3>
+
+<table><thead><tr><th>Strategie</th><th>Umsetzung</th></tr></thead><tbody><tr><td></td><td><strong>Cloud-First</strong></td><td>Keine Hardware-Einstiegskosten</td><td></td></tr><tr><td></td><td><strong>Integration</strong></td><td>Alle Geräte in einer Plattform</td><td></td></tr><tr><td></td><td><strong>Austria-Fokus</strong></td><td>Lokales Know-how, E-Control-Expertise</td><td></td></tr><tr><td></td><td><strong>SaaS-Agilität</strong></td><td>Schnelle Updates, kontinuierliche Verbesserung</td><td></td></tr></tbody></table>
+<h3>Angriffspunkte gegen Wettbewerber</h3>
+
+<table><thead><tr><th>Wettbewerber</th><th>Angriffspunkt</th></tr></thead><tbody><tr><td></td><td><strong>VOLTAG.Ai</strong></td><td>"Sie brauchen kein teures Gateway — starten Sie mit €0"</td><td></td></tr><tr><td></td><td><strong>Tibber</strong></td><td>"Wir steuern auch Ihre Geräte, nicht nur Tarife"</td><td></td></tr><tr><td></td><td><strong>Enpal</strong></td><td>"Keine langfristigen Verträge, monatlich kündbar"</td><td></td></tr><tr><td></td><td><strong>aWATTar</strong></td><td>"Wir machen aus Ihrem Haus ein intelligentes System"</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>7.6 Markteintrittsstrategie</h2>
+
+<table><thead><tr><th>Phase</th><th>Strategie</th><th>Ziel</th></tr></thead><tbody><tr><td></td><td><strong>Launch</strong></td><td>Differenzierung vs. VOLTAG.Ai</td><td>Erste 100 Kunden</td><td></td></tr><tr><td></td><td><strong>Wachstum</strong></td><td>Partner-Kanal (PV-Installateure)</td><td>500 Kunden in Wien</td><td></td></tr><tr><td></td><td><strong>Skalierung</strong></td><td>Multi-Region AT</td><td>3.000 Kunden</td><td></td></tr><tr><td></td><td><strong>Internationalisierung</strong></td><td>DACH-Expansion</td><td>Erste DE-Kunden</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Geschäftsmodell</h1>
+
+<h2>8.1 Geschäftsmodell-Übersicht</h2>
+
+<h3>Core Business Model</h3>
+
+<p>Power ist ein <strong>SaaS-Unternehmen (Software-as-a-Service)</strong> mit wiederkehrenden Einnahmen (MRR/ARR) durch monatliche Subskriptionen.</p>
+
+<h3>Revenue Streams</h3>
+
+<table><thead><tr><th>Stream</th><th>Anteil (Ziel Y3)</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Subscriptions</strong></td><td>85%</td><td>Monatliche Abo-Gebühren</td><td></td></tr><tr><td></td><td><strong>Transaktionsgebühren</strong></td><td>10%</td><td>Provisionen auf Energiehandel [Optional]</td><td></td></tr><tr><td></td><td><strong>Partner/Early Adopter</strong></td><td>5%</td><td>Setup-Gebühren, Enterprise-Deals</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>8.2 Preisstruktur</h2>
+
+<h3>Privatkunden (B2C)</h3>
+
+<table><thead><tr><th>Tier</th><th>Monat</th><th>Jahr</th><th>Laufzeit</th><th>Zielgruppe</th></tr></thead><tbody><tr><td></td><td><strong>Basic</strong></td><td>€9,90</td><td>€99</td><td>Monatlich kündbar</td><td>Tarif-Bewusste</td><td></td></tr><tr><td></td><td><strong>Pro</strong></td><td>€19,90</td><td>€199</td><td>Monatlich kündbar</td><td>Optimierungs-Willige</td><td></td></tr><tr><td></td><td><strong>Business</strong></td><td>€49,90</td><td>€499</td><td>Monatlich kündbar</td><td>Multi-Geräte</td><td></td></tr></tbody></table>
+<h3>Unternehmenslösungen (B2B)</h3>
+
+<table><thead><tr><th>Lösung</th><th>Preis</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Business Pro</strong></td><td>€99/Monat</td><td>Multi-Standort, erweiterte Features</td><td></td></tr><tr><td></td><td><strong>Enterprise</strong></td><td>Auf Anfrage</td><td>Custom-Integration, SLA, API</td><td></td></tr><tr><td></td><td><strong>Partner</strong></td><td>€9,90/Kunde/Monat</td><td>White-Label für Installateure</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>8.3 Unit Economics</h2>
+
+<h3>Customer Acquisition Cost (CAC)</h3>
+
+<table><thead><tr><th>Kanal</th><th>CAC</th><th>Conversion Rate</th></tr></thead><tbody><tr><td></td><td><strong>PV-Installateure (Partner)</strong></td><td>€50</td><td>3% (von Besucher)</td><td></td></tr><tr><td></td><td><strong>Google Ads (Branded)</strong></td><td>€80</td><td>5%</td><td></td></tr><tr><td></td><td><strong>Google Ads (Generic)</strong></td><td>€150</td><td>2%</td><td></td></tr><tr><td></td><td><strong>Content/SEO</strong></td><td>€80</td><td>1,5%</td><td></td></tr><tr><td></td><td><strong>Empfehlungen</strong></td><td>€0</td><td>10%</td><td></td></tr><tr><td></td><td><strong>Ø CAC</strong></td><td><strong>€150</strong></td><td>—</td><td></td></tr></tbody></table>
+<p>[Annahme — CAC basiert auf Branchenbenchmarks und Partner-Channel-Strategie]</p>
+
+<h3>Lifetime Value (LTV)</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Ø ARPU/Monat</strong></td><td>€15 (gewichtet über Tiers)</td><td></td></tr><tr><td></td><td><strong>Bruttomarge</strong></td><td>75%</td><td></td></tr><tr><td></td><td><strong>Durchschnittliche Kundenlebensdauer</strong></td><td>10 Jahre</td><td></td></tr><tr><td></td><td><strong>LTV (brutto)</strong></td><td>€15 × 12 × 10 = <strong>€1.800</strong></td><td></td></tr><tr><td></td><td><strong>LTV:CAC Ratio</strong></td><td><strong>12:1</strong></td><td></td></tr><tr><td></td><td><strong>Payback Period</strong></td><td><strong>8 Monate</strong></td><td></td></tr></tbody></table>
+<h3>Ökonomische Kennzahlen</h3>
+
+<table><thead><tr><th>Metrik</th><th>Wert</th><th>Benchmark</th></tr></thead><tbody><tr><td></td><td><strong>CAC</strong></td><td>€150</td><td>SaaS Avg: €200–300</td><td></td></tr><tr><td></td><td><strong>LTV</strong></td><td>€1.800</td><td>—</td><td></td></tr><tr><td></td><td><strong>LTV:CAC</strong></td><td>12:1</td><td>Gut: >3, Excellent: >5</td><td></td></tr><tr><td></td><td><strong>Payback</strong></td><td>8 Monate</td><td>SaaS Avg: 12–18 Monate</td><td></td></tr><tr><td></td><td><strong>Bruttomarge</strong></td><td>75%</td><td>SaaS Avg: 70–80%</td><td></td></tr><tr><td></td><td><strong>Churn Rate (monatlich)</strong></td><td><2%</td><td>SaaS Avg: 3–5%</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>8.4 Kostenstruktur</h2>
+
+<h3>Fixkosten (monatlich)</h3>
+
+<table><thead><tr><th>Position</th><th>Y1</th><th>Y2</th><th>Y3</th></tr></thead><tbody><tr><td></td><td>Server/Infrastruktur (AWS)</td><td>€800</td><td>€2.500</td><td>€5.000</td><td></td></tr><tr><td></td><td>Software-Lizenzen</td><td>€300</td><td>€800</td><td>€1.200</td><td></td></tr><tr><td></td><td>Buchhaltung/Legal</td><td>€400</td><td>€600</td><td>€800</td><td></td></tr><tr><td></td><td>Office & Admin</td><td>€200</td><td>€500</td><td>€1.000</td><td></td></tr><tr><td></td><td>Marketing (安排了)</td><td>€2.000</td><td>€5.000</td><td>€10.000</td><td></td></tr><tr><td></td><td><strong>Total Fixkosten</strong></td><td><strong>€3.700</strong></td><td><strong>€9.400</strong></td><td><strong>€18.000</strong></td><td></td></tr></tbody></table>
+<h3>Variable Kosten (pro Kunde)</h3>
+
+<table><thead><tr><th>Position</th><th>Kosten</th><th>Bemerkung</th></tr></thead><tbody><tr><td></td><td><strong>Support-Kosten</strong></td><td>€2/Kunde/Mt</td><td>Skaliert mit Kundenbasis</td><td></td></tr><tr><td></td><td><strong>Payment Gateway</strong></td><td>2,5% v. Revenue</td><td>SEPA/Kreditkarte</td><td></td></tr><tr><td></td><td><strong>Cloud-Zusatzkosten</strong></td><td>€0,50/Kunde/Mt</td><td>Relevant ab >500 Kunden</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>8.5 Skalierbarkeit</h2>
+
+<h3>Economies of Scale</h3>
+
+<table><thead><tr><th>Skaleneffekt</th><th>Ab Kunden</th><th>Auswirkung</th></tr></thead><tbody><tr><td></td><td><strong>AWS Volume Discounts</strong></td><td>500</td><td>10–20% Infrastrukturkosten-Reduktion</td><td></td></tr><tr><td></td><td><strong>Automatisiertes Onboarding</strong></td><td>200</td><td>Support-Kosten sinken pro Kunde</td><td></td></tr><tr><td></td><td><strong>Partner-Provisionen sinken</strong></td><td>1.000</td><td>Verhandlungsmacht bei Installateuren</td><td></td></tr><tr><td></td><td><strong>Content/SEO Skalierung</strong></td><td>500</td><td>Organic CAC sinkt</td><td></td></tr></tbody></table>
+<h3>Skalierungspfad</h3>
+
+<table><thead><tr><th>Phase</th><th>Kunden</th><th>ARR</th><th>Fokus</th></tr></thead><tbody><tr><td></td><td><strong>Launch</strong></td><td>0–100</td><td>€0–18K</td><td>Produkt-Perfektion</td><td></td></tr><tr><td></td><td><strong>Product-Market Fit</strong></td><td>100–500</td><td>€18–90K</td><td>Channel-Partner</td><td></td></tr><tr><td></td><td><strong>Wachstum</strong></td><td>500–3.000</td><td>€90K–540K</td><td>Skalierung AT</td><td></td></tr><tr><td></td><td><strong>Series A Readiness</strong></td><td>3.000+</td><td>€540K+</td><td>DACH-Expansion</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>8.6 Monetarisierung über den Kundenlebenszyklus</h2>
+
+<table><thead><tr><th>Phase</th><th>Monetarisierung</th><th>Mechanismus</th></tr></thead><tbody><tr><td></td><td><strong>Acquisition</strong></td><td>€0</td><td>Kostenlose Demo/Testphase</td><td></td></tr><tr><td></td><td><strong>Activation</strong></td><td>Setup-Gebühr (optional)</td><td>Erhöhung der Conversions</td><td></td></tr><tr><td></td><td><strong>Retention</strong></td><td>Monatliches Abo</td><td>Upsell von Basic zu Pro/Business</td><td></td></tr><tr><td></td><td><strong>Referral</strong></td><td>€0 CAC</td><td>Kunden werben Kunden</td><td></td></tr><tr><td></td><td><strong>Revenue Expansion</strong></td><td>Upsell, Cross-Sell</td><td>Mehr Standorte, Premium-Tiers</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>8.7 Pricing-Strategie</h2>
+
+<h3>Penetrations-Pricing (Launch)</h3>
+
+<table><thead><tr><th>Strategie</th><th>Umsetzung</th></tr></thead><tbody><tr><td></td><td><strong>Launch-Angebot</strong></td><td>3 Monate gratis für Pro-Tier</td><td></td></tr><tr><td></td><td><strong>Early Adopter</strong></td><td>50% Rabatt im ersten Jahr</td><td></td></tr><tr><td></td><td><strong>Partner-Angebot</strong></td><td>Keine Setup-Gebühr für PV-Installateure</td><td></td></tr></tbody></table>
+<h3>Value-Based Pricing</h3>
+
+<p>Preise reflektieren den Nutzen:</p>
+
+<table><thead><tr><th>Nutzen</th><th>Wert</th><th>Preisbereitschaft</th></tr></thead><tbody><tr><td></td><td>Ersparnis €30/Monat</td><td>€360/Jahr</td><td>€9,90–19,90/Monat</td><td></td></tr><tr><td></td><td>Ersparnis €70/Monat</td><td>€840/Jahr</td><td>€19,90–49,90/Monat</td><td></td></tr><tr><td></td><td>Netzgebühren-Reduktion €200/Monat</td><td>€2.400/Jahr</td><td>€49,90+ /Monat</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>8.8 Internationalisierungsstrategie</h2>
+
+<table><thead><tr><th>Phase</th><th>Markt</th><th>Zeitplan</th><th>Voraussetzung</th></tr></thead><tbody><tr><td></td><td><strong>1. AT-Saturation</strong></td><td>Österreich</td><td>Y1–Y2</td><td>3.000+ Kunden</td><td></td></tr><tr><td></td><td><strong>2. DACH-Start</strong></td><td>Deutschland, CH</td><td>Y2–Y3</td><td>Produkt-Lokalisierung DE</td><td></td></tr><tr><td></td><td><strong>3. DACH-Scale</strong></td><td>Vollständig DACH</td><td>Y3+</td><td>Lokale Partnerschaften</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Marketing & Vertrieb</h1>
+
+<h2>9.1 Marketingstrategie</h2>
+
+<h3>9.1.1 Positionierung</h3>
+
+<strong>Tagline:</strong> "Power — Intelligente Energie für Österreich"
+
+<strong>Positionierung:</strong>
+<blockquote>Power ist der erste Cloud-basierte AI Energy Orchestrator Made in Austria. Wir verbinden Smart-Meter-Daten mit dynamischen Tarifen und steuern Geräte automatisch für maximale Ersparnis.</blockquote>
+
+<strong>Markenversprechen:</strong>
+<ul><li>Kein teures Gateway nötig</li>
+<li>Automatische Optimierung</li>
+<li>Made in Austria</li>
+<li>E-Control konform</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>9.2 Zielgruppen-Kommunikation</h2>
+
+<h3>9.2.1 B2C — Haushalte</h3>
+
+<table><thead><tr><th>Kanal</th><th>Format</th><th>Frequenz</th></tr></thead><tbody><tr><td></td><td><strong>Google Ads</strong></td><td>Suche (Keywords: "Strom sparen", "PV optimieren")</td><td>Laufend</td><td></td></tr><tr><td></td><td><strong>Facebook/Instagram</strong></td><td>Carousel Ads, Stories</td><td>2x/Woche</td><td></td></tr><tr><td></td><td><strong>YouTube</strong></td><td>Erklärvideos (2 min)</td><td>1x/Monat</td><td></td></tr><tr><td></td><td><strong>SEO/Blog</strong></td><td>Ratgeber ("So sparen Sie mit Dynamic Tariffs")</td><td>2x/Woche</td><td></td></tr><tr><td></td><td><strong>Google My Business</strong></td><td>Local SEO, Reviews</td><td>Laufend</td><td></td></tr></tbody></table>
+<h3>9.2.2 B2B — SMEs</h3>
+
+<table><thead><tr><th>Kanal</th><th>Format</th><th>Frequenz</th></tr></thead><tbody><tr><td></td><td><strong>LinkedIn</strong></td><td>Thought Leadership Posts</td><td>3x/Woche</td><td></td></tr><tr><td></td><td><strong>Google Ads</strong></td><td>B2B Keywords ("Lastmanagement", "Energiekosten senken")</td><td>Laufend</td><td></td></tr><tr><td></td><td><strong>Direktvertrieb</strong></td><td>Cold Outreach, Webinare</td><td>Laufend</td><td></td></tr><tr><td></td><td><strong>Messsen</strong></td><td>Energy/PropTech Events</td><td>Quartalsweise</td><td></td></tr><tr><td></td><td><strong>Partner</strong></td><td>Co-Marketing mit PV-Installateuren</td><td>Laufend</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>9.3 Akquisestrategie</h2>
+
+<h3>9.3.1 Customer Acquisition Funnel</h3>
+
+<pre><code>Awareness → Interest → Consideration → Conversion → Retention
+<p>    ↓            ↓            ↓               ↓           ↓</p>
+<p>Google     Content      Demo/         Trial/       Upsell/</p>
+<p>Ads        Marketing    Webinar       Onboarding   Retention</p>
+<p></code></pre></p>
+
+<h3>9.3.2 Akquise-Kanäle und CAC</h3>
+
+<table><thead><tr><th>Kanal</th><th>Zielgruppe</th><th>CAC</th><th>Anteil am Mix</th></tr></thead><tbody><tr><td></td><td><strong>PV-Installateure</strong></td><td>PV-Besitzer</td><td>€50</td><td>40%</td><td></td></tr><tr><td></td><td><strong>Google Ads (Brand)</strong></td><td>Aktiv Suchende</td><td>€80</td><td>20%</td><td></td></tr><tr><td></td><td><strong>Google Ads (Generic)</strong></td><td>Problembewusste</td><td>€150</td><td>15%</td><td></td></tr><tr><td></td><td><strong>Content/SEO</strong></td><td>Informierte</td><td>€80</td><td>10%</td><td></td></tr><tr><td></td><td><strong>Empfehlungen</strong></td><td>Bestandskunden</td><td>€0</td><td>10%</td><td></td></tr><tr><td></td><td><strong>Messen/Events</strong></td><td>B2B</td><td>€200</td><td>5%</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>9.4 Vertriebsstrategie</h2>
+
+<h3>9.4.1 B2C Direktvertrieb</h3>
+
+<table><thead><tr><th>Phase</th><th>Touchpoint</th><th>Conversion-Ziel</th></tr></thead><tbody><tr><td></td><td><strong>Landing Page</strong></td><td>Power.at</td><td>3%</td><td></td></tr><tr><td></td><td><strong>Free Trial</strong></td><td>14 Tage Voller Zugang</td><td>20%</td><td></td></tr><tr><td></td><td><strong>Onboarding</strong></td><td>Setup + erste Ersparnis</td><td>60%</td><td></td></tr><tr><td></td><td><strong>Conversion</strong></td><td>Payed Subscription</td><td>50%</td><td></td></tr></tbody></table>
+<h3>9.4.2 B2B / Partner-Vertrieb</h3>
+
+<table><thead><tr><th>Partner-Typ</th><th>Provision</th><th>Ziel</th></tr></thead><tbody><tr><td></td><td><strong>PV-Installateure</strong></td><td>€50 pro Abschluss + laufend 10% MRR</td><td>50 Partner in AT</td><td></td></tr><tr><td></td><td><strong>Elektriker</strong></td><td>€25 pro Abschluss</td><td>100 Partner in AT</td><td></td></tr><tr><td></td><td><strong>Energieberater</strong></td><td>15% laufend</td><td>20 Partner</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>9.5 Content-Marketing</h2>
+
+<h3>9.5.1 Content-Pillar</h3>
+
+<table><thead><tr><th>Pillar</th><th>Inhalt</th><th>Format</th></tr></thead><tbody><tr><td></td><td><strong>Strom sparen</strong></td><td>Tipps, Ratgeber</td><td>Blog, Infografiken</td><td></td></tr><tr><td></td><td><strong>Dynamic Tariffs</strong></td><td>Erklärungen, News</td><td>Videos, Articles</td><td></td></tr><tr><td></td><td><strong>Smart Home</strong></td><td>Integration-Guides</td><td>Tutorials</td><td></td></tr><tr><td></td><td><strong>Nachhaltigkeit</strong></td><td>ESG-Themen</td><td>Thought Leadership</td><td></td></tr></tbody></table>
+<h3>9.5.2 Content-Kalender (Beispiel)</h3>
+
+<table><thead><tr><th>Woche</th><th>Thema</th><th>Format</th></tr></thead><tbody><tr><td></td><td>1</td><td>"Was sind Dynamic Tariffs?"</td><td>Blog + Video</td><td></td></tr><tr><td></td><td>2</td><td>"So optimieren Sie Ihre Wallbox"</td><td>Tutorial</td><td></td></tr><tr><td></td><td>3</td><td>Case Study: "40% weniger Stromkosten"</td><td>Success Story</td><td></td></tr><tr><td></td><td>4</td><td>"PV-Speicher richtig auslegen"</td><td>Infografik</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>9.6 Pricing-Promotion</h2>
+
+<h3>9.6.1 Launch-Aktionen</h3>
+
+<table><thead><tr><th>Aktion</th><th>Dauer</th><th>Mechanismus</th></tr></thead><tbody><tr><td></td><td><strong>Free Trial</strong></td><td>14 Tage</td><td>Voller Zugang, keine Kreditkarte</td><td></td></tr><tr><td></td><td><strong>Early Adopter Rabatt</strong></td><td>3 Monate</td><td>50% auf erstes Jahr</td><td></td></tr><tr><td></td><td><strong>Partner-Einführungsbonus</strong></td><td>Laufend</td><td>€25 Extra pro Abschluss</td><td></td></tr></tbody></table>
+<h3>9.6.2 saisonale Aktionen</h3>
+
+<table><thead><tr><th>Zeitpunkt</th><th>Aktion</th></tr></thead><tbody><tr><td></td><td><strong>Januar</strong></td><td>"Neues Jahr, neue Stromrechnung" — Angebotswoche</td><td></td></tr><tr><td></td><td><strong>April</strong></td><td>"Frühjahrscheck für Ihre PV-Anlage"</td><td></td></tr><tr><td></td><td><strong>September</strong></td><td>"Richtige Heizsaison vorbereiten"</td><td></td></tr><tr><td></td><td><strong>Dezember</strong></td><td>"Energie sparen im Winter"</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>9.7 Wachstumsstrategie</h2>
+
+<h3>9.7.1 Product-Led Growth (PLG)</h3>
+
+<table><thead><tr><th>Mechanismus</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Free Trial</strong></td><td>14 Tage volle Nutzung</td><td></td></tr><tr><td></td><td><strong>Self-Service Onboarding</strong></td><td>Kunde richtet sich selbst ein</td><td></td></tr><tr><td></td><td><strong>In-App Marketing</strong></td><td>"Sprechen Sie 3 Freunde und erhalten Sie 1 Monat gratis"</td><td></td></tr><tr><td></td><td><strong>Usage-Based Upgrade</strong></td><td>Automatische Empfehlung bei intensiver Nutzung</td><td></td></tr></tbody></table>
+<h3>9.7.2 Growth Loops</h3>
+
+<pre><code>Partner empfehlen → Neue Kunden → Erfolg → Partner empfehlen mehr
+<p>     ↑                                          ↓</p>
+<p>     └──────────── Bestandskunden teilen ───────┘</p>
+<p></code></pre></p>
+
+<p>---</p>
+
+<h2>9.8 Budgetplanung (Y1)</h2>
+
+<table><thead><tr><th>Position</th><th>Budget/Jahr</th><th>%</th></tr></thead><tbody><tr><td></td><td><strong>Google Ads</strong></td><td>€12.000</td><td>35%</td><td></td></tr><tr><td></td><td><strong>Content/SEO</strong></td><td>€6.000</td><td>18%</td><td></td></tr><tr><td></td><td><strong>Social Media</strong></td><td>€3.600</td><td>11%</td><td></td></tr><tr><td></td><td><strong>Partner Provisionen</strong></td><td>€6.000</td><td>18%</td><td></td></tr><tr><td></td><td><strong>Events/Messen</strong></td><td>€4.800</td><td>14%</td><td></td></tr><tr><td></td><td><strong>Tools & Software</strong></td><td>€1.200</td><td>4%</td><td></td></tr><tr><td></td><td><strong>Gesamt Marketing Y1</strong></td><td><strong>€33.600</strong></td><td>100%</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Organisation & Team</h1>
+
+<h2>10.1 Organisationsstruktur</h2>
+
+<h3>10.1.1 Aktuelle Struktur (Pre-Seed)</h3>
+
+<pre><code>Gründerteam (CEO + CTO)
+<p>         │</p>
+<p>         ├── Product/Development (CTO leitet)</p>
+<p>         │   └── Entwicklung (Outsource/Contractor)</p>
+<p>         │</p>
+<p>         └── Business/Operations (CEO leitet)</p>
+<p>             ├── Vertrieb/Marketing</p>
+<p>             ├── Customer Success</p>
+<p>             └── Regulatory/Legal</p>
+<p></code></pre></p>
+
+<h3>10.1.2 Zielstruktur (Post-Seed)</h3>
+
+<pre><code>CEO
+<p>  │</p>
+<p>  ├── CTO</p>
+<p>  │   ├── Backend Developer</p>
+<p>  │   ├── Frontend Developer</p>
+<p>  │   └── ML Engineer (Teilzeit)</p>
+<p>  │</p>
+<p>  ├── COO</p>
+<p>  │   ├── Customer Success Manager</p>
+<p>  │   └── Partner Manager</p>
+<p>  │</p>
+<p>  └── CFO (Teilzeit/Outsource)</p>
+<p>      └── Buchhaltung</p>
+<p></code></pre></p>
+
+<p>---</p>
+
+<h2>10.2 Gründerteam</h2>
+
+<h3>10.2.1 CEO — [Benötigte Information]</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Name</strong></td><td>[Benötigte Information]</td><td></td></tr><tr><td></td><td><strong>Rolle</strong></td><td>CEO, Gründer</td><td></td></tr><tr><td></td><td><strong>Verantwortung</strong></td><td>Strategie, Funding, Sales, Regulierung</td><td></td></tr></tbody></table>
+<strong>Background:</strong>
+<p>[Benötigte Information —CV/LinkedIn einfügen]</p>
+
+<strong>Expertise:</strong>
+<ul><li>[ ] Elektrotechnik / Energie-Domain</li>
+<li>[ ] Unternehmensführung</li>
+<li>[ ] Regulatory / E-Control</li>
+<li>[ ] Vertrieb / Business Development</li>
+<p></ul></p>
+<p>---</p>
+
+<h3>10.2.2 CTO — [Benötigte Information]</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Name</strong></td><td>[Benötigte Information]</td><td></td></tr><tr><td></td><td><strong>Rolle</strong></td><td>CTO, Gründer</td><td></td></tr><tr><td></td><td><strong>Verantwortung</strong></td><td>Technologie, Architektur, Entwicklung</td><td></td></tr></tbody></table>
+<strong>Background:</strong>
+<p>[Benötigte Information —CV/LinkedIn einfügen]</p>
+
+<strong>Expertise:</strong>
+<ul><li>[ ] Full-Stack Development</li>
+<li>[ ] Cloud Architecture (AWS)</li>
+<li>[ ] ML/AI</li>
+<li>[ ] System Engineering</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>10.3 Advisor Board</h2>
+
+<table><thead><tr><th>Name</th><th>Hintergrund</th><th>Beitrag</th></tr></thead><tbody><tr><td></td><td><strong>[Benötigte Information]</strong></td><td>Energie-Sektor</td><td>E-Control Netzwerk, Branchen-Know-how</td><td></td></tr><tr><td></td><td><strong>[Benötigte Information]</strong></td><td>Investor/Business Angel</td><td>Strategie, Finanzierung</td><td></td></tr><tr><td></td><td><strong>[Benötigte Information]</strong></td><td>Technologie</td><td>Architektur-Review, Hiring</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>10.4 Geplante Hiring Roadmap</h2>
+
+<table><thead><tr><th>Rolle</th><th>Wann</th><th>Gehalt (brutto)</th><th>Priorität</th></tr></thead><tbody><tr><td></td><td><strong>Backend Developer</strong></td><td>Q3 2026 (Seed)</td><td>€6.500</td><td>🔴 Hoch</td><td></td></tr><tr><td></td><td><strong>Frontend Developer</strong></td><td>Q3 2026 (Seed)</td><td>€5.500</td><td>🔴 Hoch</td><td></td></tr><tr><td></td><td><strong>Customer Success</strong></td><td>Q2 2026</td><td>€3.500</td><td>🟡 Mittel</td><td></td></tr><tr><td></td><td><strong>ML Engineer (PT)</strong></td><td>Q4 2026</td><td>€3.000 PT</td><td>🟡 Mittel</td><td></td></tr><tr><td></td><td><strong>VP Sales</strong></td><td>Q1 2027</td><td>€8.000</td><td>🟡 Mittel</td><td></td></tr><tr><td></td><td><strong>Marketing Manager</strong></td><td>Q1 2027</td><td>€5.000</td><td>🟢 Niedrig</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>10.5 Arbeitsweise & Kultur</h2>
+
+<h3>10.5.1 Remote-First</h3>
+
+<table><thead><tr><th>Aspekt</th><th>Ausprägung</th></tr></thead><tbody><tr><td></td><td><strong>Hauptarbeitsort</strong></td><td>Remote (Home Office)</td><td></td></tr><tr><td></td><td><strong>Büro</strong></td><td>Optional, Coworking bei Bedarf</td><td></td></tr><tr><td></td><td><strong>Tools</strong></td><td>Slack, GitHub, Notion, Zoom</td><td></td></tr><tr><td></td><td><strong>Kommunikation</strong></td><td>Async-first, tägliche Standups</td><td></td></tr></tbody></table>
+<h3>10.5.2 Werte</h3>
+
+<table><thead><tr><th>Wert</th><th>Bedeutung</th></tr></thead><tbody><tr><td></td><td><strong>Impact</strong></td><td>Wir machen Energie smarter — für Österreich</td><td></td></tr><tr><td></td><td><strong>Exzellenz</strong></td><td>Beste Technologie, bester Service</td><td></td></tr><tr><td></td><td><strong>Transparenz</strong></td><td>Offene Kommunikation intern und extern</td><td></td></tr><tr><td></td><td><strong>Ownership</strong></td><td>Jeder trägt Verantwortung für sein Gebiet</td><td></td></tr><tr><td></td><td><strong>Learning</strong></td><td>Kontinuierliche Verbesserung</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>10.6 Externe Ressourcen</h2>
+
+<table><thead><tr><th>Funktion</th><th>Anbieter</th><th>Status</th></tr></thead><tbody><tr><td></td><td><strong>Buchhaltung</strong></td><td>[Benötigte Information]</td><td>🔴 Offen</td><td></td></tr><tr><td></td><td><strong>Legal/Gesellschaftsrecht</strong></td><td>[Benötigte Information]</td><td>🔴 Offen</td><td></td></tr><tr><td></td><td><strong>Steuerberater</strong></td><td>[Benötigte Information]</td><td>🔴 Offen</td><td></td></tr><tr><td></td><td><strong>PR/Kommunikation</strong></td><td>Freelancer/Agentur</td><td>🟡 Langfristig</td><td></td></tr><tr><td></td><td><strong>Entwicklung (Contractor)</strong></td><td>[Benötigte Information]</td><td>🟡 Bei Bedarf</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>10.7 Cap Table (vorläufig)</h2>
+
+<table><thead><tr><th>Gesellschafter</th><th>Anteile</th><th>Bewertung</th></tr></thead><tbody><tr><td></td><td><strong>Gründer (CEO + CTO)</strong></td><td>80%</td><td>€800.000</td><td></td></tr><tr><td></td><td><strong>Advisor Pool</strong></td><td>5%</td><td>€50.000</td><td></td></tr><tr><td></td><td><strong>Investoren (Pre-Seed €150K)</strong></td><td>15%</td><td>€150.000</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>100%</strong></td><td><strong>€1.000.000</strong></td><td></td></tr></tbody></table>
+<p>[Benötigte Information — finale Cap-Table-Struktur nach Investor-Round]</p>
+
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Operativer Ablauf</h1>
+
+<h2>11.1 Wertschöpfungskette</h2>
+
+<pre><code>                    Kunden-Onboarding
+<p>                          ↓</p>
+<p>[Kunde] → [Smart-Meter] → [Power Cloud] ← [Geräte]</p>
+<p>              ↓               ↓               ↓</p>
+<p>         Datenfluss    KI-Optimierung   Steuerung</p>
+<p>                          ↓</p>
+<p>                    [Dashboard]</p>
+<p>                          ↓</p>
+<p>                    [Support/Success]</p>
+<p></code></pre></p>
+
+<p>---</p>
+
+<h2>11.2 Kernprozesse</h2>
+
+<h3>11.2.1 Kunden-Onboarding</h3>
+
+<table><thead><tr><th>Phase</th><th>Beschreibung</th><th>Dauer</th><th>Verantwortlich</th></tr></thead><tbody><tr><td></td><td>1. Registration</td><td>Kunde erstellt Account</td><td>5 Min</td><td>Self-Service</td><td></td></tr><tr><td></td><td>2. Smart-Meter</td><td>Anbindung über Gateway/API</td><td>15 Min</td><td>Support</td><td></td></tr><tr><td></td><td>3. Geräte</td><td>Verbindung der Geräte</td><td>10–30 Min</td><td>Kunde/Partner</td><td></td></tr><tr><td></td><td>4. Konfiguration</td><td>Einstellungen, Präferenzen</td><td>10 Min</td><td>Kunde</td><td></td></tr><tr><td></td><td>5. Go-Live</td><td>Optimierung startet</td><td>1 Min</td><td>Automatisch</td><td></td></tr></tbody></table>
+<strong>Gesamt:</strong> 30–60 Minuten
+
+<p>---</p>
+
+<h3>11.2.2 Laufender Betrieb</h3>
+
+<table><thead><tr><th>Prozess</th><th>Beschreibung</th><th>Häufigkeit</th></tr></thead><tbody><tr><td></td><td><strong>Datensynchronisation</strong></td><td>Smart-Meter Daten → Cloud</td><td>Minütlich</td><td></td></tr><tr><td></td><td><strong>Preis-Updates</strong></td><td>EPEX-Spot laden</td><td>Täglich (14:00)</td><td></td></tr><tr><td></td><td><strong>Optimierung</strong></td><td>KI berechnet optimalen Plan</td><td>Täglich</td><td></td></tr><tr><td></td><td><strong>Steuerung</strong></td><td>Geräte werden angesteuert</td><td>Bei Bedarf</td><td></td></tr><tr><td></td><td><strong>Reporting</strong></td><td>Dashboard-Daten aktualisiert</td><td>Echtzeit</td><td></td></tr><tr><td></td><td><strong>Backup</strong></td><td>Daten-Backup</td><td>Täglich</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h3>11.2.3 Support-Prozess</h3>
+
+<table><thead><tr><th>Tier</th><th>Problem</th><th>Reaktionszeit</th><th>Lösung</th></tr></thead><tbody><tr><td></td><td><strong>Tier 1</strong></td><td>Allgemeine Fragen</td><td><24h</td><td>Dokumentation, FAQ</td><td></td></tr><tr><td></td><td><strong>Tier 2</strong></td><td>Technische Probleme</td><td><8h</td><td>Remote-Support</td><td></td></tr><tr><td></td><td><strong>Tier 3</strong></td><td>Kritische Ausfälle</td><td><1h</td><td>Engineer Escalation</td><td></td></tr></tbody></table>
+<strong>Support-Kanäle:</strong>
+<ul><li>In-App Chat</li>
+<li>Email: support@power-energy.at</li>
+<li>Dokumentation: docs.power-energy.at</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>11.3 Technische Architektur</h2>
+
+<h3>11.3.1 Systemübersicht</h3>
+
+<pre><code>                    ┌─────────────────┐
+<p>                    │   Kunden-Device   │</p>
+<p>                    │  (Smartphone/PC)  │</p>
+<p>                    └────────┬──────────┘</p>
+<p>                             │ HTTPS</p>
+<p>                             ↓</p>
+<p>┌─────────────────────────────────────────────────────────────┐</p>
+<p>│                     AWS Cloud (Frankfurt)                    │</p>
+<p>│                                                              │</p>
+<p>│  ┌──────────┐   ┌──────────┐   ┌──────────────────────┐    │</p>
+<p>│  │  Next.js │   │ Fastify  │   │   ML Pipeline        │    │</p>
+<p>│  │ Frontend │◄──│   API    │◄──│   (Python/scikit)   │    │</p>
+<p>│  └──────────┘   └────┬─────┘   └──────────────────────┘    │</p>
+<p>│                      │                                       │</p>
+<p>│             ┌────────▼────────┐                              │</p>
+<p>│             │   PostgreSQL /  │                              │</p>
+<p>│             │   TimescaleDB   │                              │</p>
+<p>│             └─────────────────┘                              │</p>
+<p>│                                                              │</p>
+<p>│  ┌──────────┐   ┌──────────┐   ┌──────────────────────┐    │</p>
+<p>│  │  Smart   │   │  Device  │   │   External APIs       │    │</p>
+<p>│  │  Meter   │   │  Hub     │   │   (EPEX, Weather)    │    │</p>
+<p>│  │  Gateway │   │          │   │                      │    │</p>
+<p>│  └──────────┘   └──────────┘   └──────────────────────┘    │</p>
+<p>└─────────────────────────────────────────────────────────────┘</p>
+<p></code></pre></p>
+
+<h3>11.3.2 Tech Stack</h3>
+
+<table><thead><tr><th>Komponente</th><th>Technologie</th><th>备注</th></tr></thead><tbody><tr><td></td><td><strong>Frontend</strong></td><td>Next.js, React, TailwindCSS</td><td>PWA-fähig</td><td></td></tr><tr><td></td><td><strong>Backend</strong></td><td>Fastify, Node.js, TypeScript</td><td>REST API</td><td></td></tr><tr><td></td><td><strong>Database</strong></td><td>PostgreSQL, TimescaleDB</td><td>Zeitreihendaten</td><td></td></tr><tr><td></td><td><strong>ML</strong></td><td>Python, scikit-learn, pandas</td><td>Optimierung</td><td></td></tr><tr><td></td><td><strong>Infrastructure</strong></td><td>AWS ECS, RDS, S3</td><td>Production</td><td></td></tr><tr><td></td><td><strong>CI/CD</strong></td><td>GitHub Actions</td><td>Automatisiert</td><td></td></tr><tr><td></td><td><strong>Monitoring</strong></td><td>[Benötigte Information]</td><td>Observability</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>11.4 Qualitätssicherung</h2>
+
+<h3>11.4.1 Test-Strategie</h3>
+
+<table><thead><tr><th>Test-Typ</th><th>Abdeckung</th><th>Automatisiert</th></tr></thead><tbody><tr><td></td><td><strong>Unit Tests</strong></td><td>Alle Functions</td><td>✅ Ja</td><td></td></tr><tr><td></td><td><strong>Integration Tests</strong></td><td>API Endpoints</td><td>✅ Ja</td><td></td></tr><tr><td></td><td><strong>E2E Tests</strong></td><td>Kritische Flows</td><td>⚠️ Teilweise</td><td></td></tr><tr><td></td><td><strong>Performance Tests</strong></td><td>API Latenz</td><td>❌ Manuell</td><td></td></tr><tr><td></td><td><strong>Security Tests</strong></td><td>OWASP Top 10</td><td>⚠️ Teilweise</td><td></td></tr></tbody></table>
+<h3>11.4.2 Monitoring & Alerting</h3>
+
+<table><thead><tr><th>Metrik</th><th>Schwellwert</th><th>Alert</th></tr></thead><tbody><tr><td></td><td><strong>API Response Time</strong></td><td>>500ms</td><td>Warning</td><td></td></tr><tr><td></td><td><strong>Error Rate</strong></td><td>>1%</td><td>Critical</td><td></td></tr><tr><td></td><td><strong>Database Connections</strong></td><td>>80%</td><td>Warning</td><td></td></tr><tr><td></td><td><strong>Disk Usage</strong></td><td>>70%</td><td>Warning</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>11.5 Sicherheit & Compliance</h2>
+
+<h3>11.5.1 Datensicherheit</h3>
+
+<table><thead><tr><th>Maßnahme</th><th>Umsetzung</th></tr></thead><tbody><tr><td></td><td><strong>Verschlüsselung (Transit)</strong></td><td>TLS 1.3</td><td></td></tr><tr><td></td><td><strong>Verschlüsselung (at Rest)</strong></td><td>AES-256</td><td></td></tr><tr><td></td><td><strong>Zwei-Faktor-Auth</strong></td><td>Für Admin-Zugänge</td><td></td></tr><tr><td></td><td><strong>Regelmäßige Backups</strong></td><td>Täglich, 30 Tage Retention</td><td></td></tr><tr><td></td><td><strong>Penetration Testing</strong></td><td>[Benötigte Information]</td><td></td></tr></tbody></table>
+<h3>11.5.2 DSGVO-Compliance</h3>
+
+<table><thead><tr><th>Anforderung</th><th>Umsetzung</th></tr></thead><tbody><tr><td></td><td><strong>Einwilligung</strong></td><td>Klare Opt-In bei Registration</td><td></td></tr><tr><td></td><td><strong>Auskunftsrecht</strong></td><td>Export-Funktion in Dashboard</td><td></td></tr><tr><td></td><td><strong>Löschrecht</strong></td><td>"Account löschen" Funktion</td><td></td></tr><tr><td></td><td><strong>Auftragsverarbeitung</strong></td><td>AV-Verträge mit AWS</td><td></td></tr><tr><td></td><td><strong>Datenspeicherort</strong></td><td>AWS Frankfurt (EU)</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>11.6 Infrastruktur-Kosten (monatlich)</h2>
+
+<table><thead><tr><th>Service</th><th>Y1 (ø Kunden)</th><th>Y2</th><th>Y3</th></tr></thead><tbody><tr><td></td><td><strong>AWS ECS (Compute)</strong></td><td>€200</td><td>€500</td><td>€1.000</td><td></td></tr><tr><td></td><td><strong>AWS RDS (Database)</strong></td><td>€150</td><td>€300</td><td>€600</td><td></td></tr><tr><td></td><td><strong>AWS S3 (Storage)</strong></td><td>€50</td><td>€100</td><td>€200</td><td></td></tr><tr><td></td><td><strong>Datentransfer</strong></td><td>€100</td><td>€300</td><td>€600</td><td></td></tr><tr><td></td><td><strong>Domain/SSL</strong></td><td>€20</td><td>€20</td><td>€20</td><td></td></tr><tr><td></td><td><strong>Monitoring</strong></td><td>€50</td><td>€100</td><td>€200</td><td></td></tr><tr><td></td><td><strong>Sonstiges</strong></td><td>€30</td><td>€80</td><td>€180</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>€600</strong></td><td><strong>€1.400</strong></td><td><strong>€2.800</strong></td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Finanzplan</h1>
+
+<h2>12.1 Revenue-Projektion</h2>
+
+<h3>12.1.1 Umsatzannahmen</h3>
+
+<table><thead><tr><th>Annahme</th><th>Wert</th><th>Quelle</th></tr></thead><tbody><tr><td></td><td>Ø ARPU/Monat</td><td>€15</td><td>Gewichtet (70% Pro, 20% Basic, 10% Business)</td><td></td></tr><tr><td></td><td>J1 Kunden (Basis)</td><td>500</td><td>Konservativ</td><td></td></tr><tr><td></td><td>J2 Kunden (Basis)</td><td>3.000</td><td>Wachstum 500% YoY</td><td></td></tr><tr><td></td><td>J3 Kunden (Basis)</td><td>10.000</td><td>Fortgesetztes Wachstum</td><td></td></tr><tr><td></td><td>Preissteigerung</td><td>+5%/Jahr</td><td>Erhöhung bei Upsells</td><td></td></tr></tbody></table>
+<h3>12.1.2 Szenarien</h3>
+
+<table><thead><tr><th>Bear</th><th>Basis</th><th>Bull</th></tr></thead><tbody><tr><td></td><td><strong>J1 Kunden</strong></td><td>150</td><td>500</td><td>800</td><td></td></tr><tr><td></td><td><strong>J2 Kunden</strong></td><td>1.500</td><td>3.000</td><td>6.000</td><td></td></tr><tr><td></td><td><strong>J3 Kunden</strong></td><td>5.000</td><td>10.000</td><td>15.000</td><td></td></tr><tr><td></td><td><strong>J1 ARR</strong></td><td>€27.000</td><td>€90.000</td><td>€144.000</td><td></td></tr><tr><td></td><td><strong>J2 ARR</strong></td><td>€270.000</td><td>€540.000</td><td>€1.080.000</td><td></td></tr><tr><td></td><td><strong>J3 ARR</strong></td><td>€900.000</td><td>€1.800.000</td><td>€2.700.000</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>12.2 Kostenplanung</h2>
+
+<h3>12.2.1 Personalkosten</h3>
+
+<table><thead><tr><th>Position</th><th>J1</th><th>J2</th><th>J3</th></tr></thead><tbody><tr><td></td><td>CEO (Gründer, equity)</td><td>€0</td><td>€0</td><td>€6.000/Mt</td><td></td></tr><tr><td></td><td>CTO (Gründer, equity)</td><td>€0</td><td>€0</td><td>€6.000/Mt</td><td></td></tr><tr><td></td><td>Backend Developer</td><td>€0</td><td>€6.500/Mt</td><td>€6.500/Mt</td><td></td></tr><tr><td></td><td>Frontend Developer</td><td>€0</td><td>€5.500/Mt</td><td>€5.500/Mt</td><td></td></tr><tr><td></td><td>Customer Success</td><td>€3.500/Mt</td><td>€4.000/Mt</td><td>€5.000/Mt</td><td></td></tr><tr><td></td><td>Marketing Manager</td><td>€0</td><td>€0</td><td>€5.000/Mt</td><td></td></tr><tr><td></td><td><strong>Total/Monat</strong></td><td><strong>€3.500</strong></td><td><strong>€16.000</strong></td><td><strong>€28.000</strong></td><td></td></tr><tr><td></td><td><strong>Total/Jahr</strong></td><td><strong>€42.000</strong></td><td><strong>€192.000</strong></td><td><strong>€336.000</strong></td><td></td></tr></tbody></table>
+<h3>12.2.2 Fixkosten</h3>
+
+<table><thead><tr><th>Position</th><th>J1</th><th>J2</th><th>J3</th></tr></thead><tbody><tr><td></td><td>Server/Infrastruktur</td><td>€800/Mt</td><td>€2.500/Mt</td><td>€5.000/Mt</td><td></td></tr><tr><td></td><td>Software-Lizenzen</td><td>€300/Mt</td><td>€800/Mt</td><td>€1.200/Mt</td><td></td></tr><tr><td></td><td>Marketing (安排了)</td><td>€2.000/Mt</td><td>€5.000/Mt</td><td>€10.000/Mt</td><td></td></tr><tr><td></td><td>Buchhaltung/Legal</td><td>€400/Mt</td><td>€600/Mt</td><td>€800/Mt</td><td></td></tr><tr><td></td><td>Office/Admin</td><td>€200/Mt</td><td>€500/Mt</td><td>€1.000/Mt</td><td></td></tr><tr><td></td><td><strong>Total/Monat</strong></td><td><strong>€3.700</strong></td><td><strong>€9.400</strong></td><td><strong>€18.000</strong></td><td></td></tr><tr><td></td><td><strong>Total/Jahr</strong></td><td><strong>€44.400</strong></td><td><strong>€112.800</strong></td><td><strong>€216.000</strong></td><td></td></tr></tbody></table>
+<h3>12.2.3 Variable Kosten</h3>
+
+<table><thead><tr><th>Position</th><th>Kosten</th><th>Bemerkung</th></tr></thead><tbody><tr><td></td><td>Support pro Kunde</td><td>€2/Kunde/Mt</td><td>Skaliert mit Kundenbasis</td><td></td></tr><tr><td></td><td>Payment Gateway</td><td>2,5% Revenue</td><td>SEPA/Kreditkarte</td><td></td></tr><tr><td></td><td>Cloud-Zusatz ab 500 Kunden</td><td>€0,50/Kunde/Mt</td><td>Ab J2 relevant</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>12.3 Profit & Loss Statement (Basis-Szenario)</h2>
+
+<table><thead><tr><th>J1</th><th>J2</th><th>J3</th></tr></thead><tbody><tr><td></td><td><strong>Umsatz</strong></td><td>€90.000</td><td>€540.000</td><td>€1.800.000</td><td></td></tr><tr><td></td><td>- Variable Kosten</td><td>€2.700</td><td>€16.200</td><td>€54.000</td><td></td></tr><tr><td></td><td><strong>Bruttomarge</strong></td><td>€87.300</td><td>€523.800</td><td>€1.746.000</td><td></td></tr><tr><td></td><td><strong>Bruttomarge %</strong></td><td>97%</td><td>97%</td><td>97%</td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>- Personalkosten</td><td>€42.000</td><td>€192.000</td><td>€336.000</td><td></td></tr><tr><td></td><td>- Fixkosten</td><td>€44.400</td><td>€112.800</td><td>€216.000</td><td></td></tr><tr><td></td><td><strong>Operating Expense</strong></td><td>€86.400</td><td>€304.800</td><td>€552.000</td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td><strong>EBITDA</strong></td><td>€900</td><td>€219.000</td><td>€1.194.000</td><td></td></tr><tr><td></td><td><strong>EBITDA %</strong></td><td>1%</td><td>41%</td><td>66%</td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>- Abschreibungen</td><td>€5.000</td><td>€10.000</td><td>€15.000</td><td></td></tr><tr><td></td><td><strong>EBIT</strong></td><td>€-4.100</td><td>€209.000</td><td>€1.179.000</td><td></td></tr><tr><td></td><td><strong>EBIT %</strong></td><td>-5%</td><td>39%</td><td>65%</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>12.4 Cashflow-Planung (24 Monate)</h2>
+
+<h3>Quartalsweise</h3>
+
+<table><thead><tr><th>Quartal</th><th>Einnahmen</th><th>Ausgaben</th><th>Netto</th><th>Kumuliert</th></tr></thead><tbody><tr><td></td><td>Q2 2026</td><td>€0</td><td>€5.100</td><td><strong>-€5.100</strong></td><td>-€5.100</td><td></td></tr><tr><td></td><td>Q3 2026</td><td>€1.500</td><td>€12.100</td><td><strong>-€10.600</strong></td><td>-€15.700</td><td></td></tr><tr><td></td><td>Q4 2026</td><td>€10.000</td><td>€19.000</td><td><strong>-€9.000</strong></td><td>-€24.700</td><td></td></tr><tr><td></td><td>Q1 2027</td><td>€22.000</td><td>€25.000</td><td><strong>-€3.000</strong></td><td>-€27.700</td><td></td></tr><tr><td></td><td>Q2 2027</td><td>€38.000</td><td>€26.500</td><td><strong>+€11.500</strong></td><td>-€16.200</td><td></td></tr><tr><td></td><td>Q3 2027</td><td>€54.000</td><td>€30.000</td><td><strong>+€24.000</strong></td><td>+€7.800</td><td></td></tr><tr><td></td><td>Q4 2027</td><td>€75.000</td><td>€35.000</td><td><strong>+€40.000</strong></td><td>+€47.800</td><td></td></tr><tr><td></td><td>Q1 2028</td><td>€95.000</td><td>€40.000</td><td><strong>+€55.000</strong></td><td>+€102.800</td><td></td></tr></tbody></table>
+<h3>Annahmen</h3>
+<ul><li>PreSeed €150K fließt Q2 2026 ein</li>
+<li>Seed €500K fließt Q1 2027 ein</li>
+<li>Personalausbau wie geplant</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>12.5 Break-Even-Analyse</h2>
+
+<table><thead><tr><th>Metrik</th><th>Wert</th></tr></thead><tbody><tr><td></td><td>Monatliche Fixkosten (J1 avg)</td><td>€7.200</td><td></td></tr><tr><td></td><td>Variable Kosten pro Kunde/Mt</td><td>€2,50</td><td></td></tr><tr><td></td><td>Ø ARPU/Mt</td><td>€15</td><td></td></tr><tr><td></td><td><strong>Bruttomarge pro Kunde/Mt</strong></td><td><strong>€12,50</strong></td><td></td></tr><tr><td></td><td><strong>Break-Even Kunden</strong></td><td><strong>~580 Kunden</strong></td><td></td></tr><tr><td></td><td><strong>Break-Even Zeitpunkt</strong></td><td><strong>Q2 2027</strong></td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>12.6 Bilanz (Vorschau)</h2>
+
+<table><thead><tr><th>J1</th><th>J2</th><th>J3</th></tr></thead><tbody><tr><td></td><td><strong>Aktiva</strong></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>Kasse</td><td>€80.000</td><td>€400.000</td><td>€1.500.000</td><td></td></tr><tr><td></td><td>Forderungen</td><td>€7.500</td><td>€45.000</td><td>€150.000</td><td></td></tr><tr><td></td><td>Anlagevermögen</td><td>€15.000</td><td>€25.000</td><td>€35.000</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>€102.500</strong></td><td><strong>€470.000</strong></td><td><strong>€1.685.000</strong></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td><strong>Passiva</strong></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>Eigenkapital</td><td>€85.000</td><td>€435.000</td><td>€1.635.000</td><td></td></tr><tr><td></td><td>Verbindlichkeiten</td><td>€17.500</td><td>€35.000</td><td>€50.000</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>€102.500</strong></td><td><strong>€470.000</strong></td><td><strong>€1.685.000</strong></td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>12.7 Key Metrics Dashboard</h2>
+
+<table><thead><tr><th>Metrik</th><th>J1</th><th>J2</th><th>J3</th><th>Ziel</th></tr></thead><tbody><tr><td></td><td><strong>ARR</strong></td><td>€90K</td><td>€540K</td><td>€1,8M</td><td>€1M by Y3</td><td></td></tr><tr><td></td><td><strong>MRR</strong></td><td>€7.500</td><td>€45.000</td><td>€150.000</td><td>—</td><td></td></tr><tr><td></td><td><strong>Kunden</strong></td><td>500</td><td>3.000</td><td>10.000</td><td>3K by Y2</td><td></td></tr><tr><td></td><td><strong>CAC</strong></td><td>€150</td><td>€130</td><td>€120</td><td><€150</td><td></td></tr><tr><td></td><td><strong>LTV:CAC</strong></td><td>12:1</td><td>14:1</td><td>15:1</td><td>>10:1</td><td></td></tr><tr><td></td><td><strong>Churn (mtl.)</strong></td><td>2%</td><td>1,5%</td><td>1%</td><td><2%</td><td></td></tr><tr><td></td><td><strong>Burn Rate</strong></td><td>€7.200/Mt</td><td>€15.000/Mt</td><td>€20.000/Mt</td><td>—</td><td></td></tr><tr><td></td><td><strong>Runway</strong></td><td>18 Monate</td><td>24 Monate</td><td>36 Monate</td><td>>12 Monate</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>12.8 Finanzierungsbedarf</h2>
+
+<table><thead><tr><th>Runde</th><th>Betrag</th><th>Zeitpunkt</th><th>Use of Funds</th></tr></thead><tbody><tr><td></td><td><strong>Pre-Seed (jetzt)</strong></td><td>€150K</td><td>Q2 2026</td><td>MVP, Pilot</td><td></td></tr><tr><td></td><td><strong>Seed</strong></td><td>€500K</td><td>Q1 2027</td><td>Team, Wachstum</td><td></td></tr><tr><td></td><td><strong>Series A</strong></td><td>€2M</td><td>Q3 2028</td><td>Skalierung DACH</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Chancen & Risiken</h1>
+
+<h2>13.1 Chancen</h2>
+
+<h3>13.1.1 Marktchancen</h3>
+
+<table><thead><tr><th>Chance</th><th>Beschreibung</th><th>Eintrittswahrscheinlichkeit</th></tr></thead><tbody><tr><td></td><td><strong>Smart Meter Rollout 2026</strong></td><td>Flächendeckende Smart-Meter-Infrastruktur in Österreich schafft Markt</td><td>Hoch</td><td></td></tr><tr><td></td><td><strong>Steigende Strompreise</strong></td><td>Dynamische Tarife werden attraktiver, Ersparnis-Argument stärker</td><td>Hoch</td><td></td></tr><tr><td></td><td><strong>EV-Revolution</strong></td><td>Millionen EVs brauchen intelligente Ladesteuerung</td><td>Hoch</td><td></td></tr><tr><td></td><td><strong>PV-Booms</strong></td><td>Immer mehr Haushalte installieren PV + Speicher</td><td>Hoch</td><td></td></tr><tr><td></td><td><strong>EU-Regulatorik</strong></td><td>Energy Efficiency Directive schafft klare Spielregeln</td><td>Mittel</td><td></td></tr></tbody></table>
+<h3>13.1.2 Wettbewerbschancen</h3>
+
+<table><thead><tr><th>Chance</th><th>Beschreibung</th><th>Eintrittswahrscheinlichkeit</th></tr></thead><tbody><tr><td></td><td><strong>Internationaler Wettbewerber kommt nicht</strong></td><td>VOLTAG.Ai bleibt Hardware-lastig, Tibber kommt nicht voll</td><td>Mittel</td><td></td></tr><tr><td></td><td><strong>Frühzeitige Marktposition</strong></td><td>First-Mover-Vorteil in Österreich wenn schnell skaliert</td><td>Mittel</td><td></td></tr><tr><td></td><td><strong>Partner-Netzwerk</strong></td><td>Exklusive Partnerschaften mit PV-Installateuren</td><td>Mittel</td><td></td></tr></tbody></table>
+<h3>13.1.3 Produktchancen</h3>
+
+<table><thead><tr><th>Chance</th><th>Beschreibung</th><th>Eintrittswahrscheinlichkeit</th></tr></thead><tbody><tr><td></td><td><strong>White-Label-Partner</strong></td><td>Technologie an andere Anbieter lizensieren</td><td>Niedrig</td><td></td></tr><tr><td></td><td><strong>Grid-Services</strong></td><td>Als virtuelles Kraftwerk am Regelenergiemarkt teilnehmen</td><td>Niedrig</td><td></td></tr><tr><td></td><td><strong>DACH-Expansion</strong></td><td>Skalierung nach Deutschland und Schweiz</td><td>Mittel</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>13.2 Risiken</h2>
+
+<h3>13.2.1 Marktrisiken</h3>
+
+<table><thead><tr><th>Risiko</th><th>Beschreibung</th><th>Eintritt</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td></td><td><strong>Regulatorische Änderungen</strong></td><td>E-Control ändert Regeln für EMS</td><td>Mittel</td><td>Hoch</td><td>Kontinuierlicher Dialog, flexible Architektur</td><td></td></tr><tr><td></td><td><strong>Preisblasen bei AC</strong></td><td>Investoren verlangen zu hohe Bewertungen</td><td>Mittel</td><td>Mittel</td><td>Realistische Bewertung, alternative Finanzierung</td><td></td></tr><tr><td></td><td><strong>Markt wächst langsamer</strong></td><td>Smart-Meter-Rollout verzögert sich</td><td>Mittel</td><td>Mittel</td><td>Fokus auf heute adressierbare Zielgruppe</td><td></td></tr></tbody></table>
+<h3>13.2.2 Wettbewerbsrisiken</h3>
+
+<table><thead><tr><th>Risiko</th><th>Beschreibung</th><th>Eintritt</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td></td><td><strong>Internationaler Wettbewerber</strong></td><td>Tibber oder Enpal kommt voll nach AT</td><td>Niedrig</td><td>Hoch</td><td>Differenzierung, lokaler Fokus</td><td></td></tr><tr><td></td><td><strong>VOLTAG.Ai wird Cloud-first</strong></td><td>Wettbewerber kopiert Cloud-Modell</td><td>Mittel</td><td>Mittel</td><td>Speed, Partner-Netzwerk</td><td></td></tr><tr><td></td><td><strong>Preiskrieg</strong></td><td>Wettbewerber unterbietet</td><td>Niedrig</td><td>Mittel</td><td>Value-Based Pricing, USP</td><td></td></tr></tbody></table>
+<h3>13.2.3 Operative Risiken</h3>
+
+<table><thead><tr><th>Risiko</th><th>Beschreibung</th><th>Eintritt</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td></td><td><strong>MVP verzögert sich</strong></td><td>Technische Komplexität unterschätzt</td><td>Mittel</td><td>Hoch</td><td>MVP-Architektur bereits fertig, klare Scope</td><td></td></tr><tr><td></td><td><strong>Key-Person-Abhängigkeit</strong></td><td>CTO oder CEO fällt aus</td><td>Niedrig</td><td>Hoch</td><td>Dokumentation, Hiring-Plan</td><td></td></tr><tr><td></td><td><strong>Technische Schulden</strong></td><td>Schnellwachsendes System wird instabil</td><td>Mittel</td><td>Mittel</td><td>Code-Review, Testing, Monitoring</td><td></td></tr><tr><td></td><td><strong>Daten-Sicherheitsvorfall</strong></td><td>DSGVO-Problem, Hacker</td><td>Niedrig</td><td>Hoch</td><td>Security-Audits, AWS-Sicherheit</td><td></td></tr></tbody></table>
+<h3>13.2.4 Finanzrisiken</h3>
+
+<table><thead><tr><th>Risiko</th><th>Beschreibung</th><th>Eintritt</th><th>Impact</th><th>Mitigation</th></tr></thead><tbody><tr><td></td><td><strong>Seed nicht gesichert</strong></td><td>Pre-Seed reicht nicht für Wachstum</td><td>Mittel</td><td>Hoch</td><td>Pilot-Valdierung als Proof, alternative Investor:en</td><td></td></tr><tr><td></td><td><strong>Cash-Burn zu hoch</strong></td><td>runway reicht nicht bis Break-Even</td><td>Niedrig</td><td>Hoch</td><td>Konservative Planung, flexible Kosten</td><td></td></tr><tr><td></td><td><strong>Churn hoch</strong></td><td>Kunden bleiben nicht</td><td>Mittel</td><td>Mittel</td><td>Kundenzufriedenheit, 30-Tage-Garantie</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>13.3 Risiko-Matrix</h2>
+
+<table><thead><tr><th>Impact Gering</th><th>Impact Mittel</th><th>Impact Hoch</th></tr></thead><tbody><tr><td></td><td><strong>Eintritt Wahrscheinlich</strong></td><td>—</td><td>Preisblasen</td><td>Regulatorische Änderungen</td><td></td></tr><tr><td></td><td><strong>Eintritt Möglich</strong></td><td>Preiskrieg</td><td>VOLTAG.Ai Cloud</td><td>Internationaler Wettbewerber</td><td></td></tr><tr><td></td><td><strong>Eintritt Unwahrscheinlich</strong></td><td>—</td><td>Cash-Burn</td><td>Seed nicht gesichert, Key-Person-Abhängigkeit</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>13.4 Mitigationsmaßnahmen</h2>
+
+<h3>Sofort (Q2 2026)</h3>
+<ul><li>MVPLaunch und erste Kundenfeedback</li>
+<li>Pilot mit 50 Haushalten zur Validierung</li>
+<li>Regulatorischer Dialog mit E-Control</li>
+<p></ul></p>
+<h3>Kurzfristig (Q3–Q4 2026)</h3>
+<ul><li>Partner-Netzwerk mit PV-Installateuren aufbauen</li>
+<li>Customer Success Prozesse etablieren</li>
+<li>Monitoring und Alerting verstärken</li>
+<p></ul></p>
+<h3>Mittelfristig (2027)</h3>
+<ul><li>Diversifizierte Investor:innen-Kontakte</li>
+<li>Team-Expansion mit key hires</li>
+<li>Technische Dokumentation und Wissenstransfer</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>13.5 Chancen-Risiken-Bilanz</h2>
+
+<h3>Chancen überwiegen</h3>
+
+<table><thead><tr><th>Faktor</th><th>Bewertung</th></tr></thead><tbody><tr><td></td><td><strong>Markt</strong></td><td>✅ Wachsend, durch regulatorische Treiber getrieben</td><td></td></tr><tr><td></td><td><strong>Timing</strong></td><td>✅ Smart Meter Rollout 2026, EV-Revolution</td><td></td></tr><tr><td></td><td><strong>Produkt</strong></td><td>✅ MVP fertig, Differenzierung klar</td><td></td></tr><tr><td></td><td><strong>Team</strong></td><td>✅ Domain-Expertise vorhanden</td><td></td></tr><tr><td></td><td><strong>Risiken</strong></td><td>⚠️ Beherrschbar mit Mitigation</td><td></td></tr></tbody></table>
+<h3>Fazit</h3>
+
+<p>Power hat ein <strong>attraktives Chancen-Risiko-Profil</strong> mit überwiegend positiven Marktdynamiken und beherrschbaren Risiken. Die regulatorischen Treiber und der Smart-Meter-Rollout schaffen ideale Bedingungen für den Launch.</p>
+
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Roadmap</h1>
+
+<h2>14.1 Überblick</h2>
+
+<h3>Meilensteine auf einen Blick</h3>
+
+<table><thead><tr><th>Phase</th><th>Zeitraum</th><th>Fokus</th><th>Funding</th></tr></thead><tbody><tr><td></td><td><strong>Pre-Seed</strong></td><td>Q2 2026</td><td>MVP Launch, Pilot</td><td>€150K (jetzt)</td><td></td></tr><tr><td></td><td><strong>Launch</strong></td><td>Q3–Q4 2026</td><td>Product-Market Fit, erste Kunden</td><td>—</td><td></td></tr><tr><td></td><td><strong>Seed</strong></td><td>Q1 2027</td><td>Team-Build, Skalierung</td><td>€500K</td><td></td></tr><tr><td></td><td><strong>Wachstum</strong></td><td>Q2–Q4 2027</td><td>AT-Saturation</td><td>—</td><td></td></tr><tr><td></td><td><strong>Series A</strong></td><td>Q3 2028</td><td>DACH-Expansion</td><td>€2M</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>14.2 Pre-Seed Phase (Q2 2026)</h2>
+
+<h3>Ziel</h3>
+<p>MVP produktionsreif machen, Pilot mit 50 Haushalten starten, erste echte Nutzerdaten sammeln.</p>
+
+<h3>Meilensteine</h3>
+
+<table><thead><tr><th>Meilenstein</th><th>Zeitpunkt</th><th>Status</th></tr></thead><tbody><tr><td></td><td>MVP Feature-Freeze</td><td>Ende Q2</td><td>🔄</td><td></td></tr><tr><td></td><td>Beta-Testing mit 10 Usern</td><td>Q2</td><td>⏳</td><td></td></tr><tr><td></td><td>Production Deployment</td><td>Q2</td><td>⏳</td><td></td></tr><tr><td></td><td>Pilot-Start mit 50 Haushalten</td><td>Q3</td><td>⏳</td><td></td></tr><tr><td></td><td>Erste Kundenfeedback-Schleife</td><td>Q3</td><td>⏳</td><td></td></tr><tr><td></td><td>Pre-Seed Pitch Endausbau</td><td>Q2</td><td>⏳</td><td></td></tr></tbody></table>
+<h3>Deliverables</h3>
+<ul><li>[ ] MVP produktionsreif</li>
+<li>[ ] Pilotverträge mit 50 Haushalten</li>
+<li>[ ] Monitoring & Alerting aktiv</li>
+<li>[ ] Erste Nutzerdaten und Feedback</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>14.3 Launch Phase (Q3–Q4 2026)</h2>
+
+<h3>Ziel</h3>
+<p>Product-Market Fit nachweisen, skalierbare Akquise-Kanäle validieren, erste recurring Revenue.</p>
+
+<h3>Meilensteine</h3>
+
+<table><thead><tr><th>Meilenstein</th><th>Zeitpunkt</th><th>Target</th></tr></thead><tbody><tr><td></td><td>Offizieller Launch</td><td>Q3</td><td>—</td><td></td></tr><tr><td></td><td>100 zahlende Kunden</td><td>Q3</td><td>€1.500/Mt ARR</td><td></td></tr><tr><td></td><td>Partner-Kanal mit 10 PV-Installateuren</td><td>Q3</td><td>—</td><td></td></tr><tr><td></td><td>250 Kunden</td><td>Q4</td><td>€4.000/Mt ARR</td><td></td></tr><tr><td></td><td>NPS > 40</td><td>Q4</td><td>—</td><td></td></tr><tr><td></td><td>500 Kunden</td><td>Q4</td><td>€7.500/Mt ARR</td><td></td></tr></tbody></table>
+<h3>Deliverables</h3>
+<ul><li>[ ] Launch-Kampagne</li>
+<li>[ ] 500+ zahlende Kunden</li>
+<li>[ ] Validierter Partner-Kanal (CAC < €100)</li>
+<li>[ ] Erste Case Studies / Success Stories</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>14.4 Seed Phase (Q1 2027)</h2>
+
+<h3>Ziel</h3>
+<p>€500K Seed sichern, Kernteam aufbauen, Grundlage für Skalierung schaffen.</p>
+
+<h3>Meilensteine</h3>
+
+<table><thead><tr><th>Meilenstein</th><th>Zeitpunkt</th><th>Target</th></tr></thead><tbody><tr><td></td><td>Seed-Runde Closed</td><td>Q1</td><td>€500K</td><td></td></tr><tr><td></td><td>Backend Developer eingestellt</td><td>Q1</td><td>—</td><td></td></tr><tr><td></td><td>Frontend Developer eingestellt</td><td>Q1</td><td>—</td><td></td></tr><tr><td></td><td>Customer Success Manager</td><td>Q1</td><td>—</td><td></td></tr><tr><td></td><td>1.000 Kunden</td><td>Q1</td><td>€15K/Mt ARR</td><td></td></tr><tr><td></td><td>Net Revenue Retention > 100%</td><td>Q1</td><td>—</td><td></td></tr></tbody></table>
+<h3>Deliverables</h3>
+<ul><li>[ ] Seed-Term Sheet und Closing</li>
+<li>[ ] 3 neue FTE eingestellt</li>
+<li>[ ] 1.000+ Kunden</li>
+<li>[ ] SaaS-Metriken im Zielbereich</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>14.5 Wachstums Phase (Q2–Q4 2027)</h2>
+
+<h3>Ziel</h3>
+<p>Marktführer in Österreich werden, DACH-Expansion vorbereiten.</p>
+
+<h3>Meilensteine</h3>
+
+<table><thead><tr><th>Meilenstein</th><th>Zeitpunkt</th><th>Target</th></tr></thead><tbody><tr><td></td><td>3.000 Kunden</td><td>Q2</td><td>€45K/Mt ARR</td><td></td></tr><tr><td></td><td>Break-Even operativ</td><td>Q2</td><td>—</td><td></td></tr><tr><td></td><td>20 Partner-Installateure</td><td>Q2</td><td>—</td><td></td></tr><tr><td></td><td>Österreich-Marktführer Energy SaaS</td><td>Q3</td><td>—</td><td></td></tr><tr><td></td><td>5.000 Kunden</td><td>Q4</td><td>€75K/Mt ARR</td><td></td></tr><tr><td></td><td>DACH-Produkt-Lokalisierung gestartet</td><td>Q4</td><td>—</td><td></td></tr></tbody></table>
+<h3>Deliverables</h3>
+<ul><li>[ ] Break-Even erreicht</li>
+<li>[ ] 5.000+ Kunden</li>
+<li>[ ] 20+ aktive Partner</li>
+<li>[ ] DACH-Launch-Plan fertig</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>14.6 Series A Vorbereitung (Q1–Q2 2028)</h2>
+
+<h3>Ziel</h3>
+<p>€2M Series A sichern für DACH-Expansion.</p>
+
+<h3>Meilensteine</h3>
+
+<table><thead><tr><th>Meilenstein</th><th>Zeitpunkt</th><th>Target</th></tr></thead><tbody><tr><td></td><td>10.000 Kunden</td><td>Q1</td><td>€150K/Mt ARR</td><td></td></tr><tr><td></td><td>Revenue > €1M ARR</td><td>Q1</td><td>—</td><td></td></tr><tr><td></td><td>Series A Term Sheet</td><td>Q2</td><td>€2M</td><td></td></tr><tr><td></td><td>Series A Closing</td><td>Q2</td><td>—</td><td></td></tr><tr><td></td><td>DACH-Expansion gestartet</td><td>Q2</td><td>—</td><td></td></tr></tbody></table>
+<h3>Deliverables</h3>
+<ul><li>[ ] €1M+ ARR</li>
+<li>[ ] Series A Closing</li>
+<li>[ ] DACH-Launch-Team aufgebaut</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>14.7 DACH Expansion (Q3 2028+)</h2>
+
+<h3>Ziel</h3>
+<p>Marktführer in DACH-Region für AI-Energy-Orchestration.</p>
+
+<h3>Meilensteine</h3>
+
+<table><thead><tr><th>Phase</th><th>Zeitraum</th><th>Kunden</th><th>ARR</th></tr></thead><tbody><tr><td></td><td><strong>DACH Launch</strong></td><td>Q3–Q4 2028</td><td>15.000</td><td>€300K</td><td></td></tr><tr><td></td><td><strong>DACH Wachstum</strong></td><td>2029</td><td>40.000</td><td>€800K</td><td></td></tr><tr><td></td><td><strong>DACH Marktführer</strong></td><td>2030</td><td>100.000</td><td>€2M+</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>14.8 Visualisierte Timeline</h2>
+
+<pre><code>2026                    2027                    2028
+<p>Q1   Q2   Q3   Q4      Q1   Q2   Q3   Q4      Q1   Q2   Q3   Q4</p>
+<p> │    │    │    │       │    │    │    │       │    │    │    │</p>
+<p> ├────┤    │    │       │    │    │    │       │    │    │    │</p>
+<p> │ MVP │    │    │       │    │    │    │       │    │    │    │</p>
+<p> │ Launch   │    │       │    │    │    │       │    │    │    │</p>
+<p> ├─────────┤    │       │    │    │    │       │    │    │    │</p>
+<p> │ 500 Kunden   │       │    │    │    │       │    │    │    │</p>
+<p> │             ├────┤    │    │    │    │       │    │    │    │</p>
+<p> │             │Seed│    │    │    │    │       │    │    │    │</p>
+<p> │             ├─────────┤    │    │    │       │    │    │    │</p>
+<p> │             │3K Kunden│   │    │    │       │    │    │    │</p>
+<p> │             │Break-Even   │    │    │       │    │    │    │</p>
+<p> │             ├─────────────────────────┤    │    │    │    │</p>
+<p> │             │5K Kunden, DACH Plan│    │    │    │    │</p>
+<p> │             ├─────────────────────────────────────────┤    │</p>
+<p> │             │10K Kunden, Series A│    │    │    │</p>
+<p> │             ├─────────────────────────────────────────────┤    │</p>
+<p> │             │DACH Expansion│    │    │</p>
+<p></code></pre></p>
+
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Kapitalbedarf</h1>
+
+<h2>15.1 Finanzierungsbedarf</h2>
+
+<h3>15.1.1 Gesamter Kapitalbedarf</h3>
+
+<table><thead><tr><th>Phase</th><th>Betrag</th><th>Zeitraum</th><th>Zweck</th></tr></thead><tbody><tr><td></td><td><strong>Pre-Seed (jetzt)</strong></td><td>€150.000</td><td>Q2 2026</td><td>MVP Launch, Pilot, Marketing</td><td></td></tr><tr><td></td><td><strong>Seed</strong></td><td>€500.000</td><td>Q1 2027</td><td>Team, Skalierung</td><td></td></tr><tr><td></td><td><strong>Series A</strong></td><td>€2.000.000</td><td>Q3 2028</td><td>DACH-Expansion</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>€2.650.000</strong></td><td>—</td><td>—</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>15.2 Pre-Seed Runde (aktuell)</h2>
+
+<h3>15.2.1 Raise-Details</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Betrag</strong></td><td>€150.000</td><td></td></tr><tr><td></td><td><strong>Pre-Money Bewertung</strong></td><td>€850.000</td><td></td></tr><tr><td></td><td><strong>Post-Money Bewertung</strong></td><td>€1.000.000</td><td></td></tr><tr><td></td><td><strong>Anteile</strong></td><td>15%</td><td></td></tr><tr><td></td><td><strong>Anticipated Close</strong></td><td>Q2 2026</td><td></td></tr></tbody></table>
+<h3>15.2.2 Use of Funds — Pre-Seed</h3>
+
+<table><thead><tr><th>Position</th><th>Betrag</th><th>%</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>MVP-Entwicklung</strong></td><td>€80.000</td><td>53%</td><td>Produkt finalisieren, Cloud-Infrastruktur</td><td></td></tr><tr><td></td><td><strong>Pilot-Betrieb</strong></td><td>€40.000</td><td>27%</td><td>50 Pilot-Haushalte, Partner-Akquise</td><td></td></tr><tr><td></td><td><strong>Regulatory/Legal</strong></td><td>€20.000</td><td>13%</td><td>E-Control-Genehmigungen, AGB, Datenschutz</td><td></td></tr><tr><td></td><td><strong>Team/G&A</strong></td><td>€10.000</td><td>7%</td><td>Gründungskosten, Buchhaltung, Overhead</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>€150.000</strong></td><td><strong>100%</strong></td><td></td><td></td></tr></tbody></table>
+<h3>15.2.3 Pre-Seed Meilensteine</h3>
+
+<table><thead><tr><th>Meilenstein</th><th>Zeitpunkt</th><th>Budget verwendet</th></tr></thead><tbody><tr><td></td><td>MVP produktionsreif</td><td>Q2 2026</td><td>€80K</td><td></td></tr><tr><td></td><td>50 Pilotkunden aktiv</td><td>Q3 2026</td><td>€120K</td><td></td></tr><tr><td></td><td>Erste Revenue (€5K MRR)</td><td>Q4 2026</td><td>€150K</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>15.3 Seed Runde (Q1 2027)</h2>
+
+<h3>15.3.1 Raise-Details (provisorisch)</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Betrag</strong></td><td>€500.000</td><td></td></tr><tr><td></td><td><strong>Pre-Money Bewertung</strong></td><td>€3.000.000</td><td></td></tr><tr><td></td><td><strong>Post-Money Bewertung</strong></td><td>€3.500.000</td><td></td></tr><tr><td></td><td><strong>Anticipated Close</strong></td><td>Q1 2027</td><td></td></tr><tr><td></td><td><strong>Lead-Investor</strong></td><td>[Gesucht]</td><td></td></tr></tbody></table>
+<h3>15.3.2 Use of Funds — Seed</h3>
+
+<table><thead><tr><th>Position</th><th>Betrag</th><th>%</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>Team-Expansion</strong></td><td>€250.000</td><td>50%</td><td>2 Developer, Customer Success</td><td></td></tr><tr><td></td><td><strong>Marketing/Sales</strong></td><td>€100.000</td><td>20%</td><td>Kampagnen, Partner-Programm</td><td></td></tr><tr><td></td><td><strong>Produkt-Entwicklung</strong></td><td>€80.000</td><td>16%</td><td>V1.1, V1.2 Features</td><td></td></tr><tr><td></td><td><strong>Operations</strong></td><td>€70.000</td><td>14%</td><td>Büro, Tools, Overhead</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>€500.000</strong></td><td><strong>100%</strong></td><td></td><td></td></tr></tbody></table>
+<h3>15.3.3 Seed Meilensteine</h3>
+
+<table><thead><tr><th>Meilenstein</th><th>Zeitpunkt</th><th>ARR Target</th></tr></thead><tbody><tr><td></td><td>Team komplett (5 FTE)</td><td>Q1 2027</td><td>€0</td><td></td></tr><tr><td></td><td>1.000 Kunden</td><td>Q1 2027</td><td>€15K</td><td></td></tr><tr><td></td><td>3.000 Kunden</td><td>Q4 2027</td><td>€45K</td><td></td></tr><tr><td></td><td>Operativ Break-Even</td><td>Q2 2027</td><td>€38K MRR</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>15.4 Series A (Q3 2028)</h2>
+
+<h3>15.4.1 Raise-Details (provisorisch)</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Betrag</strong></td><td>€2.000.000</td><td></td></tr><tr><td></td><td><strong>Pre-Money Bewertung</strong></td><td>€10.000.000</td><td></td></tr><tr><td></td><td><strong>Post-Money Bewertung</strong></td><td>€12.000.000</td><td></td></tr><tr><td></td><td><strong>Anticipated Close</strong></td><td>Q3 2028</td><td></td></tr><tr><td></td><td><strong>Lead-Investor</strong></td><td>[Gesucht]</td><td></td></tr></tbody></table>
+<h3>15.4.2 Use of Funds — Series A</h3>
+
+<table><thead><tr><th>Position</th><th>Betrag</th><th>%</th><th>Beschreibung</th></tr></thead><tbody><tr><td></td><td><strong>DACH-Expansion</strong></td><td>€800.000</td><td>40%</td><td>DE, CH Teams, Lokalisierung</td><td></td></tr><tr><td></td><td><strong>Produkt-Skalierung</strong></td><td>€600.000</td><td>30%</td><td>Backend, ML, Platform</td><td></td></tr><tr><td></td><td><strong>Vertrieb/Marketing</strong></td><td>€400.000</td><td>20%</td><td>AT-Saturation, DE-Launch</td><td></td></tr><tr><td></td><td><strong>Overhead</strong></td><td>€200.000</td><td>10%</td><td>Operations, Legal</td><td></td></tr><tr><td></td><td><strong>Gesamt</strong></td><td><strong>€2.000.000</strong></td><td><strong>100%</strong></td><td></td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>15.5 Exit-Szenarien</h2>
+
+<h3>15.5.1 Mögliche Exit-Pfade</h3>
+
+<table><thead><tr><th>Exit-Typ</th><th>Voraussetzung</th><th>Vergleich</th></tr></thead><tbody><tr><td></td><td><strong>Strategic Acquisition</strong></td><td>€1M ARR, Marktführer AT</td><td>Enpal (DE): €350M Series D</td><td></td></tr><tr><td></td><td><strong>Series A Bridge</strong></td><td>€500K ARR</td><td>€2M @ €10M pre-money</td><td></td></tr><tr><td></td><td><strong>IPO</strong></td><td>Marktführer DACH</td><td>MyTotalEnergies: €1,2B</td><td></td></tr></tbody></table>
+<h3>15.5.2 Exit-Multiples</h3>
+
+<table><thead><tr><th>Szenario</th><th>ARR bei Exit</th><th>Multiple</th><th>Exit-Wert</th></tr></thead><tbody><tr><td></td><td>Konservativ</td><td>€2M</td><td>8x ARR</td><td>€16M</td><td></td></tr><tr><td></td><td>Basis</td><td>€5M</td><td>10x ARR</td><td>€50M</td><td></td></tr><tr><td></td><td>Optimistisch</td><td>€10M</td><td>12x ARR</td><td>€120M</td><td></td></tr></tbody></table>
+<h3>15.5.3 Investor-ROI</h3>
+
+<table><thead><tr><th>Szenario</th><th>Investment</th><th>Anteile</th><th>Exit-Wert</th><th>ROI</th></tr></thead><tbody><tr><td></td><td>Pre-Seed €150K</td><td>€150K</td><td>15%</td><td>€2,4M–€18M</td><td>16x–120x</td><td></td></tr><tr><td></td><td>Seed €500K</td><td>€500K</td><td>14%</td><td>€2,8M–€17M</td><td>5,6x–34x</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>15.6 Angebotsstruktur für Investoren</h2>
+
+<h3>15.6.1 Was Investoren bekommen</h3>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Anteile</strong></td><td>15% (Pre-Seed)</td><td></td></tr><tr><td></td><td><strong>Stimmrechte</strong></td><td>Pro-rata mit anderen Investoren</td><td></td></tr><tr><td></td><td><strong>Anti-Dilution</strong></td><td>Full Ratchet bei Down-Round [Verhandlung]</td><td></td></tr><tr><td></td><td><strong>Liquidation Preference</strong></td><td>1x non-participating [Verhandlung]</td><td></td></tr><tr><td></td><td><strong>Board Seat</strong></td><td>Beobachterrecht bei Series A</td><td></td></tr><tr><td></td><td><strong>Tag-Along Rights</strong></td><td>Ja</td><td></td></tr><tr><td></td><td><strong>Drag-Along Rights</strong></td><td>Ab 50%+ Investor consensus</td><td></td></tr></tbody></table>
+<h3>15.6.2 Informationen die verfügbar sind</h3>
+
+<table><thead><tr><th>Dokument</th><th>Status</th></tr></thead><tbody><tr><td></td><td>Pitch Deck</td><td>✅ Verfügbar</td><td></td></tr><tr><td></td><td>Businessplan (dieser)</td><td>✅ Verfügbar</td><td></td></tr><tr><td></td><td>Financial Model</td><td>✅ Verfügbar</td><td></td></tr><tr><td></td><td>Cap Table</td><td>⚠️ In Verhandlung</td><td></td></tr><tr><td></td><td>Technische Due Diligence</td><td>⚠️ Auf Anfrage</td><td></td></tr><tr><td></td><td>MVP Demo</td><td>⚠️ In Entwicklung</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>15.7 Nächste Schritte</h2>
+
+<table><thead><tr><th>Schritt</th><th>Wer</th><th>Wann</th></tr></thead><tbody><tr><td></td><td>Pitch Deck finalisieren</td><td>CEO</td><td>Sofort</td><td></td></tr><tr><td></td><td>Investorengespräche führen</td><td>CEO</td><td>Q2 2026</td><td></td></tr><tr><td></td><td>Term Sheet verhandeln</td><td>CEO + Legal</td><td>Q2 2026</td><td></td></tr><tr><td></td><td>Due Diligence</td><td>Investor</td><td>Q2 2026</td><td></td></tr><tr><td></td><td>Closing</td><td>Beide</td><td>Q2 2026</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+<p>\newpage</p>
+
+<h1>Fazit</h1>
+
+<h2>Zusammenfassung</h2>
+
+<p>Power Energy GmbH ist ein时机-perfect positioniertes Startup im Bereich AI-gesteuerter Energieoptimierung für Österreich. Die Kombination aus regulatorischen Treibern (Smart Meter Rollout 2026, EU Energy Efficiency Directive), steigenden Strompreisen und wachsender EV-Adoption schafft einen der attraktivsten Märkte im europäischen Cleantech-Sektor.</p>
+
+<p>---</p>
+
+<h2>Investment-Thesis auf einen Blick</h2>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Markt</strong></td><td>€1,65B TAM in Österreich, wachsend durch Regulierung</td><td></td></tr><tr><td></td><td><strong>Produkt</strong></td><td>Cloud-basierter AI Energy Orchestrator, MVP bereits fertig</td><td></td></tr><tr><td></td><td><strong>Differenzierung</strong></td><td>E-Control-konform, Made in Austria, keine Hardware-Einstiegskosten</td><td></td></tr><tr><td></td><td><strong>Team</strong></td><td>Domain-Expertise in Energie und Technologie</td><td></td></tr><tr><td></td><td><strong>Ökonomie</strong></td><td>12:1 LTV:CAC, 8 Monate Payback, 75% Bruttomarge</td><td></td></tr><tr><td></td><td><strong>Finanzierung</strong></td><td>€150K Pre-Seed für MVP Launch + Pilot</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>Warum jetzt investieren</h2>
+
+<h3>1. Timing</h3>
+<ul><li>Smart Meter Rollout 2026 in Österreich schafft Infrastruktur</li>
+<li>EU-Regulierung macht Flexibilität verpflichtend</li>
+<li>Erste dynamische Tarife verfügbar</li>
+<p></ul></p>
+<h3>2. Produkt</h3>
+<ul><li>MVP mit 17K+ LOC bereits entwickelt</li>
+<li>Volle Pipeline: API + Frontend + ML</li>
+<li>E-Control-Positionierung finalisiert</li>
+<p></ul></p>
+<h3>3. Markt</h3>
+<ul><li>Kein österreichischer Champion im Bereich AI Energy Orchestration</li>
+<li>VOLTAG.Ai ist Hardware-lastig, Tibber hat keine Gerätesteuerung</li>
+<li>Lücke für Cloud-first, voll-integrierte Lösung</li>
+<p></ul></p>
+<h3>4. Team</h3>
+<ul><li>CEO mit Elektro-Domain und regulatorischem Know-how</li>
+<li>CTO mit Full-Stack Architektur-Erfahrung</li>
+<li>Advisors mit E-Control-Netzwerk</li>
+<p></ul></p>
+<h3>5. Ökonomie</h3>
+<ul><li>SaaS mit starken Unit Economics</li>
+<li>Wiederkehrende Revenue (MRR/ARR)</li>
+<li>Skalierbares Business Model</li>
+<p></ul></p>
+<p>---</p>
+
+<h2>Risiken und wie wir sie adressieren</h2>
+
+<table><thead><tr><th>Risiko</th><th>Realistische Einschätzung</th><th>Mitigation</th></tr></thead><tbody><tr><td></td><td><strong>Wettbewerb</strong></td><td>VOLTAG.Ai ist etabliert, aber Hardware-lastig</td><td>Cloud-first, keine Einstiegskosten</td><td></td></tr><tr><td></td><td><strong>Regulierung</strong></td><td>Komplex, aber bereits adressiert</td><td>E-Control-Dialog aktiv, EMS-Positionierung</td><td></td></tr><tr><td></td><td><strong>Marktwachstum</strong></td><td>Abhängig von Smart Meter Rollout</td><td>Heute adressierbare Zielgruppe bereits groß</td><td></td></tr><tr><td></td><td><strong>Team</strong></td><td>Limitiert ohne externe Finanzierung</td><td>Pre-Seed sichert 12+ Monate</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>Was wir suchen</h2>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>Investment</strong></td><td>€150.000 Pre-Seed</td><td></td></tr><tr><td></td><td><strong>Anteile</strong></td><td>15% (Post-Money €1M)</td><td></td></tr><tr><td></td><td><strong>Use of Funds</strong></td><td>MVP Launch, Pilot, Regulatory</td><td></td></tr><tr><td></td><td><strong>Timeline</strong></td><td>Q2 2026</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<h2>Kontakt</h2>
+
+<table><thead><tr></tr></thead><tbody><tr><td></td><td><strong>CEO</strong></td><td>[Benötigte Information]</td><td></td></tr><tr><td></td><td><strong>Email</strong></td><td>hello@power-energy.at</td><td></td></tr><tr><td></td><td><strong>Website</strong></td><td>www.power-energy.at</td><td></td></tr><tr><td></td><td><strong>LinkedIn</strong></td><td>[Benötigte Information]</td><td></td></tr></tbody></table>
+<p>---</p>
+
+<blockquote>"Jeder Haushalt und jedes KMU in Österreich optimiert Energie automatisch — ohne manuelles Eingreifen."</blockquote>
+
+<strong>Power Energy GmbH — Building Austria's Energy Future</strong>
+
+<p>---</p>
+
+<em>Erstellt: April 2026 | BusinessPlan Architect Pro</em>
+
+
+
+</body>
+</html>

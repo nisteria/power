@@ -1,0 +1,15 @@
+// API Rate Limiting - Advanced
+# Limits
+- 100 requests/min per IP
+- 1000 requests/day per user
+- 100 connections/min per IP
+
+# Response Headers
+X-RateLimit-Limit: 100
+X-RateLimit-Remaining: 95
+X-RateLimit-Reset: 1640000000
+
+# Blocklist
+blocklist:
+  - 192.168.1.100
+  - 10.0.0.0/8

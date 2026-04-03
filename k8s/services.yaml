@@ -1,0 +1,29 @@
+// Kubernetes - Services
+# Power Energy Microservices
+
+services:
+  api:
+    replicas: 3
+    resources:
+      memory: 512Mi
+      cpu: 500m
+
+  worker:
+    replicas: 2
+    resources:
+      memory: 256Mi
+      cpu: 200m
+
+  web:
+    replicas: 2
+    resources:
+      memory: 128Mi
+      cpu: 100m
+
+# Auto-scaling
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 10
+  targetCPU: 70%
+  targetMemory: 80%

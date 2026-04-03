@@ -1,0 +1,14 @@
+// Dockerignore
+node_modules
+.git
+.env
+.env.local
+*.log
+.DS_Store
+dist
+build
+.next
+coverage
+.vscode
+.idea
+*.db

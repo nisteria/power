@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power CEO Live Dashboard</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, Segoe UI, sans-serif; background: radial-gradient(circle at top, #172246, #0b1020 50%); color:#e8ecff; }
+    header { padding: 16px 20px; border-bottom: 1px solid #243058; display:flex; justify-content:space-between; align-items:center; gap:12px; position: sticky; top:0; backdrop-filter: blur(8px); background: #0b1020cc; z-index: 10; }
+    .title-wrap h2 { margin:0; }
+    .muted{ color:#9aa6d1; }
+    .ok{ color:#57d38c; }
+    .bad{ color:#ff7b7b; }
+    .warn{ color:#ffc857; }
+    .pill { padding: 4px 10px; border: 1px solid #32427a; border-radius: 999px; font-size: 12px; }
+    .wrap { padding:16px; display:grid; gap:16px; grid-template-columns: repeat(12, minmax(0,1fr)); }
+    .card { background:#121933; border:1px solid #243058; border-radius:14px; padding:14px; box-shadow: 0 8px 24px #00000033; }
+    .kpi { grid-column: span 3; }
+    .status-card { grid-column: span 4; }
+    .timeline { grid-column: span 8; }
+    .todos { grid-column: span 8; }
+    .docs { grid-column: span 4; }
+    .pane { grid-column: span 6; }
+    .full { grid-column: 1 / -1; }
+    .light { width:12px; height:12px; border-radius:50%; display:inline-block; margin-right:8px; vertical-align:middle; }
+    .light-green{ background:#57d38c; box-shadow:0 0 10px #57d38c88; }
+    .light-red{ background:#ff7b7b; box-shadow:0 0 10px #ff7b7b88; }
+    .entry { border-bottom:1px solid #243058; padding:8px 0; }
+    .entry:last-child{ border-bottom:none; }
+    .title { font-weight:600; }
+    .list { max-height: 280px; overflow:auto; }
+    pre { white-space: pre-wrap; background:#0d1430; padding:10px; border-radius:10px; max-height:260px; overflow:auto; margin:0; }
+    button { background:#4f7cff; color:white; border:none; padding:8px 10px; border-radius:8px; cursor:pointer; }
+    .top-actions { display:flex; gap:10px; align-items:center; }
+    .kpi-value { font-size: 28px; font-weight: 700; margin-top: 8px; }
+    .bar { width:100%; height:14px; background:#1a2550; border-radius:999px; overflow:hidden; border:1px solid #2c3e74; }
+    .bar > div { height:100%; }
+    .done { background:linear-gradient(90deg, #38c976, #57d38c); }
+    .open { background:linear-gradient(90deg, #ffc857, #f7a928); }
+    .bar-legend { display:flex; justify-content:space-between; margin-top:8px; font-size:12px; color:#9aa6d1; }
+    .doc-link { display:block; padding:6px 0; color:#9dd0ff; text-decoration:none; }
+    .doc-link:hover { text-decoration: underline; }
+    @media (max-width: 1200px){
+      .kpi,.status-card,.timeline,.todos,.docs,.pane,.full { grid-column: 1 / -1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title-wrap">
+      <h2>Power CEO Live Dashboard</h2>
+      <div class="muted" id="now">lädt…</div>
+    </div>
+    <div class="top-actions">
+      <span class="pill muted" id="conn">Realtime: verbinden…</span>
+      <button id="refreshBtn">Aktualisieren</button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="card status-card">
+      <h3>Agent Status (Ampel)</h3>
+      <p id="statusText">-</p>
+      <p class="muted" id="lastEntry">-</p>
+      <p class="muted" id="fileMod">-</p>
+      <p class="muted" id="minsSince">-</p>
+    </div>
+
+    <div class="card kpi">
+      <h3>Offene Aufgaben</h3>
+      <div class="kpi-value" id="openCount">0</div>
+    </div>
+
+    <div class="card kpi">
+      <h3>Erledigte Aufgaben</h3>
+      <div class="kpi-value" id="doneCount">0</div>
+    </div>
+
+    <div class="card kpi">
+      <h3>Fortschritt</h3>
+      <div class="kpi-value" id="completionRate">0%</div>
+    </div>
+
+    <div class="card todos">
+      <h3>ToDo-Fortschritt (grafisch)</h3>
+      <div class="bar"><div id="doneBar" class="done" style="width:0%"></div></div>
+      <div class="bar" style="margin-top:8px"><div id="openBar" class="open" style="width:0%"></div></div>
+      <div class="bar-legend">
+        <span id="doneLegend">Erledigt: 0</span>
+        <span id="openLegend">Offen: 0</span>
+      </div>
+      <div style="margin-top:12px" class="muted">Neu hinzugekommen / kürzlich verändert (aus Aktivitätslog):</div>
+      <div id="recentChanges" class="list"></div>
+    </div>
+
+    <div class="card docs">
+      <h3>Dokumente zum Nachlesen</h3>
+      <div id="docLinks"></div>
+    </div>
+
+    <div class="card timeline">
+      <h3>Werdegang / Arbeitsgang (letzte Läufe)</h3>
+      <div id="feed" class="list"></div>
+    </div>
+
+    <div class="card pane">
+      <h3>Noch offen</h3>
+      <div id="openFeed" class="list"></div>
+    </div>
+
+    <div class="card pane">
+      <h3>Erledigt</h3>
+      <div id="doneFeed" class="list"></div>
+    </div>
+
+    <div class="card pane">
+      <h3>An AI gesendet (letzter Lauf)</h3>
+      <pre id="aiSent">—</pre>
+    </div>
+
+    <div class="card pane">
+      <h3>Von AI bekommen (letzter Lauf)</h3>
+      <pre id="aiReceived">—</pre>
+    </div>
+
+    <div class="card full">
+      <h3>PROJECT_STATUS.md</h3>
+      <pre id="projectStatus"></pre>
+    </div>
+
+    <div class="card full">
+      <h3>PROJECT_TODO.md</h3>
+      <pre id="projectTodo"></pre>
+    </div>
+  </div>
+
+  <script>
+    const DOC_BASE = '/docs/';
+
+    function textOrDash(v) { return v == null || v === '' ? '—' : v; }
+
+    function renderList(targetId, items, icon) {
+      const root = document.getElementById(targetId);
+      root.innerHTML = '';
+      if (!items || !items.length) {
+        root.innerHTML = '<div class="muted">Keine Einträge</div>';
+        return;
+      }
+      items.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'entry';
+        div.textContent = `${icon} ${item}`;
+        root.appendChild(div);
+      });
+    }
+
+    function render(data) {
+      document.getElementById('now').textContent = `Stand: ${new Date(data.now).toLocaleString()}`;
+      const active = !!data?.agent?.active;
+
+      document.getElementById('statusText').innerHTML = active
+        ? '<span class="light light-green"></span><span class="ok">Aktiv</span>'
+        : '<span class="light light-red"></span><span class="bad">Inaktiv/keine frischen Logs</span>';
+
+      document.getElementById('lastEntry').textContent = `Letzter Lauf: ${textOrDash(data?.agent?.latestEntryTitle)}`;
+      document.getElementById('fileMod').textContent = `Datei geändert: ${textOrDash(data?.agent?.activityFileLastModified)}`;
+      document.getElementById('minsSince').textContent = `Minuten seit letztem Lauf: ${textOrDash(data?.agent?.minutesSinceLastEntry)}`;
+
+      document.getElementById('aiSent').textContent = data?.traffic?.sent || 'Noch kein AI-> Eintrag im Log';
+      document.getElementById('aiReceived').textContent = data?.traffic?.received || 'Noch kein AI<- Eintrag im Log';
+
+      const feed = document.getElementById('feed');
+      feed.innerHTML = '';
+      (data?.feed?.activityEntries || []).slice().reverse().forEach(e => {
+        const div = document.createElement('div');
+        div.className = 'entry';
+        div.innerHTML = `<div class="title">${e.title}</div>` + (e.bullets || []).map(b => `<div>• ${b}</div>`).join('');
+        feed.appendChild(div);
+      });
+
+      const doneCount = data?.todos?.completedCount || 0;
+      const openCount = data?.todos?.openCount || 0;
+      const total = Math.max(data?.todos?.totalCount || (doneCount + openCount), 1);
+      const donePct = Math.round((doneCount / total) * 100);
+      const openPct = Math.round((openCount / total) * 100);
+
+      document.getElementById('openCount').textContent = String(openCount);
+      document.getElementById('doneCount').textContent = String(doneCount);
+      document.getElementById('completionRate').textContent = `${data?.todos?.completionRate ?? donePct}%`;
+      document.getElementById('doneBar').style.width = `${donePct}%`;
+      document.getElementById('openBar').style.width = `${openPct}%`;
+      document.getElementById('doneLegend').textContent = `Erledigt: ${doneCount}`;
+      document.getElementById('openLegend').textContent = `Offen: ${openCount}`;
+
+      renderList('openFeed', data?.todos?.open || [], '🟡');
+      renderList('doneFeed', data?.todos?.completed || [], '✅');
+      renderList('recentChanges', data?.todos?.recentChanges || [], '🆕');
+
+      const links = document.getElementById('docLinks');
+      links.innerHTML = '';
+      (data?.docs?.mentionedDocs || []).forEach(doc => {
+        const a = document.createElement('a');
+        a.className = 'doc-link';
+        a.href = `${DOC_BASE}${doc}`;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.textContent = `📄 ${doc}`;
+        links.appendChild(a);
+      });
+      if (!links.innerHTML) links.innerHTML = '<div class="muted">Keine dokumentierten Referenzen gefunden.</div>';
+
+      document.getElementById('projectStatus').textContent = data?.docs?.projectStatus || '';
+      document.getElementById('projectTodo').textContent = data?.docs?.projectTodo || '';
+    }
+
+    async function load() {
+      const btn = document.getElementById('refreshBtn');
+      try {
+        btn.disabled = true;
+        const res = await fetch('/api/status?ts=' + Date.now(), { cache: 'no-store' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        render(data);
+      } catch {
+        document.getElementById('conn').textContent = 'Realtime: Fehler beim Laden';
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    function connectRealtime() {
+      const conn = document.getElementById('conn');
+      const evt = new EventSource('/api/stream');
+      evt.onopen = () => { conn.textContent = 'Realtime: verbunden'; conn.className = 'pill ok'; };
+      evt.onmessage = (event) => render(JSON.parse(event.data));
+      evt.onerror = () => { conn.textContent = 'Realtime: getrennt, reconnect…'; conn.className = 'pill warn'; };
+    }
+
+    document.getElementById('refreshBtn').addEventListener('click', load);
+    load();
+    connectRealtime();
+  </script>
+</body>
+</html>
